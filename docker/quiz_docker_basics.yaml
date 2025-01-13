@@ -1,0 +1,99 @@
+id: containers_docker_basics
+category: docker
+level: beginner
+translations:
+  fr:
+    title: Les bases de Docker
+    description: Découvrez les concepts fondamentaux de Docker et des conteneurs
+  en:
+    title: Docker Basics
+    description: Learn the fundamental concepts of Docker and containers
+
+questions:
+  - id: q1
+    translations:
+      fr:
+        question: Quelle commande permet de lister tous les conteneurs Docker en cours d'exécution ?
+        options:
+          - docker ps
+          - docker list
+          - docker containers
+          - docker show
+        explanation: La commande 'docker ps' affiche la liste des conteneurs en cours d'exécution. Pour voir tous les conteneurs (y compris ceux arrêtés), utilisez 'docker ps -a'.
+        source: "Documentation Docker - https://docs.docker.com/engine/reference/commandline/ps/"
+      en:
+        question: Which command lists all running Docker containers?
+        options:
+          - docker ps
+          - docker list
+          - docker containers
+          - docker show
+        explanation: The 'docker ps' command shows the list of running containers. To see all containers (including stopped ones), use 'docker ps -a'.
+        source: "Docker Documentation - https://docs.docker.com/engine/reference/commandline/ps/"
+    correct_answer: 0
+
+  - id: q2
+    translations:
+      fr:
+        question: Que fait la commande 'docker pull' ?
+        options:
+          - Télécharge une image depuis un registre
+          - Démarre un conteneur
+          - Arrête un conteneur
+          - Supprime une image
+        explanation: La commande 'docker pull' télécharge une image depuis un registre (par défaut Docker Hub) vers votre machine locale.
+        source: "Documentation Docker - https://docs.docker.com/engine/reference/commandline/pull/"
+      en:
+        question: What does the 'docker pull' command do?
+        options:
+          - Downloads an image from a registry
+          - Starts a container
+          - Stops a container
+          - Removes an image
+        explanation: The 'docker pull' command downloads an image from a registry (Docker Hub by default) to your local machine.
+        source: "Docker Documentation - https://docs.docker.com/engine/reference/commandline/pull/"
+    correct_answer: 0
+
+  - id: q3
+    translations:
+      fr:
+        question: Quelle est la différence entre une image Docker et un conteneur Docker ?
+        options:
+          - L'image est un modèle en lecture seule, le conteneur est une instance en cours d'exécution
+          - L'image est plus grande que le conteneur
+          - Le conteneur est un modèle, l'image est une instance
+          - Il n'y a pas de différence
+        explanation: Une image Docker est un modèle en lecture seule qui contient les instructions pour créer un conteneur. Un conteneur est une instance en cours d'exécution d'une image, avec son propre système de fichiers, réseau et processus isolés.
+        source: "Documentation Docker - https://docs.docker.com/get-started/overview/"
+      en:
+        question: What is the difference between a Docker image and a Docker container?
+        options:
+          - The image is a read-only template, the container is a running instance
+          - The image is larger than the container
+          - The container is a template, the image is an instance
+          - There is no difference
+        explanation: A Docker image is a read-only template containing instructions for creating a container. A container is a running instance of an image, with its own filesystem, networking, and isolated processes.
+        source: "Docker Documentation - https://docs.docker.com/get-started/overview/"
+    correct_answer: 0
+
+  - id: q4
+    translations:
+      fr:
+        question: Que signifie le -d dans la commande 'docker run -d' ?
+        options:
+          - Exécute le conteneur en mode détaché (background)
+          - Supprime le conteneur après son arrêt
+          - Active le mode debug
+          - Désactive les logs
+        explanation: L'option -d (detach) permet d'exécuter le conteneur en arrière-plan. Le conteneur continue de s'exécuter mais n'est pas attaché à votre terminal actuel.
+        source: "Documentation Docker - https://docs.docker.com/engine/reference/run/#detached--d"
+      en:
+        question: What does -d mean in the 'docker run -d' command?
+        options:
+          - Runs the container in detached mode (background)
+          - Deletes the container after it stops
+          - Enables debug mode
+          - Disables logging
+        explanation: The -d (detach) option runs the container in the background. The container continues running but is not attached to your current terminal.
+        source: "Docker Documentation - https://docs.docker.com/engine/reference/run/#detached--d"
+    correct_answer: 0 

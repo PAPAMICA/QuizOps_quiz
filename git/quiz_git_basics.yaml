@@ -1,0 +1,61 @@
+id: git_basics
+category: git
+level: beginner
+title: Git Basics
+description: Learn the fundamental concepts and commands of Git version control system
+
+questions:
+  - id: q1
+    question: What is Git?
+    options:
+      - A distributed version control system
+      - A programming language
+      - A web server
+      - A database management system
+    explanation: Git is a distributed version control system that tracks changes in source code during software development. It's designed for coordinating work among programmers.
+    source: "Git Documentation - https://git-scm.com/about"
+    correct_answer: 0
+
+  - id: q2
+    question: What command creates a new Git repository?
+    options:
+      - git init
+      - git start
+      - git create
+      - git new
+    explanation: The 'git init' command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository.
+    source: "Git Documentation - https://git-scm.com/docs/git-init"
+    correct_answer: 0
+
+  - id: q3
+    question: What does 'git clone' do?
+    options:
+      - Creates a copy of a remote repository
+      - Creates a new branch
+      - Deletes a repository
+      - Merges two branches
+    explanation: The 'git clone' command copies a remote repository to your local machine. It creates a new directory, initializes a .git directory inside it, and pulls all repository data.
+    source: "Git Documentation - https://git-scm.com/docs/git-clone"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the purpose of 'git status'?
+    options:
+      - Shows the working tree status
+      - Starts a new repository
+      - Deletes all commits
+      - Changes the remote URL
+    explanation: The 'git status' command displays the state of the working directory and the staging area. It shows which changes have been staged, which haven't, and which files aren't being tracked by Git.
+    source: "Git Documentation - https://git-scm.com/docs/git-status"
+    correct_answer: 0
+
+  - id: q5
+    question: What command is used to create a new branch in Git?
+    options:
+      - git branch
+      - git create
+      - git new
+      - git checkout
+    explanation: The 'git branch' command is used to create, list, rename, and delete branches. To create a new branch, use 'git branch <branch-name>'.
+    source: "Git Documentation - https://git-scm.com/docs/git-branch"
+    correct_answer: 0 

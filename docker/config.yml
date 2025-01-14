@@ -1,3 +1,4 @@
-name: "Docker"
-logo: "https://papamica.github.io/lab_natunix/assets/logos/ansible.png"
-description: "Docker is a platform for building, shipping, and running applications in containers."
+name: Docker
+description: Learn containerization and Docker fundamentals
+logo: https://img.papamica.com/stickers/docker.png
+color: blue

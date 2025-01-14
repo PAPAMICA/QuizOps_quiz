@@ -1,0 +1,61 @@
+id: linux_basics
+category: linux
+level: beginner
+title: Linux Basics
+description: Learn the fundamental concepts and commands of Linux operating system
+
+questions:
+  - id: q1
+    question: What command is used to list files and directories in Linux?
+    options:
+      - ls
+      - dir
+      - list
+      - show
+    explanation: The 'ls' command is used to list directory contents in Linux. It can be used with various options like -l (long format), -a (show hidden files), etc.
+    source: "GNU Coreutils - https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the purpose of the 'sudo' command?
+    options:
+      - Execute a command with superuser privileges
+      - Search for files
+      - Show disk usage
+      - Switch users
+    explanation: sudo (superuser do) allows a permitted user to execute a command as the superuser or another user, as specified by the security policy.
+    source: "Sudo Manual - https://www.sudo.ws/man/sudo.man.html"
+    correct_answer: 0
+
+  - id: q3
+    question: Which directory contains system configuration files in Linux?
+    options:
+      - /etc
+      - /bin
+      - /home
+      - /usr
+    explanation: The /etc directory contains system-wide configuration files and system databases. It's one of the most important directories in Linux.
+    source: "Filesystem Hierarchy Standard - https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s07.html"
+    correct_answer: 0
+
+  - id: q4
+    question: What command is used to change file permissions in Linux?
+    options:
+      - chmod
+      - chown
+      - perm
+      - change
+    explanation: The 'chmod' command is used to change the permissions of files and directories. It can use both symbolic (u+x) and numeric (755) notation.
+    source: "GNU Coreutils - https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html"
+    correct_answer: 0
+
+  - id: q5
+    question: What does the 'pwd' command do?
+    options:
+      - Print Working Directory
+      - Password Change
+      - Power Down
+      - Program Working Directory
+    explanation: The 'pwd' (Print Working Directory) command prints the full pathname of the current working directory.
+    source: "GNU Coreutils - https://www.gnu.org/software/coreutils/manual/html_node/pwd-invocation.html"
+    correct_answer: 0 

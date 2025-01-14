@@ -1,3 +1,4 @@
-name: "Network"
-logo: "https://papamica.github.io/lab_natunix/assets/logos/ansible.png"
-description: "Network is a platform for building, shipping, and running applications in containers."
+name: Networking
+description: Learn networking concepts, protocols, and security
+logo: https://img.papamica.com/stickers/network.png
+color: blue

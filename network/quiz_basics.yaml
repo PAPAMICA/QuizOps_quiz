@@ -1,55 +1,28 @@
 id: networking_basics
 category: networking
 level: beginner
-translations:
-  fr:
-    title: Les bases du réseau
-    description: Découvrez les fondamentaux du réseau informatique
-  en:
-    title: Network Basics
-    description: Learn the fundamentals of computer networking
+title: Network Basics
+description: Learn the fundamentals of computer networking
 
 questions:
   - id: q1
-    translations:
-      fr:
-        question: Que signifie IP ?
-        options:
-          - Internet Protocol
-          - Internet Program
-          - Internal Protocol
-          - Internet Provider
-        explanation: IP signifie Internet Protocol. C'est le protocole fondamental qui permet l'adressage et le routage des paquets sur Internet.
-        source: "RFC 791 - https://datatracker.ietf.org/doc/html/rfc791"
-      en:
-        question: What does IP stand for?
-        options:
-          - Internet Protocol
-          - Internet Program
-          - Internal Protocol
-          - Internet Provider
-        explanation: IP stands for Internet Protocol. It is the fundamental protocol that enables addressing and routing of packets on the Internet.
-        source: "RFC 791 - https://datatracker.ietf.org/doc/html/rfc791"
+    question: What does IP stand for?
+    options:
+      - Internet Protocol
+      - Internet Program
+      - Internal Protocol
+      - Internet Provider
+    explanation: IP stands for Internet Protocol. It is the fundamental protocol that enables addressing and routing of packets on the Internet.
+    source: "RFC 791 - https://datatracker.ietf.org/doc/html/rfc791"
     correct_answer: 0
 
   - id: q2
-    translations:
-      fr:
-        question: Quel est le port par défaut du protocole HTTPS ?
-        options:
-          - "80"
-          - "443"
-          - "21"
-          - "22"
-        explanation: Le port 443 est le port standard pour HTTPS (HTTP Secure). Il permet une communication chiffrée entre le client et le serveur.
-        source: "IANA Port Numbers - https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml"
-      en:
-        question: What is the default port for HTTPS protocol?
-        options:
-          - "80"
-          - "443"
-          - "21"
-          - "22"
-        explanation: Port 443 is the standard port for HTTPS (HTTP Secure). It enables encrypted communication between client and server.
-        source: "IANA Port Numbers - https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml"
+    question: What is the default port for HTTPS protocol?
+    options:
+      - "80"
+      - "443"
+      - "21"
+      - "22"
+    explanation: Port 443 is the standard port for HTTPS (HTTP Secure). It enables encrypted communication between client and server.
+    source: "IANA Port Numbers - https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml"
     correct_answer: 1 

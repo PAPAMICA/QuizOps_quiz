@@ -1,0 +1,61 @@
+id: network_security_basics
+category: networking
+level: intermediate
+title: Network Security Basics
+description: Learn the fundamentals of network security, firewalls, and common attack vectors
+
+questions:
+  - id: q1
+    question: What is a firewall?
+    options:
+      - A network security device that monitors and filters incoming and outgoing traffic
+      - A physical wall that protects servers from fire damage
+      - A software that speeds up network connections
+      - A tool to compress network data
+    explanation: A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.
+    source: "NIST - https://csrc.nist.gov/glossary/term/firewall"
+    correct_answer: 0
+
+  - id: q2
+    question: What is a DDoS attack?
+    options:
+      - An attempt to make a network resource unavailable by overwhelming it with traffic
+      - A virus that deletes system files
+      - A method to steal passwords
+      - A tool to scan network vulnerabilities
+    explanation: A Distributed Denial of Service (DDoS) attack attempts to disrupt normal traffic by overwhelming the target with a flood of traffic from multiple sources.
+    source: "CISA - https://www.cisa.gov/topics/cyber-threats-and-advisories/understanding-denial-service-attacks"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the purpose of network segmentation?
+    options:
+      - To divide a network into smaller segments for better security and management
+      - To increase network speed
+      - To reduce electricity consumption
+      - To make the network more visible
+    explanation: Network segmentation divides a network into smaller parts, which helps contain security breaches, improves monitoring, and reduces the attack surface.
+    source: "NIST - https://www.nist.gov/publications/network-segmentation"
+    correct_answer: 0
+
+  - id: q4
+    question: What is a DMZ in network security?
+    options:
+      - A perimeter network that exposes external-facing services
+      - A type of firewall
+      - A secure internal network
+      - A backup network system
+    explanation: A DMZ (demilitarized zone) is a perimeter network that protects an organization's internal network by exposing only external-facing services.
+    source: "NIST - https://csrc.nist.gov/glossary/term/dmz"
+    correct_answer: 0
+
+  - id: q5
+    question: What is port scanning?
+    options:
+      - A technique to discover open ports on a network host
+      - A method to increase port speed
+      - A way to create new network ports
+      - A tool to close unused ports
+    explanation: Port scanning is a method for determining which ports on a network are open and could be receiving or sending data. It's often used by attackers to find vulnerable services.
+    source: "OWASP - https://owasp.org/www-community/controls/Port_Scanner"
+    correct_answer: 0 

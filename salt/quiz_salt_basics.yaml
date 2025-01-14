@@ -1,0 +1,116 @@
+id: salt_basics
+category: salt
+level: beginner
+title: Salt Fundamentals
+description: Test your knowledge of basic Salt concepts and usage
+
+questions:
+  - id: salt_b1
+    question: What is Salt (SaltStack)?
+    options:
+      - A configuration management and remote execution engine
+      - A continuous integration platform for building applications
+      - A container orchestration system for deploying services
+      - A version control system for tracking code changes
+    correct_answer: 0
+    explanation: Salt is a configuration management and remote execution engine that helps automate infrastructure management.
+    source: https://docs.saltproject.io/en/latest/topics/about_salt_project.html
+
+  - id: salt_b2
+    question: What is a Salt Master?
+    options:
+      - A central management server that controls Salt Minions
+      - A database system that stores configuration values
+      - A monitoring service that tracks system metrics
+      - A load balancer that distributes network traffic
+    correct_answer: 0
+    explanation: The Salt Master is the central management server that controls and communicates with Salt Minions.
+    source: https://docs.saltproject.io/en/latest/topics/installation/index.html
+
+  - id: salt_b3
+    question: What is a Salt Minion?
+    options:
+      - A managed system that receives commands from Salt Master
+      - A backup service that stores system snapshots
+      - A logging system that collects error messages
+      - A firewall that protects network boundaries
+    correct_answer: 0
+    explanation: A Salt Minion is a managed system that receives and executes commands from the Salt Master.
+    source: https://docs.saltproject.io/en/latest/topics/installation/index.html
+
+  - id: salt_b4
+    question: What is a Salt State?
+    options:
+      - A configuration template that defines system requirements
+      - A network protocol for secure communications
+      - A monitoring agent that collects system data
+      - A backup tool that preserves system files
+    correct_answer: 0
+    explanation: A Salt State is a configuration template that defines how a system should be configured.
+    source: https://docs.saltproject.io/en/latest/topics/tutorials/starting_states.html
+
+  - id: salt_b5
+    question: What file extension do Salt State files use?
+    options:
+      - .sls (SaLt State)
+      - .cfg (Configuration)
+      - .ini (Initialization)
+      - .yml (YAML Markup)
+    correct_answer: 0
+    explanation: Salt State files use the .sls extension, which stands for SaLt State.
+    source: https://docs.saltproject.io/en/latest/topics/tutorials/starting_states.html
+
+  - id: salt_b6
+    question: What is a Salt Pillar?
+    options:
+      - A secure data store for sensitive configuration values
+      - A monitoring system for tracking resource usage
+      - A backup service for protecting system data
+      - A logging tool for recording system events
+    correct_answer: 0
+    explanation: Salt Pillars provide a secure way to store and distribute sensitive configuration data to specific minions.
+    source: https://docs.saltproject.io/en/latest/topics/tutorials/pillar.html
+
+  - id: salt_b7
+    question: What is a Salt Grain?
+    options:
+      - A system information collector about minion properties
+      - A configuration validator for checking state files
+      - A package manager for installing software tools
+      - A service monitor for tracking processes
+    correct_answer: 0
+    explanation: Salt Grains collect system information about minions, such as OS type, CPU architecture, and memory.
+    source: https://docs.saltproject.io/en/latest/topics/grains/index.html
+
+  - id: salt_b8
+    question: What is the default port for Salt Master?
+    options:
+      - 4505 and 4506 for different functions
+      - 8080 and 8081 for web services
+      - 3306 and 3307 for databases
+      - 22 and 23 for remote access
+    correct_answer: 0
+    explanation: Salt Master uses ports 4505 (publish_port) and 4506 (ret_port) by default for different functions.
+    source: https://docs.saltproject.io/en/latest/ref/configuration/master.html
+
+  - id: salt_b9
+    question: What is a Salt Formula?
+    options:
+      - A pre-written collection of Salt States for specific tasks
+      - A mathematical equation for calculating resources
+      - A security protocol for encrypting messages
+      - A monitoring rule for system performance
+    correct_answer: 0
+    explanation: Salt Formulas are pre-written, reusable collections of Salt States for specific configuration tasks.
+    source: https://docs.saltproject.io/en/latest/topics/development/conventions/formulas.html
+
+  - id: salt_b10
+    question: What is Salt SSH?
+    options:
+      - A way to run Salt commands without installing minions
+      - A secure protocol for network encryption
+      - A remote backup tool for system files
+      - A monitoring agent for SSH services
+    correct_answer: 0
+    explanation: Salt SSH allows running Salt commands on target systems without installing the Salt Minion service.
+    source: https://docs.saltproject.io/en/latest/topics/ssh/ 

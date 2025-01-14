@@ -1,0 +1,116 @@
+id: rundeck_intermediate
+category: rundeck
+level: intermediate
+title: Rundeck Advanced Operations
+description: Test your knowledge of intermediate Rundeck concepts and features
+
+questions:
+  - id: rundeck_i1
+    question: What is a Node Filter in Rundeck?
+    options:
+      - A way to select nodes based on their attributes
+      - A type of job
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Node Filters allow you to select nodes for job execution based on their attributes like tags, hostname, or other properties.
+    source: https://docs.rundeck.com/docs/manual/05-nodes.html#node-filtering
+
+  - id: rundeck_i2
+    question: What is Job Reference in Rundeck?
+    options:
+      - A step that calls another job within a workflow
+      - A type of node
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Job Reference allows you to call and execute another job as a step within your current job's workflow.
+    source: https://docs.rundeck.com/docs/manual/job-workflows.html#job-reference
+
+  - id: rundeck_i3
+    question: What is a Node Executor in Rundeck?
+    options:
+      - A component that executes commands on nodes
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: A Node Executor is a component that handles the execution of commands on remote nodes, such as SSH or WinRM.
+    source: https://docs.rundeck.com/docs/administration/configuration/plugins/node-execution.html
+
+  - id: rundeck_i4
+    question: What is a Resource Model Source in Rundeck?
+    options:
+      - A plugin that provides node information to Rundeck
+      - A type of job
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: A Resource Model Source is a plugin that provides node information to Rundeck from various sources like files, APIs, or cloud providers.
+    source: https://docs.rundeck.com/docs/manual/projects/resource-model-sources.html
+
+  - id: rundeck_i5
+    question: What is a Job Notification in Rundeck?
+    options:
+      - An alert sent when a job succeeds, fails, or starts
+      - A type of node
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Job Notifications are alerts sent when a job starts, succeeds, or fails, through various channels like email or webhooks.
+    source: https://docs.rundeck.com/docs/manual/jobs.html#notifications
+
+  - id: rundeck_i6
+    question: What is a Log Filter in Rundeck?
+    options:
+      - A plugin that can modify or enhance job execution logs
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Log Filters are plugins that can modify or enhance job execution logs, like masking sensitive data or highlighting specific patterns.
+    source: https://docs.rundeck.com/docs/manual/log-filters.html
+
+  - id: rundeck_i7
+    question: What is a Node Step in Rundeck?
+    options:
+      - A step that executes once for each matched node
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: A Node Step is a workflow step that executes once for each node that matches the job's node filter.
+    source: https://docs.rundeck.com/docs/manual/job-workflows.html#node-steps
+
+  - id: rundeck_i8
+    question: What is a Workflow Strategy in Rundeck?
+    options:
+      - Determines how steps are executed in a workflow
+      - A type of node
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: A Workflow Strategy determines how steps are executed in a workflow, such as sequential or parallel execution.
+    source: https://docs.rundeck.com/docs/manual/job-workflows.html#workflow-strategy
+
+  - id: rundeck_i9
+    question: What is an Option Provider in Rundeck?
+    options:
+      - A plugin that provides dynamic options for jobs
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: An Option Provider is a plugin that can dynamically provide option values for jobs based on external sources.
+    source: https://docs.rundeck.com/docs/manual/job-options.html#option-model-provider
+
+  - id: rundeck_i10
+    question: What is a Node Orchestrator in Rundeck?
+    options:
+      - Controls how node steps are orchestrated across nodes
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: A Node Orchestrator controls how node steps are orchestrated across multiple nodes, like limiting concurrent executions.
+    source: https://docs.rundeck.com/docs/manual/job-workflows.html#node-orchestrator 

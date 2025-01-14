@@ -1,0 +1,116 @@
+id: prometheus_advanced
+category: prometheus
+level: advanced
+title: Prometheus Expert Level
+description: Test your expertise in advanced Prometheus concepts and features
+
+questions:
+  - id: prometheus_a1
+    question: What is the purpose of remote storage in Prometheus?
+    options:
+      - Allow Prometheus to write samples to remote storage systems and read them back
+      - Create local backups
+      - Generate alerts
+      - Configure service discovery
+    correct_answer: 0
+    explanation: Remote storage allows Prometheus to write samples to remote systems and read them back, enabling long-term storage and integration with other systems.
+    source: https://prometheus.io/docs/prometheus/latest/storage/#remote-storage-integrations
+
+  - id: prometheus_a2
+    question: What is staleness in Prometheus?
+    options:
+      - A state where a time series is considered stale after not receiving updates
+      - A type of alert
+      - A metric type
+      - A configuration error
+    correct_answer: 0
+    explanation: Staleness occurs when a time series hasn't received new samples for a while, affecting how queries handle missing data.
+    source: https://prometheus.io/docs/prometheus/latest/querying/basics/#staleness
+
+  - id: prometheus_a3
+    question: What is the purpose of alert inhibition in Alertmanager?
+    options:
+      - Suppress alerts that match certain criteria when other alerts are firing
+      - Create new alerts
+      - Configure routing
+      - Manage notifications
+    correct_answer: 0
+    explanation: Alert inhibition allows you to suppress certain alerts when others are firing, reducing alert noise in related failure scenarios.
+    source: https://prometheus.io/docs/alerting/latest/configuration/#inhibit_rule
+
+  - id: prometheus_a4
+    question: What is the purpose of the absent() function in PromQL?
+    options:
+      - Returns 1 if the time series doesn't exist, 0 if it does
+      - Calculates average values
+      - Counts metrics
+      - Creates alerts
+    correct_answer: 0
+    explanation: The absent() function is useful for alerting on missing metrics, returning 1 if the specified time series doesn't exist.
+    source: https://prometheus.io/docs/prometheus/latest/querying/functions/#absent
+
+  - id: prometheus_a5
+    question: What is the purpose of the scrape_interval vs evaluation_interval?
+    options:
+      - scrape_interval controls metric collection frequency, evaluation_interval controls rule evaluation frequency
+      - They are the same thing
+      - scrape_interval is for alerts, evaluation_interval is for recording rules
+      - Neither affects Prometheus behavior
+    correct_answer: 0
+    explanation: scrape_interval determines how often targets are scraped for metrics, while evaluation_interval determines how often recording and alerting rules are evaluated.
+    source: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#configuration-file
+
+  - id: prometheus_a6
+    question: What is the purpose of the subquery feature in PromQL?
+    options:
+      - Evaluate an instant query for a range of time before each point
+      - Create new metrics
+      - Configure alerts
+      - Manage storage
+    correct_answer: 0
+    explanation: Subqueries allow you to evaluate an instant query for a range of time before each point, enabling complex calculations over moving time windows.
+    source: https://prometheus.io/docs/prometheus/latest/querying/basics/#subquery
+
+  - id: prometheus_a7
+    question: What is the purpose of the honor_labels configuration in scrape configs?
+    options:
+      - Controls how Prometheus handles conflicts between scraped metrics labels and server-side labels
+      - Configures authentication
+      - Sets up alerting
+      - Manages storage
+    correct_answer: 0
+    explanation: honor_labels controls how label conflicts are handled when scraping metrics, determining whether to keep target labels or overwrite them.
+    source: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config
+
+  - id: prometheus_a8
+    question: What is the purpose of the increase() function in PromQL?
+    options:
+      - Calculates the increase in counter values over a time range
+      - Shows current value
+      - Creates alerts
+      - Manages storage
+    correct_answer: 0
+    explanation: The increase() function calculates the increase in counter values over a specified time range, useful for measuring rates of change.
+    source: https://prometheus.io/docs/prometheus/latest/querying/functions/#increase
+
+  - id: prometheus_a9
+    question: What is the purpose of external labels in Prometheus?
+    options:
+      - Identify metrics from this Prometheus instance when federated to other systems
+      - Create new metrics
+      - Configure alerts
+      - Manage storage
+    correct_answer: 0
+    explanation: External labels uniquely identify your Prometheus instance and its role in a larger Prometheus setup, particularly important in federation scenarios.
+    source: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#configuration-file
+
+  - id: prometheus_a10
+    question: What is the purpose of the label_replace function in PromQL?
+    options:
+      - Dynamically creates new labels based on regex matching
+      - Creates new metrics
+      - Configures alerts
+      - Manages storage
+    correct_answer: 0
+    explanation: label_replace allows you to dynamically create new labels based on regex matching against existing label values, useful for label manipulation.
+    source: https://prometheus.io/docs/prometheus/latest/querying/functions/#label_replace 

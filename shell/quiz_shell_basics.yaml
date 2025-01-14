@@ -1,0 +1,116 @@
+id: shell_basics
+category: shell
+level: beginner
+title: Shell Scripting Basics
+description: Learn the fundamental concepts and components of Shell Scripting and Bash
+
+questions:
+  - id: q1
+    question: What is a Shell Script?
+    options:
+      - A text file containing a sequence of shell commands that can be executed
+      - A compiled program
+      - A database query
+      - A network protocol
+    explanation: A shell script is a text file containing a sequence of commands that are executed by a shell. It's used to automate tasks and create programs using shell commands.
+    source: "GNU Bash Manual - https://www.gnu.org/software/bash/manual/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the shebang (#!) line used for?
+    options:
+      - To specify which interpreter should be used to execute the script
+      - To add comments to the script
+      - To include other scripts
+      - To define variables
+    explanation: The shebang (#!) line at the beginning of a script tells the system which interpreter (like /bin/bash) should be used to execute the script.
+    source: "GNU Bash Manual - https://www.gnu.org/software/bash/manual/html_node/Shell-Scripts.html"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you declare a variable in Bash?
+    options:
+      - variable_name=value
+      - var variable_name=value
+      - let variable_name=value
+      - set variable_name=value
+    explanation: In Bash, variables are declared by simply assigning a value using the equals sign, without spaces around the equals sign.
+    source: "GNU Bash Manual - https://www.gnu.org/software/bash/manual/html_node/Shell-Variables.html"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the purpose of the export command?
+    options:
+      - To make variables available to child processes
+      - To export files
+      - To save variables to a file
+      - To print variables
+    explanation: The export command marks variables and functions to be passed to child processes, making them available in the environment of subsequently executed commands.
+    source: "GNU Bash Manual - https://www.gnu.org/software/bash/manual/html_node/Environment.html"
+    correct_answer: 0
+
+  - id: q5
+    question: What is command substitution in Bash?
+    options:
+      - Using the output of a command as part of another command
+      - Replacing one command with another
+      - Combining multiple commands
+      - Creating command aliases
+    explanation: Command substitution allows the output of a command to replace the command itself. It can be done using backticks (`) or $(command) syntax.
+    source: "GNU Bash Manual - https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html"
+    correct_answer: 0
+
+  - id: q6
+    question: What is a conditional statement in shell scripting?
+    options:
+      - A statement that performs different actions based on whether a condition is true or false
+      - A statement that defines variables
+      - A statement that prints output
+      - A statement that runs commands
+    explanation: Conditional statements (if, elif, else) allow scripts to make decisions and execute different commands based on whether specified conditions are true or false.
+    source: "GNU Bash Manual - https://www.gnu.org/software/bash/manual/html_node/Conditional-Constructs.html"
+    correct_answer: 0
+
+  - id: q7
+    question: What is a loop in shell scripting?
+    options:
+      - A structure that repeats a sequence of commands multiple times
+      - A type of variable
+      - A command substitution
+      - A conditional statement
+    explanation: Loops (for, while, until) are control structures that allow a sequence of commands to be executed repeatedly based on specified conditions.
+    source: "GNU Bash Manual - https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of the chmod command?
+    options:
+      - To change the permissions of files and directories
+      - To create new files
+      - To move files
+      - To delete files
+    explanation: The chmod command is used to change the permissions of files and directories, controlling who can read, write, and execute them.
+    source: "GNU Coreutils Manual - https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html"
+    correct_answer: 0
+
+  - id: q9
+    question: What are shell script arguments?
+    options:
+      - Values passed to a script when it is executed
+      - Variables defined in the script
+      - Commands within the script
+      - Output from the script
+    explanation: Script arguments are values passed to a script when it is executed, accessed using special variables like $1, $2, etc., with $0 being the script name itself.
+    source: "GNU Bash Manual - https://www.gnu.org/software/bash/manual/html_node/Special-Parameters.html"
+    correct_answer: 0
+
+  - id: q10
+    question: What is a function in shell scripting?
+    options:
+      - A named block of reusable code
+      - A type of variable
+      - A command substitution
+      - A file permission
+    explanation: A function is a block of reusable code that can be defined once and called multiple times within a script, helping to organize and modularize shell scripts.
+    source: "GNU Bash Manual - https://www.gnu.org/software/bash/manual/html_node/Shell-Functions.html"
+    correct_answer: 0 

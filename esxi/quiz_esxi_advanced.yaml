@@ -1,0 +1,114 @@
+title: ESXi Expert Level
+description: Test your advanced knowledge of VMware ESXi and vSphere infrastructure
+category: esxi
+level: advanced
+questions:
+  - id: esxi_a1
+    question: What is vSphere Distributed Power Management (DPM)?
+    options:
+      - A feature that optimizes power consumption by powering off unused hosts
+      - A power supply management tool
+      - A VM power state manager
+      - A host monitoring tool
+    correct_answer: 0
+    explanation: DPM optimizes power consumption in a DRS cluster by monitoring resource utilization and powering off hosts during periods of low utilization, then powering them back on when needed.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-5E5E349A-4644-4C9C-B434-1C0243EBDC80.html
+
+  - id: esxi_a2
+    question: What is vSphere Memory Ballooning?
+    options:
+      - A technique to reclaim unused memory from virtual machines
+      - A memory backup feature
+      - A memory encryption method
+      - A memory monitoring tool
+    correct_answer: 0
+    explanation: Memory ballooning is a memory reclamation technique that ESXi uses to reclaim unused memory from virtual machines by installing a balloon driver in the guest OS.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-CF5A4A2B-16A8-4F6C-A892-443CD5188AE8.html
+
+  - id: esxi_a3
+    question: What is vSphere Network Distributed Switch (vDS)?
+    options:
+      - A centrally managed virtual switch that spans multiple hosts
+      - A physical network switch
+      - A virtual router
+      - A network monitoring tool
+    correct_answer: 0
+    explanation: A vSphere Distributed Switch is a centrally managed virtual switch that spans multiple ESXi hosts, providing centralized provisioning, administration, and monitoring of virtual networks.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-375B45C7-684C-4C51-BA3C-70E48DFABF04.html
+
+  - id: esxi_a4
+    question: What is vSphere Flash Read Cache?
+    options:
+      - A feature that uses SSD to accelerate VM disk performance
+      - A memory caching technique
+      - A network caching system
+      - A backup cache system
+    correct_answer: 0
+    explanation: vSphere Flash Read Cache is a host-level caching solution that uses SSD capacity to accelerate virtual machine performance by caching frequently accessed data.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-D5960C77-6323-4F7F-A54F-2E7B81A4FB87.html
+
+  - id: esxi_a5
+    question: What is vSphere Content Library?
+    options:
+      - A centralized repository for VM templates, ISO images, and scripts
+      - A file sharing system
+      - A backup storage location
+      - A documentation repository
+    correct_answer: 0
+    explanation: Content Library provides a centralized repository for storing and managing content like VM templates, ISO images, and scripts, with version control and synchronization capabilities.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-254B2CE8-20A8-43F0-90E8-3F6776C2C896.html
+
+  - id: esxi_a6
+    question: What is NUMA (Non-Uniform Memory Access) in ESXi?
+    options:
+      - A memory architecture that ESXi uses to optimize memory access for VMs
+      - A storage access method
+      - A network protocol
+      - A CPU scheduling technique
+    correct_answer: 0
+    explanation: NUMA is a memory architecture that ESXi recognizes and uses to optimize memory access by keeping a VM's memory allocation as close as possible to the CPUs processing that VM's workload.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-6D6D704C-4A40-47F0-9A6C-4944E9D296AF.html
+
+  - id: esxi_a7
+    question: What is vSphere Storage Policy-Based Management (SPBM)?
+    options:
+      - A framework that provides storage management through policies
+      - A storage monitoring tool
+      - A backup management system
+      - A storage allocation tool
+    correct_answer: 0
+    explanation: SPBM is a framework that provides a unified storage management interface through storage policies, allowing administrators to match VM requirements with storage capabilities.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-89091D59-D844-46B2-94C2-35A3961D23E7.html
+
+  - id: esxi_a8
+    question: What is vSphere Cluster Services (vCLS)?
+    options:
+      - A system that maintains cluster services independently of vCenter Server
+      - A cluster monitoring tool
+      - A backup service
+      - A resource management tool
+    correct_answer: 0
+    explanation: vCLS maintains cluster services like vSphere HA and DRS even when vCenter Server is unavailable, ensuring continuous operation of critical cluster functions.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-4A34E760-C5C9-4C4B-9E1A-869D36B0E4A1.html
+
+  - id: esxi_a9
+    question: What is vSphere Trust Authority (vTA)?
+    options:
+      - A security solution that provides attestation for sensitive workloads
+      - A user authentication system
+      - A network security tool
+      - A backup verification system
+    correct_answer: 0
+    explanation: vSphere Trust Authority is an advanced security feature that provides hardware-based attestation for sensitive workloads, ensuring they run only on trusted ESXi hosts.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-9D16A2F7-7849-4294-B1AA-7AE30F3D4A57.html
+
+  - id: esxi_a10
+    question: What is vSphere Lifecycle Manager?
+    options:
+      - A centralized solution for ESXi lifecycle management using desired state model
+      - A VM lifecycle management tool
+      - A storage lifecycle manager
+      - A network configuration tool
+    correct_answer: 0
+    explanation: vSphere Lifecycle Manager is a comprehensive solution for managing the lifecycle of ESXi hosts using a desired state model, handling updates, patches, and upgrades centrally.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.lifecycle-manager.doc/GUID-74295A65-E3C5-4B99-AE85-605CA2B6D650.html 

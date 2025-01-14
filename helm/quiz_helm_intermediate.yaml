@@ -1,0 +1,116 @@
+id: helm_intermediate
+category: helm
+level: intermediate
+title: Helm Advanced Usage
+description: Test your knowledge of intermediate Helm concepts and features
+
+questions:
+  - id: helm_i1
+    question: What is a Helm Hook?
+    options:
+      - A way to intervene at certain points in a release's life cycle
+      - A type of Kubernetes resource
+      - A chart dependency
+      - A template function
+    correct_answer: 0
+    explanation: Helm Hooks are a way to intervene at certain points in a release's life cycle, such as pre-install or post-upgrade.
+    source: https://helm.sh/docs/topics/charts_hooks/
+
+  - id: helm_i2
+    question: What is the purpose of .helmignore file?
+    options:
+      - To specify files that shouldn't be included in the chart package
+      - To ignore Kubernetes resources
+      - To exclude dependencies
+      - To skip chart validation
+    correct_answer: 0
+    explanation: The .helmignore file specifies which files should not be included when packaging a chart, similar to .gitignore.
+    source: https://helm.sh/docs/chart_template_guide/helm_ignore_file/
+
+  - id: helm_i3
+    question: What is a subchart in Helm?
+    options:
+      - A chart that is included as a dependency of another chart
+      - A smaller version of a chart
+      - A chart template
+      - A chart backup
+    correct_answer: 0
+    explanation: A subchart is a chart that is included as a dependency within another chart, allowing for modular chart design.
+    source: https://helm.sh/docs/chart_template_guide/subcharts_and_globals/
+
+  - id: helm_i4
+    question: What is the purpose of global values in Helm?
+    options:
+      - Values that are accessible to all subcharts
+      - Values that apply to all Kubernetes clusters
+      - Values that cannot be overridden
+      - Values that are environment-specific
+    correct_answer: 0
+    explanation: Global values are values that can be accessed by the main chart and all its subcharts, providing a way to share configuration across charts.
+    source: https://helm.sh/docs/chart_template_guide/subcharts_and_globals/#global-chart-values
+
+  - id: helm_i5
+    question: What is a named template in Helm?
+    options:
+      - A template defined in _helpers.tpl that can be reused
+      - A template for naming conventions
+      - A template for resource names
+      - A template for labels
+    correct_answer: 0
+    explanation: Named templates are templates defined in _helpers.tpl files that can be reused across multiple template files in a chart.
+    source: https://helm.sh/docs/chart_template_guide/named_templates/
+
+  - id: helm_i6
+    question: What is the purpose of helm lint command?
+    options:
+      - To examine a chart for possible issues
+      - To format chart files
+      - To validate values
+      - To check dependencies
+    correct_answer: 0
+    explanation: The helm lint command examines a chart for possible issues, checking both the chart's structure and its templates.
+    source: https://helm.sh/docs/helm/helm_lint/
+
+  - id: helm_i7
+    question: What is a post-renderer in Helm?
+    options:
+      - A tool to modify rendered templates before installation
+      - A visualization tool
+      - A template function
+      - A chart validator
+    correct_answer: 0
+    explanation: A post-renderer is a tool that can modify rendered templates before they are sent to Kubernetes, allowing for custom modifications.
+    source: https://helm.sh/docs/topics/advanced/#post-rendering
+
+  - id: helm_i8
+    question: What is the purpose of helm dependency update?
+    options:
+      - To download all dependencies specified in Chart.yaml
+      - To update chart version
+      - To upgrade dependencies
+      - To list dependencies
+    correct_answer: 0
+    explanation: The helm dependency update command downloads all dependencies specified in Chart.yaml to the charts/ directory.
+    source: https://helm.sh/docs/helm/helm_dependency_update/
+
+  - id: helm_i9
+    question: What is the purpose of the include function in Helm templates?
+    options:
+      - To include named templates in your template
+      - To import external files
+      - To add dependencies
+      - To include charts
+    correct_answer: 0
+    explanation: The include function allows you to include named templates in your template, with the ability to pass the output to other functions.
+    source: https://helm.sh/docs/chart_template_guide/named_templates/#the-include-function
+
+  - id: helm_i10
+    question: What is a chart test in Helm?
+    options:
+      - A pod that tests if a release works as expected
+      - A template validation
+      - A dependency check
+      - A values validation
+    correct_answer: 0
+    explanation: A chart test is a pod that runs to test whether a release works as expected, defined in the tests/ directory of a chart.
+    source: https://helm.sh/docs/topics/chart_tests/ 

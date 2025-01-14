@@ -1,0 +1,116 @@
+id: gitlab_intermediate
+category: gitlab
+level: intermediate
+title: GitLab Advanced Features
+description: Test your knowledge of intermediate GitLab concepts and workflows
+
+questions:
+  - id: gitlab_i1
+    question: What is GitLab Auto DevOps?
+    options:
+      - A set of preconfigured CI/CD templates for automatic deployment
+      - A manual deployment tool
+      - A testing framework
+      - A documentation system
+    correct_answer: 0
+    explanation: GitLab Auto DevOps provides preconfigured CI/CD configuration to automatically detect, build, test, deploy, and monitor applications.
+    source: https://docs.gitlab.com/ee/topics/autodevops/
+
+  - id: gitlab_i2
+    question: What is GitLab Container Registry?
+    options:
+      - A private container registry integrated with GitLab
+      - A code repository
+      - A documentation system
+      - A testing platform
+    correct_answer: 0
+    explanation: GitLab Container Registry is a secure and private registry for Docker images, integrated with GitLab CI/CD to build and deploy container images.
+    source: https://docs.gitlab.com/ee/user/packages/container_registry/
+
+  - id: gitlab_i3
+    question: What is GitLab Value Stream Analytics?
+    options:
+      - A tool to measure time spent in software development stages
+      - A code editor
+      - A deployment system
+      - A backup service
+    correct_answer: 0
+    explanation: Value Stream Analytics measures the time spent in each stage of your software development process, helping identify bottlenecks and improve efficiency.
+    source: https://docs.gitlab.com/ee/user/analytics/value_stream_analytics.html
+
+  - id: gitlab_i4
+    question: What is GitLab Review Apps?
+    options:
+      - Temporary environments created for each merge request
+      - A code review tool
+      - A documentation system
+      - A testing framework
+    correct_answer: 0
+    explanation: Review Apps are temporary application environments that are created automatically for each merge request, allowing you to preview changes in a live environment.
+    source: https://docs.gitlab.com/ee/ci/review_apps/
+
+  - id: gitlab_i5
+    question: What is GitLab Security Dashboard?
+    options:
+      - A centralized view of security vulnerabilities in your projects
+      - A monitoring tool
+      - A deployment system
+      - A backup service
+    correct_answer: 0
+    explanation: The Security Dashboard provides a centralized view of security vulnerabilities across projects and the tools to address them.
+    source: https://docs.gitlab.com/ee/user/application_security/security_dashboard/
+
+  - id: gitlab_i6
+    question: What is GitLab Package Registry?
+    options:
+      - A repository for storing package dependencies
+      - A code storage system
+      - A documentation platform
+      - A testing service
+    correct_answer: 0
+    explanation: GitLab Package Registry is a repository for publishing and sharing packages, supporting multiple package formats like npm, Maven, and PyPI.
+    source: https://docs.gitlab.com/ee/user/packages/package_registry/
+
+  - id: gitlab_i7
+    question: What is GitLab Service Desk?
+    options:
+      - A support ticket system integrated with GitLab issues
+      - A code editor
+      - A deployment platform
+      - A monitoring system
+    correct_answer: 0
+    explanation: GitLab Service Desk allows teams to connect with external users through email, creating issues from email conversations without requiring GitLab accounts.
+    source: https://docs.gitlab.com/ee/user/project/service_desk.html
+
+  - id: gitlab_i8
+    question: What is GitLab Release Evidence?
+    options:
+      - A collection of release data for compliance and auditing
+      - A testing framework
+      - A deployment tool
+      - A documentation system
+    correct_answer: 0
+    explanation: Release Evidence automatically collects and stores release data, providing a snapshot of the state and content of a release for compliance and auditing.
+    source: https://docs.gitlab.com/ee/user/project/releases/evidence.html
+
+  - id: gitlab_i9
+    question: What is GitLab Code Quality?
+    options:
+      - A tool that analyzes source code quality and suggests improvements
+      - A version control system
+      - A deployment platform
+      - A backup service
+    correct_answer: 0
+    explanation: GitLab Code Quality analyzes your source code quality using various tools and displays the results directly in merge requests and pipelines.
+    source: https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html
+
+  - id: gitlab_i10
+    question: What is GitLab Web IDE?
+    options:
+      - An integrated development environment in the browser
+      - A deployment system
+      - A monitoring tool
+      - A testing platform
+    correct_answer: 0
+    explanation: GitLab Web IDE is a browser-based code editor that allows you to make changes to your code directly from GitLab's interface.
+    source: https://docs.gitlab.com/ee/user/project/web_ide/ 

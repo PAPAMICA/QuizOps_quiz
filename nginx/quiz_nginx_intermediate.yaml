@@ -1,0 +1,114 @@
+title: NGINX Advanced Configuration
+description: Test your intermediate knowledge of NGINX configuration and features
+category: nginx
+level: intermediate
+questions:
+  - id: nginx_i1
+    question: What is the purpose of the 'upstream' directive in NGINX?
+    options:
+      - To define a group of servers for load balancing
+      - To specify upstream network settings
+      - To configure upstream DNS servers
+      - To set upstream bandwidth limits
+    correct_answer: 0
+    explanation: The 'upstream' directive is used to define a group of servers that can be referenced in proxy_pass and other directives for load balancing.
+    source: https://nginx.org/en/docs/http/ngx_http_upstream_module.html
+
+  - id: nginx_i2
+    question: Which load balancing methods are available in NGINX?
+    options:
+      - round-robin only
+      - round-robin, least-connected, and ip-hash
+      - weighted round-robin only
+      - random selection only
+    correct_answer: 1
+    explanation: NGINX provides several load balancing methods including round-robin (default), least-connected, and ip-hash for session persistence.
+    source: https://nginx.org/en/docs/http/load_balancing.html
+
+  - id: nginx_i3
+    question: How can you enable GZIP compression in NGINX?
+    options:
+      - gzip on;
+      - enable_gzip on;
+      - compression gzip;
+      - use_gzip on;
+    correct_answer: 0
+    explanation: The 'gzip on;' directive enables GZIP compression in NGINX, which can significantly reduce the size of transmitted data.
+    source: https://nginx.org/en/docs/http/ngx_http_gzip_module.html
+
+  - id: nginx_i4
+    question: What is the purpose of the 'try_files' directive?
+    options:
+      - To try different file permissions
+      - To check for file existence in specified order
+      - To attempt file transfers
+      - To test file integrity
+    correct_answer: 1
+    explanation: The 'try_files' directive checks for the existence of files in a specified order and uses the first found file for request processing.
+    source: https://nginx.org/en/docs/http/ngx_http_core_module.html#try_files
+
+  - id: nginx_i5
+    question: How do you configure SSL/TLS in NGINX?
+    options:
+      - Using the ssl_certificate and ssl_certificate_key directives
+      - Using the enable_ssl directive
+      - Using the https_config directive
+      - Using the tls_enable directive
+    correct_answer: 0
+    explanation: SSL/TLS in NGINX is configured using ssl_certificate for the certificate file and ssl_certificate_key for the private key file.
+    source: https://nginx.org/en/docs/http/configuring_https_servers.html
+
+  - id: nginx_i6
+    question: What is the purpose of the 'proxy_cache' directive?
+    options:
+      - To enable caching of proxy responses
+      - To cache proxy server addresses
+      - To store proxy credentials
+      - To cache proxy settings
+    correct_answer: 0
+    explanation: The 'proxy_cache' directive specifies a shared memory zone used for caching responses from proxied servers.
+    source: https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_cache
+
+  - id: nginx_i7
+    question: How can you limit the rate of requests in NGINX?
+    options:
+      - Using the limit_req directive
+      - Using the rate_limit directive
+      - Using the request_limit directive
+      - Using the max_requests directive
+    correct_answer: 0
+    explanation: The 'limit_req' directive is used with the limit_req_zone to limit the request rate per defined key (like IP address).
+    source: https://nginx.org/en/docs/http/ngx_http_limit_req_module.html
+
+  - id: nginx_i8
+    question: What is the purpose of the 'add_header' directive?
+    options:
+      - To add custom headers to response
+      - To modify request headers
+      - To remove headers
+      - To filter headers
+    correct_answer: 0
+    explanation: The 'add_header' directive adds the specified field to response headers if the response code equals 200, 201, 204, 206, 301, 302, 303, 304, 307, or 308.
+    source: https://nginx.org/en/docs/http/ngx_http_headers_module.html#add_header
+
+  - id: nginx_i9
+    question: How do you configure basic authentication in NGINX?
+    options:
+      - Using auth_basic and auth_basic_user_file directives
+      - Using basic_auth directive
+      - Using http_auth directive
+      - Using auth_config directive
+    correct_answer: 0
+    explanation: Basic authentication in NGINX is configured using the auth_basic directive to enable it and auth_basic_user_file to specify the password file.
+    source: https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html
+
+  - id: nginx_i10
+    question: What is the purpose of the 'proxy_set_header' directive?
+    options:
+      - To redefine or append fields to the request header passed to the proxied server
+      - To set response headers
+      - To modify header encryption
+      - To configure header compression
+    correct_answer: 0
+    explanation: The 'proxy_set_header' directive allows you to redefine or append fields to the request header passed to the proxied server.
+    source: https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_set_header 

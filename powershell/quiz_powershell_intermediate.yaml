@@ -1,0 +1,116 @@
+id: powershell_intermediate
+category: powershell
+level: intermediate
+title: PowerShell Scripting and Automation
+description: Test your knowledge of PowerShell scripting, functions, and automation concepts
+
+questions:
+  - id: powershell_i1
+    question: What is a PowerShell function?
+    options:
+      - A named block of code that performs a specific task
+      - A system variable
+      - A script file
+      - A command alias
+    correct_answer: 0
+    explanation: A PowerShell function is a named block of code that performs a specific task and can be called multiple times within a script.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/09-functions
+
+  - id: powershell_i2
+    question: What is a PowerShell parameter?
+    options:
+      - A variable that accepts input values for a function or script
+      - A system setting
+      - A file path
+      - A command output
+    correct_answer: 0
+    explanation: Parameters are variables that accept input values for functions or scripts, allowing for flexible and reusable code.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-parameters
+
+  - id: powershell_i3
+    question: What is PowerShell remoting?
+    options:
+      - Running commands on remote computers
+      - Local file copying
+      - Network monitoring
+      - System backup
+    correct_answer: 0
+    explanation: PowerShell remoting allows you to run commands on one or more remote computers using WinRM (Windows Remote Management).
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/running-remote-commands
+
+  - id: powershell_i4
+    question: What is a PowerShell array?
+    options:
+      - A collection of items stored in a single variable
+      - A system setting
+      - A file type
+      - A command output
+    correct_answer: 0
+    explanation: An array is a data structure that stores a collection of items, which can be of the same or different types, in a single variable.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-arrays
+
+  - id: powershell_i5
+    question: What is a PowerShell hash table?
+    options:
+      - A collection of key-value pairs
+      - A system variable
+      - A script file
+      - A command output
+    correct_answer: 0
+    explanation: A hash table is a data structure that stores key-value pairs, allowing for efficient lookup and storage of related information.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-hashtable
+
+  - id: powershell_i6
+    question: What is error handling in PowerShell?
+    options:
+      - Managing and responding to errors using try-catch blocks
+      - System monitoring
+      - File management
+      - Network configuration
+    correct_answer: 0
+    explanation: Error handling in PowerShell involves using try-catch blocks to manage and respond to errors that occur during script execution.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-exceptions
+
+  - id: powershell_i7
+    question: What is a PowerShell module?
+    options:
+      - A package containing PowerShell code that can be reused
+      - A system file
+      - A network protocol
+      - A command alias
+    correct_answer: 0
+    explanation: A PowerShell module is a package that contains PowerShell commands, providers, functions, variables, and other resources that can be reused.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/understanding-important-powershell-concepts#modules
+
+  - id: powershell_i8
+    question: What is PowerShell job scheduling?
+    options:
+      - Running scripts at specified times using scheduled tasks
+      - System monitoring
+      - File backup
+      - Network configuration
+    correct_answer: 0
+    explanation: PowerShell job scheduling allows you to automate tasks by running scripts at specified times using Windows Task Scheduler.
+    source: https://docs.microsoft.com/en-us/powershell/module/scheduledtasks
+
+  - id: powershell_i9
+    question: What is a PowerShell workflow?
+    options:
+      - A long-running script that can be interrupted and resumed
+      - A system process
+      - A file operation
+      - A network connection
+    correct_answer: 0
+    explanation: A PowerShell workflow is a sequence of programmed, connected steps that perform long-running tasks and can be interrupted, suspended, and restarted.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/11-workflow-basics
+
+  - id: powershell_i10
+    question: What is PowerShell DSC (Desired State Configuration)?
+    options:
+      - A management platform for maintaining system configuration
+      - A backup system
+      - A monitoring tool
+      - A network protocol
+    correct_answer: 0
+    explanation: PowerShell DSC is a management platform that enables deploying and managing configuration data for software services and managing IT environments.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/dsc/overview/overview 

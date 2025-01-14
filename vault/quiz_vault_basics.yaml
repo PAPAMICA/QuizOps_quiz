@@ -1,0 +1,116 @@
+id: vault_basics
+category: vault
+level: beginner
+title: Vault Fundamentals
+description: Test your knowledge of basic HashiCorp Vault concepts and usage
+
+questions:
+  - id: vault_b1
+    question: What is HashiCorp Vault?
+    options:
+      - A secrets management and data protection system
+      - A container orchestration platform
+      - A configuration management tool
+      - A network monitoring solution
+    correct_answer: 0
+    explanation: Vault is a tool for securely accessing secrets like API keys, passwords, and certificates.
+    source: https://www.vaultproject.io/docs/what-is-vault
+
+  - id: vault_b2
+    question: What is a Vault secret?
+    options:
+      - Any sensitive data managed by Vault
+      - A configuration file for Vault
+      - A network security protocol
+      - A system monitoring tool
+    correct_answer: 0
+    explanation: A secret is any sensitive information that needs to be tightly controlled and stored securely.
+    source: https://www.vaultproject.io/docs/secrets
+
+  - id: vault_b3
+    question: What is Vault authentication?
+    options:
+      - Verifying identity before accessing secrets
+      - Managing network access controls
+      - Configuring system permissions
+      - Monitoring user activities
+    correct_answer: 0
+    explanation: Authentication verifies the identity of users or applications before granting access to Vault.
+    source: https://www.vaultproject.io/docs/concepts/auth
+
+  - id: vault_b4
+    question: What is a Vault token?
+    options:
+      - A core authentication method for Vault
+      - A configuration management tool
+      - A network security protocol
+      - A system monitoring agent
+    correct_answer: 0
+    explanation: Tokens are the core authentication method used in Vault, representing authenticated users or applications.
+    source: https://www.vaultproject.io/docs/concepts/tokens
+
+  - id: vault_b5
+    question: What is a Vault policy?
+    options:
+      - Rules defining access permissions to secrets
+      - A backup configuration setting
+      - A network routing protocol
+      - A monitoring configuration
+    correct_answer: 0
+    explanation: Policies define what secrets and operations users or applications are allowed to access.
+    source: https://www.vaultproject.io/docs/concepts/policies
+
+  - id: vault_b6
+    question: What is Vault encryption?
+    options:
+      - Protecting data at rest and in transit
+      - Managing system configurations
+      - Monitoring network traffic
+      - Controlling user access
+    correct_answer: 0
+    explanation: Vault provides encryption services to protect sensitive data both at rest and in transit.
+    source: https://www.vaultproject.io/docs/concepts/seal
+
+  - id: vault_b7
+    question: What is a Vault mount?
+    options:
+      - A path where secret engines are enabled
+      - A system backup location
+      - A network connection point
+      - A user authentication method
+    correct_answer: 0
+    explanation: A mount is a path where secret engines are enabled and configured in Vault.
+    source: https://www.vaultproject.io/docs/concepts/mount-points
+
+  - id: vault_b8
+    question: What is Vault initialization?
+    options:
+      - The process of setting up a new Vault server
+      - A backup procedure for data
+      - A network configuration step
+      - A user management process
+    correct_answer: 0
+    explanation: Initialization is the process of preparing a Vault server for first use by generating encryption keys.
+    source: https://www.vaultproject.io/docs/concepts/seal#initialization
+
+  - id: vault_b9
+    question: What is Vault unsealing?
+    options:
+      - The process of decrypting Vault data
+      - A backup restoration step
+      - A network security protocol
+      - A user authentication method
+    correct_answer: 0
+    explanation: Unsealing is the process of reconstructing the master key to decrypt Vault data.
+    source: https://www.vaultproject.io/docs/concepts/seal#unsealing
+
+  - id: vault_b10
+    question: What is a Vault audit device?
+    options:
+      - A component that logs all Vault operations
+      - A system monitoring tool
+      - A network tracking system
+      - A user management interface
+    correct_answer: 0
+    explanation: Audit devices keep detailed logs of all requests and responses to Vault for security purposes.
+    source: https://www.vaultproject.io/docs/audit 

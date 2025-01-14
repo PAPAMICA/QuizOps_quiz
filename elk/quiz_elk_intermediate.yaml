@@ -1,0 +1,114 @@
+title: ELK Stack Advanced Operations
+description: Test your intermediate knowledge of Elasticsearch, Logstash, and Kibana
+category: elk
+level: intermediate
+questions:
+  - id: elk_i1
+    question: What is an Elasticsearch shard?
+    options:
+      - A subset of an index that contains a portion of the data
+      - A backup of an index
+      - A type of query
+      - A visualization component
+    correct_answer: 0
+    explanation: A shard is a subset of an index that contains a portion of the data. Sharding allows Elasticsearch to distribute data across multiple nodes for scalability and performance.
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/scalability.html
+
+  - id: elk_i2
+    question: What is the purpose of Logstash Grok patterns?
+    options:
+      - To parse and structure unstructured log data
+      - To compress log files
+      - To encrypt data
+      - To transfer files
+    correct_answer: 0
+    explanation: Grok is a Logstash filter plugin that allows you to parse unstructured log data into structured and queryable data using pattern matching.
+    source: https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html
+
+  - id: elk_i3
+    question: What is Kibana Lens?
+    options:
+      - An intuitive interface for creating data visualizations
+      - A security feature
+      - A data import tool
+      - A backup solution
+    correct_answer: 0
+    explanation: Kibana Lens is an intuitive interface for creating data visualizations that provides suggestions based on your data and allows for easy switching between visualization types.
+    source: https://www.elastic.co/guide/en/kibana/current/lens.html
+
+  - id: elk_i4
+    question: What is the purpose of Elasticsearch mapping?
+    options:
+      - To define how documents and their fields are stored and indexed
+      - To create network connections
+      - To manage user permissions
+      - To handle data backup
+    correct_answer: 0
+    explanation: Mapping defines how documents and their fields are stored and indexed, including field data types, formats, and whether they should be searchable or analyzable.
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html
+
+  - id: elk_i5
+    question: What is a Logstash codec?
+    options:
+      - A plugin that changes the data representation of events
+      - A compression algorithm
+      - A security feature
+      - A visualization type
+    correct_answer: 0
+    explanation: A codec in Logstash is a plugin that changes the data representation of events as they pass through the pipeline, handling tasks like encoding and decoding data.
+    source: https://www.elastic.co/guide/en/logstash/current/codec-plugins.html
+
+  - id: elk_i6
+    question: What is the purpose of Elasticsearch aggregations?
+    options:
+      - To perform analytics and statistical analysis on data
+      - To backup data
+      - To compress indexes
+      - To manage users
+    correct_answer: 0
+    explanation: Aggregations allow you to perform analytics and statistical analysis on your data, providing complex summaries and metrics about your data.
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html
+
+  - id: elk_i7
+    question: What is Kibana Canvas?
+    options:
+      - A tool for creating custom presentations and infographics
+      - A drawing tool
+      - A data import wizard
+      - A security dashboard
+    correct_answer: 0
+    explanation: Kibana Canvas is a tool that allows you to create custom presentations and infographics using your data, with dynamic elements and customizable layouts.
+    source: https://www.elastic.co/guide/en/kibana/current/canvas.html
+
+  - id: elk_i8
+    question: What is the purpose of Elasticsearch replication?
+    options:
+      - To provide high availability and fault tolerance
+      - To compress data
+      - To encrypt data
+      - To clean data
+    correct_answer: 0
+    explanation: Replication in Elasticsearch provides high availability and fault tolerance by creating copies (replicas) of shards across different nodes.
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-update-settings.html
+
+  - id: elk_i9
+    question: What is a Logstash input plugin?
+    options:
+      - A plugin that enables Logstash to read events from specific sources
+      - A visualization tool
+      - A data compression tool
+      - A security feature
+    correct_answer: 0
+    explanation: Input plugins enable Logstash to read specific types of events from various sources like files, syslog, metrics, and many other sources.
+    source: https://www.elastic.co/guide/en/logstash/current/input-plugins.html
+
+  - id: elk_i10
+    question: What is Kibana Timelion?
+    options:
+      - A time series data visualization tool
+      - A backup solution
+      - A security feature
+      - A data import tool
+    correct_answer: 0
+    explanation: Timelion is a time series data visualization tool in Kibana that allows you to combine totally independent data sources within a single visualization.
+    source: https://www.elastic.co/guide/en/kibana/current/timelion.html 

@@ -1,0 +1,116 @@
+id: gcp_intermediate
+category: gcp
+level: intermediate
+title: GCP Advanced Concepts
+description: Test your knowledge of intermediate Google Cloud Platform concepts and services
+
+questions:
+  - id: gcp_i1
+    question: What is Cloud Spanner?
+    options:
+      - A globally distributed, strongly consistent database service
+      - A caching service
+      - A load balancer
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Cloud Spanner is a fully managed relational database with unlimited scale, strong consistency, and up to 99.999% availability.
+    source: https://cloud.google.com/spanner/docs/overview
+
+  - id: gcp_i2
+    question: What is the purpose of Cloud Armor?
+    options:
+      - Protect applications and websites against denial of service and web attacks
+      - Provide virtual machine instances
+      - Manage container clusters
+      - Monitor application performance
+    correct_answer: 0
+    explanation: Cloud Armor provides DDoS protection and Web Application Firewall (WAF) security features for applications running on Google Cloud.
+    source: https://cloud.google.com/armor/docs/cloud-armor-overview
+
+  - id: gcp_i3
+    question: What is Cloud Interconnect?
+    options:
+      - A service that provides direct physical connections to Google's network
+      - A virtual machine type
+      - A database service
+      - A monitoring system
+    correct_answer: 0
+    explanation: Cloud Interconnect provides direct physical connections between your on-premises network and Google's network, offering higher reliability and lower latency.
+    source: https://cloud.google.com/network-connectivity/docs/interconnect
+
+  - id: gcp_i4
+    question: What is Cloud KMS used for?
+    options:
+      - Managing encryption keys and performing cryptographic operations
+      - Managing Kubernetes clusters
+      - Monitoring system performance
+      - Load balancing traffic
+    correct_answer: 0
+    explanation: Cloud Key Management Service (KMS) allows you to create, import, and manage cryptographic keys and perform cryptographic operations in a centralized cloud service.
+    source: https://cloud.google.com/kms/docs/overview
+
+  - id: gcp_i5
+    question: What is Cloud Dataflow?
+    options:
+      - A fully managed data processing service for executing Apache Beam pipelines
+      - A virtual machine service
+      - A database system
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Cloud Dataflow is a fully managed service for executing Apache Beam pipelines within the Google Cloud ecosystem, supporting both batch and streaming data processing.
+    source: https://cloud.google.com/dataflow/docs/overview
+
+  - id: gcp_i6
+    question: What is the purpose of Cloud CDN?
+    options:
+      - Accelerate content delivery using Google's global edge network
+      - Process big data
+      - Manage virtual machines
+      - Monitor application performance
+    correct_answer: 0
+    explanation: Cloud CDN (Content Delivery Network) uses Google's global edge network to serve content closer to users, reducing latency and improving performance.
+    source: https://cloud.google.com/cdn/docs/overview
+
+  - id: gcp_i7
+    question: What is Cloud Composer?
+    options:
+      - A fully managed workflow orchestration service built on Apache Airflow
+      - A database service
+      - A virtual machine service
+      - A monitoring system
+    correct_answer: 0
+    explanation: Cloud Composer is a fully managed workflow orchestration service that helps you create, schedule, monitor, and manage workflows that span across clouds and on-premises data centers.
+    source: https://cloud.google.com/composer/docs/concepts/overview
+
+  - id: gcp_i8
+    question: What is the purpose of Cloud NAT?
+    options:
+      - Provide internet access to instances without public IP addresses
+      - Store object data
+      - Process big data
+      - Monitor applications
+    correct_answer: 0
+    explanation: Cloud NAT (Network Address Translation) lets instances without public IP addresses access the internet, providing secure outbound connectivity.
+    source: https://cloud.google.com/nat/docs/overview
+
+  - id: gcp_i9
+    question: What is Cloud Build?
+    options:
+      - A continuous integration and continuous delivery platform
+      - A database service
+      - A virtual machine service
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Cloud Build is a service that executes your builds on Google Cloud infrastructure, allowing you to build, test, and deploy on Google's infrastructure.
+    source: https://cloud.google.com/build/docs/overview
+
+  - id: gcp_i10
+    question: What is Cloud Memorystore?
+    options:
+      - A fully managed in-memory data store service
+      - A virtual machine service
+      - A container orchestration system
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Cloud Memorystore is a fully managed in-memory data store service for Redis and Memcached, providing scalable, secure, and highly available in-memory storage.
+    source: https://cloud.google.com/memorystore/docs/overview 

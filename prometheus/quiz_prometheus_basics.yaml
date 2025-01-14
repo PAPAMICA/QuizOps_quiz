@@ -1,0 +1,116 @@
+id: prometheus_basics
+category: prometheus
+level: beginner
+title: Prometheus Fundamentals
+description: Test your knowledge of basic Prometheus concepts and usage
+
+questions:
+  - id: prometheus_b1
+    question: What is Prometheus?
+    options:
+      - An open-source monitoring and alerting toolkit
+      - A database management system
+      - A web server
+      - A load balancer
+    correct_answer: 0
+    explanation: Prometheus is an open-source systems monitoring and alerting toolkit originally built at SoundCloud.
+    source: https://prometheus.io/docs/introduction/overview/
+
+  - id: prometheus_b2
+    question: What type of database does Prometheus use to store its data?
+    options:
+      - Time series database
+      - Relational database
+      - Document database
+      - Graph database
+    correct_answer: 0
+    explanation: Prometheus stores all data as time series, with each time series consisting of a metric name and key-value pairs called labels.
+    source: https://prometheus.io/docs/concepts/data_model/
+
+  - id: prometheus_b3
+    question: What is a metric in Prometheus?
+    options:
+      - A measurement of a system aspect at a specific point in time
+      - A configuration file
+      - A type of alert
+      - A logging system
+    correct_answer: 0
+    explanation: A metric in Prometheus represents a particular measurement of your system, such as CPU usage, memory consumption, or request count.
+    source: https://prometheus.io/docs/concepts/metric_types/
+
+  - id: prometheus_b4
+    question: What is PromQL?
+    options:
+      - Prometheus Query Language
+      - Prometheus Quick Loader
+      - Prometheus Queue List
+      - Prometheus Quality Logger
+    correct_answer: 0
+    explanation: PromQL is Prometheus's flexible query language that lets you select and aggregate time series data in real time.
+    source: https://prometheus.io/docs/prometheus/latest/querying/basics/
+
+  - id: prometheus_b5
+    question: What is a target in Prometheus?
+    options:
+      - An endpoint that Prometheus can scrape metrics from
+      - A type of alert
+      - A dashboard component
+      - A backup location
+    correct_answer: 0
+    explanation: A target is an object that defines a unit to be monitored, typically representing an endpoint that Prometheus will scrape metrics from.
+    source: https://prometheus.io/docs/concepts/jobs_instances/
+
+  - id: prometheus_b6
+    question: What is the default scrape interval in Prometheus?
+    options:
+      - 15 seconds
+      - 30 seconds
+      - 1 minute
+      - 5 minutes
+    correct_answer: 0
+    explanation: By default, Prometheus scrapes targets every 15 seconds, but this can be configured to a different value.
+    source: https://prometheus.io/docs/prometheus/latest/configuration/configuration/
+
+  - id: prometheus_b7
+    question: What is an exporter in Prometheus?
+    options:
+      - A program that converts metrics from other systems into Prometheus format
+      - A backup tool
+      - A visualization tool
+      - A load balancer
+    correct_answer: 0
+    explanation: An exporter is a piece of software that takes metrics from a system and converts them into a format that Prometheus can understand.
+    source: https://prometheus.io/docs/instrumenting/exporters/
+
+  - id: prometheus_b8
+    question: What port does Prometheus web interface typically run on?
+    options:
+      - 9090
+      - 8080
+      - 3000
+      - 80
+    correct_answer: 0
+    explanation: By default, Prometheus's web interface runs on port 9090.
+    source: https://prometheus.io/docs/prometheus/latest/getting_started/
+
+  - id: prometheus_b9
+    question: What is a counter metric type in Prometheus?
+    options:
+      - A metric that can only increase or be reset to zero
+      - A metric that can go up and down
+      - A metric that shows current status
+      - A metric that measures duration
+    correct_answer: 0
+    explanation: A counter is a cumulative metric that represents a single monotonically increasing counter whose value can only increase or be reset to zero.
+    source: https://prometheus.io/docs/concepts/metric_types/#counter
+
+  - id: prometheus_b10
+    question: What tool is commonly used with Prometheus for visualization?
+    options:
+      - Grafana
+      - Excel
+      - PowerBI
+      - Tableau
+    correct_answer: 0
+    explanation: Grafana is commonly used with Prometheus for creating dashboards and visualizing metrics data.
+    source: https://prometheus.io/docs/visualization/grafana/ 

@@ -1,0 +1,116 @@
+id: prometheus_intermediate
+category: prometheus
+level: intermediate
+title: Prometheus Advanced Concepts
+description: Test your knowledge of intermediate Prometheus concepts and features
+
+questions:
+  - id: prometheus_i1
+    question: What is service discovery in Prometheus?
+    options:
+      - A mechanism to automatically detect and monitor targets
+      - A type of alert
+      - A visualization tool
+      - A backup system
+    correct_answer: 0
+    explanation: Service discovery in Prometheus allows automatic detection and monitoring of targets in dynamic environments.
+    source: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config
+
+  - id: prometheus_i2
+    question: What is a recording rule in Prometheus?
+    options:
+      - A pre-computed expression saved as a new time series
+      - A type of alert
+      - A configuration file
+      - A metric type
+    correct_answer: 0
+    explanation: Recording rules allow you to precompute frequently needed or computationally expensive expressions and save their result as a new time series.
+    source: https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/
+
+  - id: prometheus_i3
+    question: What is the purpose of Alertmanager?
+    options:
+      - Handles alerts and routes them to the correct receiver
+      - Collects metrics from targets
+      - Stores time series data
+      - Creates dashboards
+    correct_answer: 0
+    explanation: Alertmanager handles alerts sent by client applications such as the Prometheus server, including silencing, inhibition, aggregation, and sending notifications.
+    source: https://prometheus.io/docs/alerting/latest/alertmanager/
+
+  - id: prometheus_i4
+    question: What is a gauge metric type in Prometheus?
+    options:
+      - A metric that can both increase and decrease
+      - A metric that only increases
+      - A metric that only decreases
+      - A metric that never changes
+    correct_answer: 0
+    explanation: A gauge is a metric that represents a single numerical value that can arbitrarily go up and down, like temperature or memory usage.
+    source: https://prometheus.io/docs/concepts/metric_types/#gauge
+
+  - id: prometheus_i5
+    question: What is the purpose of relabeling in Prometheus?
+    options:
+      - Modify target labels before scraping
+      - Create new dashboards
+      - Configure alerts
+      - Manage backups
+    correct_answer: 0
+    explanation: Relabeling allows you to modify target labels before scraping, enabling dynamic target selection and metric manipulation.
+    source: https://prometheus.io/docs/prometheus/latest/configuration/configuration/#relabel_config
+
+  - id: prometheus_i6
+    question: What is a histogram metric type used for?
+    options:
+      - Tracking the distribution of values over time
+      - Counting events
+      - Measuring current values
+      - Setting alerts
+    correct_answer: 0
+    explanation: Histograms track the size and number of events in predefined buckets over time, useful for measuring things like request durations or response sizes.
+    source: https://prometheus.io/docs/concepts/metric_types/#histogram
+
+  - id: prometheus_i7
+    question: What is federation in Prometheus?
+    options:
+      - Allowing Prometheus servers to scrape selected time series from other Prometheus servers
+      - A type of alert
+      - A visualization tool
+      - A backup system
+    correct_answer: 0
+    explanation: Federation allows a Prometheus server to scrape selected time series from another Prometheus server, enabling hierarchical and cross-service monitoring.
+    source: https://prometheus.io/docs/prometheus/latest/federation/
+
+  - id: prometheus_i8
+    question: What is the purpose of the rate() function in PromQL?
+    options:
+      - Calculates the per-second average rate of increase of a time series
+      - Counts total number of events
+      - Shows current value
+      - Creates alerts
+    correct_answer: 0
+    explanation: The rate() function calculates the per-second average rate of increase of the time series in a range vector.
+    source: https://prometheus.io/docs/prometheus/latest/querying/functions/#rate
+
+  - id: prometheus_i9
+    question: What is a summary metric type in Prometheus?
+    options:
+      - Similar to histogram but with client-side quantile calculation
+      - A simple counter
+      - A gauge metric
+      - An alert type
+    correct_answer: 0
+    explanation: A summary is similar to a histogram but calculates streaming φ-quantiles on the client side with configurable quantile calculation.
+    source: https://prometheus.io/docs/concepts/metric_types/#summary
+
+  - id: prometheus_i10
+    question: What is the purpose of the up metric in Prometheus?
+    options:
+      - Indicates whether a target is up (1) or down (0)
+      - Measures CPU usage
+      - Tracks memory consumption
+      - Counts errors
+    correct_answer: 0
+    explanation: The up metric is automatically added by Prometheus and indicates whether a target is up (1) or down (0), useful for monitoring target availability.
+    source: https://prometheus.io/docs/concepts/jobs_instances/#automatically-generated-labels-and-time-series 

@@ -1,0 +1,116 @@
+id: openstack_advanced
+category: openstack
+level: advanced
+title: OpenStack Architecture and Enterprise Features
+description: Test your knowledge of OpenStack architecture, security, and enterprise deployment
+
+questions:
+  - id: openstack_a1
+    question: What is OpenStack-Ansible?
+    options:
+      - A deployment tool that uses Ansible to deploy OpenStack
+      - A monitoring system
+      - A backup solution
+      - A testing framework
+    correct_answer: 0
+    explanation: OpenStack-Ansible is an official project that provides Ansible playbooks and roles for deploying and managing OpenStack environments.
+    source: https://docs.openstack.org/openstack-ansible/latest/
+
+  - id: openstack_a2
+    question: What is Role-Based Access Control (RBAC) in OpenStack?
+    options:
+      - A system for controlling access to resources based on roles
+      - A user authentication method
+      - A network security protocol
+      - A resource allocation system
+    correct_answer: 0
+    explanation: RBAC in OpenStack allows fine-grained access control to resources by assigning specific permissions to roles that users can assume.
+    source: https://docs.openstack.org/keystone/latest/admin/service-api-protection.html
+
+  - id: openstack_a3
+    question: What is Nova Placement API?
+    options:
+      - A service that tracks resource provider inventories and usage
+      - A load balancing service
+      - A monitoring system
+      - A backup service
+    correct_answer: 0
+    explanation: The Placement API tracks resource provider inventories and usage, helping Nova make intelligent decisions about resource allocation.
+    source: https://docs.openstack.org/nova/latest/admin/placement.html
+
+  - id: openstack_a4
+    question: What is Barbican?
+    options:
+      - OpenStack's key management service
+      - A monitoring system
+      - A deployment tool
+      - A backup service
+    correct_answer: 0
+    explanation: Barbican is OpenStack's key management service that provides secure storage, provisioning, and management of secrets such as passwords, encryption keys, and X.509 certificates.
+    source: https://docs.openstack.org/barbican/latest/
+
+  - id: openstack_a5
+    question: What is Oslo Messaging?
+    options:
+      - OpenStack's common messaging infrastructure
+      - A monitoring system
+      - A logging service
+      - An email service
+    correct_answer: 0
+    explanation: Oslo Messaging provides a common messaging infrastructure for OpenStack services to communicate with each other using message queues.
+    source: https://docs.openstack.org/oslo.messaging/latest/
+
+  - id: openstack_a6
+    question: What is Octavia?
+    options:
+      - OpenStack's load balancing service
+      - A monitoring system
+      - A backup service
+      - A deployment tool
+    correct_answer: 0
+    explanation: Octavia is OpenStack's load balancing service that provides enterprise-grade load balancing capabilities for cloud applications.
+    source: https://docs.openstack.org/octavia/latest/
+
+  - id: openstack_a7
+    question: What is Designate?
+    options:
+      - OpenStack's DNS as a Service
+      - A monitoring system
+      - A deployment tool
+      - A backup service
+    correct_answer: 0
+    explanation: Designate is OpenStack's DNS as a Service that provides scalable and reliable DNS services for cloud applications.
+    source: https://docs.openstack.org/designate/latest/
+
+  - id: openstack_a8
+    question: What is Ironic?
+    options:
+      - OpenStack's bare metal provisioning service
+      - A virtualization service
+      - A container service
+      - A storage service
+    correct_answer: 0
+    explanation: Ironic is OpenStack's bare metal provisioning service that manages and provisions physical machines instead of virtual machines.
+    source: https://docs.openstack.org/ironic/latest/
+
+  - id: openstack_a9
+    question: What is Congress?
+    options:
+      - OpenStack's governance service
+      - A monitoring system
+      - A deployment tool
+      - A backup service
+    correct_answer: 0
+    explanation: Congress is OpenStack's governance service that provides policy as a service across any collection of cloud services to enforce compliance.
+    source: https://docs.openstack.org/congress/latest/
+
+  - id: openstack_a10
+    question: What is Senlin?
+    options:
+      - OpenStack's clustering service
+      - A monitoring system
+      - A deployment tool
+      - A backup service
+    correct_answer: 0
+    explanation: Senlin is OpenStack's clustering service that creates and operates clusters of homogeneous objects exposed by other OpenStack services.
+    source: https://docs.openstack.org/senlin/latest/ 

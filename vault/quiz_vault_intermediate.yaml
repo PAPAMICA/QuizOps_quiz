@@ -1,0 +1,116 @@
+id: vault_intermediate
+category: vault
+level: intermediate
+title: Vault Advanced Operations
+description: Test your knowledge of intermediate HashiCorp Vault concepts and operations
+
+questions:
+  - id: vault_i1
+    question: What is the purpose of Vault's KV Version 2 secret engine?
+    options:
+      - Provides versioning and metadata for secrets
+      - Only stores the latest version of secrets
+      - Encrypts secrets without versioning
+      - Manages database credentials only
+    correct_answer: 0
+    explanation: KV Version 2 adds versioning, metadata, soft delete, and destroy capabilities to secrets.
+    source: https://www.vaultproject.io/docs/secrets/kv/kv-v2
+
+  - id: vault_i2
+    question: How does Vault's dynamic secrets generation work?
+    options:
+      - Creates credentials on-demand with automatic revocation
+      - Stores static credentials in encrypted format
+      - Manages only SSH keys automatically
+      - Provides read-only access to existing secrets
+    correct_answer: 0
+    explanation: Dynamic secrets are generated when accessed and automatically revoked after their lease expires.
+    source: https://www.vaultproject.io/docs/secrets/dynamic
+
+  - id: vault_i3
+    question: What is Vault's Transit Engine used for?
+    options:
+      - Encryption as a service without storing secrets
+      - Long-term secret storage and management
+      - Database credential management
+      - SSH key generation and storage
+    correct_answer: 0
+    explanation: Transit Engine provides encryption as a service, allowing applications to encrypt data without managing keys.
+    source: https://www.vaultproject.io/docs/secrets/transit
+
+  - id: vault_i4
+    question: How does Vault's response wrapping work?
+    options:
+      - Encrypts responses with single-use tokens
+      - Compresses response data only
+      - Provides basic HTTP authentication
+      - Manages network routing only
+    correct_answer: 0
+    explanation: Response wrapping secures sensitive values by returning single-use tokens instead of actual secrets.
+    source: https://www.vaultproject.io/docs/concepts/response-wrapping
+
+  - id: vault_i5
+    question: What is the purpose of Vault's lease system?
+    options:
+      - Controls the lifetime of dynamic secrets
+      - Manages static secret storage only
+      - Handles network connectivity
+      - Configures system backups
+    correct_answer: 0
+    explanation: The lease system manages the lifecycle of dynamic secrets, including creation, renewal, and revocation.
+    source: https://www.vaultproject.io/docs/concepts/lease
+
+  - id: vault_i6
+    question: How does Vault's AppRole authentication work?
+    options:
+      - Uses role IDs and secret IDs for machine authentication
+      - Requires username and password only
+      - Manages only human user access
+      - Provides network-level authentication
+    correct_answer: 0
+    explanation: AppRole uses role IDs and secret IDs to authenticate applications and services.
+    source: https://www.vaultproject.io/docs/auth/approle
+
+  - id: vault_i7
+    question: What is Vault's seal/unseal mechanism?
+    options:
+      - Protects master key using Shamir's Secret Sharing
+      - Uses simple password protection
+      - Relies on network security only
+      - Manages backup encryption only
+    correct_answer: 0
+    explanation: The seal/unseal mechanism uses Shamir's Secret Sharing to split and protect the master key.
+    source: https://www.vaultproject.io/docs/concepts/seal#shamir-seals
+
+  - id: vault_i8
+    question: How does Vault handle secret replication?
+    options:
+      - Synchronizes data between primary and secondary clusters
+      - Only supports local storage
+      - Replicates to backup systems only
+      - Manages network traffic routing
+    correct_answer: 0
+    explanation: Vault Enterprise supports performance and disaster recovery replication between clusters.
+    source: https://www.vaultproject.io/docs/enterprise/replication
+
+  - id: vault_i9
+    question: What is the purpose of Vault's control groups?
+    options:
+      - Requires multiple approvals for secret access
+      - Manages network access only
+      - Controls system backups
+      - Handles user authentication
+    correct_answer: 0
+    explanation: Control groups enforce additional authorization by requiring multiple approvals to access secrets.
+    source: https://www.vaultproject.io/docs/enterprise/control-groups
+
+  - id: vault_i10
+    question: How does Vault's database secrets engine work?
+    options:
+      - Generates dynamic database credentials
+      - Stores static database passwords
+      - Manages network connections only
+      - Provides system monitoring
+    correct_answer: 0
+    explanation: The database secrets engine generates dynamic credentials for databases with automatic rotation.
+    source: https://www.vaultproject.io/docs/secrets/databases 

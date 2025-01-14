@@ -1,0 +1,116 @@
+id: shell_intermediate
+category: shell
+level: intermediate
+title: Shell Advanced Operations
+description: Test your knowledge of intermediate shell scripting concepts and features
+
+questions:
+  - id: shell_i1
+    question: What is process substitution in shell scripting?
+    options:
+      - A method to treat command output as a temporary file
+      - A technique to replace variables with their values
+      - A system to modify command execution sequence
+      - A process to substitute shell environment data
+    correct_answer: 0
+    explanation: Process substitution allows command output to be treated as a temporary file, enabling data passing between commands.
+    source: https://www.gnu.org/software/bash/manual/html_node/Process-Substitution.html
+
+  - id: shell_i2
+    question: What is parameter expansion in shell scripting?
+    options:
+      - A method to modify and transform variable values
+      - A technique to expand command line arguments
+      - A system to process input stream patterns
+      - A process to handle parameter validation
+    correct_answer: 0
+    explanation: Parameter expansion allows manipulation of variable values, including default values, substring operations, and pattern matching.
+    source: https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
+
+  - id: shell_i3
+    question: What is a shell array?
+    options:
+      - A variable that can hold multiple indexed values
+      - A sequence of commands executed in order
+      - A collection of shell environment settings
+      - A group of related shell functions calls
+    correct_answer: 0
+    explanation: A shell array is a variable that can store multiple values, accessed using numeric indices or associative keys.
+    source: https://www.gnu.org/software/bash/manual/html_node/Arrays.html
+
+  - id: shell_i4
+    question: What is command grouping in shell?
+    options:
+      - Executing multiple commands as a single unit
+      - Organizing shell scripts into functions
+      - Creating groups of shell variables
+      - Managing command line parameters
+    correct_answer: 0
+    explanation: Command grouping allows multiple commands to be executed as a single unit, sharing redirections and pipelines.
+    source: https://www.gnu.org/software/bash/manual/html_node/Command-Grouping.html
+
+  - id: shell_i5
+    question: What is a shell trap?
+    options:
+      - A command to handle signals and events
+      - A method to catch script execution errors
+      - A system to monitor process status
+      - A tool to manage script debugging
+    correct_answer: 0
+    explanation: A trap command allows scripts to catch and handle signals and events, executing specified commands when triggered.
+    source: https://www.gnu.org/software/bash/manual/html_node/Signals.html
+
+  - id: shell_i6
+    question: What is shell pattern matching?
+    options:
+      - A system to match filenames using wildcards
+      - A method to compare string variables
+      - A process to validate input patterns
+      - A tool to search text in files
+    correct_answer: 0
+    explanation: Pattern matching allows matching filenames or text using wildcards and special characters like *, ?, and [].
+    source: https://www.gnu.org/software/bash/manual/html_node/Pattern-Matching.html
+
+  - id: shell_i7
+    question: What is command substitution?
+    options:
+      - Using output of one command as arguments
+      - Replacing commands with aliases
+      - Modifying command execution paths
+      - Changing command input sources
+    correct_answer: 0
+    explanation: Command substitution allows the output of a command to be used as arguments or assigned to variables.
+    source: https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html
+
+  - id: shell_i8
+    question: What is shell redirection?
+    options:
+      - Changing input and output streams
+      - Moving files between directories
+      - Redirecting network connections
+      - Managing process priorities
+    correct_answer: 0
+    explanation: Shell redirection allows changing where commands read input from and write output to using operators like >, <, and |.
+    source: https://www.gnu.org/software/bash/manual/html_node/Redirections.html
+
+  - id: shell_i9
+    question: What is a shell function?
+    options:
+      - A named block of reusable commands
+      - A system process identifier
+      - A variable type declaration
+      - A command line parameter
+    correct_answer: 0
+    explanation: A shell function is a named block of commands that can be reused throughout a script, accepting parameters and returning values.
+    source: https://www.gnu.org/software/bash/manual/html_node/Shell-Functions.html
+
+  - id: shell_i10
+    question: What is shell arithmetic expansion?
+    options:
+      - Evaluating mathematical expressions
+      - Expanding variable definitions
+      - Processing numeric sequences
+      - Converting string formats
+    correct_answer: 0
+    explanation: Arithmetic expansion allows mathematical calculations to be performed within shell scripts using $(()) syntax.
+    source: https://www.gnu.org/software/bash/manual/html_node/Arithmetic-Expansion.html 

@@ -1,0 +1,114 @@
+title: ArgoCD Advanced Operations
+description: Test your intermediate knowledge of ArgoCD and GitOps practices
+category: argocd
+level: intermediate
+questions:
+  - id: argocd_i1
+    question: What is the purpose of the 'sync-wave' annotation in ArgoCD?
+    options:
+      - To control the order of resource synchronization
+      - To control the frequency of syncs
+      - To manage wave-based deployments
+      - To sync multiple clusters
+    correct_answer: 0
+    explanation: The sync-wave annotation allows you to control the order in which resources are synchronized by assigning them to different waves, with lower numbered waves being processed first.
+    source: https://argo-cd.readthedocs.io/en/stable/user-guide/sync-waves/
+
+  - id: argocd_i2
+    question: How can you implement automated sync in ArgoCD?
+    options:
+      - By setting automated sync policy in the Application spec
+      - By using external automation tools
+      - By scheduling cron jobs
+      - By manual triggers only
+    correct_answer: 0
+    explanation: Automated sync can be implemented by configuring the automated sync policy in the Application spec, including options for prune and self-heal.
+    source: https://argo-cd.readthedocs.io/en/stable/user-guide/auto_sync/
+
+  - id: argocd_i3
+    question: What is the purpose of the 'argocd-image-updater'?
+    options:
+      - To automatically update container images in Git repositories
+      - To build container images
+      - To scan images for vulnerabilities
+      - To cache container images
+    correct_answer: 0
+    explanation: The argocd-image-updater is a tool that automatically updates container image versions in Git repositories based on specified rules and policies.
+    source: https://argocd-image-updater.readthedocs.io/en/stable/
+
+  - id: argocd_i4
+    question: How does ArgoCD handle RBAC (Role-Based Access Control)?
+    options:
+      - Through built-in RBAC with projects and policies
+      - Through external RBAC only
+      - Through manual user management
+      - Through static access rules
+    correct_answer: 0
+    explanation: ArgoCD implements RBAC through projects and policies, allowing fine-grained control over who can access and modify applications and resources.
+    source: https://argo-cd.readthedocs.io/en/stable/operator-manual/rbac/
+
+  - id: argocd_i5
+    question: What is the purpose of 'resource hooks' in ArgoCD?
+    options:
+      - To run custom actions during sync operations
+      - To manage resource allocation
+      - To monitor resource usage
+      - To backup resources
+    correct_answer: 0
+    explanation: Resource hooks allow you to run custom actions during different phases of the sync operation, such as PreSync, Sync, PostSync, and SyncFail.
+    source: https://argo-cd.readthedocs.io/en/stable/user-guide/resource_hooks/
+
+  - id: argocd_i6
+    question: How can you manage secrets in ArgoCD?
+    options:
+      - Using Bitnami Sealed Secrets, Vault, or other secret management tools
+      - Only using plain Kubernetes secrets
+      - Only using environment variables
+      - Only using external storage
+    correct_answer: 0
+    explanation: ArgoCD can work with various secret management solutions like Bitnami Sealed Secrets, HashiCorp Vault, or other tools to securely manage sensitive information.
+    source: https://argo-cd.readthedocs.io/en/stable/operator-manual/secret-management/
+
+  - id: argocd_i7
+    question: What is the purpose of the 'app of apps' pattern in ArgoCD?
+    options:
+      - To manage multiple applications using a single parent application
+      - To create application backups
+      - To monitor application health
+      - To deploy applications
+    correct_answer: 0
+    explanation: The 'app of apps' pattern allows you to manage multiple ArgoCD applications using a single parent application, enabling easier management of complex deployments.
+    source: https://argo-cd.readthedocs.io/en/stable/operator-manual/cluster-bootstrapping/
+
+  - id: argocd_i8
+    question: How can you implement Progressive Delivery with ArgoCD?
+    options:
+      - By integrating with Argo Rollouts
+      - By using native Kubernetes deployments
+      - By manual deployment only
+      - By using external tools
+    correct_answer: 0
+    explanation: Progressive Delivery can be implemented by integrating ArgoCD with Argo Rollouts, which provides advanced deployment strategies like canary and blue-green deployments.
+    source: https://argo-cd.readthedocs.io/en/stable/operator-manual/progressive-delivery/
+
+  - id: argocd_i9
+    question: What is the purpose of ApplicationSets in ArgoCD?
+    options:
+      - To automate the creation of multiple similar applications
+      - To group applications only
+      - To monitor application sets
+      - To backup applications
+    correct_answer: 0
+    explanation: ApplicationSets allow you to automatically create multiple similar applications based on templates and generators, making it easier to manage applications across multiple clusters or environments.
+    source: https://argo-cd.readthedocs.io/en/stable/user-guide/application-set/
+
+  - id: argocd_i10
+    question: How can you implement custom health checks in ArgoCD?
+    options:
+      - By creating Lua scripts that define health check logic
+      - By using external monitoring only
+      - By manual health checks
+      - By modifying application code
+    correct_answer: 0
+    explanation: Custom health checks can be implemented using Lua scripts that define specific logic for determining the health status of resources.
+    source: https://argo-cd.readthedocs.io/en/stable/operator-manual/health/ 

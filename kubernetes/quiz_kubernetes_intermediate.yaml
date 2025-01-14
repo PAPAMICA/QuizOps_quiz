@@ -1,0 +1,116 @@
+id: kubernetes_intermediate
+category: kubernetes
+level: intermediate
+title: Intermediate Kubernetes Concepts
+description: Explore intermediate concepts and practices in Kubernetes container orchestration
+
+questions:
+  - id: q1
+    question: What is the purpose of a StatefulSet in Kubernetes?
+    options:
+      - To manage stateful applications with unique network identities and persistent storage
+      - To manage stateless applications
+      - To handle network routing
+      - To manage cluster security
+    explanation: StatefulSets are used to manage stateful applications, providing guarantees about the ordering and uniqueness of Pods, including stable network identities and persistent storage.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/"
+    correct_answer: 0
+
+  - id: q2
+    question: How do DaemonSets ensure pod placement in Kubernetes?
+    options:
+      - By running one copy of a pod on every node in the cluster
+      - By running multiple copies on a single node
+      - By running pods randomly across nodes
+      - By not placing pods at all
+    explanation: DaemonSets ensure that all (or some) nodes run a copy of a pod, useful for running cluster-wide services like log collectors or monitoring agents.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the purpose of Horizontal Pod Autoscaling?
+    options:
+      - To automatically scale the number of pods based on resource utilization or custom metrics
+      - To scale nodes in the cluster
+      - To manage storage scaling
+      - To handle network scaling
+    explanation: Horizontal Pod Autoscaling automatically scales the number of pods in a deployment or replica set based on observed CPU utilization or custom metrics.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/"
+    correct_answer: 0
+
+  - id: q4
+    question: How do PodDisruptionBudgets protect application availability?
+    options:
+      - By limiting the number of pods that can be down simultaneously during voluntary disruptions
+      - By preventing all pod disruptions
+      - By increasing pod resources
+      - By restarting failed pods
+    explanation: PodDisruptionBudgets ensure that a minimum number of pods remain running during voluntary disruptions, helping maintain application availability during cluster maintenance.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/workloads/pods/disruptions/"
+    correct_answer: 0
+
+  - id: q5
+    question: What is the purpose of an Ingress Controller?
+    options:
+      - To manage external access to services in a cluster through rules
+      - To control pod scheduling
+      - To manage storage access
+      - To handle container runtime
+    explanation: An Ingress Controller implements the Ingress resource, providing HTTP and HTTPS routing to services based on rules defined in the Ingress resource.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/"
+    correct_answer: 0
+
+  - id: q6
+    question: How do InitContainers work in Kubernetes?
+    options:
+      - They run and complete before application containers start in a pod
+      - They run alongside application containers
+      - They run after application containers
+      - They never run in pods
+    explanation: InitContainers run and complete before the application containers in a pod start, useful for setup tasks or dependency checks before the main application runs.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/workloads/pods/init-containers/"
+    correct_answer: 0
+
+  - id: q7
+    question: What is the purpose of PodSecurityPolicies?
+    options:
+      - To control security-sensitive aspects of pod specification
+      - To encrypt pod communication
+      - To manage pod networking
+      - To handle pod storage
+    explanation: PodSecurityPolicies enable fine-grained authorization of pod creation and updates, controlling security-sensitive aspects of the pod specification.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/policy/pod-security-policy/"
+    correct_answer: 0
+
+  - id: q8
+    question: How do NetworkPolicies control pod communication?
+    options:
+      - By specifying how groups of pods are allowed to communicate with each other
+      - By managing external access only
+      - By controlling pod placement
+      - By handling storage access
+    explanation: NetworkPolicies specify how groups of pods are allowed to communicate with each other and other network endpoints, providing pod-level network security.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/services-networking/network-policies/"
+    correct_answer: 0
+
+  - id: q9
+    question: What is the purpose of CustomResourceDefinitions (CRDs)?
+    options:
+      - To extend the Kubernetes API with custom resources
+      - To customize pod scheduling
+      - To manage custom storage
+      - To handle custom networking
+    explanation: CustomResourceDefinitions allow you to extend the Kubernetes API by defining custom resources and their schemas, enabling custom controllers and operators.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/"
+    correct_answer: 0
+
+  - id: q10
+    question: How do PriorityClasses affect pod scheduling?
+    options:
+      - By assigning priority values to pods that influence scheduling decisions
+      - By controlling pod placement only
+      - By managing pod resources
+      - By handling pod security
+    explanation: PriorityClasses assign priority values to pods, influencing the scheduling order and potential preemption of lower-priority pods when resources are constrained.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/"
+    correct_answer: 0 

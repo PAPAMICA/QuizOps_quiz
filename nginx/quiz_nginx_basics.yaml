@@ -1,0 +1,116 @@
+id: nginx_basics
+category: nginx
+level: beginner
+title: Nginx Basics
+description: Learn the fundamental concepts and components of Nginx web server and reverse proxy
+
+questions:
+  - id: q1
+    question: What is Nginx?
+    options:
+      - A high-performance HTTP server, reverse proxy, and load balancer
+      - A database system
+      - A programming language
+      - A monitoring tool
+    explanation: Nginx is a popular open-source web server that can also act as a reverse proxy, load balancer, mail proxy, and HTTP cache.
+    source: "Nginx Documentation - https://nginx.org/en/docs/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is a reverse proxy?
+    options:
+      - A server that forwards client requests to appropriate backend servers
+      - A client-side proxy
+      - A database server
+      - A monitoring system
+    explanation: A reverse proxy is a server that sits in front of web servers and forwards client requests to those web servers. It provides an additional level of abstraction and control.
+    source: "Nginx Documentation - https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the main configuration file for Nginx?
+    options:
+      - nginx.conf
+      - config.ini
+      - settings.conf
+      - nginx.ini
+    explanation: The main configuration file for Nginx is nginx.conf, typically located in /etc/nginx/. This file contains the global configuration settings.
+    source: "Nginx Documentation - https://nginx.org/en/docs/beginners_guide.html"
+    correct_answer: 0
+
+  - id: q4
+    question: What is a server block in Nginx?
+    options:
+      - A configuration block that defines settings for a specific domain or IP address
+      - A physical server
+      - A database server
+      - A monitoring block
+    explanation: A server block is a configuration block in Nginx that defines the settings for a specific domain or IP address, similar to Apache's virtual hosts.
+    source: "Nginx Documentation - https://nginx.org/en/docs/http/server_names.html"
+    correct_answer: 0
+
+  - id: q5
+    question: What is load balancing in Nginx?
+    options:
+      - Distributing incoming network traffic across multiple servers
+      - Compressing files
+      - Caching content
+      - Managing databases
+    explanation: Load balancing in Nginx is the process of distributing incoming network traffic across multiple backend servers to ensure no single server bears too much load.
+    source: "Nginx Documentation - https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the purpose of location blocks in Nginx?
+    options:
+      - To define how Nginx processes requests for different URL patterns
+      - To configure databases
+      - To set up monitoring
+      - To manage users
+    explanation: Location blocks in Nginx configuration files define how the server should process specific URL patterns or requests.
+    source: "Nginx Documentation - https://nginx.org/en/docs/http/ngx_http_core_module.html#location"
+    correct_answer: 0
+
+  - id: q7
+    question: What is FastCGI in Nginx?
+    options:
+      - A protocol for interfacing with programming languages and web applications
+      - A type of database
+      - A monitoring system
+      - A caching system
+    explanation: FastCGI is a protocol for interfacing interactive programs with a web server, commonly used to run PHP and other dynamic languages with Nginx.
+    source: "Nginx Documentation - https://nginx.org/en/docs/http/ngx_http_fastcgi_module.html"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of worker_processes in Nginx?
+    options:
+      - To define how many worker processes Nginx should use
+      - To configure databases
+      - To set up SSL
+      - To manage logging
+    explanation: The worker_processes directive defines how many worker processes Nginx should use, typically set to the number of CPU cores for optimal performance.
+    source: "Nginx Documentation - https://nginx.org/en/docs/ngx_core_module.html#worker_processes"
+    correct_answer: 0
+
+  - id: q9
+    question: What is SSL termination in Nginx?
+    options:
+      - The process of handling SSL/TLS encryption at the proxy level
+      - A type of load balancing
+      - A caching mechanism
+      - A logging system
+    explanation: SSL termination is when Nginx handles SSL/TLS encryption and decryption, allowing backend servers to receive unencrypted requests and reducing their processing load.
+    source: "Nginx Documentation - https://docs.nginx.com/nginx/admin-guide/security-controls/terminating-ssl-http/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of nginx -t command?
+    options:
+      - To test the Nginx configuration file for syntax errors
+      - To start the Nginx server
+      - To stop the Nginx server
+      - To reload the configuration
+    explanation: The nginx -t command tests the Nginx configuration files for syntax errors without actually applying the configuration.
+    source: "Nginx Documentation - https://nginx.org/en/docs/switches.html"
+    correct_answer: 0 

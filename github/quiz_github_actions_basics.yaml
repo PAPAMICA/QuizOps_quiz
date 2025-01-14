@@ -1,0 +1,116 @@
+id: github_actions_basics
+category: github_actions
+level: beginner
+title: GitHub Actions Basics
+description: Learn the fundamental concepts and components of GitHub Actions CI/CD platform
+
+questions:
+  - id: q1
+    question: What is GitHub Actions?
+    options:
+      - A CI/CD platform that automates build, test, and deployment workflows
+      - A version control system
+      - A code editor
+      - A monitoring system
+    explanation: GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline directly from GitHub.
+    source: "GitHub Actions Documentation - https://docs.github.com/en/actions"
+    correct_answer: 0
+
+  - id: q2
+    question: What is a GitHub Actions Workflow?
+    options:
+      - A configurable automated process that runs one or more jobs
+      - A repository branch
+      - A deployment server
+      - A monitoring dashboard
+    explanation: A workflow is a configurable automated process that will run one or more jobs. Workflows are defined in YAML files in the .github/workflows directory.
+    source: "GitHub Actions Documentation - https://docs.github.com/en/actions/using-workflows"
+    correct_answer: 0
+
+  - id: q3
+    question: What is a GitHub Actions Event?
+    options:
+      - A specific activity that triggers a workflow run
+      - A type of deployment
+      - A monitoring alert
+      - A build script
+    explanation: An event is a specific activity in a repository that triggers a workflow run, such as creating a pull request or pushing a commit.
+    source: "GitHub Actions Documentation - https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows"
+    correct_answer: 0
+
+  - id: q4
+    question: What is a GitHub Actions Runner?
+    options:
+      - A server that runs your workflows when they're triggered
+      - A type of workflow
+      - A deployment strategy
+      - A monitoring tool
+    explanation: A runner is a server that runs your workflows when they're triggered. Each runner can run a single job at a time and reports progress, logs, and results back to GitHub.
+    source: "GitHub Actions Documentation - https://docs.github.com/en/actions/using-github-hosted-runners"
+    correct_answer: 0
+
+  - id: q5
+    question: What is a GitHub Actions Job?
+    options:
+      - A set of steps in a workflow that execute on the same runner
+      - A type of event
+      - A deployment environment
+      - A monitoring alert
+    explanation: A job is a set of steps in a workflow that execute on the same runner. Each step is either a shell script or an action that will be run.
+    source: "GitHub Actions Documentation - https://docs.github.com/en/actions/using-jobs"
+    correct_answer: 0
+
+  - id: q6
+    question: What is a GitHub Actions Step?
+    options:
+      - An individual task that can run commands in a job
+      - A type of workflow
+      - A deployment strategy
+      - A monitoring system
+    explanation: A step is an individual task that can run commands or actions. Each step in a job executes on the same runner, allowing the actions in that job to share data.
+    source: "GitHub Actions Documentation - https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idsteps"
+    correct_answer: 0
+
+  - id: q7
+    question: What is a GitHub Actions Action?
+    options:
+      - A reusable unit of code that can be used in workflows
+      - A type of event
+      - A deployment environment
+      - A monitoring alert
+    explanation: An action is a custom application for the GitHub Actions platform that performs a complex but frequently repeated task, allowing you to reuse code in your workflows.
+    source: "GitHub Actions Documentation - https://docs.github.com/en/actions/creating-actions"
+    correct_answer: 0
+
+  - id: q8
+    question: What is a GitHub Actions Artifact?
+    options:
+      - Files produced during a workflow run that can be saved
+      - A type of runner
+      - A deployment strategy
+      - A monitoring system
+    explanation: Artifacts are files produced during a workflow run that can be saved and used in subsequent jobs or downloaded after the workflow run completes.
+    source: "GitHub Actions Documentation - https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts"
+    correct_answer: 0
+
+  - id: q9
+    question: What is a GitHub Actions Environment?
+    options:
+      - A set of protection rules and secrets for deployments
+      - A type of runner
+      - A workflow file
+      - A monitoring system
+    explanation: An environment is a set of protection rules and secrets that can be referenced in a workflow, allowing you to control deployments to different environments like production or staging.
+    source: "GitHub Actions Documentation - https://docs.github.com/en/actions/deployment/targeting-different-environments"
+    correct_answer: 0
+
+  - id: q10
+    question: What is a GitHub Actions Secret?
+    options:
+      - A secure environment variable that is encrypted
+      - A type of workflow
+      - A deployment strategy
+      - A monitoring alert
+    explanation: Secrets are encrypted environment variables that you create in a repository or organization and can be used in GitHub Actions workflows.
+    source: "GitHub Actions Documentation - https://docs.github.com/en/actions/security-guides/encrypted-secrets"
+    correct_answer: 0 

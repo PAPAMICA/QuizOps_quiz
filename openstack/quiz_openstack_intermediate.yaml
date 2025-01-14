@@ -1,0 +1,116 @@
+id: openstack_intermediate
+category: openstack
+level: intermediate
+title: OpenStack Administration
+description: Test your knowledge of OpenStack administration and advanced features
+
+questions:
+  - id: openstack_i1
+    question: What is OpenStack Flavor?
+    options:
+      - A virtual hardware template defining VM resources
+      - A type of storage volume
+      - A network configuration
+      - A security group
+    correct_answer: 0
+    explanation: A Flavor defines the compute, memory, and storage capacity of a virtual instance, acting as a hardware template.
+    source: https://docs.openstack.org/nova/latest/user/flavors.html
+
+  - id: openstack_i2
+    question: What is a Security Group in OpenStack?
+    options:
+      - A set of network access rules for instances
+      - A user group
+      - A storage policy
+      - A resource quota
+    correct_answer: 0
+    explanation: Security Groups act as virtual firewalls for instances by defining a set of IP filter rules that determine network access.
+    source: https://docs.openstack.org/nova/latest/admin/security-groups.html
+
+  - id: openstack_i3
+    question: What is OpenStack Volume Snapshot?
+    options:
+      - A point-in-time copy of a volume
+      - A backup configuration
+      - A network capture
+      - A system image
+    correct_answer: 0
+    explanation: A Volume Snapshot is a point-in-time copy of a block storage volume that can be used to create new volumes or restore data.
+    source: https://docs.openstack.org/cinder/latest/admin/blockstorage-volume-backups.html
+
+  - id: openstack_i4
+    question: What is Neutron Router?
+    options:
+      - A virtual router that connects different networks
+      - A physical network device
+      - A load balancer
+      - A firewall service
+    correct_answer: 0
+    explanation: A Neutron Router provides routing and NAT services between different networks in OpenStack, enabling connectivity between networks.
+    source: https://docs.openstack.org/neutron/latest/admin/intro-os-networking.html
+
+  - id: openstack_i5
+    question: What is Nova Live Migration?
+    options:
+      - Moving a running VM from one host to another
+      - Cloning a virtual machine
+      - Backing up instance data
+      - Scaling compute resources
+    correct_answer: 0
+    explanation: Live Migration allows moving a running virtual machine instance from one compute host to another with minimal downtime.
+    source: https://docs.openstack.org/nova/latest/admin/migration.html
+
+  - id: openstack_i6
+    question: What is Swift Container?
+    options:
+      - A storage space for storing objects
+      - A Docker container
+      - A network segment
+      - A resource group
+    correct_answer: 0
+    explanation: A Swift Container is a storage compartment for objects in OpenStack's object storage service, similar to folders in a file system.
+    source: https://docs.openstack.org/swift/latest/admin/objectstorage-intro.html
+
+  - id: openstack_i7
+    question: What is Cinder Volume Type?
+    options:
+      - A specification for different types of block storage
+      - A virtual machine type
+      - A network type
+      - A user role type
+    correct_answer: 0
+    explanation: Cinder Volume Types allow you to create different tiers of storage with different performance characteristics or backend devices.
+    source: https://docs.openstack.org/cinder/latest/admin/blockstorage-volume-types.html
+
+  - id: openstack_i8
+    question: What is Nova Compute Cell?
+    options:
+      - A way to scale Nova deployments
+      - A virtual CPU
+      - A storage unit
+      - A network zone
+    correct_answer: 0
+    explanation: Nova Cells allow you to scale your compute deployment by partitioning compute nodes into groups while maintaining a single API endpoint.
+    source: https://docs.openstack.org/nova/latest/admin/cells.html
+
+  - id: openstack_i9
+    question: What is Keystone Federation?
+    options:
+      - Allowing users from external identity providers to access OpenStack
+      - A backup system
+      - A load balancing service
+      - A monitoring system
+    correct_answer: 0
+    explanation: Keystone Federation enables users from external identity providers to access OpenStack services using their existing credentials.
+    source: https://docs.openstack.org/keystone/latest/admin/federation/introduction.html
+
+  - id: openstack_i10
+    question: What is Heat Stack Update?
+    options:
+      - Modifying a running stack's resources
+      - Updating system packages
+      - Upgrading OpenStack services
+      - Patching security issues
+    correct_answer: 0
+    explanation: Heat Stack Update allows you to modify the resources of a running stack by updating the template or parameters of the stack.
+    source: https://docs.openstack.org/heat/latest/template_guide/hot_guide.html 

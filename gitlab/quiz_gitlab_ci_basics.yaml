@@ -1,0 +1,116 @@
+id: gitlab_ci_basics
+category: cicd
+level: beginner
+title: GitLab CI Basics
+description: Learn the fundamental concepts and components of GitLab CI/CD pipelines
+
+questions:
+  - id: q1
+    question: What is GitLab CI/CD?
+    options:
+      - A continuous integration and delivery platform integrated with GitLab
+      - A version control system
+      - A code editor
+      - A deployment server
+    explanation: GitLab CI/CD is a tool built into GitLab for software development through continuous integration, delivery, and deployment methodologies.
+    source: "GitLab Documentation - https://docs.gitlab.com/ee/ci/"
+    correct_answer: 0
+
+  - id: q2
+    question: What file is used to configure GitLab CI/CD pipelines?
+    options:
+      - .gitlab-ci.yml
+      - pipeline.yml
+      - ci-config.yml
+      - build.yml
+    explanation: The .gitlab-ci.yml file is a YAML file that defines the structure and order of the pipelines and determines what the CI server should do.
+    source: "GitLab Documentation - https://docs.gitlab.com/ee/ci/yaml/"
+    correct_answer: 0
+
+  - id: q3
+    question: What is a GitLab CI/CD pipeline?
+    options:
+      - A sequence of automated steps that code goes through from development to deployment
+      - A type of version control
+      - A deployment server
+      - A testing framework
+    explanation: A pipeline is a group of jobs that get executed in stages. All the jobs in a stage are executed in parallel, and if they all succeed, the pipeline moves on to the next stage.
+    source: "GitLab Documentation - https://docs.gitlab.com/ee/ci/pipelines/"
+    correct_answer: 0
+
+  - id: q4
+    question: What is a GitLab Runner?
+    options:
+      - An application that executes the jobs in your CI/CD pipeline
+      - A web interface for GitLab
+      - A code repository
+      - A deployment tool
+    explanation: GitLab Runner is an application that works with GitLab CI/CD to execute jobs in a pipeline. It can be installed on multiple machines to distribute jobs across different platforms.
+    source: "GitLab Documentation - https://docs.gitlab.com/runner/"
+    correct_answer: 0
+
+  - id: q5
+    question: What is a stage in GitLab CI?
+    options:
+      - A logical division of jobs in a pipeline that run sequentially
+      - A type of runner
+      - A deployment environment
+      - A branch in Git
+    explanation: Stages define when and how to run jobs. Jobs in the same stage run in parallel, and jobs in subsequent stages run after the jobs from the previous stage complete successfully.
+    source: "GitLab Documentation - https://docs.gitlab.com/ee/ci/yaml/#stages"
+    correct_answer: 0
+
+  - id: q6
+    question: What is an artifact in GitLab CI?
+    options:
+      - A file or directory created by a job that can be passed to subsequent jobs
+      - A type of pipeline
+      - A runner configuration
+      - A deployment script
+    explanation: Artifacts are files or directories created by jobs that are passed to subsequent jobs in later stages of the same pipeline and can be downloaded from the GitLab UI.
+    source: "GitLab Documentation - https://docs.gitlab.com/ee/ci/pipelines/job_artifacts.html"
+    correct_answer: 0
+
+  - id: q7
+    question: What is a cache in GitLab CI?
+    options:
+      - A storage mechanism to speed up jobs by reusing previously downloaded or generated files
+      - A type of runner
+      - A deployment environment
+      - A testing framework
+    explanation: Cache is used to speed up your jobs by reusing existing data from previous jobs. It's different from artifacts as it's meant to store dependencies and other build data.
+    source: "GitLab Documentation - https://docs.gitlab.com/ee/ci/caching/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is a job in GitLab CI?
+    options:
+      - The smallest unit of work in a pipeline that runs commands or scripts
+      - A type of runner
+      - A deployment environment
+      - A pipeline configuration
+    explanation: A job is the most basic element in a .gitlab-ci.yml file. It's a collection of commands or scripts that GitLab CI/CD runs as part of a pipeline.
+    source: "GitLab Documentation - https://docs.gitlab.com/ee/ci/jobs/"
+    correct_answer: 0
+
+  - id: q9
+    question: What is a GitLab environment?
+    options:
+      - A target for deploying applications with specific settings and variables
+      - A type of runner
+      - A cache storage
+      - A testing framework
+    explanation: An environment is a deployment target that represents a specific setting like staging, production, or development, with its own variables and deployment rules.
+    source: "GitLab Documentation - https://docs.gitlab.com/ee/ci/environments/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is a GitLab CI/CD variable?
+    options:
+      - A configuration value that can be used across jobs and pipelines
+      - A type of artifact
+      - A deployment script
+      - A runner setting
+    explanation: Variables in GitLab CI/CD allow you to customize jobs and pipelines by storing configuration values that can be used across multiple jobs, stages, or pipelines.
+    source: "GitLab Documentation - https://docs.gitlab.com/ee/ci/variables/"
+    correct_answer: 0 

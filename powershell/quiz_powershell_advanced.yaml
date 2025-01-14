@@ -1,0 +1,116 @@
+id: powershell_advanced
+category: powershell
+level: advanced
+title: PowerShell Advanced Concepts and Enterprise Features
+description: Test your knowledge of advanced PowerShell scripting, security, and enterprise deployment
+
+questions:
+  - id: powershell_a1
+    question: What is PowerShell Just Enough Administration (JEA)?
+    options:
+      - A security technology that enables delegated administration
+      - A backup system
+      - A monitoring tool
+      - A deployment system
+    correct_answer: 0
+    explanation: JEA is a security technology that enables delegated administration through role-based access control and PowerShell remoting.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/jea/overview
+
+  - id: powershell_a2
+    question: What is PowerShell Constrained Language Mode?
+    options:
+      - A restricted version of PowerShell that limits functionality
+      - A programming language
+      - A scripting mode
+      - A command syntax
+    correct_answer: 0
+    explanation: Constrained Language Mode is a restricted version of PowerShell that limits which language elements can be used to prevent malicious use.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/constrained-language-mode
+
+  - id: powershell_a3
+    question: What is PowerShell Class-Based DSC Resources?
+    options:
+      - Custom DSC resources written using PowerShell classes
+      - System resources
+      - Network resources
+      - Storage resources
+    correct_answer: 0
+    explanation: Class-Based DSC Resources allow you to create custom DSC resources using PowerShell classes instead of MOF schema files.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/dsc/resources/authoringresourceclass
+
+  - id: powershell_a4
+    question: What is PowerShell Script Signing?
+    options:
+      - Digitally signing scripts for security and authenticity
+      - File encryption
+      - Code compilation
+      - Data compression
+    correct_answer: 0
+    explanation: Script Signing is a security feature that uses digital signatures to verify the authenticity and integrity of PowerShell scripts.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/security/script-signing
+
+  - id: powershell_a5
+    question: What is PowerShell Plaster?
+    options:
+      - A template-based file and project generator
+      - A backup tool
+      - A monitoring system
+      - A deployment tool
+    correct_answer: 0
+    explanation: Plaster is a template-based file and project generator that helps standardize PowerShell module and script creation.
+    source: https://github.com/PowerShellOrg/Plaster
+
+  - id: powershell_a6
+    question: What is PowerShell Pester?
+    options:
+      - A testing framework for PowerShell
+      - A deployment system
+      - A monitoring tool
+      - A backup solution
+    correct_answer: 0
+    explanation: Pester is a testing and mocking framework for PowerShell that enables test-driven development and automated testing.
+    source: https://pester.dev/docs/quick-start
+
+  - id: powershell_a7
+    question: What is PowerShell Abstract Syntax Tree (AST)?
+    options:
+      - A representation of PowerShell code structure
+      - A file system
+      - A network protocol
+      - A security feature
+    correct_answer: 0
+    explanation: AST is a tree representation of PowerShell code structure that enables advanced script analysis and manipulation.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/developer/ast/abstract-syntax-tree
+
+  - id: powershell_a8
+    question: What is PowerShell Type Accelerators?
+    options:
+      - Shortcuts for .NET framework type names
+      - Code optimizers
+      - Script compilers
+      - Memory managers
+    correct_answer: 0
+    explanation: Type Accelerators are aliases for .NET framework type names that make PowerShell code more concise and readable.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/developer/help/using-type-accelerators
+
+  - id: powershell_a9
+    question: What is PowerShell Transactions?
+    options:
+      - Atomic operations that can be rolled back if they fail
+      - File transfers
+      - Network connections
+      - System backups
+    correct_answer: 0
+    explanation: Transactions enable atomic operations in PowerShell that can be committed or rolled back as a single unit of work.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-transactions
+
+  - id: powershell_a10
+    question: What is PowerShell Gallery?
+    options:
+      - A central repository for sharing PowerShell code
+      - A code editor
+      - A deployment system
+      - A monitoring tool
+    correct_answer: 0
+    explanation: PowerShell Gallery is the central repository for sharing PowerShell code including modules, scripts, and DSC resources.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/gallery/overview 

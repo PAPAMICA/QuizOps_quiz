@@ -1,0 +1,114 @@
+title: ESXi Fundamentals
+description: Test your basic knowledge of VMware ESXi and virtualization concepts
+category: esxi
+level: beginner
+questions:
+  - id: esxi_b1
+    question: What is VMware ESXi?
+    options:
+      - A bare-metal hypervisor that installs directly on server hardware
+      - A hosted hypervisor that runs on top of an operating system
+      - A container platform
+      - A virtual machine management tool
+    correct_answer: 0
+    explanation: ESXi is a Type 1 (bare-metal) hypervisor that installs and runs directly on physical server hardware, providing efficient resource management and virtualization capabilities.
+    source: https://docs.vmware.com/en/VMware-vSphere/index.html
+
+  - id: esxi_b2
+    question: What is a virtual machine in ESXi?
+    options:
+      - A software container that behaves like a physical computer
+      - A physical server
+      - A network switch
+      - A storage device
+    correct_answer: 0
+    explanation: A virtual machine is a software implementation of a computer that runs an operating system and applications, sharing physical hardware resources managed by ESXi.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-55238059-912E-411F-A0E9-A7A536972A91.html
+
+  - id: esxi_b3
+    question: What is vSphere Client used for?
+    options:
+      - To manage ESXi hosts and virtual machines through a web interface
+      - To manage physical network connections
+      - To manage storage arrays
+      - To manage backup operations
+    correct_answer: 0
+    explanation: vSphere Client is a web-based interface used to manage ESXi hosts, virtual machines, and other vSphere components remotely.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-39D19B2B-4CD8-4F5A-BD20-85E4F5684050.html
+
+  - id: esxi_b4
+    question: What is a datastore in ESXi?
+    options:
+      - A logical container for storing virtual machine files and other files
+      - A physical hard drive
+      - A network share
+      - A backup location
+    correct_answer: 0
+    explanation: A datastore is a logical storage unit that can be used to hold virtual machine files, templates, ISO images, and other files needed for virtual machine operations.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-7BF27035-CA35-4413-B859-E3CD36452E9E.html
+
+  - id: esxi_b5
+    question: What is the purpose of VMware Tools?
+    options:
+      - To enhance virtual machine performance and provide additional features
+      - To manage physical hardware
+      - To configure network settings
+      - To manage storage devices
+    correct_answer: 0
+    explanation: VMware Tools is a suite of utilities that enhances virtual machine performance and improves management capabilities by providing better interaction between the guest OS and ESXi.
+    source: https://docs.vmware.com/en/VMware-Tools/index.html
+
+  - id: esxi_b6
+    question: What is a virtual network switch (vSwitch) in ESXi?
+    options:
+      - A software switch that provides network connectivity to virtual machines
+      - A physical network switch
+      - A router
+      - A firewall
+    correct_answer: 0
+    explanation: A virtual switch (vSwitch) is a software component that provides network connectivity to virtual machines and handles network traffic between VMs and physical network adapters.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-350344DE-483A-42ED-B0E2-C811EE927D59.html
+
+  - id: esxi_b7
+    question: What is a snapshot in ESXi?
+    options:
+      - A point-in-time copy of a virtual machine's state
+      - A backup of the ESXi host
+      - A network configuration
+      - A storage configuration
+    correct_answer: 0
+    explanation: A snapshot captures the state of a virtual machine at a specific point in time, including memory, settings, and virtual disk states, allowing you to revert to that state if needed.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-CA948C69-7F58-4519-AEB1-739545EA94E5.html
+
+  - id: esxi_b8
+    question: What is the minimum amount of RAM recommended for ESXi 7.0?
+    options:
+      - 8GB
+      - 2GB
+      - 4GB
+      - 16GB
+    correct_answer: 0
+    explanation: VMware recommends a minimum of 8GB of RAM for ESXi 7.0 hosts, although more memory is recommended for running multiple virtual machines.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.upgrade.doc/GUID-DEB8086A-306B-4239-BF76-E354679202FC.html
+
+  - id: esxi_b9
+    question: What is thin provisioning in ESXi?
+    options:
+      - A storage allocation method that uses space only when needed
+      - A memory management technique
+      - A network configuration method
+      - A backup strategy
+    correct_answer: 0
+    explanation: Thin provisioning is a method of optimizing storage utilization by allocating storage space to virtual disks only when it is actually needed, rather than pre-allocating all space upfront.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-8204A8D7-25B6-4DE2-A227-408C158A31DE.html
+
+  - id: esxi_b10
+    question: What is the purpose of vMotion in ESXi?
+    options:
+      - To migrate running virtual machines between hosts with no downtime
+      - To backup virtual machines
+      - To create new virtual machines
+      - To manage storage devices
+    correct_answer: 0
+    explanation: vMotion enables the live migration of running virtual machines from one ESXi host to another without any service interruption or downtime.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-D19EA1CB-5222-49F9-A002-4F8692B92D63.html 

@@ -1,0 +1,116 @@
+id: linux_intermediate
+category: linux
+level: intermediate
+title: Linux System Administration
+description: Test your knowledge of Linux system administration and advanced commands
+
+questions:
+  - id: linux_i1
+    question: What is the purpose of the grep command?
+    options:
+      - Search for patterns in files using regular expressions
+      - Group users
+      - Generate reports
+      - Graph system resources
+    correct_answer: 0
+    explanation: The grep command searches for patterns in files using regular expressions, making it a powerful tool for text searching and filtering.
+    source: https://www.gnu.org/software/grep/manual/grep.html
+
+  - id: linux_i2
+    question: What is a symbolic link in Linux?
+    options:
+      - A special file that points to another file or directory
+      - A system library
+      - A symbolic programming language
+      - A network protocol
+    correct_answer: 0
+    explanation: A symbolic link (symlink) is a special type of file that points to another file or directory, similar to a shortcut in Windows.
+    source: https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html
+
+  - id: linux_i3
+    question: What is the purpose of the chmod command?
+    options:
+      - Change file permissions and access rights
+      - Change file modification time
+      - Change file owner
+      - Change file mode
+    correct_answer: 0
+    explanation: The chmod command is used to change the permissions and access rights of files and directories in Linux.
+    source: https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html
+
+  - id: linux_i4
+    question: What is the purpose of the cron daemon?
+    options:
+      - Schedule and automate tasks
+      - Control system resources
+      - Monitor system processes
+      - Manage network connections
+    correct_answer: 0
+    explanation: The cron daemon is used to schedule and automate tasks (called cron jobs) to run at specified times or intervals.
+    source: https://man7.org/linux/man-pages/man8/cron.8.html
+
+  - id: linux_i5
+    question: What is the purpose of the ps command?
+    options:
+      - Display information about active processes
+      - Print system statistics
+      - Process scheduling
+      - Power save mode
+    correct_answer: 0
+    explanation: The ps command displays information about active processes running on the system, including their status and resource usage.
+    source: https://man7.org/linux/man-pages/man1/ps.1.html
+
+  - id: linux_i6
+    question: What is the purpose of the tar command?
+    options:
+      - Archive files and directories
+      - Terminate processes
+      - Test and repair filesystems
+      - Track system resources
+    correct_answer: 0
+    explanation: The tar command is used to create, maintain, modify, and extract files from archives, commonly used for backup and distribution.
+    source: https://www.gnu.org/software/tar/manual/tar.html
+
+  - id: linux_i7
+    question: What is the purpose of the find command?
+    options:
+      - Search for files and directories based on various criteria
+      - Find network connections
+      - Find system errors
+      - Find user information
+    correct_answer: 0
+    explanation: The find command searches for files and directories in a directory hierarchy based on various criteria like name, size, type, and permissions.
+    source: https://www.gnu.org/software/findutils/manual/html_node/find_html/
+
+  - id: linux_i8
+    question: What is the purpose of the sed command?
+    options:
+      - Stream editor for filtering and transforming text
+      - Secure encrypted data
+      - Send email data
+      - System error detection
+    correct_answer: 0
+    explanation: The sed (Stream Editor) command is used to perform basic text transformations on an input stream (file or pipe).
+    source: https://www.gnu.org/software/sed/manual/sed.html
+
+  - id: linux_i9
+    question: What is the purpose of the awk command?
+    options:
+      - Pattern scanning and text processing language
+      - Automatic work scheduler
+      - Advanced web kit
+      - Audio workstation
+    correct_answer: 0
+    explanation: The awk command is a powerful text processing language used for pattern scanning and processing in text files.
+    source: https://www.gnu.org/software/gawk/manual/gawk.html
+
+  - id: linux_i10
+    question: What is the purpose of the systemctl command?
+    options:
+      - Control the systemd system and service manager
+      - System cleanup tool
+      - System clock time
+      - System configuration loader
+    correct_answer: 0
+    explanation: The systemctl command is used to control the systemd system and service manager, managing system services, checking their status, and more.
+    source: https://www.freedesktop.org/software/systemd/man/systemctl.html 

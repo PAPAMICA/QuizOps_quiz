@@ -1,0 +1,116 @@
+id: helm_basics
+category: helm
+level: beginner
+title: Helm Basics
+description: Learn the fundamental concepts and components of Helm, the package manager for Kubernetes
+
+questions:
+  - id: q1
+    question: What is Helm?
+    options:
+      - A package manager for Kubernetes that helps you manage Kubernetes applications
+      - A container runtime
+      - A monitoring system
+      - A deployment strategy
+    explanation: Helm is a package manager for Kubernetes that helps you manage Kubernetes applications through Helm Charts, which are packages of pre-configured Kubernetes resources.
+    source: "Helm Documentation - https://helm.sh/docs/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is a Helm Chart?
+    options:
+      - A package of pre-configured Kubernetes resources
+      - A monitoring dashboard
+      - A container image
+      - A network policy
+    explanation: A Helm Chart is a collection of files that describe a related set of Kubernetes resources. It contains all the resource definitions necessary to run an application on Kubernetes.
+    source: "Helm Documentation - https://helm.sh/docs/topics/charts/"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the purpose of values.yaml in a Helm Chart?
+    options:
+      - To provide default configuration values for the chart
+      - To store container images
+      - To define network policies
+      - To manage secrets
+    explanation: The values.yaml file is used to provide default configuration values for a Helm Chart. These values can be overridden during chart installation or upgrade.
+    source: "Helm Documentation - https://helm.sh/docs/chart_template_guide/values_files/"
+    correct_answer: 0
+
+  - id: q4
+    question: What command is used to install a Helm Chart?
+    options:
+      - helm install
+      - helm start
+      - helm run
+      - helm deploy
+    explanation: The helm install command is used to install a chart onto your Kubernetes cluster, creating a new release for it.
+    source: "Helm Documentation - https://helm.sh/docs/helm/helm_install/"
+    correct_answer: 0
+
+  - id: q5
+    question: What is a Helm Repository?
+    options:
+      - A place where Helm Charts are stored and shared
+      - A type of container
+      - A monitoring system
+      - A deployment strategy
+    explanation: A Helm Repository is a place where packaged charts can be stored and shared. It can be a local directory or a remote server that holds chart archives.
+    source: "Helm Documentation - https://helm.sh/docs/topics/chart_repository/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the purpose of Chart.yaml in a Helm Chart?
+    options:
+      - To provide metadata about the chart
+      - To store configuration values
+      - To define Kubernetes resources
+      - To manage dependencies
+    explanation: The Chart.yaml file contains metadata about the chart, such as its name, version, description, and other important information.
+    source: "Helm Documentation - https://helm.sh/docs/topics/charts/#the-chartyaml-file"
+    correct_answer: 0
+
+  - id: q7
+    question: What is a Helm Release?
+    options:
+      - An instance of a chart running in a Kubernetes cluster
+      - A type of container
+      - A configuration file
+      - A network policy
+    explanation: A Helm Release is an instance of a chart running in a Kubernetes cluster. When you install a chart, a new release is created.
+    source: "Helm Documentation - https://helm.sh/docs/intro/using_helm/#three-big-concepts"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of helm template command?
+    options:
+      - To render chart templates locally and display the output
+      - To install a chart
+      - To update a release
+      - To delete a release
+    explanation: The helm template command renders chart templates locally and displays the output. It's useful for testing chart rendering before actual installation.
+    source: "Helm Documentation - https://helm.sh/docs/helm/helm_template/"
+    correct_answer: 0
+
+  - id: q9
+    question: What is the purpose of dependencies in a Helm Chart?
+    options:
+      - To specify other charts that are required for this chart to work
+      - To define container images
+      - To manage secrets
+      - To configure networking
+    explanation: Dependencies in a Helm Chart allow you to specify other charts that are required for your chart to function properly.
+    source: "Helm Documentation - https://helm.sh/docs/topics/charts/#chart-dependencies"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of helm upgrade command?
+    options:
+      - To upgrade a release to a new version of a chart
+      - To install a new chart
+      - To delete a release
+      - To list all releases
+    explanation: The helm upgrade command is used to upgrade a release to a new version of a chart or with different configuration values.
+    source: "Helm Documentation - https://helm.sh/docs/helm/helm_upgrade/"
+    correct_answer: 0 

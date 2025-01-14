@@ -1,0 +1,116 @@
+id: python_intermediate
+category: python
+level: intermediate
+title: Python Advanced Concepts
+description: Test your knowledge of intermediate Python programming concepts
+
+questions:
+  - id: python_i1
+    question: What is a list comprehension in Python?
+    options:
+      - A concise way to create lists based on existing lists
+      - A way to sort lists
+      - A way to merge lists
+      - A way to delete lists
+    correct_answer: 0
+    explanation: List comprehensions provide a concise way to create lists based on existing lists or other sequences.
+    source: https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
+
+  - id: python_i2
+    question: What is the difference between a tuple and a list in Python?
+    options:
+      - Tuples are immutable, lists are mutable
+      - Tuples are faster than lists
+      - Lists are immutable, tuples are mutable
+      - There is no difference
+    correct_answer: 0
+    explanation: The main difference is that tuples are immutable (cannot be changed after creation) while lists are mutable.
+    source: https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences
+
+  - id: python_i3
+    question: What is a lambda function in Python?
+    options:
+      - A small anonymous function defined with the lambda keyword
+      - A large function
+      - A built-in function
+      - A class method
+    correct_answer: 0
+    explanation: Lambda functions are small anonymous functions that can have any number of arguments but can only have one expression.
+    source: https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions
+
+  - id: python_i4
+    question: What is the purpose of the *args parameter in Python?
+    options:
+      - Allow a function to accept any number of positional arguments
+      - Define a required argument
+      - Create a global variable
+      - Import a module
+    correct_answer: 0
+    explanation: The *args syntax allows a function to accept any number of positional arguments, which are collected into a tuple.
+    source: https://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists
+
+  - id: python_i5
+    question: What is a decorator in Python?
+    options:
+      - A function that modifies another function
+      - A type of variable
+      - A loop construct
+      - A class attribute
+    correct_answer: 0
+    explanation: A decorator is a function that takes another function as input and extends or modifies its behavior.
+    source: https://docs.python.org/3/glossary.html#term-decorator
+
+  - id: python_i6
+    question: What is the purpose of the with statement in Python?
+    options:
+      - Ensure proper handling of resources like file operations
+      - Create a loop
+      - Define a function
+      - Import a module
+    correct_answer: 0
+    explanation: The with statement ensures proper acquisition and release of resources, commonly used with file operations.
+    source: https://docs.python.org/3/reference/compound_stmts.html#with
+
+  - id: python_i7
+    question: What is a generator in Python?
+    options:
+      - A function that returns an iterator using yield
+      - A type of variable
+      - A built-in function
+      - A class method
+    correct_answer: 0
+    explanation: A generator is a function that returns an iterator object, using yield to generate values on-the-fly instead of storing them all in memory.
+    source: https://docs.python.org/3/tutorial/classes.html#generators
+
+  - id: python_i8
+    question: What is the purpose of the __init__ method in Python classes?
+    options:
+      - Initialize object attributes when the class is instantiated
+      - Delete an object
+      - Create a loop
+      - Import a module
+    correct_answer: 0
+    explanation: The __init__ method is called when a class is instantiated and is used to initialize object attributes.
+    source: https://docs.python.org/3/tutorial/classes.html#class-objects
+
+  - id: python_i9
+    question: What is the difference between is and == in Python?
+    options:
+      - is checks identity, == checks equality
+      - They are the same
+      - is is faster than ==
+      - == is more accurate
+    correct_answer: 0
+    explanation: The is operator checks if two objects have the same identity (same memory location), while == checks if they have the same value.
+    source: https://docs.python.org/3/reference/expressions.html#comparisons
+
+  - id: python_i10
+    question: What is a dictionary comprehension in Python?
+    options:
+      - A concise way to create dictionaries based on existing sequences
+      - A way to sort dictionaries
+      - A way to merge dictionaries
+      - A way to delete dictionaries
+    correct_answer: 0
+    explanation: Dictionary comprehensions provide a concise way to create dictionaries based on existing sequences or other dictionaries.
+    source: https://docs.python.org/3/tutorial/datastructures.html#dictionaries 

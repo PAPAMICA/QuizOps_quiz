@@ -1,0 +1,116 @@
+id: rundeck_advanced
+category: rundeck
+level: advanced
+title: Rundeck Expert Level
+description: Test your expertise in advanced Rundeck concepts and features
+
+questions:
+  - id: rundeck_a1
+    question: What is Key Storage in Rundeck?
+    options:
+      - A secure storage system for sensitive data like passwords and keys
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Key Storage is a secure system for storing sensitive data like passwords, SSH keys, and API tokens that can be used in jobs.
+    source: https://docs.rundeck.com/docs/manual/key-storage/
+
+  - id: rundeck_a2
+    question: What is an SCM Plugin in Rundeck?
+    options:
+      - A plugin that integrates with version control systems
+      - A type of node
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: SCM (Source Control Management) plugins allow integration with version control systems to manage job definitions and project configurations.
+    source: https://docs.rundeck.com/docs/manual/projects/scm/
+
+  - id: rundeck_a3
+    question: What is Enterprise Runner in Rundeck?
+    options:
+      - A distributed execution system for running jobs across networks
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Enterprise Runner is a distributed execution system that allows running jobs across different networks and security zones.
+    source: https://docs.rundeck.com/docs/administration/runner/
+
+  - id: rundeck_a4
+    question: What is a Global Variable in Rundeck?
+    options:
+      - A variable available across all projects and jobs
+      - A type of node
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Global Variables are framework properties that are available across all projects and jobs in a Rundeck instance.
+    source: https://docs.rundeck.com/docs/manual/job-workflows.html#context-variables
+
+  - id: rundeck_a5
+    question: What is Access Control Policy in Rundeck?
+    options:
+      - A YAML/XML file defining access control rules
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Access Control Policy files define detailed rules about who can perform what actions on which resources in Rundeck.
+    source: https://docs.rundeck.com/docs/administration/security/authorization.html
+
+  - id: rundeck_a6
+    question: What is a Webhook Plugin in Rundeck?
+    options:
+      - A plugin that handles incoming HTTP requests to trigger jobs
+      - A type of node
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Webhook plugins allow external systems to trigger Rundeck jobs through HTTP requests with custom authentication and payload handling.
+    source: https://docs.rundeck.com/docs/manual/webhooks/
+
+  - id: rundeck_a7
+    question: What is Log Storage in Rundeck?
+    options:
+      - A system for storing and managing execution logs
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Log Storage is a system for storing, managing, and retrieving execution logs, with support for different storage backends.
+    source: https://docs.rundeck.com/docs/administration/cluster/logstore/
+
+  - id: rundeck_a8
+    question: What is a Custom Step Plugin in Rundeck?
+    options:
+      - A plugin that implements custom workflow step behavior
+      - A type of node
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Custom Step Plugins allow you to implement custom workflow step behavior using various programming languages.
+    source: https://docs.rundeck.com/docs/developer/custom-step-plugin.html
+
+  - id: rundeck_a9
+    question: What is Cluster Mode in Rundeck?
+    options:
+      - Running multiple Rundeck instances for high availability
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Cluster Mode allows running multiple Rundeck instances for high availability and load balancing.
+    source: https://docs.rundeck.com/docs/administration/cluster/
+
+  - id: rundeck_a10
+    question: What is a Remote Option Provider in Rundeck?
+    options:
+      - A plugin that fetches option values from remote services
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Remote Option Providers fetch option values from remote services or APIs when a job is executed or scheduled.
+    source: https://docs.rundeck.com/docs/manual/job-options.html#remote-option-values 

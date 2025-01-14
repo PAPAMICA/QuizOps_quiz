@@ -1,0 +1,114 @@
+title: Docker Compose Advanced Operations
+description: Test your intermediate knowledge of Docker Compose
+category: docker_compose
+level: intermediate
+questions:
+  - id: docker_compose_i1
+    question: What is the purpose of the 'build' context in Docker Compose?
+    options:
+      - To specify the build configuration for creating a custom image
+      - To define runtime variables
+      - To configure networks
+      - To manage volumes
+    correct_answer: 0
+    explanation: The 'build' context allows you to specify a path to a Dockerfile and additional build settings for creating a custom image for a service.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#build
+
+  - id: docker_compose_i2
+    question: How do you override default Compose configurations?
+    options:
+      - Using multiple compose files with the -f flag
+      - By editing the original file only
+      - Through environment variables only
+      - Using command line arguments only
+    correct_answer: 0
+    explanation: Docker Compose allows you to override configurations using multiple compose files with the -f flag, following a specific merge strategy.
+    source: https://docs.docker.com/compose/extends/
+
+  - id: docker_compose_i3
+    question: What is the purpose of the 'restart' policy in Docker Compose?
+    options:
+      - To define how containers should be restarted when they exit
+      - To schedule container restarts
+      - To force container restarts
+      - To prevent container restarts
+    correct_answer: 0
+    explanation: The 'restart' policy specifies how containers should be restarted when they exit, with options like 'no', 'always', 'on-failure', and 'unless-stopped'.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#restart
+
+  - id: docker_compose_i4
+    question: How do you implement health checks in Docker Compose?
+    options:
+      - Using the 'healthcheck' configuration in service definition
+      - Through external monitoring only
+      - Using environment variables
+      - By manual inspection only
+    correct_answer: 0
+    explanation: The 'healthcheck' configuration allows you to specify commands to check container health and configure check intervals and timeouts.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#healthcheck
+
+  - id: docker_compose_i5
+    question: What is the purpose of networks with aliases in Docker Compose?
+    options:
+      - To provide alternative hostnames for services in specific networks
+      - To configure network speeds
+      - To set up VPNs
+      - To manage IP addresses
+    correct_answer: 0
+    explanation: Network aliases allow you to create alternative hostnames for services when connected to specific networks, useful for service discovery.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#aliases
+
+  - id: docker_compose_i6
+    question: How do you manage secrets in Docker Compose?
+    options:
+      - Using the 'secrets' configuration to define and mount secrets
+      - Through environment variables only
+      - Using plain text files only
+      - By hardcoding values
+    correct_answer: 0
+    explanation: The 'secrets' configuration allows you to manage sensitive data by defining secrets and mounting them into services securely.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#secrets
+
+  - id: docker_compose_i7
+    question: What is the purpose of the 'extends' keyword in Docker Compose?
+    options:
+      - To share common configurations between multiple services
+      - To extend networks only
+      - To extend volumes only
+      - To extend environment variables
+    correct_answer: 0
+    explanation: The 'extends' keyword allows you to share common configurations between different services and compose files.
+    source: https://docs.docker.com/compose/extends/#extending-services
+
+  - id: docker_compose_i8
+    question: How do you implement resource constraints in Docker Compose?
+    options:
+      - Using deploy or resources configurations to limit CPU and memory
+      - Through environment variables only
+      - Using external tools only
+      - By manual monitoring
+    correct_answer: 0
+    explanation: Resource constraints can be implemented using deploy or resources configurations to limit CPU and memory usage of containers.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#resources
+
+  - id: docker_compose_i9
+    question: What is the purpose of the 'configs' section in Docker Compose?
+    options:
+      - To manage configuration files that can be mounted into services
+      - To manage environment variables only
+      - To configure networks only
+      - To set up logging
+    correct_answer: 0
+    explanation: The 'configs' section allows you to manage configuration files that can be mounted into services, similar to secrets but for non-sensitive data.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#configs
+
+  - id: docker_compose_i10
+    question: How do you implement rolling updates in Docker Compose?
+    options:
+      - Using update_config in the deploy section
+      - Through manual container replacement
+      - Using basic restart policies
+      - By stopping and starting services
+    correct_answer: 0
+    explanation: Rolling updates can be configured using the update_config settings in the deploy section, specifying parallelism, delay, and failure action.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#update_config 

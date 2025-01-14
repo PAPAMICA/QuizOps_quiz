@@ -1,0 +1,116 @@
+id: helm_advanced
+category: helm
+level: advanced
+title: Helm Enterprise and Advanced Concepts
+description: Test your knowledge of advanced Helm concepts, security, and enterprise features
+
+questions:
+  - id: helm_a1
+    question: What is Helm's Library Chart feature?
+    options:
+      - A chart that defines common utilities and functions for reuse
+      - A chart repository
+      - A chart version
+      - A chart template
+    correct_answer: 0
+    explanation: Library charts provide reusable utilities or functions for chart developers, containing no deployable Kubernetes resources of their own.
+    source: https://helm.sh/docs/topics/library_charts/
+
+  - id: helm_a2
+    question: What is the purpose of Helm's Provenance and Integrity feature?
+    options:
+      - To verify the authenticity and integrity of charts
+      - To manage chart versions
+      - To validate templates
+      - To check dependencies
+    correct_answer: 0
+    explanation: Provenance and Integrity allows chart consumers to verify that a chart hasn't been tampered with and comes from a trusted source.
+    source: https://helm.sh/docs/topics/provenance/
+
+  - id: helm_a3
+    question: What is a Starters Chart in Helm?
+    options:
+      - A boilerplate chart used as a starting point for new charts
+      - A basic chart template
+      - A chart for beginners
+      - A testing chart
+    correct_answer: 0
+    explanation: Starter charts are boilerplate charts that can be used as a starting point when creating new charts, defined in $HELM_HOME/starters.
+    source: https://helm.sh/docs/topics/charts/#chart-starter-packs
+
+  - id: helm_a4
+    question: What is the purpose of Capabilities object in Helm templates?
+    options:
+      - To provide information about the Kubernetes cluster and Helm capabilities
+      - To manage chart capabilities
+      - To define resource limits
+      - To check API versions
+    correct_answer: 0
+    explanation: The Capabilities object provides information about what capabilities the Kubernetes cluster supports and what versions of Kubernetes are available.
+    source: https://helm.sh/docs/chart_template_guide/builtin_objects/
+
+  - id: helm_a5
+    question: What is the purpose of helm push command?
+    options:
+      - To upload a chart to a remote repository
+      - To deploy a chart
+      - To package a chart
+      - To update a chart
+    correct_answer: 0
+    explanation: The helm push command is used to upload a chart to a remote repository, typically an OCI-based registry.
+    source: https://helm.sh/docs/topics/registries/
+
+  - id: helm_a6
+    question: What is a Schema Validation in Helm?
+    options:
+      - A way to validate values.yaml against a JSON schema
+      - A template validator
+      - A chart validator
+      - A dependency validator
+    correct_answer: 0
+    explanation: Schema validation allows chart authors to define a JSON schema that incoming values must conform to, ensuring configuration correctness.
+    source: https://helm.sh/docs/topics/charts/#schema-files
+
+  - id: helm_a7
+    question: What is the purpose of XDG Base Directory specification in Helm?
+    options:
+      - To define standard locations for configuration and data files
+      - To specify chart locations
+      - To define template locations
+      - To store cache files
+    correct_answer: 0
+    explanation: Helm follows the XDG Base Directory specification to determine where to store configuration, data, and cache files across different operating systems.
+    source: https://helm.sh/docs/helm/helm/
+
+  - id: helm_a8
+    question: What is Helm's OCI support feature?
+    options:
+      - The ability to store and distribute charts using OCI registries
+      - A chart format
+      - A deployment strategy
+      - A security feature
+    correct_answer: 0
+    explanation: OCI support allows Helm to use OCI-compliant registries for storing and distributing charts, treating them like container images.
+    source: https://helm.sh/docs/topics/registries/
+
+  - id: helm_a9
+    question: What is the purpose of the lookup function in Helm?
+    options:
+      - To look up resources in a running Kubernetes cluster
+      - To search for charts
+      - To find templates
+      - To check values
+    correct_answer: 0
+    explanation: The lookup function allows templates to look up resources in a running Kubernetes cluster, enabling dynamic template generation based on cluster state.
+    source: https://helm.sh/docs/chart_template_guide/functions_and_pipelines/#using-the-lookup-function
+
+  - id: helm_a10
+    question: What is a Helm Plugin?
+    options:
+      - A tool that extends Helm's functionality
+      - A chart extension
+      - A template function
+      - A repository type
+    correct_answer: 0
+    explanation: Helm plugins are tools that extend Helm's core functionality by adding new subcommands or features through the plugin system.
+    source: https://helm.sh/docs/topics/plugins/ 

@@ -1,0 +1,116 @@
+id: github_intermediate
+category: github
+level: intermediate
+title: GitHub Advanced Features
+description: Test your knowledge of intermediate GitHub concepts and workflows
+
+questions:
+  - id: github_i1
+    question: What is GitHub Actions?
+    options:
+      - A continuous integration and continuous delivery (CI/CD) platform
+      - A code editor
+      - A version control system
+      - A database service
+    correct_answer: 0
+    explanation: GitHub Actions is a CI/CD platform that allows you to automate your build, test, and deployment pipeline directly from GitHub.
+    source: https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
+
+  - id: github_i2
+    question: What is a GitHub Project?
+    options:
+      - A project management tool integrated with GitHub issues and pull requests
+      - A code repository
+      - A version control system
+      - A deployment platform
+    correct_answer: 0
+    explanation: GitHub Projects is a customizable, flexible tool for planning and tracking work on GitHub, integrating with issues and pull requests.
+    source: https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects
+
+  - id: github_i3
+    question: What is GitHub Codespaces?
+    options:
+      - A cloud-based development environment
+      - A version control system
+      - A project management tool
+      - A testing framework
+    correct_answer: 0
+    explanation: GitHub Codespaces provides cloud-based development environments that are configurable and accessible from anywhere, powered by Visual Studio Code.
+    source: https://docs.github.com/en/codespaces/overview
+
+  - id: github_i4
+    question: What is GitHub Discussions?
+    options:
+      - A collaborative communication forum for the community
+      - A code review tool
+      - A deployment platform
+      - A testing framework
+    correct_answer: 0
+    explanation: GitHub Discussions is a collaborative communication forum for the community to have conversations, ask questions, and share ideas outside the scope of specific issues.
+    source: https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/about-discussions
+
+  - id: github_i5
+    question: What is GitHub Security scanning?
+    options:
+      - A set of security features to identify vulnerabilities
+      - A backup system
+      - A deployment tool
+      - A testing framework
+    correct_answer: 0
+    explanation: GitHub Security scanning includes features like Dependabot and Code scanning that help identify and fix security vulnerabilities in your code and dependencies.
+    source: https://docs.github.com/en/code-security/getting-started/github-security-features
+
+  - id: github_i6
+    question: What is GitHub Packages?
+    options:
+      - A package hosting service integrated with GitHub
+      - A code editor
+      - A project management tool
+      - A testing platform
+    correct_answer: 0
+    explanation: GitHub Packages is a package hosting service that allows you to host your packages privately or publicly and use packages as dependencies in your projects.
+    source: https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages
+
+  - id: github_i7
+    question: What is a GitHub Template repository?
+    options:
+      - A repository that serves as a starting point for other repositories
+      - A backup repository
+      - A testing repository
+      - A deployment repository
+    correct_answer: 0
+    explanation: Template repositories let you generate new repositories with the same directory structure, branches, and files, making it easier to start new projects.
+    source: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository
+
+  - id: github_i8
+    question: What is GitHub Copilot?
+    options:
+      - An AI pair programmer that suggests code completions
+      - A code review tool
+      - A project management system
+      - A testing framework
+    correct_answer: 0
+    explanation: GitHub Copilot is an AI-powered code completion tool that suggests code and entire functions in real-time, acting as an AI pair programmer.
+    source: https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot
+
+  - id: github_i9
+    question: What is GitHub Sponsors?
+    options:
+      - A way to financially support open source developers
+      - A project management tool
+      - A deployment platform
+      - A testing service
+    correct_answer: 0
+    explanation: GitHub Sponsors allows you to financially support open source developers and projects that design, build, and maintain the open source projects you depend on.
+    source: https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors
+
+  - id: github_i10
+    question: What is GitHub Advanced Security?
+    options:
+      - A suite of security features for code analysis and vulnerability detection
+      - A backup system
+      - A deployment platform
+      - A testing framework
+    correct_answer: 0
+    explanation: GitHub Advanced Security is a suite of security features that help you identify and fix security vulnerabilities in your code, including code scanning, secret scanning, and dependency review.
+    source: https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security 

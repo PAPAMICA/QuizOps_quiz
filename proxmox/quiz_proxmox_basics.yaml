@@ -1,0 +1,116 @@
+id: proxmox_basics
+category: proxmox
+level: beginner
+title: Proxmox VE Fundamentals
+description: Test your knowledge of basic Proxmox Virtual Environment concepts and usage
+
+questions:
+  - id: proxmox_b1
+    question: What is Proxmox VE?
+    options:
+      - An open-source virtualization management platform
+      - A web browser
+      - A database system
+      - An operating system
+    correct_answer: 0
+    explanation: Proxmox VE (Virtual Environment) is an open-source server virtualization management platform based on QEMU/KVM and LXC.
+    source: https://www.proxmox.com/en/proxmox-ve
+
+  - id: proxmox_b2
+    question: What types of virtualization does Proxmox VE support?
+    options:
+      - Both KVM virtual machines and LXC containers
+      - Only KVM virtual machines
+      - Only Docker containers
+      - Only VMware virtual machines
+    correct_answer: 0
+    explanation: Proxmox VE supports both full virtualization with KVM (Kernel-based Virtual Machine) and containerization with LXC (Linux Containers).
+    source: https://www.proxmox.com/en/proxmox-ve/features
+
+  - id: proxmox_b3
+    question: What is the default web interface port for Proxmox VE?
+    options:
+      - 8006
+      - 80
+      - 443
+      - 22
+    correct_answer: 0
+    explanation: The Proxmox VE web interface runs on port 8006 by default, using HTTPS for secure access.
+    source: https://pve.proxmox.com/wiki/Web_Interface
+
+  - id: proxmox_b4
+    question: What is a Container in Proxmox VE?
+    options:
+      - A lightweight virtualization technology using LXC
+      - A storage device
+      - A backup file
+      - A network interface
+    correct_answer: 0
+    explanation: In Proxmox VE, a container is a lightweight virtualization solution using LXC (Linux Containers) that shares the host kernel.
+    source: https://pve.proxmox.com/wiki/Linux_Container
+
+  - id: proxmox_b5
+    question: What is the minimum RAM recommended for running Proxmox VE?
+    options:
+      - 1GB
+      - 512MB
+      - 2GB
+      - 4GB
+    correct_answer: 0
+    explanation: The minimum recommended RAM for running Proxmox VE is 1GB, although more is recommended for running multiple virtual machines or containers.
+    source: https://www.proxmox.com/en/proxmox-ve/requirements
+
+  - id: proxmox_b6
+    question: What is a VM ID in Proxmox?
+    options:
+      - A unique number identifying a virtual machine or container
+      - A network address
+      - A storage device
+      - A user account
+    correct_answer: 0
+    explanation: A VM ID is a unique numerical identifier assigned to each virtual machine or container in Proxmox VE.
+    source: https://pve.proxmox.com/wiki/VM_IDs
+
+  - id: proxmox_b7
+    question: What is the purpose of the Proxmox Backup Server?
+    options:
+      - To create and manage backups of virtual machines and containers
+      - To host websites
+      - To manage network traffic
+      - To store user data
+    correct_answer: 0
+    explanation: Proxmox Backup Server is an enterprise backup solution for backing up and restoring virtual machines, containers, and physical hosts.
+    source: https://www.proxmox.com/en/proxmox-backup-server
+
+  - id: proxmox_b8
+    question: What is a node in Proxmox VE?
+    options:
+      - A physical server running Proxmox VE
+      - A virtual machine
+      - A container
+      - A storage device
+    correct_answer: 0
+    explanation: A node in Proxmox VE refers to a physical server that runs the Proxmox VE software and can host virtual machines and containers.
+    source: https://pve.proxmox.com/wiki/Cluster_Manager
+
+  - id: proxmox_b9
+    question: What is the default username for Proxmox VE web interface?
+    options:
+      - root
+      - admin
+      - proxmox
+      - user
+    correct_answer: 0
+    explanation: The default username for accessing the Proxmox VE web interface is root, which is the system's root user.
+    source: https://pve.proxmox.com/wiki/Web_Interface_And_CLI
+
+  - id: proxmox_b10
+    question: What file system is recommended for Proxmox VE storage?
+    options:
+      - ZFS
+      - FAT32
+      - NTFS
+      - exFAT
+    correct_answer: 0
+    explanation: ZFS is highly recommended for Proxmox VE storage due to its advanced features like snapshots, data integrity, and RAID capabilities.
+    source: https://pve.proxmox.com/wiki/Storage 

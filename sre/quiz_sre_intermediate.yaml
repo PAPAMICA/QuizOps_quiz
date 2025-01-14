@@ -1,0 +1,116 @@
+id: sre_intermediate
+category: sre
+level: intermediate
+title: Site Reliability Engineering Intermediate
+description: Explore advanced concepts and practices in Site Reliability Engineering
+
+questions:
+  - id: q1
+    question: What is the relationship between SLIs, SLOs, and SLAs?
+    options:
+      - SLIs measure service levels, SLOs set targets for SLIs, and SLAs are contracts based on SLOs
+      - They are different names for the same concept
+      - SLIs are less important than SLOs and SLAs
+      - They are only used in large organizations
+    explanation: SLIs (Service Level Indicators) measure specific aspects of service levels, SLOs (Service Level Objectives) set target values for these measurements, and SLAs (Service Level Agreements) are contracts with users based on these objectives.
+    source: "Google SRE Book - https://sre.google/sre-book/service-level-objectives/"
+    correct_answer: 0
+
+  - id: q2
+    question: How does the concept of "Risk Budget" relate to "Error Budget"?
+    options:
+      - Risk budget helps determine error budget by quantifying acceptable risk levels
+      - They are unrelated concepts
+      - Risk budget replaces error budget
+      - Risk budget is only used in financial contexts
+    explanation: Risk budget helps organizations determine appropriate error budgets by quantifying the level of risk they're willing to accept, which then informs the setting of SLOs and error budgets.
+    source: "Google SRE Book - https://sre.google/sre-book/embracing-risk/"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the purpose of implementing "Defense in Depth" in SRE?
+    options:
+      - To create multiple layers of security and reliability controls
+      - To reduce system performance
+      - To increase system complexity
+      - To replace monitoring systems
+    explanation: Defense in Depth implements multiple layers of security and reliability controls to ensure that if one layer fails, other layers will prevent system failure, enhancing overall reliability.
+    source: "Google SRE Book - https://sre.google/sre-book/addressing-cascading-failures/"
+    correct_answer: 0
+
+  - id: q4
+    question: How does "Canary Analysis" contribute to reliability?
+    options:
+      - By testing changes on a small subset of users before full deployment
+      - By increasing system load
+      - By replacing monitoring systems
+      - By eliminating the need for testing
+    explanation: Canary Analysis improves reliability by testing changes on a small subset of users or traffic first, allowing detection of issues before they affect the entire user base.
+    source: "Google SRE Book - https://sre.google/sre-book/release-engineering/"
+    correct_answer: 0
+
+  - id: q5
+    question: What is the significance of "Time to Detect" (TTD) in incident management?
+    options:
+      - It measures how quickly an organization can identify problems
+      - It's only relevant for security incidents
+      - It's less important than Time to Resolution
+      - It's only used in small organizations
+    explanation: Time to Detect is crucial as it represents how quickly an organization can identify problems, directly impacting the total duration and severity of incidents.
+    source: "Google SRE Book - https://sre.google/sre-book/monitoring-distributed-systems/"
+    correct_answer: 0
+
+  - id: q6
+    question: How does "Capacity Planning" relate to "Error Budgets"?
+    options:
+      - Proper capacity planning helps maintain error budgets by preventing resource-related failures
+      - They are completely independent concepts
+      - Capacity planning replaces error budgets
+      - Error budgets determine capacity needs
+    explanation: Effective capacity planning helps maintain error budgets by ensuring sufficient resources are available to meet demand while staying within reliability targets.
+    source: "Google SRE Book - https://sre.google/sre-book/software-engineering-in-sre/"
+    correct_answer: 0
+
+  - id: q7
+    question: What role does "Configuration as Code" play in SRE practices?
+    options:
+      - It enables version control, testing, and automation of infrastructure configuration
+      - It's only used for application code
+      - It increases manual work
+      - It's only relevant for development teams
+    explanation: Configuration as Code allows treating infrastructure configuration like application code, enabling version control, testing, and automation, which improves reliability and reduces human error.
+    source: "Google SRE Book - https://sre.google/sre-book/configuration-design/"
+    correct_answer: 0
+
+  - id: q8
+    question: How does "Chaos Engineering" contribute to system reliability?
+    options:
+      - By proactively testing system resilience through controlled experiments
+      - By creating random system failures
+      - By replacing traditional testing
+      - By increasing system complexity
+    explanation: Chaos Engineering improves reliability by proactively identifying weaknesses through controlled experiments that test system resilience under various failure conditions.
+    source: "Principles of Chaos Engineering - https://principlesofchaos.org/"
+    correct_answer: 0
+
+  - id: q9
+    question: What is the purpose of "Service Level Indicators" (SLI) Budget?
+    options:
+      - To allocate resources for measuring and maintaining different SLIs
+      - To replace error budgets
+      - To increase system complexity
+      - To reduce monitoring costs
+    explanation: SLI budgets help organizations allocate resources effectively for measuring and maintaining different service level indicators, ensuring comprehensive reliability monitoring.
+    source: "Google SRE Book - https://sre.google/sre-book/service-level-objectives/"
+    correct_answer: 0
+
+  - id: q10
+    question: How does "Technical Debt" impact SRE practices?
+    options:
+      - It can reduce reliability and increase toil if not managed properly
+      - It only affects development teams
+      - It has no impact on reliability
+      - It's beneficial for SRE practices
+    explanation: Technical debt can significantly impact reliability by increasing system complexity and toil, making it harder to maintain SLOs and manage incidents effectively.
+    source: "Google SRE Book - https://sre.google/sre-book/software-engineering-in-sre/"
+    correct_answer: 0 

@@ -1,0 +1,116 @@
+id: salt_intermediate
+category: salt
+level: intermediate
+title: Salt Advanced Operations
+description: Test your knowledge of intermediate Salt concepts and features
+
+questions:
+  - id: salt_i1
+    question: What is Salt Event System?
+    options:
+      - A real-time event bus for monitoring Salt infrastructure
+      - A historical data collector for system metrics
+      - A configuration validator for state files
+      - A package management system for updates
+    correct_answer: 0
+    explanation: The Salt Event System is a real-time event bus that allows monitoring and responding to events in Salt infrastructure.
+    source: https://docs.saltproject.io/en/latest/topics/event/index.html
+
+  - id: salt_i2
+    question: What is Salt Reactor?
+    options:
+      - A system that automatically responds to Salt events
+      - A performance monitoring tool for resources
+      - A configuration backup service for states
+      - A network management tool for routing
+    correct_answer: 0
+    explanation: Salt Reactor automatically responds to events from the event system by executing predefined actions.
+    source: https://docs.saltproject.io/en/latest/topics/reactor/index.html
+
+  - id: salt_i3
+    question: What is Salt Syndic?
+    options:
+      - A master of masters for hierarchical Salt control
+      - A load balancer for distributing requests
+      - A backup system for configuration data
+      - A monitoring service for system logs
+    correct_answer: 0
+    explanation: Salt Syndic allows creating a master of masters, enabling hierarchical control in large infrastructures.
+    source: https://docs.saltproject.io/en/latest/topics/topology/syndic.html
+
+  - id: salt_i4
+    question: What is Salt Mine?
+    options:
+      - A data collection and sharing system between minions
+      - A central repository for state files
+      - A monitoring platform for metrics
+      - A backup service for system data
+    correct_answer: 0
+    explanation: Salt Mine allows minions to share data with each other and the master for cross-minion operations.
+    source: https://docs.saltproject.io/en/latest/topics/mine/index.html
+
+  - id: salt_i5
+    question: What is Salt Proxy Minion?
+    options:
+      - A minion that manages devices without Salt support
+      - A load balancer for network traffic
+      - A monitoring agent for services
+      - A backup system for configurations
+    correct_answer: 0
+    explanation: Proxy Minions allow Salt to manage devices that cannot run a standard Salt Minion, like network devices.
+    source: https://docs.saltproject.io/en/latest/topics/proxyminion/index.html
+
+  - id: salt_i6
+    question: What is Salt Beacons?
+    options:
+      - A monitoring system that watches for system events
+      - A configuration management tool for states
+      - A package deployment system for updates
+      - A logging service for error tracking
+    correct_answer: 0
+    explanation: Beacons monitor system events and changes, triggering Salt events when specified conditions occur.
+    source: https://docs.saltproject.io/en/latest/topics/beacons/index.html
+
+  - id: salt_i7
+    question: What is Salt Orchestration?
+    options:
+      - A system for coordinating actions across multiple minions
+      - A monitoring platform for system metrics
+      - A backup service for configuration data
+      - A package management tool for updates
+    correct_answer: 0
+    explanation: Salt Orchestration coordinates complex operations across multiple minions in a specific order.
+    source: https://docs.saltproject.io/en/latest/topics/orchestrate/index.html
+
+  - id: salt_i8
+    question: What is Salt Cloud?
+    options:
+      - A cloud provisioning system integrated with Salt
+      - A monitoring service for cloud resources
+      - A backup platform for cloud data
+      - A network manager for cloud services
+    correct_answer: 0
+    explanation: Salt Cloud is a cloud provisioning system that integrates with various cloud providers to create and manage instances.
+    source: https://docs.saltproject.io/en/latest/topics/cloud/index.html
+
+  - id: salt_i9
+    question: What is Salt Targeting?
+    options:
+      - A system for selecting specific minions for commands
+      - A monitoring tool for system resources
+      - A backup service for minion data
+      - A configuration validator for states
+    correct_answer: 0
+    explanation: Salt Targeting allows selecting specific minions for command execution based on various criteria.
+    source: https://docs.saltproject.io/en/latest/topics/targeting/index.html
+
+  - id: salt_i10
+    question: What is Salt Schedule?
+    options:
+      - A system for scheduling recurring Salt functions
+      - A monitoring platform for time tracking
+      - A backup service for periodic data
+      - A configuration manager for cron jobs
+    correct_answer: 0
+    explanation: Salt Schedule allows scheduling Salt functions to run at specific times or intervals.
+    source: https://docs.saltproject.io/en/latest/topics/jobs/schedule.html 

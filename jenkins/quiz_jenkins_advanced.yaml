@@ -1,0 +1,116 @@
+id: jenkins_advanced
+category: jenkins
+level: advanced
+title: Jenkins Enterprise and Advanced Pipeline Concepts
+description: Test your knowledge of Jenkins enterprise features and advanced pipeline concepts
+
+questions:
+  - id: jenkins_a1
+    question: What is Jenkins Configuration as Code (JCasC)?
+    options:
+      - A way to configure Jenkins using YAML files
+      - A pipeline type
+      - A build tool
+      - A deployment strategy
+    correct_answer: 0
+    explanation: Jenkins Configuration as Code allows you to configure Jenkins and its plugins using YAML files, enabling version control and automation of Jenkins configuration.
+    source: https://www.jenkins.io/projects/jcasc/
+
+  - id: jenkins_a2
+    question: What is Jenkins High Availability?
+    options:
+      - A setup to ensure Jenkins service continuity
+      - A backup system
+      - A security protocol
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Jenkins High Availability involves setting up multiple Jenkins instances to ensure service continuity in case of failures, often using active-passive configurations.
+    source: https://www.jenkins.io/doc/book/scaling/high-availability/
+
+  - id: jenkins_a3
+    question: What is Pipeline Unit Testing?
+    options:
+      - Testing Jenkins pipeline code using a testing framework
+      - Testing build outputs
+      - Testing plugins
+      - Testing agents
+    correct_answer: 0
+    explanation: Pipeline Unit Testing allows you to write unit tests for Jenkins pipeline code using frameworks like JenkinsPipelineUnit, ensuring pipeline reliability.
+    source: https://github.com/jenkinsci/JenkinsPipelineUnit
+
+  - id: jenkins_a4
+    question: What is Jenkins X?
+    options:
+      - A cloud native CI/CD solution for modern cloud applications
+      - A plugin manager
+      - A monitoring system
+      - A backup tool
+    correct_answer: 0
+    explanation: Jenkins X is a cloud native CI/CD solution for modern cloud applications on Kubernetes, automating the entire software delivery pipeline.
+    source: https://jenkins-x.io/docs/overview/what-is-jenkins-x/
+
+  - id: jenkins_a5
+    question: What is Pipeline REST API?
+    options:
+      - An API to interact with Jenkins pipelines programmatically
+      - A monitoring tool
+      - A deployment system
+      - A security protocol
+    correct_answer: 0
+    explanation: The Pipeline REST API allows programmatic interaction with Jenkins pipelines, enabling external systems to trigger and monitor pipeline executions.
+    source: https://www.jenkins.io/doc/book/using/remote-access-api/
+
+  - id: jenkins_a6
+    question: What is Cross Pipeline Triggering?
+    options:
+      - Triggering one pipeline from another pipeline
+      - A backup process
+      - A security feature
+      - A monitoring system
+    correct_answer: 0
+    explanation: Cross Pipeline Triggering allows one pipeline to trigger another pipeline, enabling complex workflow orchestration and dependencies between pipelines.
+    source: https://www.jenkins.io/doc/pipeline/steps/pipeline-build-step/
+
+  - id: jenkins_a7
+    question: What is Pipeline Load Balancing?
+    options:
+      - Distributing pipeline workload across multiple agents
+      - A backup strategy
+      - A security protocol
+      - A monitoring system
+    correct_answer: 0
+    explanation: Pipeline Load Balancing involves distributing pipeline workload across multiple Jenkins agents to optimize resource utilization and build times.
+    source: https://www.jenkins.io/doc/book/scaling/scaling-jenkins-on-kubernetes/
+
+  - id: jenkins_a8
+    question: What is Pipeline Durability?
+    options:
+      - A setting that controls how pipeline data is persisted
+      - A backup system
+      - A security feature
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Pipeline Durability settings control how pipeline data is written to disk, balancing between performance and reliability in case of system failures.
+    source: https://www.jenkins.io/doc/book/pipeline/scaling-pipeline/
+
+  - id: jenkins_a9
+    question: What is Artifact Fingerprinting?
+    options:
+      - A way to track and verify build artifacts across jobs
+      - A security protocol
+      - A backup system
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Artifact Fingerprinting allows tracking and verification of build artifacts across different jobs and builds in Jenkins.
+    source: https://www.jenkins.io/doc/pipeline/steps/core/#fingerprint-record-fingerprints-of-files-to-track-usage
+
+  - id: jenkins_a10
+    question: What is Pipeline Checkpoint?
+    options:
+      - A feature to resume pipeline execution from a saved point
+      - A backup system
+      - A security protocol
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Pipeline Checkpoint is an enterprise feature that allows pipelines to be resumed from a saved point after a Jenkins restart or failure.
+    source: https://www.jenkins.io/doc/book/pipeline/scaling-pipeline/#checkpoints 

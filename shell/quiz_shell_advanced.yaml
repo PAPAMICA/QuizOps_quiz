@@ -1,0 +1,116 @@
+id: shell_advanced
+category: shell
+level: advanced
+title: Shell Expert Level
+description: Test your expertise in advanced shell scripting concepts and features
+
+questions:
+  - id: shell_a1
+    question: What is shell coprocessing?
+    options:
+      - Running a subprocess with bidirectional communication
+      - Managing multiple shell process priorities
+      - Coordinating parallel script execution
+      - Implementing process synchronization
+    correct_answer: 0
+    explanation: Coprocessing allows running a subprocess asynchronously with bidirectional pipe communication to the parent shell.
+    source: https://www.gnu.org/software/bash/manual/html_node/Coprocesses.html
+
+  - id: shell_a2
+    question: What is shell job control?
+    options:
+      - Managing background and foreground processes
+      - Controlling system resource allocation
+      - Implementing process scheduling tasks
+      - Handling process execution states
+    correct_answer: 0
+    explanation: Job control allows managing multiple processes, moving them between background and foreground, and controlling their execution.
+    source: https://www.gnu.org/software/bash/manual/html_node/Job-Control.html
+
+  - id: shell_a3
+    question: What is shell parameter indirection?
+    options:
+      - Referencing variables using dynamic names
+      - Managing indirect parameter passing
+      - Implementing variable scope control
+      - Handling parameter type conversion
+    correct_answer: 0
+    explanation: Parameter indirection allows using the value of one variable as the name of another variable to access its value.
+    source: https://www.gnu.org/software/bash/manual/html_node/Shell-Parameters.html
+
+  - id: shell_a4
+    question: What is shell process substitution?
+    options:
+      - Creating temporary files from command output
+      - Managing process output redirection
+      - Implementing command output control
+      - Handling process stream conversion
+    correct_answer: 0
+    explanation: Process substitution creates a temporary file containing command output that can be used as input to another command.
+    source: https://www.gnu.org/software/bash/manual/html_node/Process-Substitution.html
+
+  - id: shell_a5
+    question: What is shell name reference?
+    options:
+      - Creating variables that reference other variables
+      - Managing variable naming conventions
+      - Implementing variable scope control
+      - Handling variable type definitions
+    correct_answer: 0
+    explanation: Name references allow creating variables that reference other variables, similar to pointers in other languages.
+    source: https://www.gnu.org/software/bash/manual/html_node/Shell-Parameters.html
+
+  - id: shell_a6
+    question: What is shell event designation?
+    options:
+      - Referencing commands from command history
+      - Managing historical command execution
+      - Implementing command recall systems
+      - Handling command sequence control
+    correct_answer: 0
+    explanation: Event designation allows referencing and re-executing commands from the shell's command history using various syntax.
+    source: https://www.gnu.org/software/bash/manual/html_node/Event-Designators.html
+
+  - id: shell_a7
+    question: What is shell parameter transformation?
+    options:
+      - Modifying parameter values using patterns
+      - Managing parameter value conversion
+      - Implementing parameter type changes
+      - Handling parameter format control
+    correct_answer: 0
+    explanation: Parameter transformation allows modifying parameter values using pattern matching and substitution operations.
+    source: https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
+
+  - id: shell_a8
+    question: What is shell restricted mode?
+    options:
+      - Limiting shell functionality for security
+      - Managing shell access permissions
+      - Implementing shell usage control
+      - Handling shell command restrictions
+    correct_answer: 0
+    explanation: Restricted mode limits shell functionality by disabling certain commands and features for security purposes.
+    source: https://www.gnu.org/software/bash/manual/html_node/The-Restricted-Shell.html
+
+  - id: shell_a9
+    question: What is shell arithmetic evaluation?
+    options:
+      - Performing complex mathematical operations
+      - Managing numerical computation tasks
+      - Implementing calculation routines
+      - Handling mathematical expressions
+    correct_answer: 0
+    explanation: Arithmetic evaluation allows performing complex mathematical operations and calculations within shell scripts.
+    source: https://www.gnu.org/software/bash/manual/html_node/Shell-Arithmetic.html
+
+  - id: shell_a10
+    question: What is shell array expansion?
+    options:
+      - Processing arrays with special operators
+      - Managing array element operations
+      - Implementing array manipulation
+      - Handling array value processing
+    correct_answer: 0
+    explanation: Array expansion allows processing array elements using special operators and parameter expansion syntax.
+    source: https://www.gnu.org/software/bash/manual/html_node/Arrays.html 

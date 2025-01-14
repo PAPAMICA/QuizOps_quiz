@@ -1,0 +1,116 @@
+id: grafana_advanced
+category: grafana
+level: advanced
+title: Grafana Enterprise and Advanced Operations
+description: Test your knowledge of Grafana enterprise features and advanced operations
+
+questions:
+  - id: grafana_a1
+    question: What is Grafana Enterprise Logs?
+    options:
+      - A scalable self-managed log aggregation solution
+      - A visualization plugin
+      - A dashboard template
+      - A monitoring agent
+    correct_answer: 0
+    explanation: Grafana Enterprise Logs is a highly scalable logs database built on Grafana Loki, offering enterprise features like audit logging and advanced authentication.
+    source: https://grafana.com/docs/enterprise-logs/latest/
+
+  - id: grafana_a2
+    question: What is Grafana High Availability?
+    options:
+      - A setup to ensure continuous service availability
+      - A visualization type
+      - A data source
+      - A monitoring system
+    correct_answer: 0
+    explanation: Grafana High Availability involves setting up multiple Grafana servers behind a load balancer to ensure continuous service availability and fault tolerance.
+    source: https://grafana.com/docs/grafana/latest/setup-grafana/set-up-for-high-availability/
+
+  - id: grafana_a3
+    question: What is Grafana White Labeling?
+    options:
+      - Customizing Grafana's appearance with company branding
+      - A reporting tool
+      - A dashboard template
+      - A monitoring system
+    correct_answer: 0
+    explanation: White Labeling is an enterprise feature that allows organizations to customize Grafana's appearance with their own branding and styling.
+    source: https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/configure-custom-branding/
+
+  - id: grafana_a4
+    question: What is Grafana Data Source Permissions?
+    options:
+      - Fine-grained access control for data sources
+      - A visualization type
+      - A dashboard template
+      - An alert system
+    correct_answer: 0
+    explanation: Data Source Permissions allow organizations to control which users and teams can query specific data sources, enhancing security and access control.
+    source: https://grafana.com/docs/grafana/latest/administration/data-source-management/
+
+  - id: grafana_a5
+    question: What is Grafana Enterprise Metrics?
+    options:
+      - A scalable self-managed metrics platform
+      - A visualization plugin
+      - A dashboard system
+      - An alert manager
+    correct_answer: 0
+    explanation: Grafana Enterprise Metrics is a highly scalable Prometheus-compatible metrics platform offering enterprise features like multi-tenancy and high availability.
+    source: https://grafana.com/docs/enterprise-metrics/latest/
+
+  - id: grafana_a6
+    question: What is Grafana Reporting?
+    options:
+      - Automated generation of dashboard reports
+      - A visualization type
+      - A data source
+      - A monitoring system
+    correct_answer: 0
+    explanation: Grafana Reporting is an enterprise feature that enables automated generation and delivery of dashboard reports in various formats.
+    source: https://grafana.com/docs/grafana/latest/dashboards/share-dashboards-panels/#reporting
+
+  - id: grafana_a7
+    question: What is Grafana Audit Logs?
+    options:
+      - Detailed logs of user actions and system changes
+      - A visualization plugin
+      - A dashboard template
+      - A monitoring agent
+    correct_answer: 0
+    explanation: Audit Logs provide detailed records of user actions and system changes in Grafana, essential for security and compliance requirements.
+    source: https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/audit-grafana/
+
+  - id: grafana_a8
+    question: What is Grafana Enterprise SSO?
+    options:
+      - Enhanced single sign-on with additional providers
+      - A visualization type
+      - A data source
+      - A monitoring system
+    correct_answer: 0
+    explanation: Enterprise SSO extends Grafana's authentication capabilities with additional providers and enhanced features for enterprise environments.
+    source: https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/
+
+  - id: grafana_a9
+    question: What is Grafana Usage Insights?
+    options:
+      - Analytics about dashboard usage and performance
+      - A reporting tool
+      - A data source
+      - An alert system
+    correct_answer: 0
+    explanation: Usage Insights provides analytics about dashboard usage, helping organizations understand how their Grafana deployment is being used.
+    source: https://grafana.com/docs/grafana/latest/dashboards/assess-dashboard-usage/
+
+  - id: grafana_a10
+    question: What is Grafana Enterprise Traces?
+    options:
+      - A scalable distributed tracing solution
+      - A visualization plugin
+      - A dashboard system
+      - A monitoring agent
+    correct_answer: 0
+    explanation: Grafana Enterprise Traces is a highly scalable distributed tracing system built on Tempo, offering enterprise features like advanced security and multi-tenancy.
+    source: https://grafana.com/docs/enterprise-traces/latest/ 

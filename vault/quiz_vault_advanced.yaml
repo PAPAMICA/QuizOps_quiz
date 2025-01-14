@@ -1,0 +1,116 @@
+id: vault_advanced
+category: vault
+level: advanced
+title: Vault Expert Operations
+description: Test your expertise in advanced HashiCorp Vault concepts and enterprise features
+
+questions:
+  - id: vault_a1
+    question: How does Vault's Transform secrets engine protect sensitive data?
+    options:
+      - Performs format-preserving encryption and tokenization
+      - Only provides basic encryption without format preservation
+      - Stores encrypted data without transformation
+      - Manages access control for encrypted data
+    correct_answer: 0
+    explanation: Transform secrets engine performs format-preserving encryption and tokenization while maintaining data format and referential integrity.
+    source: https://www.vaultproject.io/docs/secrets/transform
+
+  - id: vault_a2
+    question: What is the purpose of Vault's Auto-Unseal feature?
+    options:
+      - Automatically unseals Vault using cloud KMS or HSM
+      - Requires manual key shares for unsealing
+      - Only supports software-based unsealing
+      - Manages backup encryption keys
+    correct_answer: 0
+    explanation: Auto-Unseal automatically unseals Vault using cloud KMS or HSM, eliminating manual unseal operations.
+    source: https://www.vaultproject.io/docs/configuration/seal/index
+
+  - id: vault_a3
+    question: How does Vault's Namespaces feature work in Enterprise?
+    options:
+      - Creates isolated security domains with separate policies
+      - Only separates authentication methods
+      - Manages network segmentation
+      - Provides basic multi-tenancy
+    correct_answer: 0
+    explanation: Namespaces create isolated security domains with separate auth methods, secrets engines, and policies.
+    source: https://www.vaultproject.io/docs/enterprise/namespaces
+
+  - id: vault_a4
+    question: What is Vault's KMIP secrets engine used for?
+    options:
+      - Provides KMIP server functionality for key management
+      - Only manages internal Vault keys
+      - Stores encryption keys statically
+      - Handles basic key rotation
+    correct_answer: 0
+    explanation: KMIP secrets engine implements a KMIP server for centralized enterprise key management.
+    source: https://www.vaultproject.io/docs/secrets/kmip
+
+  - id: vault_a5
+    question: How does Vault's Performance Standby Nodes feature work?
+    options:
+      - Serves read requests while maintaining consistency
+      - Only provides backup capabilities
+      - Manages write operations independently
+      - Handles network load balancing
+    correct_answer: 0
+    explanation: Performance Standby Nodes can serve read requests while maintaining strong consistency with the active node.
+    source: https://www.vaultproject.io/docs/enterprise/performance-standby
+
+  - id: vault_a6
+    question: What is the purpose of Vault's MFA enforcement?
+    options:
+      - Requires multiple factors at auth and secret access
+      - Only enforces MFA at login
+      - Manages basic password authentication
+      - Provides network access control
+    correct_answer: 0
+    explanation: MFA can be enforced at both authentication time and secret access time using various authentication methods.
+    source: https://www.vaultproject.io/docs/enterprise/mfa
+
+  - id: vault_a7
+    question: How does Vault's HSM integration work?
+    options:
+      - Stores master keys and performs cryptographic operations
+      - Only provides basic key storage
+      - Manages software-based encryption
+      - Handles network security
+    correct_answer: 0
+    explanation: HSM integration allows storing master keys and performing cryptographic operations using hardware security modules.
+    source: https://www.vaultproject.io/docs/enterprise/hsm
+
+  - id: vault_a8
+    question: What is Vault's Integrated Storage (Raft) used for?
+    options:
+      - Provides built-in storage and HA capabilities
+      - Only stores basic key-value data
+      - Manages external storage systems
+      - Handles backup operations
+    correct_answer: 0
+    explanation: Integrated Storage provides built-in highly available storage using the Raft consensus protocol.
+    source: https://www.vaultproject.io/docs/configuration/storage/raft
+
+  - id: vault_a9
+    question: How does Vault's PKI secrets engine handle certificate management?
+    options:
+      - Generates and manages X.509 certificates dynamically
+      - Only stores pre-generated certificates
+      - Manages basic SSL/TLS configuration
+      - Provides network encryption
+    correct_answer: 0
+    explanation: PKI secrets engine generates X.509 certificates dynamically with full lifecycle management.
+    source: https://www.vaultproject.io/docs/secrets/pki
+
+  - id: vault_a10
+    question: What is Vault's Service Registration feature?
+    options:
+      - Registers services for service mesh integration
+      - Only manages internal services
+      - Handles basic service discovery
+      - Provides load balancing
+    correct_answer: 0
+    explanation: Service Registration enables integration with service mesh and service discovery systems.
+    source: https://www.vaultproject.io/docs/platform/k8s/injector 

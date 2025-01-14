@@ -1,0 +1,116 @@
+id: proxmox_intermediate
+category: proxmox
+level: intermediate
+title: Proxmox VE Advanced Operations
+description: Test your knowledge of intermediate Proxmox Virtual Environment concepts and features
+
+questions:
+  - id: proxmox_i1
+    question: What is Proxmox clustering?
+    options:
+      - A way to manage multiple Proxmox nodes as a single system
+      - A backup solution
+      - A storage type
+      - A network configuration
+    correct_answer: 0
+    explanation: Proxmox clustering allows multiple Proxmox VE nodes to be managed as a single system, providing high availability and load balancing capabilities.
+    source: https://pve.proxmox.com/wiki/Cluster_Manager
+
+  - id: proxmox_i2
+    question: What is the purpose of live migration in Proxmox?
+    options:
+      - Moving running VMs between nodes without downtime
+      - Creating backups
+      - Installing updates
+      - Managing storage
+    correct_answer: 0
+    explanation: Live migration allows you to move running virtual machines between Proxmox nodes without any downtime or service interruption.
+    source: https://pve.proxmox.com/wiki/Live_Migration
+
+  - id: proxmox_i3
+    question: What is the difference between backup and snapshot in Proxmox?
+    options:
+      - Backups are complete copies stored separately, snapshots are point-in-time states
+      - They are the same thing
+      - Backups are faster than snapshots
+      - Snapshots are more secure than backups
+    correct_answer: 0
+    explanation: Backups create complete copies of VMs/containers stored separately, while snapshots capture the state at a specific point in time without creating a full copy.
+    source: https://pve.proxmox.com/wiki/Backup_and_Restore
+
+  - id: proxmox_i4
+    question: What is the purpose of the Proxmox firewall?
+    options:
+      - Protect VMs and containers with network filtering rules
+      - Manage storage
+      - Create backups
+      - Monitor system resources
+    correct_answer: 0
+    explanation: The Proxmox firewall provides network security by allowing you to define and manage filtering rules for VMs, containers, and the host system.
+    source: https://pve.proxmox.com/wiki/Firewall
+
+  - id: proxmox_i5
+    question: What is template in Proxmox VE?
+    options:
+      - A pre-configured VM or container image used as a base for new instances
+      - A network configuration
+      - A backup file
+      - A storage type
+    correct_answer: 0
+    explanation: Templates are pre-configured VM or container images that can be used as a base to quickly create new instances with the same configuration.
+    source: https://pve.proxmox.com/wiki/Templates_and_Clones
+
+  - id: proxmox_i6
+    question: What is the purpose of Storage Replication in Proxmox?
+    options:
+      - Synchronize storage content between multiple nodes
+      - Create backups
+      - Monitor performance
+      - Manage networks
+    correct_answer: 0
+    explanation: Storage replication allows you to synchronize storage content between multiple nodes, providing data redundancy and high availability.
+    source: https://pve.proxmox.com/wiki/Storage_Replication
+
+  - id: proxmox_i7
+    question: What is the difference between QEMU and KVM in Proxmox?
+    options:
+      - QEMU is an emulator, KVM is a kernel module for hardware virtualization
+      - They are the same thing
+      - QEMU is newer than KVM
+      - KVM is for containers only
+    correct_answer: 0
+    explanation: QEMU is a hardware emulator, while KVM is a kernel module that allows QEMU to use hardware virtualization features for better performance.
+    source: https://pve.proxmox.com/wiki/KVM
+
+  - id: proxmox_i8
+    question: What is the purpose of CPU limits in Proxmox?
+    options:
+      - Control how much CPU resources a VM or container can use
+      - Monitor network traffic
+      - Manage storage
+      - Create backups
+    correct_answer: 0
+    explanation: CPU limits allow you to control and restrict how much CPU resources a virtual machine or container can utilize.
+    source: https://pve.proxmox.com/wiki/CPU_Limits
+
+  - id: proxmox_i9
+    question: What is the purpose of Bridge networking in Proxmox?
+    options:
+      - Connect VMs and containers to the network like physical machines
+      - Store backups
+      - Monitor performance
+      - Manage storage
+    correct_answer: 0
+    explanation: Bridge networking allows virtual machines and containers to connect to the network as if they were physical machines connected to a switch.
+    source: https://pve.proxmox.com/wiki/Network_Configuration
+
+  - id: proxmox_i10
+    question: What is the purpose of Resource Pools in Proxmox?
+    options:
+      - Group and organize VMs and containers with shared resources
+      - Create backups
+      - Monitor performance
+      - Manage storage
+    correct_answer: 0
+    explanation: Resource pools allow you to group and organize virtual machines and containers, making it easier to manage permissions and resources.
+    source: https://pve.proxmox.com/wiki/User_Management 

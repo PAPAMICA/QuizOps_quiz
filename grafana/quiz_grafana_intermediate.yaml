@@ -1,0 +1,116 @@
+id: grafana_intermediate
+category: grafana
+level: intermediate
+title: Grafana Advanced Features
+description: Test your knowledge of intermediate Grafana concepts and features
+
+questions:
+  - id: grafana_i1
+    question: What is Grafana Provisioning?
+    options:
+      - Automated way to configure Grafana resources
+      - A visualization type
+      - A database system
+      - A monitoring agent
+    correct_answer: 0
+    explanation: Grafana Provisioning allows you to configure Grafana resources (dashboards, data sources, etc.) using configuration files, enabling automation and version control.
+    source: https://grafana.com/docs/grafana/latest/administration/provisioning/
+
+  - id: grafana_i2
+    question: What is Grafana Transformations?
+    options:
+      - Processing and transforming data before visualization
+      - A data source type
+      - A dashboard template
+      - An alert system
+    correct_answer: 0
+    explanation: Transformations allow you to process and transform your data before it is visualized, enabling complex calculations and data manipulations.
+    source: https://grafana.com/docs/grafana/latest/panels-visualizations/query-transform-data/transform-data/
+
+  - id: grafana_i3
+    question: What is Grafana Annotations?
+    options:
+      - Time-based events marked on graphs
+      - Dashboard templates
+      - Alert rules
+      - Data sources
+    correct_answer: 0
+    explanation: Annotations are time-based events that can be displayed as markers on graphs, providing additional context to your visualizations.
+    source: https://grafana.com/docs/grafana/latest/dashboards/build-dashboards/annotate-visualizations/
+
+  - id: grafana_i4
+    question: What is Grafana OAuth?
+    options:
+      - An authentication mechanism for single sign-on
+      - A visualization type
+      - A data source
+      - A monitoring system
+    correct_answer: 0
+    explanation: OAuth in Grafana allows you to integrate with external authentication providers for single sign-on capabilities.
+    source: https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/
+
+  - id: grafana_i5
+    question: What is Grafana RBAC?
+    options:
+      - Role-based access control system
+      - A reporting tool
+      - A visualization type
+      - A data source
+    correct_answer: 0
+    explanation: Role-Based Access Control (RBAC) in Grafana allows you to manage user permissions and access to resources based on assigned roles.
+    source: https://grafana.com/docs/grafana/latest/administration/roles-and-permissions/
+
+  - id: grafana_i6
+    question: What is Grafana Loki?
+    options:
+      - A log aggregation system designed for Grafana
+      - A visualization type
+      - A dashboard template
+      - An alert system
+    correct_answer: 0
+    explanation: Grafana Loki is a horizontally scalable, highly available log aggregation system designed to be cost-effective and easy to operate.
+    source: https://grafana.com/docs/loki/latest/
+
+  - id: grafana_i7
+    question: What is Grafana Tempo?
+    options:
+      - A distributed tracing backend
+      - A visualization plugin
+      - A dashboard system
+      - An alert manager
+    correct_answer: 0
+    explanation: Grafana Tempo is a distributed tracing backend that is easy to operate at scale, integrating with Grafana for trace visualization.
+    source: https://grafana.com/docs/tempo/latest/
+
+  - id: grafana_i8
+    question: What is Grafana Plugin Development?
+    options:
+      - Creating custom extensions for Grafana
+      - Writing alert rules
+      - Creating dashboards
+      - Managing data sources
+    correct_answer: 0
+    explanation: Plugin Development allows you to extend Grafana's functionality by creating custom data sources, panels, or applications.
+    source: https://grafana.com/docs/grafana/latest/developers/plugins/
+
+  - id: grafana_i9
+    question: What is Grafana Dashboard Templating?
+    options:
+      - Creating reusable dashboard templates with variables
+      - A visualization type
+      - A data source
+      - An alert system
+    correct_answer: 0
+    explanation: Dashboard Templating allows you to create reusable dashboards by using variables that can be changed on the fly.
+    source: https://grafana.com/docs/grafana/latest/dashboards/variables/
+
+  - id: grafana_i10
+    question: What is Grafana Image Rendering?
+    options:
+      - A service to generate images from dashboards
+      - A visualization type
+      - A data source
+      - An alert system
+    correct_answer: 0
+    explanation: Image Rendering in Grafana allows you to generate and save images of dashboards and panels, useful for sharing and reporting.
+    source: https://grafana.com/docs/grafana/latest/setup-grafana/image-rendering/ 

@@ -1,0 +1,116 @@
+id: sre_advanced
+category: sre
+level: advanced
+title: Advanced Site Reliability Engineering
+description: Master complex concepts and practices in Site Reliability Engineering
+
+questions:
+  - id: q1
+    question: How does Non-Abstract Large System Design (NALSD) contribute to system reliability?
+    options:
+      - By providing a structured approach to designing large-scale systems with concrete implementation details
+      - By simplifying system architecture
+      - By reducing system complexity
+      - By eliminating the need for monitoring
+    explanation: NALSD contributes to reliability by providing a structured approach to designing large-scale systems that considers concrete implementation details, capacity planning, failure modes, and dependencies.
+    source: "Google SRE Book - https://sre.google/sre-book/non-abstract-design/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the relationship between Service Level Objectives (SLOs) and the concept of "error budget burn rate"?
+    options:
+      - Error budget burn rate measures how quickly a service is consuming its error budget relative to the SLO time window
+      - They are unrelated concepts
+      - Error budget burn rate only applies to security incidents
+      - SLOs are determined by burn rates
+    explanation: Error budget burn rate indicates how quickly a service is consuming its error budget relative to the SLO time window, helping teams identify and respond to reliability issues before SLO breaches occur.
+    source: "Google SRE Workbook - https://sre.google/workbook/implementing-slos/"
+    correct_answer: 0
+
+  - id: q3
+    question: How does the concept of "Production Readiness Review" (PRR) enhance system reliability?
+    options:
+      - By ensuring services meet specific reliability criteria before deployment to production
+      - By replacing testing processes
+      - By simplifying deployment procedures
+      - By eliminating the need for monitoring
+    explanation: PRR enhances reliability by ensuring services meet specific criteria for reliability, scalability, monitoring, and incident response before being deployed to production.
+    source: "Google SRE Book - https://sre.google/sre-book/evolving-sre-engagement/"
+    correct_answer: 0
+
+  - id: q4
+    question: What role does "Disaster Recovery Testing" play in maintaining system reliability?
+    options:
+      - By validating recovery procedures and identifying gaps in disaster response capabilities
+      - By preventing all disasters
+      - By replacing regular backups
+      - By eliminating the need for monitoring
+    explanation: Disaster Recovery Testing validates recovery procedures and identifies gaps in disaster response capabilities through regular exercises and simulations of various failure scenarios.
+    source: "Google SRE Workbook - https://sre.google/workbook/disaster-testing/"
+    correct_answer: 0
+
+  - id: q5
+    question: How does "Queue Theory" apply to capacity planning in SRE?
+    options:
+      - By helping predict system behavior under different load conditions and queue lengths
+      - By eliminating the need for queues
+      - By replacing load balancers
+      - By simplifying system architecture
+    explanation: Queue Theory helps predict system behavior under different load conditions, enabling better capacity planning by understanding relationships between utilization, latency, and queue length.
+    source: "Google SRE Book - https://sre.google/sre-book/addressing-cascading-failures/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the significance of "Control Theory" in SRE practices?
+    options:
+      - By providing mathematical frameworks for designing stable automated control systems
+      - By eliminating manual interventions
+      - By replacing monitoring systems
+      - By simplifying system architecture
+    explanation: Control Theory provides mathematical frameworks for designing stable automated control systems, helping ensure reliable system behavior through proper feedback loops and control mechanisms.
+    source: "Google SRE Book - https://sre.google/sre-book/practical-alerting/"
+    correct_answer: 0
+
+  - id: q7
+    question: How does "Canarying with Gradual Roll-outs" enhance deployment reliability?
+    options:
+      - By enabling early detection of issues while limiting potential impact through controlled deployment stages
+      - By eliminating the need for testing
+      - By replacing CI/CD pipelines
+      - By simplifying deployment procedures
+    explanation: Canarying with Gradual Roll-outs enhances reliability by enabling early detection of issues while limiting potential impact through controlled deployment stages with increasing traffic allocation.
+    source: "Google SRE Workbook - https://sre.google/workbook/canarying-releases/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of "Service Dependency Analysis" in SRE?
+    options:
+      - To understand and manage the impact of dependencies on system reliability
+      - To eliminate all dependencies
+      - To simplify system architecture
+      - To replace monitoring systems
+    explanation: Service Dependency Analysis helps understand and manage how dependencies affect system reliability, enabling better risk assessment and mitigation strategies.
+    source: "Google SRE Book - https://sre.google/sre-book/managing-critical-state/"
+    correct_answer: 0
+
+  - id: q9
+    question: How does "Continuous Profiling" contribute to system reliability?
+    options:
+      - By identifying performance bottlenecks and resource usage patterns over time
+      - By replacing regular monitoring
+      - By eliminating performance issues
+      - By simplifying system architecture
+    explanation: Continuous Profiling contributes to reliability by helping identify performance bottlenecks and resource usage patterns over time, enabling proactive optimization and capacity planning.
+    source: "Google SRE Book - https://sre.google/sre-book/monitoring-distributed-systems/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the role of "Reliability Pattern Analysis" in SRE?
+    options:
+      - By identifying common patterns in system behavior that affect reliability
+      - By eliminating all reliability issues
+      - By replacing incident analysis
+      - By simplifying system architecture
+    explanation: Reliability Pattern Analysis helps identify and understand common patterns in system behavior that affect reliability, enabling better design decisions and proactive reliability improvements.
+    source: "Google SRE Workbook - https://sre.google/workbook/implementing-slos/"
+    correct_answer: 0 

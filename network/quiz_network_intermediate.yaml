@@ -1,0 +1,116 @@
+id: network_intermediate
+category: network
+level: intermediate
+title: Network Protocols and Services
+description: Test your knowledge of networking protocols, services, and infrastructure
+
+questions:
+  - id: network_i1
+    question: What is VLAN?
+    options:
+      - Virtual LAN - a logical subdivision of a physical network
+      - Virtual Local Area Network Service
+      - Virtual Link Access Node
+      - Virtual LAN Access Protocol
+    correct_answer: 0
+    explanation: A VLAN (Virtual LAN) is a logical subdivision of a physical network that allows devices to be grouped together regardless of physical location.
+    source: https://standards.ieee.org/standard/802_1Q-2018.html
+
+  - id: network_i2
+    question: What is NAT?
+    options:
+      - Network Address Translation - maps private to public IP addresses
+      - Network Access Terminal
+      - Network Authentication Tool
+      - Network Address Terminal
+    correct_answer: 0
+    explanation: NAT (Network Address Translation) is a method of mapping private IP addresses to a public IP address, enabling multiple devices to share a single public IP.
+    source: https://www.ietf.org/rfc/rfc3022.txt
+
+  - id: network_i3
+    question: What is OSPF?
+    options:
+      - Open Shortest Path First - a routing protocol
+      - Open System Protocol Framework
+      - Operating System Protocol Format
+      - Open Source Protocol Function
+    correct_answer: 0
+    explanation: OSPF (Open Shortest Path First) is a routing protocol that determines the best path for packets as they pass through a set of connected networks.
+    source: https://www.ietf.org/rfc/rfc2328.txt
+
+  - id: network_i4
+    question: What is a VLAN trunk?
+    options:
+      - A link that carries multiple VLANs between switches
+      - A backup VLAN connection
+      - A virtual router
+      - A network monitoring tool
+    correct_answer: 0
+    explanation: A VLAN trunk is a network link that carries traffic for multiple VLANs between switches, allowing VLANs to span across multiple switches.
+    source: https://standards.ieee.org/standard/802_1Q-2018.html
+
+  - id: network_i5
+    question: What is SNMP?
+    options:
+      - Simple Network Management Protocol - for monitoring network devices
+      - Secure Network Management Protocol
+      - System Network Management Program
+      - Simple Network Monitoring Program
+    correct_answer: 0
+    explanation: SNMP (Simple Network Management Protocol) is a protocol used for collecting and organizing information about managed devices on IP networks.
+    source: https://www.ietf.org/rfc/rfc1157.txt
+
+  - id: network_i6
+    question: What is BGP?
+    options:
+      - Border Gateway Protocol - routes traffic between autonomous systems
+      - Basic Gateway Protocol
+      - Backup Gateway Protocol
+      - Bridge Gateway Protocol
+    correct_answer: 0
+    explanation: BGP (Border Gateway Protocol) is the protocol that makes core routing decisions on the Internet, routing traffic between autonomous systems.
+    source: https://www.ietf.org/rfc/rfc4271.txt
+
+  - id: network_i7
+    question: What is STP?
+    options:
+      - Spanning Tree Protocol - prevents network loops
+      - Simple Transfer Protocol
+      - System Transfer Protocol
+      - Secure Transfer Protocol
+    correct_answer: 0
+    explanation: STP (Spanning Tree Protocol) prevents loops in network topologies by ensuring that there is only one active path between network segments.
+    source: https://standards.ieee.org/standard/802_1D-2004.html
+
+  - id: network_i8
+    question: What is QoS?
+    options:
+      - Quality of Service - prioritizes network traffic
+      - Query of Service
+      - Quick Operating System
+      - Quantum Operating System
+    correct_answer: 0
+    explanation: QoS (Quality of Service) is a set of technologies that work on a network to guarantee its ability to dependably run high-priority applications and traffic.
+    source: https://www.ietf.org/rfc/rfc2475.txt
+
+  - id: network_i9
+    question: What is HSRP?
+    options:
+      - Hot Standby Router Protocol - provides network redundancy
+      - High Speed Router Protocol
+      - Host System Router Protocol
+      - Hardware System Router Protocol
+    correct_answer: 0
+    explanation: HSRP (Hot Standby Router Protocol) provides network redundancy for IP networks, ensuring that user traffic immediately recovers from first hop failures.
+    source: https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/9234-hsrpguidetoc.html
+
+  - id: network_i10
+    question: What is Port Mirroring?
+    options:
+      - Copying network traffic for monitoring purposes
+      - Creating backup ports
+      - Connecting multiple ports
+      - Securing network ports
+    correct_answer: 0
+    explanation: Port Mirroring is a feature that copies network traffic from one switch port (or VLAN) to another port for analysis and monitoring purposes.
+    source: https://standards.ieee.org/standard/802_3-2018.html 

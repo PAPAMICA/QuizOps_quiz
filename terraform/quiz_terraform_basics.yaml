@@ -1,0 +1,116 @@
+id: terraform_basics
+category: terraform
+level: beginner
+title: Terraform Basics
+description: Learn the fundamental concepts and components of Terraform Infrastructure as Code
+
+questions:
+  - id: q1
+    question: What is Terraform?
+    options:
+      - An Infrastructure as Code tool for building, changing, and versioning infrastructure safely and efficiently
+      - A configuration management tool
+      - A container orchestration platform
+      - A cloud provider
+    explanation: Terraform is an Infrastructure as Code tool that allows you to define both cloud and on-prem resources in human-readable configuration files that you can version, reuse, and share.
+    source: "Terraform Documentation - https://www.terraform.io/docs/intro/index.html"
+    correct_answer: 0
+
+  - id: q2
+    question: What language is used to write Terraform configurations?
+    options:
+      - HashiCorp Configuration Language (HCL)
+      - YAML
+      - JSON
+      - XML
+    explanation: Terraform uses HashiCorp Configuration Language (HCL), which is designed to be both human-readable and machine-friendly.
+    source: "Terraform Documentation - https://www.terraform.io/docs/language/index.html"
+    correct_answer: 0
+
+  - id: q3
+    question: What is a Terraform provider?
+    options:
+      - A plugin that allows Terraform to interact with cloud providers, SaaS providers, and other APIs
+      - A type of resource
+      - A deployment method
+      - A version control system
+    explanation: A provider is responsible for understanding API interactions and exposing resources. It serves as a plugin that Terraform uses to manage resources in different cloud providers and services.
+    source: "Terraform Documentation - https://www.terraform.io/docs/language/providers/index.html"
+    correct_answer: 0
+
+  - id: q4
+    question: What command is used to initialize a Terraform working directory?
+    options:
+      - terraform init
+      - terraform start
+      - terraform setup
+      - terraform begin
+    explanation: The terraform init command initializes a working directory containing Terraform configuration files and downloads required provider plugins.
+    source: "Terraform Documentation - https://www.terraform.io/docs/cli/commands/init.html"
+    correct_answer: 0
+
+  - id: q5
+    question: What is a Terraform state file?
+    options:
+      - A file that tracks the resources Terraform manages and their current configuration
+      - A backup file
+      - A log file
+      - A configuration template
+    explanation: The state file is a JSON file that maps real-world resources to your configuration, keeps track of metadata, and improves performance for large infrastructures.
+    source: "Terraform Documentation - https://www.terraform.io/docs/language/state/index.html"
+    correct_answer: 0
+
+  - id: q6
+    question: What command shows the execution plan before applying changes?
+    options:
+      - terraform plan
+      - terraform show
+      - terraform preview
+      - terraform check
+    explanation: The terraform plan command creates an execution plan, showing what actions Terraform will take to change your infrastructure to match the configuration.
+    source: "Terraform Documentation - https://www.terraform.io/docs/cli/commands/plan.html"
+    correct_answer: 0
+
+  - id: q7
+    question: What is a Terraform module?
+    options:
+      - A container for multiple resources that are used together
+      - A single resource definition
+      - A provider configuration
+      - A variable declaration
+    explanation: A module is a container for multiple resources that are used together. Modules help you organize and reuse your Terraform code.
+    source: "Terraform Documentation - https://www.terraform.io/docs/language/modules/index.html"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of terraform.tfvars file?
+    options:
+      - To define values for variables used in Terraform configurations
+      - To store state information
+      - To define provider configurations
+      - To store output values
+    explanation: The terraform.tfvars file is used to assign values to variables that are defined in your Terraform configurations, allowing you to separate variable definitions from their values.
+    source: "Terraform Documentation - https://www.terraform.io/docs/language/values/variables.html"
+    correct_answer: 0
+
+  - id: q9
+    question: What command applies the changes required to reach the desired state?
+    options:
+      - terraform apply
+      - terraform execute
+      - terraform run
+      - terraform deploy
+    explanation: The terraform apply command executes the actions proposed in a Terraform plan to create, update, or destroy infrastructure.
+    source: "Terraform Documentation - https://www.terraform.io/docs/cli/commands/apply.html"
+    correct_answer: 0
+
+  - id: q10
+    question: What is a data source in Terraform?
+    options:
+      - A way to query external resources and use the results in your configuration
+      - A type of variable
+      - A state file backup
+      - A provider setting
+    explanation: Data sources allow Terraform to use information defined outside of Terraform, such as resources created by another Terraform configuration or external to Terraform completely.
+    source: "Terraform Documentation - https://www.terraform.io/docs/language/data-sources/index.html"
+    correct_answer: 0 

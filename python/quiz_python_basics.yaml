@@ -1,0 +1,116 @@
+id: python_basics
+category: python
+level: beginner
+title: Python Fundamentals
+description: Test your knowledge of basic Python programming concepts
+
+questions:
+  - id: python_b1
+    question: What is Python?
+    options:
+      - A high-level, interpreted programming language
+      - A database system
+      - A web server
+      - An operating system
+    correct_answer: 0
+    explanation: Python is a high-level, interpreted programming language known for its simplicity and readability.
+    source: https://docs.python.org/3/tutorial/index.html
+
+  - id: python_b2
+    question: What is the correct way to create a variable in Python?
+    options:
+      - "name = 'John'"
+      - "var name = 'John'"
+      - "string name = 'John'"
+      - "name <- 'John'"
+    correct_answer: 0
+    explanation: In Python, variables are created by simply assigning a value using the equals sign (=).
+    source: https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator
+
+  - id: python_b3
+    question: Which of these is a valid comment in Python?
+    options:
+      - "# This is a comment"
+      - "// This is a comment"
+      - "/* This is a comment */"
+      - "<!-- This is a comment -->"
+    correct_answer: 0
+    explanation: In Python, single-line comments start with the # symbol.
+    source: https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming
+
+  - id: python_b4
+    question: What is the correct way to create a list in Python?
+    options:
+      - my_list = [1, 2, 3]
+      - my_list = array(1, 2, 3)
+      - my_list = list(1, 2, 3)
+      - my_list = {1, 2, 3}
+    correct_answer: 0
+    explanation: Lists in Python are created using square brackets [] with comma-separated values.
+    source: https://docs.python.org/3/tutorial/introduction.html#lists
+
+  - id: python_b5
+    question: How do you create a function in Python?
+    options:
+      - def my_function():
+      - function my_function():
+      - void my_function():
+      - create my_function():
+    correct_answer: 0
+    explanation: Functions in Python are defined using the def keyword followed by the function name and parentheses.
+    source: https://docs.python.org/3/tutorial/controlflow.html#defining-functions
+
+  - id: python_b6
+    question: What is the correct way to write an if statement in Python?
+    options:
+      - if x > 5:
+      - if (x > 5)
+      - if x > 5 then
+      - if x > 5 {
+    correct_answer: 0
+    explanation: Python if statements use a colon (:) and indentation to define the conditional block.
+    source: https://docs.python.org/3/tutorial/controlflow.html#if-statements
+
+  - id: python_b7
+    question: How do you create a for loop in Python?
+    options:
+      - for x in range(5):
+      - for (x = 0; x < 5; x++)
+      - for x = 1 to 5
+      - loop x in 5
+    correct_answer: 0
+    explanation: Python for loops use the for keyword with in to iterate over a sequence.
+    source: https://docs.python.org/3/tutorial/controlflow.html#for-statements
+
+  - id: python_b8
+    question: What is the correct way to import a module in Python?
+    options:
+      - import math
+      - include math
+      - using math
+      - require math
+    correct_answer: 0
+    explanation: Python uses the import keyword to import modules and make their functions available.
+    source: https://docs.python.org/3/tutorial/modules.html
+
+  - id: python_b9
+    question: How do you get the length of a string in Python?
+    options:
+      - len(string)
+      - string.length
+      - string.size()
+      - string.length()
+    correct_answer: 0
+    explanation: The len() function is used to get the length of strings, lists, and other sequences in Python.
+    source: https://docs.python.org/3/library/functions.html#len
+
+  - id: python_b10
+    question: What is the correct file extension for Python files?
+    options:
+      - .py
+      - .python
+      - .pt
+      - .pyt
+    correct_answer: 0
+    explanation: Python files use the .py extension by convention.
+    source: https://docs.python.org/3/tutorial/interpreter.html#source-code-encoding 

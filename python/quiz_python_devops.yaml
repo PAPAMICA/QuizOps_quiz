@@ -1,0 +1,116 @@
+id: python_devops
+category: python
+level: beginner
+title: Python for DevOps
+description: Learn how to use Python for automation and DevOps tasks
+
+questions:
+  - id: q1
+    question: What is Fabric in Python?
+    options:
+      - A library for streamlining SSH for application deployment or systems administration tasks
+      - A web framework
+      - A testing framework
+      - A database library
+    explanation: Fabric is a Python library and command-line tool for streamlining the use of SSH for application deployment or systems administration tasks.
+    source: "Fabric Documentation - https://www.fabfile.org/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is Ansible's relationship with Python?
+    options:
+      - Ansible is written in Python and uses Python for its modules
+      - Ansible has no relation to Python
+      - Ansible only uses Python for testing
+      - Ansible is a Python web framework
+    explanation: Ansible is written in Python, and its modules are also written in Python. Understanding Python helps in writing custom Ansible modules and working with the Ansible API.
+    source: "Ansible Documentation - https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the boto3 library used for?
+    options:
+      - AWS SDK for Python to interact with AWS services
+      - Database management
+      - Web development
+      - GUI development
+    explanation: Boto3 is the Amazon Web Services (AWS) SDK for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2.
+    source: "AWS Documentation - https://boto3.amazonaws.com/v1/documentation/api/latest/index.html"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the subprocess module in Python used for?
+    options:
+      - Spawning new processes and connecting to their input/output/error pipes
+      - Web scraping
+      - Database operations
+      - File compression
+    explanation: The subprocess module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes, which is essential for system administration tasks.
+    source: "Python Documentation - https://docs.python.org/3/library/subprocess.html"
+    correct_answer: 0
+
+  - id: q5
+    question: What is the purpose of the os module in Python?
+    options:
+      - Provides a way of using operating system dependent functionality
+      - Creates graphical user interfaces
+      - Manages databases
+      - Handles email
+    explanation: The os module provides a portable way of using operating system dependent functionality like reading or writing to the file system, manipulating paths, and executing commands.
+    source: "Python Documentation - https://docs.python.org/3/library/os.html"
+    correct_answer: 0
+
+  - id: q6
+    question: What is Docker SDK for Python?
+    options:
+      - A library for interacting with Docker in Python applications
+      - A web framework
+      - A testing tool
+      - A database driver
+    explanation: Docker SDK for Python (docker-py) is a library that allows you to interact with Docker in your Python applications, automating container operations.
+    source: "Docker SDK Documentation - https://docker-py.readthedocs.io/"
+    correct_answer: 0
+
+  - id: q7
+    question: What is the requests library commonly used for in DevOps?
+    options:
+      - Making HTTP requests to APIs and web services
+      - Creating databases
+      - Managing processes
+      - File compression
+    explanation: The requests library is used for making HTTP requests to APIs and web services, which is essential for integrating with various services and monitoring endpoints.
+    source: "Requests Documentation - https://docs.python-requests.org/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is PyYAML used for in DevOps?
+    options:
+      - Parsing and generating YAML files
+      - Network programming
+      - Database management
+      - GUI development
+    explanation: PyYAML is used for parsing and generating YAML files, which are commonly used in configuration files for various DevOps tools like Docker Compose and Kubernetes.
+    source: "PyYAML Documentation - https://pyyaml.org/"
+    correct_answer: 0
+
+  - id: q9
+    question: What is the purpose of the logging module in Python?
+    options:
+      - Provides a flexible framework for generating log messages
+      - Creates user interfaces
+      - Manages databases
+      - Handles email
+    explanation: The logging module provides a flexible framework for generating log messages from Python programs, which is crucial for monitoring and debugging applications.
+    source: "Python Documentation - https://docs.python.org/3/library/logging.html"
+    correct_answer: 0
+
+  - id: q10
+    question: What is Paramiko in Python?
+    options:
+      - A Python implementation of the SSHv2 protocol
+      - A web framework
+      - A testing framework
+      - A database library
+    explanation: Paramiko is a Python implementation of the SSHv2 protocol, providing both client and server functionality. It's often used for automating SSH operations.
+    source: "Paramiko Documentation - http://www.paramiko.org/"
+    correct_answer: 0 

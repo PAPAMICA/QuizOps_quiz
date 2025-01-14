@@ -1,0 +1,116 @@
+id: security_basics
+category: security
+level: beginner
+title: Security Fundamentals
+description: Test your knowledge of basic security concepts and practices
+
+questions:
+  - id: security_b1
+    question: What is Authentication?
+    options:
+      - The process of verifying the identity of a user or system
+      - The process of securing data transmission through encryption protocols
+      - The process of monitoring and logging system activities and events
+      - The process of managing and protecting critical system backups
+    correct_answer: 0
+    explanation: Authentication is the process of verifying that someone or something is who they claim to be.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_b2
+    question: What is Authorization?
+    options:
+      - The process of determining what actions a user can perform in a system
+      - The process of creating and managing secure password policies and rules
+      - The process of encrypting network traffic between system components
+      - The process of scanning systems for potential security vulnerabilities
+    correct_answer: 0
+    explanation: Authorization determines what resources a user has permission to access and what actions they can perform.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_b3
+    question: What is Encryption?
+    options:
+      - The process of converting data into a secure coded format for protection
+      - The process of creating and maintaining system backup archives
+      - The process of monitoring and tracking user activity patterns
+      - The process of managing and securing password credentials
+    correct_answer: 0
+    explanation: Encryption is the process of converting information into a coded format that can only be decoded with a specific key.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_b4
+    question: What is a Firewall?
+    options:
+      - A system that monitors and controls incoming and outgoing network traffic
+      - A tool for creating and enforcing secure password requirements
+      - A system for managing and protecting data backup operations
+      - A tool for encrypting sensitive files and communications
+    correct_answer: 0
+    explanation: A firewall is a network security system that monitors and controls incoming and outgoing network traffic.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_b5
+    question: What is Two-Factor Authentication (2FA)?
+    options:
+      - A security process requiring two different forms of identity verification
+      - A method for encrypting network traffic between secure endpoints
+      - A system for monitoring and analyzing user activity patterns
+      - A tool for managing and securing password authentication methods
+    correct_answer: 0
+    explanation: Two-Factor Authentication adds an extra layer of security by requiring two different forms of verification.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_b6
+    question: What is a Security Policy?
+    options:
+      - A document defining rules and guidelines for protecting system resources
+      - A tool for monitoring and analyzing network traffic patterns
+      - A method for encrypting and securing sensitive data assets
+      - A system for managing and automating backup procedures
+    correct_answer: 0
+    explanation: A security policy is a document that outlines rules and procedures for maintaining system and data security.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_b7
+    question: What is a Vulnerability?
+    options:
+      - A weakness in system security that could be exploited by threats
+      - A tool for monitoring and logging system activity patterns
+      - A method for encrypting and protecting sensitive files
+      - A system for managing and controlling access rights
+    correct_answer: 0
+    explanation: A vulnerability is a weakness in a system that could be exploited to compromise security.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_b8
+    question: What is Access Control?
+    options:
+      - A system for managing and regulating user access to resources
+      - A method for encrypting and securing network communications
+      - A tool for monitoring and analyzing system log files
+      - A process for creating and maintaining system backups
+    correct_answer: 0
+    explanation: Access control is a security technique that regulates who can access specific resources in a system.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_b9
+    question: What is a Security Incident?
+    options:
+      - An event that violates security policies or threatens system safety
+      - A method for encrypting and protecting sensitive data assets
+      - A tool for managing and securing password credentials
+      - A system for monitoring and analyzing network traffic
+    correct_answer: 0
+    explanation: A security incident is an event that violates security policies or poses a threat to system security.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_b10
+    question: What is Password Security?
+    options:
+      - Practices for creating and managing secure password credentials
+      - A method for encrypting and protecting network communications
+      - A system for monitoring and controlling system access rights
+      - A tool for managing and automating backup procedures
+    correct_answer: 0
+    explanation: Password security involves practices for creating, storing, and managing secure passwords to protect accounts.
+    source: https://www.nist.gov/cyberframework 

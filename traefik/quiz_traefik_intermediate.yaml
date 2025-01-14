@@ -1,0 +1,116 @@
+id: traefik_intermediate
+category: traefik
+level: intermediate
+title: Traefik Advanced Operations
+description: Test your knowledge of intermediate Traefik concepts and features
+
+questions:
+  - id: traefik_i1
+    question: What is Traefik TLS configuration?
+    options:
+      - Managing SSL/TLS certificates and settings
+      - Configuring network protocols
+      - Setting up load balancing rules
+      - Implementing access controls
+    correct_answer: 0
+    explanation: TLS configuration manages SSL/TLS certificates and settings for secure HTTPS connections.
+    source: https://doc.traefik.io/traefik/https/tls/
+
+  - id: traefik_i2
+    question: What is Traefik load balancing?
+    options:
+      - Distributing traffic across multiple services
+      - Managing service configurations
+      - Implementing routing rules
+      - Handling service discovery
+    correct_answer: 0
+    explanation: Load balancing distributes incoming traffic across multiple instances of a service for better performance.
+    source: https://doc.traefik.io/traefik/routing/services/#load-balancing
+
+  - id: traefik_i3
+    question: What is Traefik circuit breaker?
+    options:
+      - Protecting services from cascading failures
+      - Managing network connections
+      - Implementing service timeouts
+      - Handling error responses
+    correct_answer: 0
+    explanation: Circuit breaker protects services by stopping traffic when the service is experiencing issues.
+    source: https://doc.traefik.io/traefik/middlewares/circuitbreaker/
+
+  - id: traefik_i4
+    question: What is Traefik rate limiting?
+    options:
+      - Controlling request frequency to services
+      - Managing service bandwidth
+      - Implementing traffic quotas
+      - Handling connection limits
+    correct_answer: 0
+    explanation: Rate limiting controls how many requests can be made to a service within a specific time period.
+    source: https://doc.traefik.io/traefik/middlewares/ratelimit/
+
+  - id: traefik_i5
+    question: What is Traefik retry mechanism?
+    options:
+      - Automatically retrying failed requests
+      - Managing connection timeouts
+      - Implementing error handling
+      - Handling service failures
+    correct_answer: 0
+    explanation: Retry mechanism automatically attempts to resend failed requests to services a specified number of times.
+    source: https://doc.traefik.io/traefik/middlewares/retry/
+
+  - id: traefik_i6
+    question: What is Traefik basic authentication?
+    options:
+      - Securing routes with username and password
+      - Managing access controls
+      - Implementing security rules
+      - Handling user credentials
+    correct_answer: 0
+    explanation: Basic authentication secures routes by requiring username and password credentials for access.
+    source: https://doc.traefik.io/traefik/middlewares/basicauth/
+
+  - id: traefik_i7
+    question: What is Traefik header manipulation?
+    options:
+      - Modifying HTTP request and response headers
+      - Managing protocol settings
+      - Implementing data transformation
+      - Handling metadata changes
+    correct_answer: 0
+    explanation: Header manipulation allows modifying HTTP headers in requests and responses as they pass through Traefik.
+    source: https://doc.traefik.io/traefik/middlewares/headers/
+
+  - id: traefik_i8
+    question: What is Traefik URL rewriting?
+    options:
+      - Modifying request URLs before forwarding
+      - Managing path configurations
+      - Implementing routing patterns
+      - Handling address changes
+    correct_answer: 0
+    explanation: URL rewriting allows modifying the path of requests before they are forwarded to services.
+    source: https://doc.traefik.io/traefik/middlewares/rewrite/
+
+  - id: traefik_i9
+    question: What is Traefik error handling?
+    options:
+      - Managing responses for service errors
+      - Implementing failure recovery
+      - Configuring error pages
+      - Handling service issues
+    correct_answer: 0
+    explanation: Error handling manages how Traefik responds when services return errors or are unavailable.
+    source: https://doc.traefik.io/traefik/middlewares/errorpages/
+
+  - id: traefik_i10
+    question: What is Traefik compression?
+    options:
+      - Compressing HTTP responses for clients
+      - Managing data transmission
+      - Implementing content encoding
+      - Handling response size
+    correct_answer: 0
+    explanation: Compression reduces the size of HTTP responses before sending them to clients to save bandwidth.
+    source: https://doc.traefik.io/traefik/middlewares/compress/ 

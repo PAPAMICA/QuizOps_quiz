@@ -1,0 +1,116 @@
+id: security_advanced
+category: security
+level: advanced
+title: Security Expert Level
+description: Test your expertise in advanced security concepts and practices
+
+questions:
+  - id: security_a1
+    question: What is Zero Trust Security?
+    options:
+      - A security model that assumes no trust by default for any access
+      - A system for managing network access controls
+      - A protocol for secure data transmission
+      - A method for user authentication
+    correct_answer: 0
+    explanation: Zero Trust is a security model that requires strict identity verification for every person and device trying to access resources, regardless of location.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_a2
+    question: What is Security Orchestration and Response (SOAR)?
+    options:
+      - A system that automates security incident response and workflows
+      - A tool for monitoring network traffic patterns
+      - A method for encrypting sensitive data
+      - A protocol for secure communications
+    correct_answer: 0
+    explanation: SOAR platforms combine security orchestration, automation, and incident response to streamline security operations and incident handling.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_a3
+    question: What is Threat Hunting?
+    options:
+      - Proactively searching for cyber threats that evade detection
+      - A tool for managing system backups
+      - A method for network monitoring
+      - A protocol for secure access
+    correct_answer: 0
+    explanation: Threat hunting involves proactively searching through networks and datasets to detect and isolate advanced threats that evade existing security solutions.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_a4
+    question: What is Security Information Rights Management (IRM)?
+    options:
+      - Technology that protects sensitive data through encryption
+      - A system for managing user access
+      - A tool for monitoring network traffic
+      - A method for backup management
+    correct_answer: 0
+    explanation: IRM technology protects sensitive information through persistent encryption, access controls, and usage policies that remain with the data.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_a5
+    question: What is Red Team Assessment?
+    options:
+      - A simulated cyber attack to test security defenses
+      - A tool for monitoring system performance
+      - A method for data encryption
+      - A protocol for secure transfer
+    correct_answer: 0
+    explanation: Red Team Assessment is a comprehensive security test that simulates real-world cyber attacks to evaluate organizational security controls.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_a6
+    question: What is Security Chaos Engineering?
+    options:
+      - Testing system resilience by introducing controlled failures
+      - A method for encrypting network traffic
+      - A tool for monitoring security events
+      - A protocol for secure access
+    correct_answer: 0
+    explanation: Security Chaos Engineering tests system security by intentionally introducing controlled failures to identify weaknesses and improve resilience.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_a7
+    question: What is Quantum Cryptography?
+    options:
+      - Using quantum mechanics principles for secure communication
+      - A tool for managing encryption keys
+      - A method for network monitoring
+      - A protocol for data transfer
+    correct_answer: 0
+    explanation: Quantum cryptography uses principles of quantum mechanics to provide theoretically unbreakable encryption for secure communications.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_a8
+    question: What is Security Mesh Architecture?
+    options:
+      - A distributed security approach for flexible protection
+      - A tool for monitoring system access
+      - A method for data encryption
+      - A protocol for secure transfer
+    correct_answer: 0
+    explanation: Security Mesh Architecture is a distributed security approach that provides flexible, scalable protection for digital assets across environments.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_a9
+    question: What is Cyber Threat Intelligence?
+    options:
+      - Evidence-based knowledge about security threats
+      - A tool for managing system access
+      - A method for data protection
+      - A protocol for secure backup
+    correct_answer: 0
+    explanation: Cyber Threat Intelligence is evidence-based knowledge about existing or emerging threats that helps organizations make informed security decisions.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_a10
+    question: What is Security Behavior Analytics?
+    options:
+      - Analysis of user behavior to detect security threats
+      - A tool for monitoring network traffic
+      - A method for data encryption
+      - A protocol for secure access
+    correct_answer: 0
+    explanation: Security Behavior Analytics uses advanced analytics to monitor user behavior patterns and detect potential security threats or anomalies.
+    source: https://www.nist.gov/cyberframework 

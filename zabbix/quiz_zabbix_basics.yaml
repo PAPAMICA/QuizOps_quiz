@@ -1,0 +1,116 @@
+id: zabbix_basics
+category: zabbix
+level: beginner
+title: Zabbix Fundamentals
+description: Test your knowledge of basic Zabbix monitoring concepts and usage
+
+questions:
+  - id: zabbix_b1
+    question: What is Zabbix?
+    options:
+      - An enterprise-class open source monitoring solution
+      - A configuration management platform
+      - A container orchestration system
+      - A version control system
+    correct_answer: 0
+    explanation: Zabbix is a mature enterprise-class monitoring solution for networks and applications.
+    source: https://www.zabbix.com/documentation/current/en/manual/introduction/about
+
+  - id: zabbix_b2
+    question: What is a Zabbix agent?
+    options:
+      - A program that monitors local resources and applications
+      - A centralized management interface
+      - A database storage system
+      - A network routing protocol
+    correct_answer: 0
+    explanation: Zabbix agents are deployed on monitoring targets to actively monitor local resources and applications.
+    source: https://www.zabbix.com/documentation/current/en/manual/concepts/agent
+
+  - id: zabbix_b3
+    question: What is a Zabbix item?
+    options:
+      - A single piece of data you want to monitor
+      - A network security protocol
+      - A system configuration file
+      - A user management tool
+    correct_answer: 0
+    explanation: An item is the individual metric or data point you want to receive from a host.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/items/item
+
+  - id: zabbix_b4
+    question: What is a Zabbix trigger?
+    options:
+      - A logical expression that defines a problem threshold
+      - A data collection method
+      - A network monitoring protocol
+      - A system backup process
+    correct_answer: 0
+    explanation: Triggers are logical expressions that evaluate data gathered by items and represent the current system state.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/triggers
+
+  - id: zabbix_b5
+    question: What is a Zabbix template?
+    options:
+      - A set of entities that can be applied to multiple hosts
+      - A system configuration file
+      - A network security protocol
+      - A monitoring dashboard layout
+    correct_answer: 0
+    explanation: Templates are sets of ready-to-use entities (items, triggers, etc.) that can be applied to multiple hosts.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/templates
+
+  - id: zabbix_b6
+    question: What is a Zabbix host?
+    options:
+      - A networked device you want to monitor
+      - A backup storage location
+      - A security protocol
+      - A user interface component
+    correct_answer: 0
+    explanation: A host is a networked device that you want to monitor, with IP/DNS address.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/hosts
+
+  - id: zabbix_b7
+    question: What is a Zabbix proxy?
+    options:
+      - A process that collects data on behalf of the server
+      - A network security gateway
+      - A system backup tool
+      - A user authentication method
+    correct_answer: 0
+    explanation: A Zabbix proxy can collect performance and availability data on behalf of the Zabbix server.
+    source: https://www.zabbix.com/documentation/current/en/manual/concepts/proxy
+
+  - id: zabbix_b8
+    question: What is a Zabbix action?
+    options:
+      - A predefined response to an event
+      - A data collection method
+      - A system configuration
+      - A network protocol
+    correct_answer: 0
+    explanation: Actions are predefined responses to events that can include notifications and remote commands.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/notifications/action
+
+  - id: zabbix_b9
+    question: What is Zabbix discovery?
+    options:
+      - Automatic detection of network entities
+      - A backup procedure
+      - A security protocol
+      - A user management process
+    correct_answer: 0
+    explanation: Discovery is the automatic detection of network entities based on discovery rules.
+    source: https://www.zabbix.com/documentation/current/en/manual/discovery
+
+  - id: zabbix_b10
+    question: What is a Zabbix dashboard?
+    options:
+      - A customizable monitoring overview page
+      - A network configuration tool
+      - A system backup interface
+      - A user management screen
+    correct_answer: 0
+    explanation: Dashboards provide a customizable overview of your monitored infrastructure and data.
+    source: https://www.zabbix.com/documentation/current/en/manual/web_interface/frontend_sections/monitoring/dashboard 

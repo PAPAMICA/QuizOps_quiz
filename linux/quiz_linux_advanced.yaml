@@ -1,0 +1,116 @@
+id: linux_advanced
+category: linux
+level: advanced
+title: Linux System Internals and Advanced Administration
+description: Test your knowledge of Linux system internals, security, and advanced administration concepts
+
+questions:
+  - id: linux_a1
+    question: What is a Linux kernel module?
+    options:
+      - A piece of code that can be loaded and unloaded into the kernel upon demand
+      - A system monitoring tool
+      - A package manager
+      - A boot loader
+    correct_answer: 0
+    explanation: A kernel module is a piece of code that extends the kernel functionality and can be loaded or unloaded without rebooting the system.
+    source: https://www.kernel.org/doc/html/latest/admin-guide/kernel-parameters.html
+
+  - id: linux_a2
+    question: What is SELinux?
+    options:
+      - A Linux security module that provides mandatory access control
+      - A system encryption tool
+      - A secure shell client
+      - A security scanner
+    correct_answer: 0
+    explanation: SELinux (Security-Enhanced Linux) is a security module that provides mandatory access control (MAC) security mechanism in the Linux kernel.
+    source: https://selinuxproject.org/page/Main_Page
+
+  - id: linux_a3
+    question: What is the purpose of the iptables command?
+    options:
+      - Configure kernel packet filtering rules
+      - Manage IP addresses
+      - Monitor network traffic
+      - Test network connectivity
+    correct_answer: 0
+    explanation: iptables is used to configure kernel packet filtering rules, providing firewall functionality in Linux systems.
+    source: https://netfilter.org/projects/iptables/index.html
+
+  - id: linux_a4
+    question: What is a Linux namespace?
+    options:
+      - A feature that provides isolation of system resources
+      - A naming convention
+      - A DNS configuration
+      - A file system hierarchy
+    correct_answer: 0
+    explanation: Linux namespaces provide isolation of system resources, processes, network stacks, and more, forming the foundation of container technology.
+    source: https://man7.org/linux/man-pages/man7/namespaces.7.html
+
+  - id: linux_a5
+    question: What is the purpose of the strace command?
+    options:
+      - Trace system calls and signals
+      - System time synchronization
+      - Stream system logs
+      - System resource allocation
+    correct_answer: 0
+    explanation: strace is a diagnostic tool that traces system calls and signals, useful for debugging and understanding program behavior.
+    source: https://man7.org/linux/man-pages/man1/strace.1.html
+
+  - id: linux_a6
+    question: What is a Linux control group (cgroup)?
+    options:
+      - A mechanism to limit and isolate resource usage
+      - A user group configuration
+      - A process control system
+      - A system configuration group
+    correct_answer: 0
+    explanation: Control groups (cgroups) are a kernel feature that limits, accounts for, and isolates resource usage (CPU, memory, disk I/O, etc.) of process groups.
+    source: https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt
+
+  - id: linux_a7
+    question: What is the purpose of the tcpdump command?
+    options:
+      - Analyze network traffic in real-time
+      - Transfer files over TCP
+      - Test TCP connections
+      - Monitor TCP ports
+    correct_answer: 0
+    explanation: tcpdump is a powerful command-line packet analyzer that allows you to capture and analyze network traffic in real-time.
+    source: https://www.tcpdump.org/manpages/tcpdump.1.html
+
+  - id: linux_a8
+    question: What is Linux LVM (Logical Volume Management)?
+    options:
+      - A system for flexible disk space management
+      - A log volume monitor
+      - A Linux version manager
+      - A load balancing system
+    correct_answer: 0
+    explanation: LVM provides a method of allocating space on mass-storage devices that is more flexible than conventional partitioning schemes.
+    source: https://www.sourceware.org/lvm2/
+
+  - id: linux_a9
+    question: What is a Linux system call?
+    options:
+      - A programmatic way for processes to request services from the kernel
+      - A telephone system
+      - A system alert
+      - A callback function
+    correct_answer: 0
+    explanation: A system call is the programmatic way in which a process requests a service from the kernel of the operating system.
+    source: https://man7.org/linux/man-pages/man2/syscalls.2.html
+
+  - id: linux_a10
+    question: What is Linux RAID?
+    options:
+      - A method of combining multiple disk drives for redundancy or performance
+      - A remote access identifier
+      - A system raid cleaner
+      - A backup system
+    correct_answer: 0
+    explanation: RAID (Redundant Array of Independent Disks) combines multiple disk drives into a logical unit for data redundancy or performance improvement.
+    source: https://raid.wiki.kernel.org/index.php/Linux_Raid 

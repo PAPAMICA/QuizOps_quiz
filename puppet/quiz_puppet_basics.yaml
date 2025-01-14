@@ -1,0 +1,116 @@
+id: puppet_basics
+category: puppet
+level: beginner
+title: Puppet Fundamentals
+description: Test your knowledge of basic Puppet concepts and usage
+
+questions:
+  - id: puppet_b1
+    question: What is Puppet?
+    options:
+      - An open-source configuration management tool
+      - A web server
+      - A database system
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Puppet is an open-source configuration management tool that helps automate the provisioning and management of IT infrastructure.
+    source: https://puppet.com/docs/puppet/latest/puppet_overview.html
+
+  - id: puppet_b2
+    question: What is a Puppet manifest?
+    options:
+      - A file containing Puppet code that defines system configuration
+      - A log file
+      - A backup file
+      - A network configuration
+    correct_answer: 0
+    explanation: A Puppet manifest is a file with .pp extension that contains Puppet code describing the desired system configuration.
+    source: https://puppet.com/docs/puppet/latest/lang_summary.html
+
+  - id: puppet_b3
+    question: What is a Puppet resource?
+    options:
+      - A basic unit that describes a system aspect to manage
+      - A backup system
+      - A monitoring tool
+      - A network protocol
+    correct_answer: 0
+    explanation: A resource is a basic unit in Puppet that describes an aspect of the system you want to manage, like a file, service, or package.
+    source: https://puppet.com/docs/puppet/latest/lang_resources.html
+
+  - id: puppet_b4
+    question: What is the Puppet agent?
+    options:
+      - The component that runs on managed nodes and applies configurations
+      - A monitoring tool
+      - A backup system
+      - A web interface
+    correct_answer: 0
+    explanation: The Puppet agent is the component that runs on managed nodes, receives configurations from the Puppet master, and applies them.
+    source: https://puppet.com/docs/puppet/latest/architecture.html
+
+  - id: puppet_b5
+    question: What is the default port for Puppet master?
+    options:
+      - 8140
+      - 80
+      - 443
+      - 22
+    correct_answer: 0
+    explanation: The Puppet master server typically listens on port 8140 for agent connections.
+    source: https://puppet.com/docs/puppet/latest/configuration.html
+
+  - id: puppet_b6
+    question: What is a Puppet class?
+    options:
+      - A named block of Puppet code that can be reused
+      - A type of resource
+      - A monitoring tool
+      - A backup system
+    correct_answer: 0
+    explanation: A Puppet class is a named block of Puppet code that can be reused across different configurations and nodes.
+    source: https://puppet.com/docs/puppet/latest/lang_classes.html
+
+  - id: puppet_b7
+    question: What is Facter in Puppet?
+    options:
+      - A tool that collects system information about nodes
+      - A backup system
+      - A monitoring tool
+      - A web interface
+    correct_answer: 0
+    explanation: Facter is a tool that gathers basic facts about nodes (system information) that Puppet can use when applying configurations.
+    source: https://puppet.com/docs/facter/latest/core_facts.html
+
+  - id: puppet_b8
+    question: What file extension do Puppet manifests use?
+    options:
+      - .pp
+      - .pup
+      - .puppet
+      - .conf
+    correct_answer: 0
+    explanation: Puppet manifests use the .pp file extension, which stands for "Puppet Program".
+    source: https://puppet.com/docs/puppet/latest/lang_summary.html
+
+  - id: puppet_b9
+    question: What is a Puppet module?
+    options:
+      - A collection of manifests and data for a specific purpose
+      - A single manifest file
+      - A backup system
+      - A monitoring tool
+    correct_answer: 0
+    explanation: A Puppet module is a collection of manifests, files, and data organized to manage a specific aspect of system configuration.
+    source: https://puppet.com/docs/puppet/latest/modules_fundamentals.html
+
+  - id: puppet_b10
+    question: What is the purpose of site.pp in Puppet?
+    options:
+      - The main entry point for node classification
+      - A backup file
+      - A log file
+      - A configuration file
+    correct_answer: 0
+    explanation: site.pp is the main manifest file that Puppet uses as an entry point for node classification and configuration.
+    source: https://puppet.com/docs/puppet/latest/dirs_manifest.html 

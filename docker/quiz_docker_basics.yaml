@@ -1,50 +1,116 @@
-id: containers_docker_basics
+id: docker_basics
 category: docker
 level: beginner
 title: Docker Basics
-description: Discover the fundamental concepts of Docker and containers
+description: Learn the fundamental concepts and commands of Docker containerization
 
 questions:
   - id: q1
-    question: Which command lists all running Docker containers?
+    question: What is Docker?
     options:
-      - docker ps
-      - docker list
-      - docker containers
-      - docker show
-    explanation: The 'docker ps' command displays the list of running containers. To see all containers (including stopped ones), use 'docker ps -a'.
-    source: "Docker Documentation - https://docs.docker.com/engine/reference/commandline/ps/"
-    correct_answer: 0
-
-  - id: q2
-    question: What does the 'docker pull' command do?
-    options:
-      - Downloads an image from a registry
-      - Starts a container
-      - Stops a container
-      - Removes an image
-    explanation: The 'docker pull' command downloads an image from a registry (Docker Hub by default) to your local machine.
-    source: "Docker Documentation - https://docs.docker.com/engine/reference/commandline/pull/"
-    correct_answer: 0
-
-  - id: q3
-    question: What is the difference between a Docker image and a Docker container?
-    options:
-      - The image is a read-only template, the container is a running instance
-      - The image is larger than the container
-      - The container is a template, the image is an instance
-      - There is no difference
-    explanation: A Docker image is a read-only template containing instructions to create a container. A container is a running instance of an image, with its own filesystem, network, and isolated processes.
+      - A platform for developing, shipping, and running applications in containers
+      - A programming language
+      - A database system
+      - An operating system
+    explanation: Docker is a platform that uses containerization to make it easier to create, deploy, and run applications by using containers.
     source: "Docker Documentation - https://docs.docker.com/get-started/overview/"
     correct_answer: 0
 
-  - id: q4
-    question: What does the -d mean in the 'docker run -d' command?
+  - id: q2
+    question: What is a Docker container?
     options:
-      - Runs the container in detached mode (background)
-      - Deletes the container after it stops
-      - Enables debug mode
-      - Disables logging
-    explanation: The -d (detach) option runs the container in the background. The container continues to run but is not attached to your current terminal.
-    source: "Docker Documentation - https://docs.docker.com/engine/reference/run/#detached--d"
+      - A standardized unit of software that packages code and all its dependencies
+      - A virtual machine
+      - A physical server
+      - A network protocol
+    explanation: A Docker container is a lightweight, standalone, executable package that includes everything needed to run a piece of software, including code, runtime, system tools, libraries, and settings.
+    source: "Docker Documentation - https://docs.docker.com/get-started/"
+    correct_answer: 0
+
+  - id: q3
+    question: What command is used to download a Docker image?
+    options:
+      - docker pull
+      - docker get
+      - docker download
+      - docker fetch
+    explanation: The docker pull command is used to download Docker images from a registry (like Docker Hub) to your local machine.
+    source: "Docker Documentation - https://docs.docker.com/engine/reference/commandline/pull/"
+    correct_answer: 0
+
+  - id: q4
+    question: What is a Dockerfile?
+    options:
+      - A text file that contains instructions for building a Docker image
+      - A container configuration file
+      - A network settings file
+      - A log file
+    explanation: A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
+    source: "Docker Documentation - https://docs.docker.com/engine/reference/builder/"
+    correct_answer: 0
+
+  - id: q5
+    question: What command starts a Docker container?
+    options:
+      - docker run
+      - docker start
+      - docker begin
+      - docker launch
+    explanation: The docker run command is used to create and start a new container from a Docker image.
+    source: "Docker Documentation - https://docs.docker.com/engine/reference/run/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is Docker Hub?
+    options:
+      - A public registry for sharing and downloading Docker images
+      - A container orchestration tool
+      - A monitoring system
+      - A backup service
+    explanation: Docker Hub is a cloud-based registry service that allows you to download Docker images, store your own images, and share them with others.
+    source: "Docker Documentation - https://docs.docker.com/docker-hub/"
+    correct_answer: 0
+
+  - id: q7
+    question: What command shows running containers?
+    options:
+      - docker ps
+      - docker list
+      - docker show
+      - docker status
+    explanation: The docker ps command shows all currently running containers. Use docker ps -a to see all containers, including stopped ones.
+    source: "Docker Documentation - https://docs.docker.com/engine/reference/commandline/ps/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is a Docker image?
+    options:
+      - A template containing instructions for creating a Docker container
+      - A running container
+      - A network configuration
+      - A backup file
+    explanation: A Docker image is a read-only template that contains a set of instructions for creating a Docker container.
+    source: "Docker Documentation - https://docs.docker.com/get-started/overview/#images"
+    correct_answer: 0
+
+  - id: q9
+    question: What command stops a running container?
+    options:
+      - docker stop
+      - docker end
+      - docker kill
+      - docker halt
+    explanation: The docker stop command gracefully stops a running container by sending a SIGTERM signal and then a SIGKILL after a grace period.
+    source: "Docker Documentation - https://docs.docker.com/engine/reference/commandline/stop/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of Docker volumes?
+    options:
+      - To store and share data between containers and the host system
+      - To increase container performance
+      - To improve network speed
+      - To reduce image size
+    explanation: Docker volumes are used to persist data generated by and used by Docker containers, allowing data to be shared between containers and the host system.
+    source: "Docker Documentation - https://docs.docker.com/storage/volumes/"
     correct_answer: 0

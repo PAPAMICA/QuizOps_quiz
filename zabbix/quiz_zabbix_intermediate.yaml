@@ -1,0 +1,116 @@
+id: zabbix_intermediate
+category: zabbix
+level: intermediate
+title: Zabbix Advanced Monitoring
+description: Test your knowledge of intermediate Zabbix monitoring concepts and operations
+
+questions:
+  - id: zabbix_i1
+    question: What is a Zabbix Low-level Discovery (LLD)?
+    options:
+      - Automatically creates items, triggers, and graphs
+      - Only discovers network devices
+      - Manages user permissions
+      - Configures system backups
+    correct_answer: 0
+    explanation: LLD automatically creates items, triggers, and graphs based on discovered entities.
+    source: https://www.zabbix.com/documentation/current/en/manual/discovery/low_level_discovery
+
+  - id: zabbix_i2
+    question: How do Zabbix macros work?
+    options:
+      - Provide variable placeholders for flexible configurations
+      - Only store static values
+      - Manage user permissions
+      - Handle network routing
+    correct_answer: 0
+    explanation: Macros are variables that can be used in item keys, triggers, and other Zabbix elements.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/macros
+
+  - id: zabbix_i3
+    question: What is the purpose of Zabbix preprocessing?
+    options:
+      - Transforms and processes collected data
+      - Only stores raw data
+      - Manages network connections
+      - Handles user authentication
+    correct_answer: 0
+    explanation: Preprocessing transforms and processes collected data before storing it in the database.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/items/preprocessing
+
+  - id: zabbix_i4
+    question: How do Zabbix calculated items work?
+    options:
+      - Compute values based on other items
+      - Only store static values
+      - Manage system configurations
+      - Handle network monitoring
+    correct_answer: 0
+    explanation: Calculated items compute values based on expressions using other item values.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/items/calculated
+
+  - id: zabbix_i5
+    question: What is a Zabbix value mapping?
+    options:
+      - Converts numeric values to human-readable format
+      - Only displays raw data
+      - Manages system configurations
+      - Handles network routing
+    correct_answer: 0
+    explanation: Value mapping converts numeric and string values into human-readable formats.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/items/value_mapping
+
+  - id: zabbix_i6
+    question: How do Zabbix trigger dependencies work?
+    options:
+      - Prevent trigger activation based on other triggers
+      - Only manage simple triggers
+      - Handle network monitoring
+      - Configure system backups
+    correct_answer: 0
+    explanation: Trigger dependencies prevent trigger activation when dependent triggers are in a problem state.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/triggers/dependencies
+
+  - id: zabbix_i7
+    question: What is a Zabbix aggregate item?
+    options:
+      - Collects data from multiple items into one
+      - Only stores single values
+      - Manages system configurations
+      - Handles user permissions
+    correct_answer: 0
+    explanation: Aggregate items collect and process data from multiple items into a single value.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/items/itemtypes/aggregate
+
+  - id: zabbix_i8
+    question: How do Zabbix maintenance periods work?
+    options:
+      - Define times when problems should be suppressed
+      - Only handle system backups
+      - Manage user permissions
+      - Configure network routing
+    correct_answer: 0
+    explanation: Maintenance periods define time periods when problem notifications should be suppressed.
+    source: https://www.zabbix.com/documentation/current/en/manual/maintenance
+
+  - id: zabbix_i9
+    question: What is the purpose of Zabbix user parameters?
+    options:
+      - Execute custom commands on monitored systems
+      - Only handle predefined commands
+      - Manage user permissions
+      - Configure system backups
+    correct_answer: 0
+    explanation: User parameters allow execution of custom commands on monitored systems to collect data.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/items/userparameters
+
+  - id: zabbix_i10
+    question: How do Zabbix trigger expressions work?
+    options:
+      - Define logical conditions for problem detection
+      - Only handle simple conditions
+      - Manage system configurations
+      - Configure network routing
+    correct_answer: 0
+    explanation: Trigger expressions define logical conditions that determine when a problem occurs.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/triggers/expression 

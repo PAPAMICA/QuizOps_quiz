@@ -1,0 +1,116 @@
+id: terraform_intermediate
+category: terraform
+level: intermediate
+title: Terraform Advanced Operations
+description: Test your knowledge of intermediate Terraform concepts and features
+
+questions:
+  - id: terraform_i1
+    question: What is a Terraform workspace?
+    options:
+      - A separate instance of state data for configuration
+      - A collection of provider configurations
+      - A directory containing terraform modules
+      - A group of resource definitions
+    correct_answer: 0
+    explanation: Workspaces allow managing multiple states for the same configuration, enabling different environments or configurations.
+    source: https://www.terraform.io/docs/language/state/workspaces.html
+
+  - id: terraform_i2
+    question: What is a Terraform data source?
+    options:
+      - A way to query external resources for data
+      - A method to store configuration values
+      - A system to manage state information
+      - A tool to validate resource inputs
+    correct_answer: 0
+    explanation: Data sources allow Terraform to query external resources and use their data within configurations.
+    source: https://www.terraform.io/docs/language/data-sources/index.html
+
+  - id: terraform_i3
+    question: What is Terraform state locking?
+    options:
+      - A mechanism to prevent concurrent state access
+      - A system to encrypt state information
+      - A method to backup state files
+      - A tool to validate state integrity
+    correct_answer: 0
+    explanation: State locking prevents multiple users from modifying state simultaneously, avoiding conflicts and corruption.
+    source: https://www.terraform.io/docs/language/state/locking.html
+
+  - id: terraform_i4
+    question: What is a Terraform output value?
+    options:
+      - A way to expose resource attributes
+      - A method to log execution results
+      - A system to monitor resource states
+      - A tool to validate input values
+    correct_answer: 0
+    explanation: Output values expose specific values from your resources that can be used by other configurations or users.
+    source: https://www.terraform.io/docs/language/values/outputs.html
+
+  - id: terraform_i5
+    question: What is Terraform remote state?
+    options:
+      - A way to store state files remotely
+      - A method to manage remote resources
+      - A system to track remote changes
+      - A tool to sync configuration files
+    correct_answer: 0
+    explanation: Remote state allows storing Terraform state files in a remote backend for team collaboration and safety.
+    source: https://www.terraform.io/docs/language/state/remote.html
+
+  - id: terraform_i6
+    question: What is a Terraform backend?
+    options:
+      - A system to store and manage state files
+      - A method to execute remote operations
+      - A tool to handle provider configs
+      - A way to organize resource groups
+    correct_answer: 0
+    explanation: Backends determine how state is stored, how operations are performed, and how state is locked.
+    source: https://www.terraform.io/docs/language/settings/backends/index.html
+
+  - id: terraform_i7
+    question: What is Terraform graph?
+    options:
+      - A visual representation of dependencies
+      - A method to track resource changes
+      - A system to monitor state updates
+      - A tool to analyze performance
+    correct_answer: 0
+    explanation: Terraform graph generates a visual representation of resource dependencies in your configuration.
+    source: https://www.terraform.io/docs/cli/commands/graph.html
+
+  - id: terraform_i8
+    question: What is a Terraform provisioner?
+    options:
+      - A way to execute scripts on resources
+      - A method to configure providers
+      - A system to manage resource states
+      - A tool to validate configurations
+    correct_answer: 0
+    explanation: Provisioners can be used to execute scripts on local or remote resources after creation.
+    source: https://www.terraform.io/docs/language/resources/provisioners/index.html
+
+  - id: terraform_i9
+    question: What is Terraform import?
+    options:
+      - A way to manage existing resources
+      - A method to share configuration
+      - A system to track dependencies
+      - A tool to validate resources
+    correct_answer: 0
+    explanation: Import allows bringing existing resources under Terraform management by importing them into state.
+    source: https://www.terraform.io/docs/cli/import/index.html
+
+  - id: terraform_i10
+    question: What is a Terraform local value?
+    options:
+      - A named value for reuse in configuration
+      - A method to store temporary data
+      - A system to manage local files
+      - A tool to track local changes
+    correct_answer: 0
+    explanation: Local values assign a name to an expression, allowing it to be used multiple times within a module.
+    source: https://www.terraform.io/docs/language/values/locals.html 

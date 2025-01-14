@@ -1,0 +1,116 @@
+id: sre_basics
+category: sre
+level: beginner
+title: Site Reliability Engineering Basics
+description: Learn the fundamental concepts and principles of Site Reliability Engineering
+
+questions:
+  - id: q1
+    question: What is Site Reliability Engineering (SRE)?
+    options:
+      - A practice that incorporates aspects of software engineering and applies them to infrastructure and operations problems
+      - A type of software development
+      - A monitoring system
+      - A deployment strategy
+    explanation: SRE is a discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems, focusing on creating scalable and reliable software systems.
+    source: "Google SRE Book - https://sre.google/sre-book/introduction/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is Service Level Objective (SLO)?
+    options:
+      - A target value or range of values for a service level that is measured by SLIs
+      - A monitoring tool
+      - A deployment strategy
+      - A type of alert
+    explanation: An SLO is a target value or range of values for a service level that is measured by Service Level Indicators (SLIs), representing the reliability goals of the service.
+    source: "Google SRE Book - https://sre.google/sre-book/service-level-objectives/"
+    correct_answer: 0
+
+  - id: q3
+    question: What is Error Budget?
+    options:
+      - The allowed amount of unreliability that can be tolerated before stopping feature development
+      - A financial budget
+      - A resource limit
+      - A monitoring threshold
+    explanation: An error budget is the maximum amount of time that a service can fail without violating its SLO, used to balance reliability and innovation.
+    source: "Google SRE Book - https://sre.google/sre-book/embracing-risk/"
+    correct_answer: 0
+
+  - id: q4
+    question: What is Service Level Indicator (SLI)?
+    options:
+      - A carefully defined quantitative measure of some aspect of the service level
+      - A service agreement
+      - A deployment strategy
+      - A monitoring tool
+    explanation: An SLI is a quantitative measure of some aspect of the level of service being provided, such as latency, availability, or error rate.
+    source: "Google SRE Book - https://sre.google/sre-book/service-level-objectives/"
+    correct_answer: 0
+
+  - id: q5
+    question: What is Toil in SRE?
+    options:
+      - Manual, repetitive, and automatable work that scales linearly with service growth
+      - A type of monitoring
+      - A deployment strategy
+      - A testing method
+    explanation: Toil is the kind of work tied to running a production service that tends to be manual, repetitive, automatable, tactical, and devoid of enduring value.
+    source: "Google SRE Book - https://sre.google/sre-book/eliminating-toil/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the purpose of Service Level Agreement (SLA)?
+    options:
+      - A contract that defines the expected service level and penalties for not meeting it
+      - A monitoring system
+      - A deployment strategy
+      - An alert policy
+    explanation: An SLA is an explicit or implicit contract with users that includes consequences of meeting (or missing) the service level objectives they contain.
+    source: "Google SRE Book - https://sre.google/sre-book/service-level-objectives/"
+    correct_answer: 0
+
+  - id: q7
+    question: What is the Golden Signal in monitoring?
+    options:
+      - Latency, traffic, errors, and saturation
+      - CPU usage only
+      - Memory usage only
+      - Network traffic only
+    explanation: The four golden signals of monitoring are latency, traffic, errors, and saturation, which provide a comprehensive view of system health.
+    source: "Google SRE Book - https://sre.google/sre-book/monitoring-distributed-systems/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is Capacity Planning in SRE?
+    options:
+      - The process of determining the resources needed to meet future demand
+      - A deployment strategy
+      - A monitoring system
+      - An alert policy
+    explanation: Capacity planning is the process of determining what resources are needed to meet future demand while maintaining reliability and performance targets.
+    source: "Google SRE Book - https://sre.google/sre-book/software-engineering-in-sre/"
+    correct_answer: 0
+
+  - id: q9
+    question: What is the purpose of Postmortem in SRE?
+    options:
+      - A written record of an incident, its impact, actions taken, and follow-up work
+      - A monitoring dashboard
+      - A deployment plan
+      - A testing strategy
+    explanation: A postmortem is a written record of an incident, including its impact, the actions taken to mitigate or resolve it, and the follow-up actions to prevent recurrence.
+    source: "Google SRE Book - https://sre.google/sre-book/postmortem-culture/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the principle of "Hope is Not a Strategy"?
+    options:
+      - Relying on systematic approaches rather than wishful thinking for reliability
+      - A monitoring technique
+      - A deployment method
+      - A testing approach
+    explanation: This principle emphasizes that reliability requires systematic approaches, automation, and proper engineering rather than hoping things will work out.
+    source: "Google SRE Book - https://sre.google/sre-book/introduction/"
+    correct_answer: 0 

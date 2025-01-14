@@ -1,0 +1,116 @@
+id: network_basics
+category: network
+level: beginner
+title: Network Fundamentals
+description: Test your knowledge of basic networking concepts and protocols
+
+questions:
+  - id: network_b1
+    question: What is an IP address?
+    options:
+      - A unique identifier assigned to devices on a network
+      - A web browser
+      - A network cable
+      - A security protocol
+    correct_answer: 0
+    explanation: An IP address is a unique numerical identifier assigned to each device on a computer network that uses the Internet Protocol for communication.
+    source: https://www.ietf.org/rfc/rfc791.txt
+
+  - id: network_b2
+    question: What is DNS?
+    options:
+      - Domain Name System - translates domain names to IP addresses
+      - Data Network Service
+      - Digital Network System
+      - Dynamic Network Setup
+    correct_answer: 0
+    explanation: DNS (Domain Name System) is a system that translates human-readable domain names into IP addresses that computers use to communicate.
+    source: https://www.ietf.org/rfc/rfc1034.txt
+
+  - id: network_b3
+    question: What is a subnet mask?
+    options:
+      - A number that defines the range of IP addresses in a network
+      - A security feature
+      - A type of firewall
+      - A network cable
+    correct_answer: 0
+    explanation: A subnet mask is a 32-bit number that divides an IP address into network and host portions, defining the range of IP addresses within a network.
+    source: https://www.ietf.org/rfc/rfc950.txt
+
+  - id: network_b4
+    question: What is a router?
+    options:
+      - A device that forwards data between computer networks
+      - A network cable
+      - A security protocol
+      - A type of server
+    correct_answer: 0
+    explanation: A router is a networking device that forwards data packets between computer networks, determining the best path for data transmission.
+    source: https://www.ietf.org/rfc/rfc1812.txt
+
+  - id: network_b5
+    question: What is HTTP?
+    options:
+      - Hypertext Transfer Protocol - for transmitting web pages
+      - High Transfer Protocol
+      - Host Transfer Protocol
+      - Hypertext Terminal Protocol
+    correct_answer: 0
+    explanation: HTTP (Hypertext Transfer Protocol) is the foundation of data communication on the World Wide Web, used for transmitting web pages and other resources.
+    source: https://www.ietf.org/rfc/rfc2616.txt
+
+  - id: network_b6
+    question: What is a MAC address?
+    options:
+      - A unique hardware identifier assigned to network interfaces
+      - A security protocol
+      - A type of IP address
+      - A network cable
+    correct_answer: 0
+    explanation: A MAC (Media Access Control) address is a unique identifier assigned to network interfaces for communications on a network segment.
+    source: https://standards.ieee.org/standard/802_3-2018.html
+
+  - id: network_b7
+    question: What is DHCP?
+    options:
+      - Dynamic Host Configuration Protocol - automatically assigns IP addresses
+      - Digital Host Control Protocol
+      - Dynamic Host Control Program
+      - Data Host Configuration Protocol
+    correct_answer: 0
+    explanation: DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and other network configuration parameters to devices on a network.
+    source: https://www.ietf.org/rfc/rfc2131.txt
+
+  - id: network_b8
+    question: What is a firewall?
+    options:
+      - A network security system that monitors and controls traffic
+      - A type of router
+      - A network cable
+      - A web browser
+    correct_answer: 0
+    explanation: A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules.
+    source: https://www.nist.gov/publications/guidelines-firewalls-and-firewall-policy
+
+  - id: network_b9
+    question: What is a switch?
+    options:
+      - A device that connects devices in a network and forwards data
+      - A type of cable
+      - A security protocol
+      - A web server
+    correct_answer: 0
+    explanation: A switch is a networking device that connects devices in a network and forwards data only to the intended destination device.
+    source: https://standards.ieee.org/standard/802_1Q-2018.html
+
+  - id: network_b10
+    question: What is TCP/IP?
+    options:
+      - A set of protocols that enable communication on the Internet
+      - A type of network cable
+      - A security system
+      - A web browser
+    correct_answer: 0
+    explanation: TCP/IP (Transmission Control Protocol/Internet Protocol) is the basic communication protocol of the Internet and the foundation for all modern networking.
+    source: https://www.ietf.org/rfc/rfc793.txt 

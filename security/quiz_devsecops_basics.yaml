@@ -1,0 +1,116 @@
+id: devsecops_basics
+category: security
+level: beginner
+title: DevSecOps Basics
+description: Learn the fundamental concepts and practices of DevSecOps
+
+questions:
+  - id: q1
+    question: What is DevSecOps?
+    options:
+      - An approach that integrates security practices within the DevOps process
+      - A specialized type of firewall for protecting development environments
+      - A comprehensive security testing tool for continuous integration
+      - A standardized compliance framework for software development
+    explanation: DevSecOps is an approach to culture, automation, and platform design that integrates security as a shared responsibility throughout the entire IT lifecycle.
+    source: "NIST Special Publication 800-190"
+    correct_answer: 0
+
+  - id: q2
+    question: What is SAST?
+    options:
+      - Static Application Security Testing - analyzing source code for security vulnerabilities
+      - A comprehensive network scanning tool for identifying system weaknesses
+      - A real-time monitoring tool for application performance and security
+      - A continuous deployment strategy for secure software releases
+    explanation: SAST (Static Application Security Testing) analyzes source code or compiled versions of code to help find security vulnerabilities without executing the application.
+    source: "OWASP Source Code Analysis Tools"
+    correct_answer: 0
+
+  - id: q3
+    question: What is DAST?
+    options:
+      - Dynamic Application Security Testing - testing an application while it's running
+      - A systematic code review process for identifying security vulnerabilities
+      - A comprehensive backup strategy for securing application data
+      - An automated compliance checking system for security standards
+    explanation: DAST (Dynamic Application Security Testing) is a security testing methodology that analyzes a running application by simulating attacks from malicious users.
+    source: "OWASP Web Security Testing Guide"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the principle of least privilege?
+    options:
+      - Users and processes should only have the minimum permissions necessary to perform their tasks
+      - All users should have administrative access to ensure maximum system efficiency
+      - Sharing credentials between team members to facilitate collaboration
+      - Using the same password across systems for simplified management
+    explanation: The principle of least privilege states that every user and process should operate using the minimum set of privileges necessary to complete their job.
+    source: "NIST Special Publication 800-53"
+    correct_answer: 0
+
+  - id: q5
+    question: What is Container Security Scanning?
+    options:
+      - Analyzing container images for known vulnerabilities and security issues
+      - Implementing physical security measures for protecting data center infrastructure
+      - Continuous network monitoring for detecting unauthorized access attempts
+      - Advanced password management system for container authentication
+    explanation: Container security scanning involves analyzing container images for known vulnerabilities, malware, and security issues before they are deployed to production.
+    source: "Docker Security Documentation"
+    correct_answer: 0
+
+  - id: q6
+    question: What is Secret Management?
+    options:
+      - Secure storage and handling of sensitive information like passwords and API keys
+      - Advanced public key encryption system for securing network communications
+      - Comprehensive network firewall solution for protecting internal systems
+      - Detailed access logging system for tracking user authentication attempts
+    explanation: Secret management involves the secure storage, distribution, and rotation of sensitive information such as passwords, API keys, and certificates.
+    source: "HashiCorp Vault Documentation"
+    correct_answer: 0
+
+  - id: q7
+    question: What is Compliance as Code?
+    options:
+      - Automating compliance and security policies through version-controlled code
+      - Conducting systematic manual security audits of system configurations
+      - Implementing comprehensive physical security measures and controls
+      - Deploying advanced network monitoring and intrusion detection
+    explanation: Compliance as Code involves defining and enforcing security policies and compliance requirements through automated, version-controlled code.
+    source: "AWS Security Documentation"
+    correct_answer: 0
+
+  - id: q8
+    question: What is Infrastructure as Code (IaC) Security?
+    options:
+      - Security practices applied to infrastructure defined and managed through code
+      - Comprehensive physical server security measures and access controls
+      - Traditional manual configuration and security management processes
+      - Advanced network monitoring and traffic analysis systems
+    explanation: IaC Security involves securing infrastructure definitions, ensuring secure configurations, and scanning IaC templates for security issues before deployment.
+    source: "Terraform Security Documentation"
+    correct_answer: 0
+
+  - id: q9
+    question: What is Security Monitoring?
+    options:
+      - Continuous observation and analysis of systems for security threats and anomalies
+      - Comprehensive one-time security audit of system configurations and settings
+      - Systematic manual review of system logs and security event records
+      - Regular periodic backup and verification of critical system data
+    explanation: Security monitoring involves the continuous collection, analysis, and correlation of security events and logs to detect and respond to security threats.
+    source: "NIST Cybersecurity Framework"
+    correct_answer: 0
+
+  - id: q10
+    question: What is Threat Modeling?
+    options:
+      - A structured approach to identifying and prioritizing potential security threats
+      - A specialized type of firewall for protecting against advanced threats
+      - A comprehensive backup strategy for disaster recovery planning
+      - An automated deployment method for security configurations
+    explanation: Threat modeling is a structured approach to identifying, quantifying, and addressing security risks and potential threats to a system.
+    source: "OWASP Threat Modeling"
+    correct_answer: 0 

@@ -1,0 +1,116 @@
+id: terraform_advanced
+category: terraform
+level: advanced
+title: Terraform Expert Level
+description: Test your expertise in advanced Terraform concepts and features
+
+questions:
+  - id: terraform_a1
+    question: What is Terraform provider development?
+    options:
+      - Creating custom providers for specific platforms
+      - Managing provider version dependencies
+      - Configuring provider authentication
+      - Implementing provider resources
+    correct_answer: 0
+    explanation: Provider development involves creating custom providers to manage resources on specific platforms or services.
+    source: https://www.terraform.io/docs/extend/writing-custom-providers.html
+
+  - id: terraform_a2
+    question: What is Terraform state manipulation?
+    options:
+      - Directly modifying state data structure
+      - Managing state file backups
+      - Implementing state locking
+      - Configuring state storage
+    correct_answer: 0
+    explanation: State manipulation involves directly modifying the Terraform state data structure using state management commands.
+    source: https://www.terraform.io/docs/cli/state/index.html
+
+  - id: terraform_a3
+    question: What is Terraform module composition?
+    options:
+      - Combining modules to create larger systems
+      - Managing module version control
+      - Implementing module testing
+      - Configuring module inputs
+    correct_answer: 0
+    explanation: Module composition involves combining multiple modules to create larger and more complex infrastructure systems.
+    source: https://www.terraform.io/docs/language/modules/composition.html
+
+  - id: terraform_a4
+    question: What is Terraform provider aliasing?
+    options:
+      - Using multiple configurations of same provider
+      - Managing provider credentials
+      - Implementing provider fallbacks
+      - Configuring provider timeouts
+    correct_answer: 0
+    explanation: Provider aliasing allows using multiple configurations of the same provider within a single configuration.
+    source: https://www.terraform.io/docs/language/providers/configuration.html
+
+  - id: terraform_a5
+    question: What is Terraform expression functions?
+    options:
+      - Creating custom functions for configurations
+      - Managing built-in functions
+      - Implementing function libraries
+      - Configuring function calls
+    correct_answer: 0
+    explanation: Expression functions allow creating custom functions to extend Terraform's configuration language capabilities.
+    source: https://www.terraform.io/docs/language/functions/custom.html
+
+  - id: terraform_a6
+    question: What is Terraform external data source?
+    options:
+      - Running external programs for data retrieval
+      - Managing external state files
+      - Implementing external providers
+      - Configuring external access
+    correct_answer: 0
+    explanation: External data sources allow running external programs to retrieve data for use in Terraform configurations.
+    source: https://www.terraform.io/docs/language/data-sources/external.html
+
+  - id: terraform_a7
+    question: What is Terraform dynamic block usage?
+    options:
+      - Generating nested blocks dynamically
+      - Managing block dependencies
+      - Implementing block templates
+      - Configuring block parameters
+    correct_answer: 0
+    explanation: Dynamic blocks allow generating nested configuration blocks dynamically based on complex expressions.
+    source: https://www.terraform.io/docs/language/expressions/dynamic-blocks.html
+
+  - id: terraform_a8
+    question: What is Terraform custom validation rules?
+    options:
+      - Creating custom input validation logic
+      - Managing validation errors
+      - Implementing validation checks
+      - Configuring validation rules
+    correct_answer: 0
+    explanation: Custom validation rules allow defining specific validation logic for input variables and resources.
+    source: https://www.terraform.io/docs/language/values/variables.html#custom-validation-rules
+
+  - id: terraform_a9
+    question: What is Terraform provider protocols?
+    options:
+      - Implementing provider communication methods
+      - Managing provider interfaces
+      - Configuring provider APIs
+      - Handling provider requests
+    correct_answer: 0
+    explanation: Provider protocols define how Terraform core communicates with provider plugins to manage resources.
+    source: https://www.terraform.io/docs/extend/how-terraform-works.html
+
+  - id: terraform_a10
+    question: What is Terraform state migration?
+    options:
+      - Moving resources between state files
+      - Managing state versions
+      - Implementing state transfers
+      - Configuring state changes
+    correct_answer: 0
+    explanation: State migration involves moving resources between state files or refactoring existing state structures.
+    source: https://www.terraform.io/docs/cli/state/move.html 

@@ -1,0 +1,114 @@
+title: ArgoCD Expert Concepts
+description: Test your advanced knowledge of ArgoCD architecture and enterprise patterns
+category: argocd
+level: advanced
+questions:
+  - id: argocd_a1
+    question: How can you implement custom diffing logic in ArgoCD?
+    options:
+      - By creating a custom diff plugin using the plugin framework
+      - By modifying the core ArgoCD code
+      - By using external diff tools
+      - By implementing custom CRDs
+    correct_answer: 0
+    explanation: Custom diffing logic can be implemented by creating plugins using ArgoCD's plugin framework, allowing for specialized comparison of resources based on specific requirements.
+    source: https://argo-cd.readthedocs.io/en/stable/user-guide/diff-strategies/
+
+  - id: argocd_a2
+    question: What are the implications of using the 'force' sync option in ArgoCD?
+    options:
+      - It bypasses checks and hooks, potentially causing data loss or service disruption
+      - It only forces metadata updates
+      - It only affects non-critical resources
+      - It automatically backs up before sync
+    correct_answer: 0
+    explanation: Force sync bypasses normal safety checks and resource hooks, which can lead to data loss or service disruption if not used carefully, especially with stateful applications.
+    source: https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/
+
+  - id: argocd_a3
+    question: How can you implement custom resource actions in ArgoCD?
+    options:
+      - By creating ConfigMap-based action definitions with custom UI and backend logic
+      - By modifying the ArgoCD UI only
+      - By using external scripts
+      - By implementing new CRDs
+    correct_answer: 0
+    explanation: Custom resource actions can be implemented by defining them in ConfigMaps, including both UI elements and backend logic for performing specific operations on resources.
+    source: https://argo-cd.readthedocs.io/en/stable/operator-manual/custom-actions/
+
+  - id: argocd_a4
+    question: What is the purpose of the 'resource tracking' method in ArgoCD?
+    options:
+      - To determine which resources belong to an application using different strategies
+      - To monitor resource usage
+      - To track deployment history
+      - To manage resource quotas
+    correct_answer: 0
+    explanation: Resource tracking methods determine how ArgoCD identifies which resources belong to an application, with options like annotation-based, label-based, or combinatorial approaches.
+    source: https://argo-cd.readthedocs.io/en/stable/user-guide/resource_tracking/
+
+  - id: argocd_a5
+    question: How can you implement custom authentication in ArgoCD?
+    options:
+      - By configuring OIDC, LDAP, or implementing custom authentication plugins
+      - By using basic auth only
+      - By modifying core authentication code
+      - By using external auth services only
+    correct_answer: 0
+    explanation: Custom authentication can be implemented through built-in support for OIDC and LDAP, or by creating custom authentication plugins for specific requirements.
+    source: https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/
+
+  - id: argocd_a6
+    question: What are the considerations for implementing multi-cluster management with ArgoCD?
+    options:
+      - Network connectivity, RBAC, secret management, and cluster credentials
+      - Only network connectivity
+      - Only RBAC settings
+      - Only cluster credentials
+    correct_answer: 0
+    explanation: Multi-cluster management requires careful consideration of network connectivity between clusters, RBAC configurations, secret management, and secure handling of cluster credentials.
+    source: https://argo-cd.readthedocs.io/en/stable/operator-manual/cluster-management/
+
+  - id: argocd_a7
+    question: How can you implement custom metrics and monitoring in ArgoCD?
+    options:
+      - By using Prometheus metrics, custom metrics, and monitoring integrations
+      - By using logs only
+      - By external monitoring only
+      - By manual checks only
+    correct_answer: 0
+    explanation: Custom metrics and monitoring can be implemented using built-in Prometheus metrics, custom metric exporters, and integrations with monitoring systems like Grafana.
+    source: https://argo-cd.readthedocs.io/en/stable/operator-manual/metrics/
+
+  - id: argocd_a8
+    question: What is the purpose of the 'application reconciliation' process in ArgoCD?
+    options:
+      - To continuously ensure the desired state matches the actual state
+      - To backup applications
+      - To deploy new versions
+      - To rollback changes
+    correct_answer: 0
+    explanation: Application reconciliation is the core process where ArgoCD continuously compares the desired state in Git with the actual state in the cluster and attempts to resolve any differences.
+    source: https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/
+
+  - id: argocd_a9
+    question: How can you implement custom resource state management in ArgoCD?
+    options:
+      - By creating custom health checks and sync hooks
+      - By using external state management
+      - By manual state tracking
+      - By modifying core state logic
+    correct_answer: 0
+    explanation: Custom resource state management can be implemented through custom health checks, sync hooks, and resource actions to handle complex application states and transitions.
+    source: https://argo-cd.readthedocs.io/en/stable/operator-manual/health/
+
+  - id: argocd_a10
+    question: What are the security implications of using 'server-side apply' in ArgoCD?
+    options:
+      - Potential conflicts with other controllers and field management issues
+      - No security implications
+      - Only affects performance
+      - Only impacts logging
+    correct_answer: 0
+    explanation: Server-side apply can lead to conflicts with other controllers managing the same resources and requires careful consideration of field management and RBAC permissions.
+    source: https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/ 

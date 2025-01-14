@@ -1,0 +1,116 @@
+id: network_advanced
+category: network
+level: advanced
+title: Advanced Network Security and Design
+description: Test your knowledge of advanced networking concepts, security, and infrastructure design
+
+questions:
+  - id: network_a1
+    question: What is SDN?
+    options:
+      - Software-Defined Networking - centralizes network control
+      - System Distribution Network
+      - Secure Data Network
+      - Service Delivery Network
+    correct_answer: 0
+    explanation: SDN (Software-Defined Networking) is an approach to network management that enables dynamic, programmatically efficient network configuration.
+    source: https://www.opennetworking.org/sdn-definition/
+
+  - id: network_a2
+    question: What is MPLS?
+    options:
+      - Multiprotocol Label Switching - high-performance routing
+      - Multiple Protocol Layer System
+      - Multi-Path Link Service
+      - Management Protocol Link System
+    correct_answer: 0
+    explanation: MPLS (Multiprotocol Label Switching) is a routing technique in telecommunications networks that directs data from one node to the next based on labels.
+    source: https://www.ietf.org/rfc/rfc3031.txt
+
+  - id: network_a3
+    question: What is IPsec?
+    options:
+      - Internet Protocol Security - secure network communications
+      - IP Security Protocol
+      - Internet Protocol Service
+      - IP Secure Extension
+    correct_answer: 0
+    explanation: IPsec (Internet Protocol Security) is a protocol suite for securing Internet Protocol (IP) communications by authenticating and encrypting each IP packet.
+    source: https://www.ietf.org/rfc/rfc4301.txt
+
+  - id: network_a4
+    question: What is BGP Route Reflection?
+    options:
+      - A method to scale BGP by reducing full-mesh requirements
+      - A routing backup system
+      - A traffic monitoring tool
+      - A network security protocol
+    correct_answer: 0
+    explanation: BGP Route Reflection is a method to scale BGP by allowing a router (route reflector) to advertise routes to clients, reducing the need for a full mesh.
+    source: https://www.ietf.org/rfc/rfc4456.txt
+
+  - id: network_a5
+    question: What is EVPN?
+    options:
+      - Ethernet VPN - provides Layer 2 and Layer 3 VPN services
+      - Extended Virtual Private Network
+      - Enhanced VPN Protocol
+      - Enterprise VPN Network
+    correct_answer: 0
+    explanation: EVPN (Ethernet VPN) is a technology that provides both Layer 2 and Layer 3 VPN services with enhanced scalability and multitenancy.
+    source: https://www.ietf.org/rfc/rfc7432.txt
+
+  - id: network_a6
+    question: What is Network Microsegmentation?
+    options:
+      - A security approach that divides network into small, isolated segments
+      - A network monitoring tool
+      - A routing protocol
+      - A bandwidth management system
+    correct_answer: 0
+    explanation: Network Microsegmentation is a security approach that divides the network into small, isolated segments to improve security and limit the spread of breaches.
+    source: https://www.nist.gov/publications/zero-trust-architecture
+
+  - id: network_a7
+    question: What is LISP?
+    options:
+      - Locator/ID Separation Protocol - separates location from identity
+      - Local Internet Service Protocol
+      - Link Interface Security Protocol
+      - Layer Internet Security Protocol
+    correct_answer: 0
+    explanation: LISP (Locator/ID Separation Protocol) is a network architecture that separates location and identity of network devices, improving routing scalability.
+    source: https://www.ietf.org/rfc/rfc6830.txt
+
+  - id: network_a8
+    question: What is PBR?
+    options:
+      - Policy-Based Routing - routes based on policies
+      - Protocol-Based Routing
+      - Path-Based Routing
+      - Performance-Based Routing
+    correct_answer: 0
+    explanation: PBR (Policy-Based Routing) allows routing decisions to be made based on policies set by the network administrator rather than routing protocols.
+    source: https://www.cisco.com/c/en/us/td/docs/ios/12_2/qos/configuration/guide/fqos_c/qcfpbr.html
+
+  - id: network_a9
+    question: What is Network Function Virtualization (NFV)?
+    options:
+      - Virtualizing network services traditionally run on proprietary hardware
+      - Network File Verification
+      - Network Function Validation
+      - Network Firewall Virtualization
+    correct_answer: 0
+    explanation: NFV virtualizes network services traditionally run on proprietary hardware, allowing them to run on standard servers as virtual functions.
+    source: https://www.etsi.org/technologies/nfv
+
+  - id: network_a10
+    question: What is Zero Trust Networking?
+    options:
+      - A security model that trusts nothing by default
+      - A network testing methodology
+      - A routing protocol
+      - A bandwidth management system
+    correct_answer: 0
+    explanation: Zero Trust Networking is a security model that requires strict identity verification for every person and device trying to access resources on a network.
+    source: https://www.nist.gov/publications/zero-trust-architecture 

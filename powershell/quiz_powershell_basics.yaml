@@ -1,0 +1,116 @@
+id: powershell_basics
+category: powershell
+level: beginner
+title: PowerShell Fundamentals
+description: Test your knowledge of basic PowerShell concepts and commands
+
+questions:
+  - id: powershell_b1
+    question: What is PowerShell?
+    options:
+      - A command-line shell and scripting language from Microsoft
+      - A text editor
+      - A web browser
+      - An antivirus program
+    correct_answer: 0
+    explanation: PowerShell is a task automation framework and command-line shell from Microsoft, designed for system administration and automation.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/overview
+
+  - id: powershell_b2
+    question: What is a cmdlet in PowerShell?
+    options:
+      - A lightweight command used to perform an action
+      - A script file
+      - A variable type
+      - A text editor
+    correct_answer: 0
+    explanation: A cmdlet is a lightweight command that is used in the PowerShell environment, following a verb-noun naming pattern.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview
+
+  - id: powershell_b3
+    question: What is the Get-Help cmdlet used for?
+    options:
+      - Displays help about PowerShell commands and concepts
+      - Gets system information
+      - Creates new files
+      - Lists running processes
+    correct_answer: 0
+    explanation: Get-Help displays information about PowerShell commands (cmdlets, functions, scripts) and concepts.
+    source: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-help
+
+  - id: powershell_b4
+    question: What is a PowerShell pipeline?
+    options:
+      - A series of commands connected by the pipe operator |
+      - A network connection
+      - A script file
+      - A system variable
+    correct_answer: 0
+    explanation: A PowerShell pipeline allows you to send the output of one command as input to another command using the pipe operator (|).
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/understanding-the-powershell-pipeline
+
+  - id: powershell_b5
+    question: What is the Get-Process cmdlet used for?
+    options:
+      - Gets the processes running on the local computer
+      - Gets file information
+      - Gets network settings
+      - Gets system time
+    correct_answer: 0
+    explanation: Get-Process gets the processes that are running on the local computer or a remote computer.
+    source: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process
+
+  - id: powershell_b6
+    question: What is a PowerShell variable?
+    options:
+      - A unit of storage that can hold data
+      - A command
+      - A script file
+      - A function
+    correct_answer: 0
+    explanation: A PowerShell variable is a unit of memory that stores a value, denoted by a name beginning with $ symbol.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/variables
+
+  - id: powershell_b7
+    question: What is the Set-Location cmdlet used for?
+    options:
+      - Changes the current working directory
+      - Sets system time
+      - Creates new files
+      - Modifies permissions
+    correct_answer: 0
+    explanation: Set-Location (alias cd) changes the current working location to a specified location.
+    source: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/set-location
+
+  - id: powershell_b8
+    question: What is the Get-Content cmdlet used for?
+    options:
+      - Gets the content of a file
+      - Gets process information
+      - Gets network settings
+      - Gets system time
+    correct_answer: 0
+    explanation: Get-Content gets the content of a file at the specified location.
+    source: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content
+
+  - id: powershell_b9
+    question: What is a PowerShell alias?
+    options:
+      - An alternate name for a cmdlet or command
+      - A variable type
+      - A script file
+      - A function
+    correct_answer: 0
+    explanation: An alias is an alternate name or shortcut for a cmdlet or command in PowerShell.
+    source: https://docs.microsoft.com/en-us/powershell/scripting/learn/using-familiar-command-names
+
+  - id: powershell_b10
+    question: What is the Write-Host cmdlet used for?
+    options:
+      - Writes customized output to the console
+      - Creates new files
+      - Modifies permissions
+      - Sets system time
+    correct_answer: 0
+    explanation: Write-Host writes customized output to the console, allowing you to specify colors and other formatting options.
+    source: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/write-host 

@@ -1,0 +1,114 @@
+title: ESXi Advanced Operations
+description: Test your intermediate knowledge of VMware ESXi and vSphere management
+category: esxi
+level: intermediate
+questions:
+  - id: esxi_i1
+    question: What is Storage vMotion used for?
+    options:
+      - To migrate virtual machine storage while the VM is running
+      - To backup virtual machines
+      - To create new datastores
+      - To configure storage adapters
+    correct_answer: 0
+    explanation: Storage vMotion allows you to migrate virtual machine disk files between datastores while the virtual machine continues running, with no downtime.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-AB266895-BAA3-4C93-82A0-0BDB1268B52F.html
+
+  - id: esxi_i2
+    question: What is High Availability (HA) in vSphere?
+    options:
+      - A feature that automatically restarts VMs on other hosts if their host fails
+      - A backup solution
+      - A load balancing feature
+      - A security feature
+    correct_answer: 0
+    explanation: vSphere HA provides high availability for virtual machines by pooling them and the hosts into a cluster, monitoring them for failures, and restarting VMs on other hosts when needed.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-33A65FF7-DA22-4DC5-8B18-5A7F97CCA536.html
+
+  - id: esxi_i3
+    question: What is the purpose of Distributed Resource Scheduler (DRS)?
+    options:
+      - To automatically balance resources across hosts in a cluster
+      - To manage storage allocation
+      - To configure network settings
+      - To handle backup operations
+    correct_answer: 0
+    explanation: DRS continuously monitors resource utilization within a cluster and intelligently allocates available resources among virtual machines according to business needs.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-8ACF3502-5314-469F-8CC9-4A9BD5925BC2.html
+
+  - id: esxi_i4
+    question: What is the purpose of Resource Pools in ESXi?
+    options:
+      - To partition available CPU and memory resources for VMs
+      - To manage storage resources only
+      - To configure network bandwidth
+      - To handle backup scheduling
+    correct_answer: 0
+    explanation: Resource pools allow you to partition available CPU and memory resources and allocate them to virtual machines based on business needs and priorities.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html
+
+  - id: esxi_i5
+    question: What is VMFS (Virtual Machine File System)?
+    options:
+      - A high-performance cluster file system for ESXi hosts
+      - A backup file system
+      - A network file system
+      - A temporary file system
+    correct_answer: 0
+    explanation: VMFS is a cluster file system that provides storage virtualization optimized for virtual machines, allowing multiple ESXi hosts to access the same storage concurrently.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5EE84941-366D-4D37-8B7B-767D08928888.html
+
+  - id: esxi_i6
+    question: What is the purpose of vSphere Fault Tolerance?
+    options:
+      - To provide continuous availability by maintaining a secondary copy of a VM
+      - To handle storage failures
+      - To manage network redundancy
+      - To provide backup services
+    correct_answer: 0
+    explanation: vSphere Fault Tolerance creates and maintains a secondary copy of a virtual machine that can take over at any time, providing continuous availability.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-57929CF0-DA9B-407A-BF2E-E7B72708D825.html
+
+  - id: esxi_i7
+    question: What is the purpose of Host Profiles in vSphere?
+    options:
+      - To automate host configuration and ensure consistency
+      - To manage virtual machines
+      - To configure storage settings
+      - To handle network settings
+    correct_answer: 0
+    explanation: Host Profiles allow you to create a reference host configuration and apply that same configuration to other hosts, ensuring consistency across your environment.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostprofiles.doc/GUID-FBE41168-B64E-4A3F-A00D-0F357A3F491F.html
+
+  - id: esxi_i8
+    question: What is Storage DRS in vSphere?
+    options:
+      - A feature that balances storage workloads across datastores
+      - A backup solution
+      - A storage monitoring tool
+      - A file system type
+    correct_answer: 0
+    explanation: Storage DRS provides automated load balancing and initial placement recommendations for virtual machines based on storage space and I/O capacity.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-D744F20C-97EA-435E-B8E9-A6BD4E6F7417.html
+
+  - id: esxi_i9
+    question: What is the purpose of vSphere Network I/O Control?
+    options:
+      - To prioritize network bandwidth allocation for different traffic types
+      - To configure network cards
+      - To manage network cables
+      - To monitor network usage
+    correct_answer: 0
+    explanation: Network I/O Control allows you to prioritize network bandwidth allocation for different types of network traffic, ensuring critical traffic gets the resources it needs.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-517243B4-50F3-48DA-9C6F-F56802F6D40B.html
+
+  - id: esxi_i10
+    question: What is Enhanced vMotion Compatibility (EVC)?
+    options:
+      - A feature that ensures CPU compatibility for vMotion across different processor generations
+      - A storage migration tool
+      - A network configuration tool
+      - A backup feature
+    correct_answer: 0
+    explanation: EVC ensures that all hosts in a cluster present the same CPU feature set to virtual machines, making vMotion possible between hosts with different CPU generations.
+    source: https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-9F444D9B-44B0-4967-8C07-693C6B40278A.html 

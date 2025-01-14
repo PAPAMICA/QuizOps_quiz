@@ -1,0 +1,116 @@
+id: jenkins_basics
+category: jenkins
+level: beginner
+title: Jenkins Fundamentals
+description: Test your knowledge of basic Jenkins concepts and features
+
+questions:
+  - id: jenkins_b1
+    question: What is Jenkins?
+    options:
+      - An open-source automation server for CI/CD
+      - A version control system
+      - A container orchestration platform
+      - A code editor
+    correct_answer: 0
+    explanation: Jenkins is an open-source automation server that enables developers to build, test, and deploy their software through continuous integration and continuous delivery/deployment (CI/CD).
+    source: https://www.jenkins.io/doc/
+
+  - id: jenkins_b2
+    question: What is a Jenkins Pipeline?
+    options:
+      - A suite of plugins that supports implementing and integrating continuous delivery pipelines
+      - A network connection
+      - A storage system
+      - A monitoring tool
+    correct_answer: 0
+    explanation: A Jenkins Pipeline is a suite of plugins that supports implementing and integrating continuous delivery pipelines into Jenkins, defining the deployment pipeline as code.
+    source: https://www.jenkins.io/doc/book/pipeline/
+
+  - id: jenkins_b3
+    question: What is a Jenkins Job?
+    options:
+      - A runnable task controlled and monitored by Jenkins
+      - A server configuration
+      - A plugin
+      - A user account
+    correct_answer: 0
+    explanation: A Jenkins Job is a runnable task that is controlled and monitored by Jenkins, such as building a project, running tests, or deploying software.
+    source: https://www.jenkins.io/doc/book/using/
+
+  - id: jenkins_b4
+    question: What is a Jenkins Agent?
+    options:
+      - A machine that connects to Jenkins and executes tasks
+      - A security protocol
+      - A monitoring system
+      - A backup system
+    correct_answer: 0
+    explanation: A Jenkins Agent (or node) is a machine that connects to the Jenkins controller and executes tasks when directed by the controller.
+    source: https://www.jenkins.io/doc/book/using/using-agents/
+
+  - id: jenkins_b5
+    question: What is a Jenkinsfile?
+    options:
+      - A text file containing the pipeline definition
+      - A configuration file
+      - A log file
+      - A backup file
+    correct_answer: 0
+    explanation: A Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline and is checked into source control.
+    source: https://www.jenkins.io/doc/book/pipeline/jenkinsfile/
+
+  - id: jenkins_b6
+    question: What is a Jenkins Plugin?
+    options:
+      - An extension that provides additional functionality to Jenkins
+      - A pipeline stage
+      - A build tool
+      - A deployment script
+    correct_answer: 0
+    explanation: A Jenkins Plugin is an extension that adds new features or modifies existing functionality in Jenkins, such as source code management, build triggers, and more.
+    source: https://www.jenkins.io/doc/book/managing/plugins/
+
+  - id: jenkins_b7
+    question: What is a Build Trigger in Jenkins?
+    options:
+      - A condition that starts a build automatically
+      - A plugin type
+      - A deployment tool
+      - A security feature
+    correct_answer: 0
+    explanation: A Build Trigger is a condition that causes Jenkins to start a build automatically, such as code changes, scheduled times, or other jobs completing.
+    source: https://www.jenkins.io/doc/book/pipeline/syntax/#triggers
+
+  - id: jenkins_b8
+    question: What is Jenkins Workspace?
+    options:
+      - A directory where Jenkins builds your project
+      - A user interface
+      - A plugin manager
+      - A security setting
+    correct_answer: 0
+    explanation: A Jenkins Workspace is a directory on the Jenkins agent where Jenkins builds your project, containing source code and build artifacts.
+    source: https://www.jenkins.io/doc/book/pipeline/workspaces/
+
+  - id: jenkins_b9
+    question: What is a Jenkins Stage?
+    options:
+      - A section of a pipeline that performs a specific task
+      - A type of plugin
+      - A security level
+      - A backup system
+    correct_answer: 0
+    explanation: A Stage is a section of a Jenkins Pipeline that performs a specific task, such as Build, Test, or Deploy, helping to visualize the pipeline progress.
+    source: https://www.jenkins.io/doc/book/pipeline/syntax/#stage
+
+  - id: jenkins_b10
+    question: What is Jenkins Blue Ocean?
+    options:
+      - A user interface for Jenkins Pipeline
+      - A backup system
+      - A security protocol
+      - A build tool
+    correct_answer: 0
+    explanation: Jenkins Blue Ocean is a modern, visual user interface for Jenkins that focuses on Pipeline visualization and simplifies the Pipeline creation process.
+    source: https://www.jenkins.io/doc/book/blueocean/ 

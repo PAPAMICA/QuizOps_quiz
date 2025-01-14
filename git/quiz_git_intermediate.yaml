@@ -1,0 +1,116 @@
+id: git_intermediate
+category: git
+level: intermediate
+title: Git Advanced Concepts
+description: Test your knowledge of intermediate Git concepts and operations
+
+questions:
+  - id: git_i1
+    question: What is a Git rebase?
+    options:
+      - A way to integrate changes from one branch into another by rewriting commit history
+      - A way to delete a branch
+      - A way to create a new repository
+      - A way to tag a commit
+    correct_answer: 0
+    explanation: Git rebase moves or combines a sequence of commits to a new base commit, effectively rewriting the project history by creating new commits for each commit in the original branch.
+    source: https://git-scm.com/docs/git-rebase
+
+  - id: git_i2
+    question: What does 'git cherry-pick' do?
+    options:
+      - Applies the changes from specific commits to the current branch
+      - Deletes specific commits
+      - Creates a new branch
+      - Merges two branches
+    correct_answer: 0
+    explanation: Git cherry-pick is used to apply the changes introduced by some existing commits to the current branch, allowing you to pick specific commits from one branch and apply them to another.
+    source: https://git-scm.com/docs/git-cherry-pick
+
+  - id: git_i3
+    question: What is a Git stash?
+    options:
+      - A way to temporarily save changes that are not ready to be committed
+      - A permanent storage location
+      - A type of branch
+      - A remote repository
+    correct_answer: 0
+    explanation: Git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later.
+    source: https://git-scm.com/docs/git-stash
+
+  - id: git_i4
+    question: What is a Git tag?
+    options:
+      - A reference to a specific point in Git history
+      - A type of branch
+      - A commit message
+      - A merge strategy
+    correct_answer: 0
+    explanation: A Git tag is a reference that points to a specific point in Git history, typically used to mark release points (v1.0, v2.0, etc.).
+    source: https://git-scm.com/docs/git-tag
+
+  - id: git_i5
+    question: What is the purpose of .gitignore?
+    options:
+      - Specify files and directories that Git should ignore
+      - Store Git configuration
+      - List all Git commands
+      - Track binary files
+    correct_answer: 0
+    explanation: The .gitignore file specifies intentionally untracked files that Git should ignore, such as build artifacts, temporary files, or sensitive information.
+    source: https://git-scm.com/docs/gitignore
+
+  - id: git_i6
+    question: What is a Git submodule?
+    options:
+      - A repository nested inside another repository
+      - A type of branch
+      - A commit message format
+      - A merge strategy
+    correct_answer: 0
+    explanation: Git submodules allow you to keep a Git repository as a subdirectory of another Git repository, letting you clone another repository into your project and keep your commits separate.
+    source: https://git-scm.com/docs/git-submodule
+
+  - id: git_i7
+    question: What does 'git bisect' do?
+    options:
+      - Uses binary search to find the commit that introduced a bug
+      - Splits a repository in two
+      - Merges two branches
+      - Creates a new branch
+    correct_answer: 0
+    explanation: Git bisect uses a binary search algorithm to find which commit in your project's history introduced a bug by letting you test each commit until you find the exact one that introduced the problem.
+    source: https://git-scm.com/docs/git-bisect
+
+  - id: git_i8
+    question: What is a Git hook?
+    options:
+      - Scripts that run automatically before or after Git commands
+      - A type of branch
+      - A remote repository
+      - A merge strategy
+    correct_answer: 0
+    explanation: Git hooks are scripts that Git executes before or after events such as commit, push, and receive, allowing you to customize Git's internal behavior and trigger customizable actions.
+    source: https://git-scm.com/docs/githooks
+
+  - id: git_i9
+    question: What does 'git reflog' show?
+    options:
+      - A log of all reference updates in the repository
+      - Current branch status
+      - Remote repository status
+      - Commit messages only
+    correct_answer: 0
+    explanation: Git reflog records when the tips of branches and other references were updated in the local repository, providing a way to recover lost commits or branches.
+    source: https://git-scm.com/docs/git-reflog
+
+  - id: git_i10
+    question: What is a Git remote?
+    options:
+      - A repository hosted on the internet or network
+      - A local branch
+      - A commit message
+      - A merge strategy
+    correct_answer: 0
+    explanation: A Git remote is a repository hosted on the internet or another network, allowing collaboration with other developers by pushing to and pulling from these remote repositories.
+    source: https://git-scm.com/docs/git-remote 

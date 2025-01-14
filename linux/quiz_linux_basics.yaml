@@ -1,61 +1,116 @@
 id: linux_basics
 category: linux
 level: beginner
-title: Linux Basics
-description: Learn the fundamental concepts and commands of Linux operating system
+title: Linux Fundamentals
+description: Test your knowledge of basic Linux concepts and commands
 
 questions:
-  - id: q1
-    question: What command is used to list files and directories in Linux?
+  - id: linux_b1
+    question: What is Linux?
     options:
-      - ls
-      - dir
-      - list
-      - show
-    explanation: The 'ls' command is used to list directory contents in Linux. It can be used with various options like -l (long format), -a (show hidden files), etc.
-    source: "GNU Coreutils - https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html"
+      - An open-source operating system kernel
+      - A text editor
+      - A programming language
+      - A web browser
     correct_answer: 0
+    explanation: Linux is an open-source operating system kernel originally created by Linus Torvalds, which forms the foundation of many operating systems.
+    source: https://www.kernel.org/linux.html
 
-  - id: q2
-    question: What is the purpose of the 'sudo' command?
+  - id: linux_b2
+    question: What is the pwd command used for?
     options:
-      - Execute a command with superuser privileges
-      - Search for files
-      - Show disk usage
-      - Switch users
-    explanation: sudo (superuser do) allows a permitted user to execute a command as the superuser or another user, as specified by the security policy.
-    source: "Sudo Manual - https://www.sudo.ws/man/sudo.man.html"
+      - Print Working Directory - shows current directory path
+      - Change password
+      - Power down system
+      - Print word document
     correct_answer: 0
+    explanation: The pwd (Print Working Directory) command displays the full path of the current working directory you are in.
+    source: https://www.gnu.org/software/coreutils/manual/html_node/pwd-invocation.html
 
-  - id: q3
-    question: Which directory contains system configuration files in Linux?
+  - id: linux_b3
+    question: What is the ls command used for?
     options:
-      - /etc
-      - /bin
-      - /home
-      - /usr
-    explanation: The /etc directory contains system-wide configuration files and system databases. It's one of the most important directories in Linux.
-    source: "Filesystem Hierarchy Standard - https://refspecs.linuxfoundation.org/FHS_3.0/fhs/ch03s07.html"
+      - List directory contents
+      - Login to system
+      - Load system
+      - Link software
     correct_answer: 0
+    explanation: The ls command is used to list directory contents, showing files and subdirectories in the current directory.
+    source: https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html
 
-  - id: q4
-    question: What command is used to change file permissions in Linux?
+  - id: linux_b4
+    question: What is the cd command used for?
     options:
-      - chmod
-      - chown
-      - perm
-      - change
-    explanation: The 'chmod' command is used to change the permissions of files and directories. It can use both symbolic (u+x) and numeric (755) notation.
-    source: "GNU Coreutils - https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html"
+      - Change Directory - navigate between directories
+      - Copy directory
+      - Create directory
+      - Close directory
     correct_answer: 0
+    explanation: The cd (Change Directory) command is used to navigate between directories in the file system.
+    source: https://www.gnu.org/software/bash/manual/html_node/Directory-Stack-Builtins.html
 
-  - id: q5
-    question: What does the 'pwd' command do?
+  - id: linux_b5
+    question: What is the mkdir command used for?
     options:
-      - Print Working Directory
-      - Password Change
-      - Power Down
-      - Program Working Directory
-    explanation: The 'pwd' (Print Working Directory) command prints the full pathname of the current working directory.
-    source: "GNU Coreutils - https://www.gnu.org/software/coreutils/manual/html_node/pwd-invocation.html"
-    correct_answer: 0 
+      - Make Directory - create new directories
+      - Move directory
+      - Modify directory
+      - Mark directory
+    correct_answer: 0
+    explanation: The mkdir (Make Directory) command is used to create new directories in the file system.
+    source: https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html
+
+  - id: linux_b6
+    question: What is the rm command used for?
+    options:
+      - Remove files or directories
+      - Read mail
+      - Remote access
+      - Run program
+    correct_answer: 0
+    explanation: The rm (Remove) command is used to delete files or directories from the file system.
+    source: https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html
+
+  - id: linux_b7
+    question: What is the cp command used for?
+    options:
+      - Copy files and directories
+      - Change permissions
+      - Create program
+      - Close program
+    correct_answer: 0
+    explanation: The cp (Copy) command is used to copy files and directories from one location to another.
+    source: https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html
+
+  - id: linux_b8
+    question: What is the mv command used for?
+    options:
+      - Move or rename files and directories
+      - Make video
+      - Monitor version
+      - Modify value
+    correct_answer: 0
+    explanation: The mv (Move) command is used to move files and directories from one location to another, or to rename them.
+    source: https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html
+
+  - id: linux_b9
+    question: What is the cat command used for?
+    options:
+      - Display file contents
+      - Create archive
+      - Change attributes
+      - Copy all text
+    correct_answer: 0
+    explanation: The cat (Concatenate) command is used to display the contents of one or more files.
+    source: https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html
+
+  - id: linux_b10
+    question: What is the sudo command used for?
+    options:
+      - Execute commands with superuser privileges
+      - Sort data
+      - Show users
+      - System update
+    correct_answer: 0
+    explanation: The sudo (Superuser Do) command allows users to execute commands with the security privileges of another user, by default the superuser.
+    source: https://www.sudo.ws/docs/man/sudo.man/ 

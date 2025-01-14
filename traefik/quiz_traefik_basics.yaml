@@ -1,0 +1,116 @@
+id: traefik_basics
+category: traefik
+level: beginner
+title: Traefik Fundamentals
+description: Test your knowledge of basic Traefik concepts and usage
+
+questions:
+  - id: traefik_b1
+    question: What is Traefik?
+    options:
+      - A modern HTTP reverse proxy and load balancer
+      - A container orchestration platform
+      - A monitoring and logging system
+      - A configuration management tool
+    correct_answer: 0
+    explanation: Traefik is a modern HTTP reverse proxy and load balancer designed to deploy microservices with ease.
+    source: https://doc.traefik.io/traefik/
+
+  - id: traefik_b2
+    question: What is a Traefik router?
+    options:
+      - A component that routes requests to services
+      - A network interface configuration
+      - A service discovery mechanism
+      - A load balancing algorithm
+    correct_answer: 0
+    explanation: A router is responsible for connecting incoming requests to the services that will handle them.
+    source: https://doc.traefik.io/traefik/routing/routers/
+
+  - id: traefik_b3
+    question: What is a Traefik entrypoint?
+    options:
+      - A network entry point listening for incoming traffic
+      - A configuration file location
+      - A service endpoint definition
+      - A monitoring data collector
+    correct_answer: 0
+    explanation: An entrypoint is a network entry point that listens for incoming traffic on specific ports.
+    source: https://doc.traefik.io/traefik/routing/entrypoints/
+
+  - id: traefik_b4
+    question: What is a Traefik middleware?
+    options:
+      - A component that modifies requests or responses
+      - A service configuration template
+      - A network traffic analyzer
+      - A load balancing mechanism
+    correct_answer: 0
+    explanation: Middleware modifies the request or the response before they are sent to your service or to the client.
+    source: https://doc.traefik.io/traefik/middlewares/overview/
+
+  - id: traefik_b5
+    question: What is a Traefik provider?
+    options:
+      - A source of configuration for Traefik
+      - A service deployment platform
+      - A network protocol handler
+      - A monitoring data source
+    correct_answer: 0
+    explanation: A provider supplies the configuration to Traefik, such as Docker, Kubernetes, or file configuration.
+    source: https://doc.traefik.io/traefik/providers/overview/
+
+  - id: traefik_b6
+    question: What is Traefik service discovery?
+    options:
+      - Automatic detection of backend services
+      - Manual service configuration
+      - Network topology mapping
+      - Load balancer setup
+    correct_answer: 0
+    explanation: Service discovery allows Traefik to automatically detect and configure backend services.
+    source: https://doc.traefik.io/traefik/providers/overview/
+
+  - id: traefik_b7
+    question: What is a Traefik service?
+    options:
+      - A destination where requests are forwarded
+      - A configuration file format
+      - A network protocol type
+      - A monitoring endpoint
+    correct_answer: 0
+    explanation: A service is the destination where the requests will be forwarded by Traefik routers.
+    source: https://doc.traefik.io/traefik/routing/services/
+
+  - id: traefik_b8
+    question: What is Traefik static configuration?
+    options:
+      - Core Traefik settings that rarely change
+      - Dynamic routing rules
+      - Service endpoint definitions
+      - Middleware configurations
+    correct_answer: 0
+    explanation: Static configuration contains settings that define Traefik's behavior and are set at startup.
+    source: https://doc.traefik.io/traefik/getting-started/configuration-overview/
+
+  - id: traefik_b9
+    question: What is Traefik dynamic configuration?
+    options:
+      - Configuration that can change during runtime
+      - Initial setup parameters
+      - Network interface settings
+      - System resource limits
+    correct_answer: 0
+    explanation: Dynamic configuration contains settings that can be changed and updated while Traefik is running.
+    source: https://doc.traefik.io/traefik/getting-started/configuration-overview/
+
+  - id: traefik_b10
+    question: What is a Traefik backend?
+    options:
+      - A service that handles forwarded requests
+      - A configuration storage system
+      - A network routing protocol
+      - A monitoring data store
+    correct_answer: 0
+    explanation: A backend is a service that receives and handles requests forwarded by Traefik.
+    source: https://doc.traefik.io/traefik/routing/services/ 

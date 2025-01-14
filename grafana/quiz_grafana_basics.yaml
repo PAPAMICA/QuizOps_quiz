@@ -1,0 +1,116 @@
+id: grafana_basics
+category: grafana
+level: beginner
+title: Grafana Fundamentals
+description: Test your knowledge of basic Grafana concepts and features
+
+questions:
+  - id: grafana_b1
+    question: What is Grafana?
+    options:
+      - An open-source platform for monitoring and observability
+      - A database management system
+      - A programming language
+      - A web server
+    correct_answer: 0
+    explanation: Grafana is an open-source platform for monitoring and observability that allows you to query, visualize, alert on, and understand your metrics.
+    source: https://grafana.com/docs/grafana/latest/introduction/
+
+  - id: grafana_b2
+    question: What is a Grafana Dashboard?
+    options:
+      - A collection of panels organized for visualizing data
+      - A database
+      - A server monitoring tool
+      - A code editor
+    correct_answer: 0
+    explanation: A Grafana Dashboard is a collection of panels organized in a grid layout that allows you to visualize your data through various types of visualizations.
+    source: https://grafana.com/docs/grafana/latest/dashboards/
+
+  - id: grafana_b3
+    question: What is a Grafana Panel?
+    options:
+      - A basic visualization unit in a dashboard
+      - A server configuration
+      - A database table
+      - A monitoring agent
+    correct_answer: 0
+    explanation: A Panel is the basic visualization unit in Grafana, displaying data in various formats like graphs, stats, tables, or logs.
+    source: https://grafana.com/docs/grafana/latest/panels-visualizations/
+
+  - id: grafana_b4
+    question: What is a Grafana Data Source?
+    options:
+      - A connection to a data storage backend
+      - A visualization type
+      - A dashboard template
+      - A monitoring agent
+    correct_answer: 0
+    explanation: A Data Source is a connection to a database or service that stores your metrics, logs, or other data that you want to visualize in Grafana.
+    source: https://grafana.com/docs/grafana/latest/datasources/
+
+  - id: grafana_b5
+    question: What is Grafana Alerting?
+    options:
+      - A system to notify users when metrics meet certain conditions
+      - A visualization type
+      - A database system
+      - A logging service
+    correct_answer: 0
+    explanation: Grafana Alerting allows you to create alert rules that monitor your data and notify you when certain conditions are met.
+    source: https://grafana.com/docs/grafana/latest/alerting/
+
+  - id: grafana_b6
+    question: What is a Grafana Query?
+    options:
+      - A request to retrieve data from a data source
+      - A dashboard template
+      - A visualization type
+      - A monitoring agent
+    correct_answer: 0
+    explanation: A Query is a request to retrieve specific data from a data source, which can then be visualized in Grafana panels.
+    source: https://grafana.com/docs/grafana/latest/panels-visualizations/query-transform-data/
+
+  - id: grafana_b7
+    question: What is Grafana Explore?
+    options:
+      - A tool for ad-hoc data exploration and troubleshooting
+      - A dashboard template
+      - A database system
+      - A monitoring agent
+    correct_answer: 0
+    explanation: Grafana Explore is a tool that allows you to make ad-hoc queries and explore your data without the need to create a dashboard.
+    source: https://grafana.com/docs/grafana/latest/explore/
+
+  - id: grafana_b8
+    question: What is a Grafana Organization?
+    options:
+      - A way to isolate dashboards and users
+      - A type of visualization
+      - A data source
+      - A monitoring agent
+    correct_answer: 0
+    explanation: A Grafana Organization is an isolated instance of Grafana with its own users, dashboards, and configuration settings.
+    source: https://grafana.com/docs/grafana/latest/administration/organization-management/
+
+  - id: grafana_b9
+    question: What is Grafana Variables?
+    options:
+      - Placeholders that can be used across a dashboard
+      - Database tables
+      - Monitoring agents
+      - Alert rules
+    correct_answer: 0
+    explanation: Variables in Grafana are placeholders for values that can be used across a dashboard, making dashboards more interactive and reusable.
+    source: https://grafana.com/docs/grafana/latest/dashboards/variables/
+
+  - id: grafana_b10
+    question: What is a Grafana Playlist?
+    options:
+      - A sequence of dashboards that rotate automatically
+      - A data source type
+      - A visualization style
+      - An alert rule
+    correct_answer: 0
+    explanation: A Grafana Playlist is a feature that allows you to create a sequence of dashboards that rotate automatically at a specified interval.
+    source: https://grafana.com/docs/grafana/latest/dashboards/playlist/ 

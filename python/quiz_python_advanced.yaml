@@ -1,0 +1,116 @@
+id: python_advanced
+category: python
+level: advanced
+title: Python Expert Level
+description: Test your expertise in advanced Python programming concepts
+
+questions:
+  - id: python_a1
+    question: What is a metaclass in Python?
+    options:
+      - A class that defines how a class behaves
+      - A type of variable
+      - A function decorator
+      - A built-in method
+    correct_answer: 0
+    explanation: A metaclass is a class for a class that defines how a class behaves, allowing you to customize class creation.
+    source: https://docs.python.org/3/reference/datamodel.html#metaclasses
+
+  - id: python_a2
+    question: What is the Global Interpreter Lock (GIL) in Python?
+    options:
+      - A mutex that protects access to Python objects in CPython
+      - A global variable
+      - A type of loop
+      - A file lock
+    correct_answer: 0
+    explanation: The GIL is a mutex that prevents multiple native threads from executing Python bytecodes simultaneously in CPython.
+    source: https://docs.python.org/3/glossary.html#term-global-interpreter-lock
+
+  - id: python_a3
+    question: What is a context manager in Python?
+    options:
+      - An object that defines __enter__ and __exit__ methods
+      - A type of variable
+      - A function decorator
+      - A built-in method
+    correct_answer: 0
+    explanation: A context manager is an object that implements __enter__ and __exit__ methods to define what happens when entering and exiting a with block.
+    source: https://docs.python.org/3/reference/datamodel.html#context-managers
+
+  - id: python_a4
+    question: What is monkey patching in Python?
+    options:
+      - Dynamically modifying classes or modules at runtime
+      - A type of error handling
+      - A way to create classes
+      - A debugging technique
+    correct_answer: 0
+    explanation: Monkey patching is the practice of modifying classes or modules at runtime, typically to add features or fix bugs.
+    source: https://docs.python.org/3/library/unittest.mock.html#module-unittest.mock
+
+  - id: python_a5
+    question: What is the purpose of the __slots__ attribute in Python?
+    options:
+      - Restrict which attributes can be added to a class instance
+      - Define class methods
+      - Create instance variables
+      - Import modules
+    correct_answer: 0
+    explanation: __slots__ allows you to explicitly declare data members and prevents the creation of __dict__, saving memory and improving access speed.
+    source: https://docs.python.org/3/reference/datamodel.html#slots
+
+  - id: python_a6
+    question: What is a descriptor in Python?
+    options:
+      - An object that defines how attribute access is intercepted
+      - A type of variable
+      - A function decorator
+      - A built-in method
+    correct_answer: 0
+    explanation: A descriptor is an object that defines how attribute access (get, set, delete) is intercepted on a class instance.
+    source: https://docs.python.org/3/howto/descriptor.html
+
+  - id: python_a7
+    question: What is the purpose of the asyncio module in Python?
+    options:
+      - Write asynchronous code using coroutines
+      - Handle exceptions
+      - Create classes
+      - Manage files
+    correct_answer: 0
+    explanation: asyncio is a library to write asynchronous code using coroutines, multiplexing I/O access over sockets and other resources.
+    source: https://docs.python.org/3/library/asyncio.html
+
+  - id: python_a8
+    question: What is the difference between __new__ and __init__ in Python?
+    options:
+      - __new__ creates the instance, __init__ initializes it
+      - They are the same
+      - __new__ is faster
+      - __init__ is more powerful
+    correct_answer: 0
+    explanation: __new__ is called to create a new instance of the class, while __init__ is called to initialize the newly created instance.
+    source: https://docs.python.org/3/reference/datamodel.html#object.__new__
+
+  - id: python_a9
+    question: What is the purpose of the @property decorator?
+    options:
+      - Define a method that can be accessed like an attribute
+      - Create a class
+      - Define a static method
+      - Import a module
+    correct_answer: 0
+    explanation: The @property decorator allows you to define methods that can be accessed like attributes, providing getter/setter functionality.
+    source: https://docs.python.org/3/library/functions.html#property
+
+  - id: python_a10
+    question: What is a coroutine in Python?
+    options:
+      - A special function that can be paused and resumed
+      - A type of variable
+      - A class method
+      - A built-in function
+    correct_answer: 0
+    explanation: A coroutine is a special type of function that can be paused and resumed, used for cooperative multitasking and async programming.
+    source: https://docs.python.org/3/library/asyncio-task.html 

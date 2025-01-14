@@ -1,0 +1,116 @@
+id: kubernetes_advanced
+category: kubernetes
+level: advanced
+title: Advanced Kubernetes Concepts
+description: Master advanced concepts and practices in Kubernetes container orchestration
+
+questions:
+  - id: q1
+    question: How does the Kubernetes Scheduler's Extended Resources feature work?
+    options:
+      - By allowing nodes to advertise custom resources that can be requested by pods
+      - By only managing CPU and memory
+      - By handling network resources
+      - By managing storage only
+    explanation: Extended Resources allow nodes to advertise custom resources (like GPUs or FPGAs) that can be requested by pods, enabling scheduling based on specialized hardware requirements.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#extended-resources"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the purpose of Admission Controllers in Kubernetes?
+    options:
+      - To intercept requests to the API server before object persistence and enforce custom policies
+      - To manage authentication only
+      - To handle network routing
+      - To control storage access
+    explanation: Admission Controllers intercept requests to the Kubernetes API server before object persistence but after authentication and authorization, allowing enforcement of custom policies and resource mutation.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/"
+    correct_answer: 0
+
+  - id: q3
+    question: How do Aggregated APIs extend the Kubernetes API server?
+    options:
+      - By allowing installation of additional APIs alongside the core Kubernetes APIs
+      - By replacing core APIs
+      - By modifying existing APIs
+      - By removing APIs
+    explanation: Aggregated APIs allow the installation of additional Kubernetes-style APIs in your cluster, running alongside the core Kubernetes APIs and registered through APIService objects.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation/"
+    correct_answer: 0
+
+  - id: q4
+    question: What role do Finalizers play in Kubernetes object deletion?
+    options:
+      - To ensure specific cleanup operations occur before object deletion
+      - To prevent all deletions
+      - To speed up deletions
+      - To bypass deletion checks
+    explanation: Finalizers are namespaced keys that tell Kubernetes to wait until specific conditions are met before fully deleting resources, ensuring proper cleanup of resources.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/overview/working-with-objects/finalizers/"
+    correct_answer: 0
+
+  - id: q5
+    question: How does the Node Authorizer control kubelet access?
+    options:
+      - By granting kubelets specific API access based on the pods scheduled to run on them
+      - By blocking all kubelet access
+      - By allowing unlimited access
+      - By delegating to external systems
+    explanation: The Node Authorizer is a special-purpose authorization mode that specifically authorizes API requests made by kubelets, granting them access based on the pods scheduled to run on them.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/reference/access-authn-authz/node/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the purpose of the Kubernetes Device Plugin framework?
+    options:
+      - To enable pods to access specialized hardware resources through a standardized mechanism
+      - To manage standard resources only
+      - To handle network plugins
+      - To control storage plugins
+    explanation: The Device Plugin framework provides a standardized way for Kubernetes to expose system hardware resources to pods, enabling support for GPUs, NICs, FPGAs, and other specialized hardware.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/"
+    correct_answer: 0
+
+  - id: q7
+    question: How do Pod Topology Spread Constraints work?
+    options:
+      - By controlling how pods are spread across topology domains like regions, zones, nodes
+      - By managing pod resources only
+      - By handling pod security
+      - By controlling pod networking
+    explanation: Pod Topology Spread Constraints control how pods are spread across topology domains (regions, zones, nodes, etc.) to achieve high availability and balanced resource utilization.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/workloads/pods/pod-topology-spread-constraints/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of the Dynamic Admission Control system?
+    options:
+      - To modify and validate objects dynamically using webhooks before persistence
+      - To handle authentication only
+      - To manage authorization
+      - To control networking
+    explanation: Dynamic Admission Control allows the use of admission webhooks to modify and validate objects dynamically before they are persisted, enabling complex validation and mutation logic.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/"
+    correct_answer: 0
+
+  - id: q9
+    question: How does the Kubernetes Scheduler's Priority and Preemption feature work?
+    options:
+      - By evicting lower priority pods when necessary to schedule higher priority pods
+      - By scheduling all pods equally
+      - By ignoring pod priorities
+      - By preventing pod scheduling
+    explanation: Priority and Preemption enables the scheduler to evict lower priority pods when necessary to schedule higher priority pods, ensuring critical workloads can be scheduled even in resource-constrained situations.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of the Kubernetes Garbage Collection controller?
+    options:
+      - To clean up terminated pods and unused containers, images, and volumes
+      - To manage application deployment only
+      - To handle network cleanup
+      - To control storage allocation
+    explanation: The Garbage Collection controller manages cleanup of terminated pods and unused containers, images, and volumes, preventing resource leaks and ensuring efficient resource utilization.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/"
+    correct_answer: 0 

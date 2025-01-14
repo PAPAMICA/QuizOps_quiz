@@ -1,0 +1,114 @@
+title: Docker Compose Expert Level
+description: Test your advanced knowledge of Docker Compose
+category: docker_compose
+level: advanced
+questions:
+  - id: docker_compose_a1
+    question: How do you implement custom networking with network drivers in Docker Compose?
+    options:
+      - By specifying custom drivers and options in the networks section
+      - By using basic network settings only
+      - Through environment variables
+      - Using command line only
+    correct_answer: 0
+    explanation: Custom networking can be implemented by defining networks with specific drivers (overlay, macvlan, etc.) and driver options in the networks section.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#network-configuration-reference
+
+  - id: docker_compose_a2
+    question: How do you implement service mesh integration in Docker Compose?
+    options:
+      - Using custom network drivers and labels for service discovery
+      - Through basic networking only
+      - Using environment variables
+      - By manual configuration only
+    correct_answer: 0
+    explanation: Service mesh integration can be achieved using custom network drivers, labels, and configurations to enable service discovery and mesh features.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#labels
+
+  - id: docker_compose_a3
+    question: What are the implications of using 'init' process in Docker Compose services?
+    options:
+      - It ensures proper process management and zombie process cleanup
+      - It only affects startup time
+      - It only manages logging
+      - It only impacts resource usage
+    correct_answer: 0
+    explanation: Using 'init' process ensures proper handling of signals and zombie processes in containers, improving container lifecycle management.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#init
+
+  - id: docker_compose_a4
+    question: How do you implement custom logging drivers and configurations?
+    options:
+      - Using the logging driver configuration with custom options
+      - Through basic logging only
+      - Using environment variables
+      - By manual log collection
+    correct_answer: 0
+    explanation: Custom logging can be implemented by specifying logging drivers (fluentd, syslog, etc.) and their options in the logging configuration.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#logging
+
+  - id: docker_compose_a5
+    question: How do you handle sensitive data in build-time arguments?
+    options:
+      - Using build secrets and secure build contexts
+      - Through environment variables only
+      - Using plain text in Dockerfile
+      - By manual input only
+    correct_answer: 0
+    explanation: Sensitive build-time data should be handled using build secrets and secure build contexts to prevent exposure in image layers.
+    source: https://docs.docker.com/develop/develop-images/build_enhancements/#new-docker-build-secret-information
+
+  - id: docker_compose_a6
+    question: How do you implement custom health check scripting in Docker Compose?
+    options:
+      - By creating complex health check commands with shell scripting
+      - Using basic ping checks only
+      - Through external monitoring only
+      - By manual inspection
+    correct_answer: 0
+    explanation: Complex health checks can be implemented using shell scripts and custom commands in the healthcheck configuration to perform detailed health assessments.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#healthcheck
+
+  - id: docker_compose_a7
+    question: How do you implement service scaling with volume management?
+    options:
+      - Using named volumes with proper configuration for concurrent access
+      - Through basic volume mounts
+      - Using local storage only
+      - By manual volume creation
+    correct_answer: 0
+    explanation: Service scaling with volumes requires careful configuration of named volumes and storage drivers to handle concurrent access from multiple service instances.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#volume-configuration-reference
+
+  - id: docker_compose_a8
+    question: How do you implement custom DNS resolution in Docker Compose?
+    options:
+      - Using custom DNS servers and search domains in the compose file
+      - Through basic DNS settings only
+      - Using external DNS only
+      - By manual DNS configuration
+    correct_answer: 0
+    explanation: Custom DNS resolution can be implemented by configuring DNS servers, search domains, and options in the compose file for specific services.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#dns
+
+  - id: docker_compose_a9
+    question: How do you implement advanced resource quotas and limits?
+    options:
+      - Using combination of deploy, resources, and ulimits configurations
+      - Through basic resource limits only
+      - Using environment variables
+      - By manual monitoring
+    correct_answer: 0
+    explanation: Advanced resource management requires combining deploy resources, ulimits, and other configurations to implement comprehensive resource controls.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#resources
+
+  - id: docker_compose_a10
+    question: How do you implement service discovery patterns in Docker Compose?
+    options:
+      - Using networks, aliases, and labels for automatic service discovery
+      - Through basic networking only
+      - Using external services only
+      - By manual configuration
+    correct_answer: 0
+    explanation: Service discovery patterns can be implemented using a combination of networks, aliases, labels, and custom configurations to enable automatic service discovery.
+    source: https://docs.docker.com/compose/compose-file/compose-file-v3/#networks 

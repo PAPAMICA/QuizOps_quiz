@@ -1,0 +1,114 @@
+title: NGINX Fundamentals
+description: Test your basic knowledge of NGINX web server
+category: nginx
+level: beginner
+questions:
+  - id: nginx_b1
+    question: What is NGINX?
+    options:
+      - A web server only
+      - A reverse proxy server only
+      - A web server, reverse proxy server, and load balancer
+      - A database server
+    correct_answer: 2
+    explanation: NGINX is a versatile software that can act as a web server, reverse proxy server, and load balancer, making it a popular choice for modern web infrastructure.
+    source: https://nginx.org/en/
+
+  - id: nginx_b2
+    question: Which command is used to test the NGINX configuration file syntax?
+    options:
+      - nginx -t
+      - nginx -check
+      - nginx -verify
+      - nginx -test
+    correct_answer: 0
+    explanation: The command 'nginx -t' is used to test the configuration file syntax without actually starting or reloading NGINX.
+    source: https://nginx.org/en/docs/switches.html
+
+  - id: nginx_b3
+    question: Where is the default NGINX configuration file typically located on Linux systems?
+    options:
+      - /etc/nginx/nginx.conf
+      - /usr/nginx/conf/nginx.conf
+      - /var/nginx/nginx.conf
+      - /opt/nginx/nginx.conf
+    correct_answer: 0
+    explanation: On most Linux distributions, the main NGINX configuration file is located at /etc/nginx/nginx.conf.
+    source: https://nginx.org/en/docs/beginners_guide.html
+
+  - id: nginx_b4
+    question: Which directive is used to define a new virtual server in NGINX?
+    options:
+      - server
+      - virtual_server
+      - host
+      - website
+    correct_answer: 0
+    explanation: The 'server' directive is used in NGINX to define a new virtual server block, which can handle requests for specific domains or IP addresses.
+    source: https://nginx.org/en/docs/http/ngx_http_core_module.html#server
+
+  - id: nginx_b5
+    question: How do you reload NGINX configuration without stopping the server?
+    options:
+      - nginx -reload
+      - nginx -s reload
+      - service nginx reload
+      - systemctl reload nginx
+    correct_answer: 1
+    explanation: The command 'nginx -s reload' is used to reload NGINX configuration without stopping the server, allowing for zero-downtime configuration changes.
+    source: https://nginx.org/en/docs/control.html
+
+  - id: nginx_b6
+    question: What is the purpose of the 'location' directive in NGINX?
+    options:
+      - To set the server's physical location
+      - To define how NGINX processes specific URL patterns
+      - To specify the server's timezone
+      - To set the document root location
+    correct_answer: 1
+    explanation: The 'location' directive is used to define how NGINX should process requests for specific URL patterns or paths.
+    source: https://nginx.org/en/docs/http/ngx_http_core_module.html#location
+
+  - id: nginx_b7
+    question: Which module provides basic HTTP server features in NGINX?
+    options:
+      - ngx_http_core_module
+      - ngx_http_basic_module
+      - ngx_core_module
+      - ngx_http_server_module
+    correct_answer: 0
+    explanation: The ngx_http_core_module provides the core features needed for NGINX to function as an HTTP server.
+    source: https://nginx.org/en/docs/http/ngx_http_core_module.html
+
+  - id: nginx_b8
+    question: What is the default port for HTTP in NGINX?
+    options:
+      - 80
+      - 8080
+      - 443
+      - 8000
+    correct_answer: 0
+    explanation: By default, NGINX listens on port 80 for HTTP traffic, which is the standard port for HTTP protocol.
+    source: https://nginx.org/en/docs/beginners_guide.html
+
+  - id: nginx_b9
+    question: Which directive is used to specify the number of worker processes in NGINX?
+    options:
+      - worker_processes
+      - process_count
+      - workers
+      - nginx_workers
+    correct_answer: 0
+    explanation: The 'worker_processes' directive is used to define how many worker processes NGINX should spawn.
+    source: https://nginx.org/en/docs/ngx_core_module.html#worker_processes
+
+  - id: nginx_b10
+    question: What is the purpose of the 'root' directive in NGINX?
+    options:
+      - To specify the root user for NGINX
+      - To set the document root directory for requests
+      - To define the root configuration file
+      - To set the root domain name
+    correct_answer: 1
+    explanation: The 'root' directive specifies the root directory that will be used to search for files to serve in response to requests.
+    source: https://nginx.org/en/docs/http/ngx_http_core_module.html#root 

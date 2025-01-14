@@ -1,61 +1,116 @@
 id: git_basics
 category: git
 level: beginner
-title: Git Basics
-description: Learn the fundamental concepts and commands of Git version control system
+title: Git Fundamentals
+description: Test your knowledge of basic Git concepts and commands
 
 questions:
-  - id: q1
+  - id: git_b1
     question: What is Git?
     options:
       - A distributed version control system
       - A programming language
-      - A web server
-      - A database management system
-    explanation: Git is a distributed version control system that tracks changes in source code during software development. It's designed for coordinating work among programmers.
-    source: "Git Documentation - https://git-scm.com/about"
+      - A web hosting service
+      - A code editor
     correct_answer: 0
+    explanation: Git is a distributed version control system that tracks changes in source code during software development, enabling multiple developers to work together on non-linear development.
+    source: https://git-scm.com/about
 
-  - id: q2
-    question: What command creates a new Git repository?
+  - id: git_b2
+    question: What command initializes a new Git repository?
     options:
       - git init
       - git start
       - git create
       - git new
+    correct_answer: 0
     explanation: The 'git init' command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository.
-    source: "Git Documentation - https://git-scm.com/docs/git-init"
-    correct_answer: 0
+    source: https://git-scm.com/docs/git-init
 
-  - id: q3
-    question: What does 'git clone' do?
+  - id: git_b3
+    question: What command is used to clone a repository?
     options:
-      - Creates a copy of a remote repository
-      - Creates a new branch
-      - Deletes a repository
-      - Merges two branches
-    explanation: The 'git clone' command copies a remote repository to your local machine. It creates a new directory, initializes a .git directory inside it, and pulls all repository data.
-    source: "Git Documentation - https://git-scm.com/docs/git-clone"
+      - git clone
+      - git copy
+      - git download
+      - git fetch
     correct_answer: 0
+    explanation: The 'git clone' command copies a remote repository to your local machine, creating a new directory, initializing a .git directory inside it, and pulling all repository data.
+    source: https://git-scm.com/docs/git-clone
 
-  - id: q4
-    question: What is the purpose of 'git status'?
+  - id: git_b4
+    question: What command adds files to the staging area?
     options:
-      - Shows the working tree status
-      - Starts a new repository
-      - Deletes all commits
-      - Changes the remote URL
-    explanation: The 'git status' command displays the state of the working directory and the staging area. It shows which changes have been staged, which haven't, and which files aren't being tracked by Git.
-    source: "Git Documentation - https://git-scm.com/docs/git-status"
+      - git add
+      - git stage
+      - git commit
+      - git push
     correct_answer: 0
+    explanation: The 'git add' command adds file contents to the staging area (index), preparing them for the next commit.
+    source: https://git-scm.com/docs/git-add
 
-  - id: q5
-    question: What command is used to create a new branch in Git?
+  - id: git_b5
+    question: What command creates a new commit?
+    options:
+      - git commit
+      - git save
+      - git store
+      - git push
+    correct_answer: 0
+    explanation: The 'git commit' command captures a snapshot of the project's currently staged changes, creating a new commit in the repository's history.
+    source: https://git-scm.com/docs/git-commit
+
+  - id: git_b6
+    question: What command shows the status of files in the working directory?
+    options:
+      - git status
+      - git info
+      - git check
+      - git show
+    correct_answer: 0
+    explanation: The 'git status' command displays the state of the working directory and the staging area, showing which changes have been staged, which haven't, and which files aren't being tracked by Git.
+    source: https://git-scm.com/docs/git-status
+
+  - id: git_b7
+    question: What command creates a new branch?
     options:
       - git branch
       - git create
       - git new
       - git checkout
-    explanation: The 'git branch' command is used to create, list, rename, and delete branches. To create a new branch, use 'git branch <branch-name>'.
-    source: "Git Documentation - https://git-scm.com/docs/git-branch"
-    correct_answer: 0 
+    correct_answer: 0
+    explanation: The 'git branch' command creates a new branch. To create and switch to a new branch in one command, you can use 'git checkout -b branch-name'.
+    source: https://git-scm.com/docs/git-branch
+
+  - id: git_b8
+    question: What command switches between branches?
+    options:
+      - git checkout
+      - git switch
+      - git change
+      - git move
+    correct_answer: 0
+    explanation: The 'git checkout' command switches between branches or restores working tree files. Note that newer versions of Git also support 'git switch' for branch switching.
+    source: https://git-scm.com/docs/git-checkout
+
+  - id: git_b9
+    question: What command shows the commit history?
+    options:
+      - git log
+      - git history
+      - git show
+      - git commits
+    correct_answer: 0
+    explanation: The 'git log' command shows the commit history, displaying information about previous commits including their hash, author, date, and commit message.
+    source: https://git-scm.com/docs/git-log
+
+  - id: git_b10
+    question: What command downloads changes from a remote repository?
+    options:
+      - git pull
+      - git download
+      - git fetch
+      - git sync
+    correct_answer: 0
+    explanation: The 'git pull' command fetches changes from a remote repository and integrates them into the current branch. It's essentially a combination of 'git fetch' and 'git merge'.
+    source: https://git-scm.com/docs/git-pull

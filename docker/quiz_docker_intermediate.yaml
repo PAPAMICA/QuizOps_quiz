@@ -1,0 +1,116 @@
+id: docker_intermediate
+category: docker
+level: intermediate
+title: Intermediate Docker Concepts
+description: Explore intermediate concepts and best practices in Docker containerization
+
+questions:
+  - id: q1
+    question: What is the purpose of multi-stage builds in Docker?
+    options:
+      - To reduce the final image size by using multiple stages to separate build and runtime dependencies
+      - To increase build speed
+      - To improve security scanning
+      - To simplify deployment
+    explanation: Multi-stage builds allow you to use multiple stages in a single Dockerfile, where you can copy specific artifacts from one stage to another, resulting in a smaller final image that doesn't include build dependencies.
+    source: "Docker Documentation - https://docs.docker.com/develop/develop-images/multistage-build/"
+    correct_answer: 0
+
+  - id: q2
+    question: How do Docker networks in bridge mode handle container communication?
+    options:
+      - By creating an internal network where containers can communicate using their names or aliases
+      - By exposing all ports to the host
+      - By using host networking directly
+      - By requiring manual IP configuration
+    explanation: Bridge networks create an internal network where containers can communicate with each other using container names or aliases as DNS names, while still being isolated from the host network.
+    source: "Docker Documentation - https://docs.docker.com/network/bridge/"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the purpose of Docker health checks?
+    options:
+      - To verify if a container is functioning correctly by running a test command
+      - To scan for security vulnerabilities
+      - To monitor resource usage
+      - To backup container data
+    explanation: Health checks allow Docker to test if a container is working correctly by running a command inside the container, helping orchestrators make decisions about container availability.
+    source: "Docker Documentation - https://docs.docker.com/engine/reference/builder/#healthcheck"
+    correct_answer: 0
+
+  - id: q4
+    question: How do Docker volumes differ from bind mounts?
+    options:
+      - Volumes are managed by Docker and provide better portability and backup options
+      - Volumes are slower than bind mounts
+      - Volumes require more configuration
+      - Volumes use more disk space
+    explanation: Docker volumes are managed by Docker and provide better portability, backup options, and sharing between containers compared to bind mounts, which are direct mappings to host filesystem paths.
+    source: "Docker Documentation - https://docs.docker.com/storage/volumes/"
+    correct_answer: 0
+
+  - id: q5
+    question: What is the purpose of Docker content trust?
+    options:
+      - To ensure the integrity and publisher of container images through digital signatures
+      - To compress container images
+      - To scan for vulnerabilities
+      - To improve build performance
+    explanation: Docker content trust provides digital signing for container images, allowing you to verify the integrity and publisher of images before running them.
+    source: "Docker Documentation - https://docs.docker.com/engine/security/trust/"
+    correct_answer: 0
+
+  - id: q6
+    question: How do Docker layer caching mechanisms work?
+    options:
+      - By reusing unchanged layers from previous builds to speed up build time
+      - By compressing all layers
+      - By removing intermediate layers
+      - By combining all layers
+    explanation: Docker caches layers from previous builds and reuses them if the corresponding Dockerfile instruction and its context haven't changed, significantly speeding up build times.
+    source: "Docker Documentation - https://docs.docker.com/develop/develop-images/dockerfile_best-practices/"
+    correct_answer: 0
+
+  - id: q7
+    question: What is the purpose of Docker secrets?
+    options:
+      - To securely store and distribute sensitive data to containers that need it
+      - To encrypt container images
+      - To secure network communications
+      - To protect volume data
+    explanation: Docker secrets provide a secure way to store and distribute sensitive data like passwords and SSL certificates to containers that need them, without exposing the data in the image or container configuration.
+    source: "Docker Documentation - https://docs.docker.com/engine/swarm/secrets/"
+    correct_answer: 0
+
+  - id: q8
+    question: How does Docker handle container logging?
+    options:
+      - By capturing stdout and stderr from the container and providing logging drivers for different destinations
+      - By writing directly to host system logs
+      - By requiring external logging agents
+      - By storing logs in volumes
+    explanation: Docker captures the standard output and error streams from containers and provides various logging drivers to send these logs to different destinations like files, syslog, or logging services.
+    source: "Docker Documentation - https://docs.docker.com/config/containers/logging/"
+    correct_answer: 0
+
+  - id: q9
+    question: What is the purpose of Docker buildx?
+    options:
+      - To build images for multiple platforms and architectures from a single build
+      - To improve build performance
+      - To reduce image size
+      - To scan for vulnerabilities
+    explanation: Docker buildx is a CLI plugin that extends Docker build with additional features like building for multiple platforms from a single build command and enhanced build capabilities.
+    source: "Docker Documentation - https://docs.docker.com/buildx/working-with-buildx/"
+    correct_answer: 0
+
+  - id: q10
+    question: How do Docker overlay networks facilitate container communication across hosts?
+    options:
+      - By creating a distributed network that spans multiple Docker hosts
+      - By using host networking
+      - By requiring manual routing
+      - By exposing all ports
+    explanation: Overlay networks create a distributed network across multiple Docker hosts, allowing containers on different hosts to communicate as if they were on the same network.
+    source: "Docker Documentation - https://docs.docker.com/network/overlay/"
+    correct_answer: 0 

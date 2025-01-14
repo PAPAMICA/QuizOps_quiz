@@ -1,0 +1,116 @@
+id: proxmox_advanced
+category: proxmox
+level: advanced
+title: Proxmox VE Expert Level
+description: Test your expertise in advanced Proxmox Virtual Environment concepts and features
+
+questions:
+  - id: proxmox_a1
+    question: What is High Availability (HA) in Proxmox VE?
+    options:
+      - A feature that ensures VMs and containers continue running even if a node fails
+      - A backup solution
+      - A monitoring system
+      - A storage type
+    correct_answer: 0
+    explanation: High Availability ensures that virtual machines and containers continue running even if a node fails by automatically migrating them to another available node.
+    source: https://pve.proxmox.com/wiki/High_Availability
+
+  - id: proxmox_a2
+    question: What is Ceph in Proxmox VE context?
+    options:
+      - A distributed storage system integrated with Proxmox
+      - A backup solution
+      - A network protocol
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Ceph is a distributed storage system that can be integrated with Proxmox VE to provide scalable, redundant storage for virtual machines and containers.
+    source: https://pve.proxmox.com/wiki/Ceph_Server
+
+  - id: proxmox_a3
+    question: What is the purpose of the corosync protocol in Proxmox clustering?
+    options:
+      - Handles cluster membership and messaging between nodes
+      - Manages storage
+      - Creates backups
+      - Monitors performance
+    correct_answer: 0
+    explanation: Corosync handles cluster membership, messaging, and quorum between Proxmox VE nodes in a cluster configuration.
+    source: https://pve.proxmox.com/wiki/Cluster_Manager
+
+  - id: proxmox_a4
+    question: What is the significance of quorum in Proxmox clustering?
+    options:
+      - Ensures cluster decisions are made by majority consensus
+      - Manages backups
+      - Controls network traffic
+      - Handles storage
+    correct_answer: 0
+    explanation: Quorum ensures that cluster decisions are made only when a majority of nodes agree, preventing split-brain scenarios and maintaining cluster integrity.
+    source: https://pve.proxmox.com/wiki/Cluster_Manager#quorum
+
+  - id: proxmox_a5
+    question: What is the purpose of SPICE in Proxmox VE?
+    options:
+      - A protocol for remote display and device redirection
+      - A backup system
+      - A storage type
+      - A network configuration
+    correct_answer: 0
+    explanation: SPICE is a remote display protocol that provides better performance and features than VNC for accessing virtual machines, including device redirection.
+    source: https://pve.proxmox.com/wiki/SPICE
+
+  - id: proxmox_a6
+    question: What is the purpose of the vzdump hook scripts?
+    options:
+      - Execute custom scripts before and after backup operations
+      - Monitor performance
+      - Configure networking
+      - Manage storage
+    correct_answer: 0
+    explanation: vzdump hook scripts allow you to execute custom scripts before and after backup operations, enabling automated pre and post-backup tasks.
+    source: https://pve.proxmox.com/wiki/Backup_and_Restore#vzdump_hook_scripts
+
+  - id: proxmox_a7
+    question: What is PCIe passthrough in Proxmox?
+    options:
+      - Allows VMs direct access to physical PCIe devices
+      - A backup feature
+      - A network protocol
+      - A storage type
+    correct_answer: 0
+    explanation: PCIe passthrough allows virtual machines to directly access physical PCIe devices, providing near-native performance for devices like GPUs or network cards.
+    source: https://pve.proxmox.com/wiki/PCI_Passthrough
+
+  - id: proxmox_a8
+    question: What is the purpose of the pvecm command in Proxmox?
+    options:
+      - Manages cluster configuration and membership
+      - Creates backups
+      - Configures storage
+      - Monitors performance
+    correct_answer: 0
+    explanation: The pvecm command is used to manage Proxmox VE cluster configuration, including adding/removing nodes and managing cluster membership.
+    source: https://pve.proxmox.com/wiki/Cluster_Manager#pvecm
+
+  - id: proxmox_a9
+    question: What is the purpose of SDN (Software Defined Networking) in Proxmox?
+    options:
+      - Provides advanced network management and virtualization
+      - Manages backups
+      - Controls storage
+      - Monitors performance
+    correct_answer: 0
+    explanation: SDN in Proxmox provides advanced network management and virtualization capabilities, allowing for complex network configurations and isolation.
+    source: https://pve.proxmox.com/wiki/Software_Defined_Networking
+
+  - id: proxmox_a10
+    question: What is the purpose of the qm command in Proxmox?
+    options:
+      - Manages QEMU/KVM virtual machines from the command line
+      - Creates backups
+      - Configures networking
+      - Manages storage
+    correct_answer: 0
+    explanation: The qm command is a command-line tool for managing QEMU/KVM virtual machines in Proxmox VE, allowing for advanced VM management and configuration.
+    source: https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines 

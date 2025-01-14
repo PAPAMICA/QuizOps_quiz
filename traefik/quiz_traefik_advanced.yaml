@@ -1,0 +1,116 @@
+id: traefik_advanced
+category: traefik
+level: advanced
+title: Traefik Expert Level
+description: Test your expertise in advanced Traefik concepts and features
+
+questions:
+  - id: traefik_a1
+    question: What is Traefik custom middleware development?
+    options:
+      - Creating custom request processing components
+      - Managing middleware configurations
+      - Implementing middleware chains
+      - Handling middleware plugins
+    correct_answer: 0
+    explanation: Custom middleware development allows creating specialized components for processing requests and responses.
+    source: https://doc.traefik.io/traefik/middlewares/custom/
+
+  - id: traefik_a2
+    question: What is Traefik metrics integration?
+    options:
+      - Collecting and exposing performance metrics
+      - Managing monitoring systems
+      - Implementing data collection
+      - Handling metric endpoints
+    correct_answer: 0
+    explanation: Metrics integration enables collecting and exposing performance and operational metrics to monitoring systems.
+    source: https://doc.traefik.io/traefik/observability/metrics/overview/
+
+  - id: traefik_a3
+    question: What is Traefik service failover?
+    options:
+      - Redirecting traffic when services fail
+      - Managing service availability
+      - Implementing backup systems
+      - Handling service recovery
+    correct_answer: 0
+    explanation: Service failover automatically redirects traffic to backup services when primary services become unavailable.
+    source: https://doc.traefik.io/traefik/routing/services/#failover
+
+  - id: traefik_a4
+    question: What is Traefik plugin development?
+    options:
+      - Creating custom Traefik functionality
+      - Managing plugin configurations
+      - Implementing feature extensions
+      - Handling plugin integration
+    correct_answer: 0
+    explanation: Plugin development allows creating custom features and extending Traefik's core functionality.
+    source: https://doc.traefik.io/traefik/plugins/
+
+  - id: traefik_a5
+    question: What is Traefik TCP routing?
+    options:
+      - Managing non-HTTP network protocols
+      - Configuring TCP connections
+      - Implementing protocol handling
+      - Handling network streams
+    correct_answer: 0
+    explanation: TCP routing enables managing and routing non-HTTP network protocols through Traefik.
+    source: https://doc.traefik.io/traefik/routing/tcp/
+
+  - id: traefik_a6
+    question: What is Traefik service mirroring?
+    options:
+      - Copying traffic to multiple services
+      - Managing request duplication
+      - Implementing traffic cloning
+      - Handling parallel processing
+    correct_answer: 0
+    explanation: Service mirroring allows copying traffic to multiple services for testing or monitoring purposes.
+    source: https://doc.traefik.io/traefik/routing/services/#mirroring
+
+  - id: traefik_a7
+    question: What is Traefik weighted round robin?
+    options:
+      - Distributing traffic based on weights
+      - Managing load distribution
+      - Implementing traffic splitting
+      - Handling service priorities
+    correct_answer: 0
+    explanation: Weighted round robin distributes traffic across services according to specified weight values.
+    source: https://doc.traefik.io/traefik/routing/services/#weighted-round-robin
+
+  - id: traefik_a8
+    question: What is Traefik forward authentication?
+    options:
+      - Delegating authentication to external service
+      - Managing authentication flows
+      - Implementing security checks
+      - Handling user verification
+    correct_answer: 0
+    explanation: Forward authentication delegates authentication decisions to an external service before allowing access.
+    source: https://doc.traefik.io/traefik/middlewares/forwardauth/
+
+  - id: traefik_a9
+    question: What is Traefik sticky sessions?
+    options:
+      - Maintaining client-server affinity
+      - Managing session persistence
+      - Implementing connection tracking
+      - Handling request routing
+    correct_answer: 0
+    explanation: Sticky sessions ensure that subsequent requests from a client are routed to the same server.
+    source: https://doc.traefik.io/traefik/routing/services/#sticky-sessions
+
+  - id: traefik_a10
+    question: What is Traefik middleware chaining?
+    options:
+      - Combining multiple middleware components
+      - Managing middleware sequence
+      - Implementing processing flows
+      - Handling request modifications
+    correct_answer: 0
+    explanation: Middleware chaining allows combining multiple middleware components in a specific order for request processing.
+    source: https://doc.traefik.io/traefik/middlewares/chain/ 

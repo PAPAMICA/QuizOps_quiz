@@ -1,0 +1,116 @@
+id: puppet_intermediate
+category: puppet
+level: intermediate
+title: Puppet Advanced Operations
+description: Test your knowledge of intermediate Puppet concepts and features
+
+questions:
+  - id: puppet_i1
+    question: What is Hiera in Puppet?
+    options:
+      - A hierarchical data lookup system for configuration data
+      - A monitoring tool
+      - A backup system
+      - A web interface
+    correct_answer: 0
+    explanation: Hiera is a hierarchical data lookup system that helps separate data from Puppet code, making configurations more flexible and reusable.
+    source: https://puppet.com/docs/puppet/latest/hiera_intro.html
+
+  - id: puppet_i2
+    question: What is a Puppet environment?
+    options:
+      - An isolated set of Puppet code and modules
+      - A monitoring system
+      - A backup solution
+      - A network configuration
+    correct_answer: 0
+    explanation: A Puppet environment is an isolated set of Puppet code and modules, useful for testing changes before deploying to production.
+    source: https://puppet.com/docs/puppet/latest/environments.html
+
+  - id: puppet_i3
+    question: What is the purpose of node classification in Puppet?
+    options:
+      - Determine which classes and configurations apply to specific nodes
+      - Monitor system performance
+      - Manage backups
+      - Configure networks
+    correct_answer: 0
+    explanation: Node classification determines which Puppet classes and configurations should be applied to specific nodes in your infrastructure.
+    source: https://puppet.com/docs/puppet/latest/nodes_external.html
+
+  - id: puppet_i4
+    question: What is a Puppet fact?
+    options:
+      - A piece of information about a system collected by Facter
+      - A type of backup
+      - A monitoring alert
+      - A network setting
+    correct_answer: 0
+    explanation: A fact is a piece of system information collected by Facter that Puppet can use in its configurations.
+    source: https://puppet.com/docs/puppet/latest/lang_facts_and_builtin_vars.html
+
+  - id: puppet_i5
+    question: What is the purpose of relationships in Puppet?
+    options:
+      - Define the order in which resources should be managed
+      - Monitor system status
+      - Manage backups
+      - Configure networks
+    correct_answer: 0
+    explanation: Relationships in Puppet define the order in which resources should be managed, ensuring proper dependency handling.
+    source: https://puppet.com/docs/puppet/latest/lang_relationships.html
+
+  - id: puppet_i6
+    question: What is a defined type in Puppet?
+    options:
+      - A reusable block of Puppet code that can accept parameters
+      - A system variable
+      - A monitoring tool
+      - A backup configuration
+    correct_answer: 0
+    explanation: A defined type is a reusable configuration block that can be declared multiple times with different parameters.
+    source: https://puppet.com/docs/puppet/latest/lang_defined_types.html
+
+  - id: puppet_i7
+    question: What is the purpose of templates in Puppet?
+    options:
+      - Generate dynamic configuration files
+      - Monitor system performance
+      - Manage backups
+      - Configure networks
+    correct_answer: 0
+    explanation: Templates in Puppet allow you to generate dynamic configuration files using variables and logic.
+    source: https://puppet.com/docs/puppet/latest/lang_template.html
+
+  - id: puppet_i8
+    question: What is the purpose of exported resources in Puppet?
+    options:
+      - Share resource information between different nodes
+      - Monitor system status
+      - Manage backups
+      - Configure networks
+    correct_answer: 0
+    explanation: Exported resources allow nodes to share resource information with other nodes in the Puppet infrastructure.
+    source: https://puppet.com/docs/puppet/latest/lang_exported.html
+
+  - id: puppet_i9
+    question: What is the purpose of roles and profiles pattern in Puppet?
+    options:
+      - Organize and structure Puppet code in a maintainable way
+      - Monitor system performance
+      - Manage backups
+      - Configure networks
+    correct_answer: 0
+    explanation: The roles and profiles pattern is a way to organize Puppet code that makes it more maintainable and reusable.
+    source: https://puppet.com/docs/puppet/latest/roles_and_profiles.html
+
+  - id: puppet_i10
+    question: What is the purpose of the puppet parser validate command?
+    options:
+      - Check Puppet manifests for syntax errors
+      - Monitor system status
+      - Manage backups
+      - Configure networks
+    correct_answer: 0
+    explanation: The puppet parser validate command checks Puppet manifests for syntax errors without actually applying the changes.
+    source: https://puppet.com/docs/puppet/latest/man/parser.html 

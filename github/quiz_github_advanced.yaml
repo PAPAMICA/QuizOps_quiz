@@ -1,0 +1,116 @@
+id: github_advanced
+category: github
+level: advanced
+title: GitHub Enterprise and Advanced Workflows
+description: Test your knowledge of GitHub enterprise features and advanced workflows
+
+questions:
+  - id: github_a1
+    question: What is GitHub Enterprise Server?
+    options:
+      - A self-hosted version of GitHub that runs on your infrastructure
+      - A cloud-based GitHub service
+      - A code editor
+      - A testing platform
+    correct_answer: 0
+    explanation: GitHub Enterprise Server is a self-hosted platform that allows organizations to run GitHub on their own infrastructure, providing enhanced security and compliance features.
+    source: https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server
+
+  - id: github_a2
+    question: What is GitHub SAML SSO?
+    options:
+      - A single sign-on security feature for enterprise authentication
+      - A code scanning tool
+      - A deployment platform
+      - A testing framework
+    correct_answer: 0
+    explanation: GitHub SAML SSO (Single Sign-On) allows enterprise organizations to centrally manage and secure access to GitHub resources using their identity provider.
+    source: https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/about-identity-and-access-management-with-saml-single-sign-on
+
+  - id: github_a3
+    question: What is GitHub Audit Log?
+    options:
+      - A detailed record of actions taken in an organization
+      - A code review tool
+      - A deployment log
+      - A testing report
+    correct_answer: 0
+    explanation: GitHub Audit Log provides a detailed record of actions taken in your organization, helping administrators track changes and maintain security compliance.
+    source: https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization
+
+  - id: github_a4
+    question: What is GitHub Enterprise Managed Users?
+    options:
+      - A service for centrally managing user identities and access
+      - A user management tool
+      - A deployment service
+      - A testing platform
+    correct_answer: 0
+    explanation: GitHub Enterprise Managed Users allows enterprises to centrally manage user identities and access on GitHub.com through their identity provider.
+    source: https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/managing-iam-with-enterprise-managed-users/about-enterprise-managed-users
+
+  - id: github_a5
+    question: What is GitHub Actions Workflow Visualization?
+    options:
+      - A visual representation of workflow execution and dependencies
+      - A code editor
+      - A project management tool
+      - A testing framework
+    correct_answer: 0
+    explanation: GitHub Actions Workflow Visualization provides a graphical view of workflow execution, helping you understand job dependencies and execution flow.
+    source: https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/using-the-visualization-graph
+
+  - id: github_a6
+    question: What is GitHub's IP Allow List?
+    options:
+      - A security feature to restrict access from specific IP addresses
+      - A network monitoring tool
+      - A deployment platform
+      - A testing service
+    correct_answer: 0
+    explanation: IP Allow List is a security feature that lets enterprise organizations control access to their assets by specifying allowed IP addresses.
+    source: https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization
+
+  - id: github_a7
+    question: What is GitHub's Required Status Checks?
+    options:
+      - A branch protection rule requiring specific checks to pass before merging
+      - A testing framework
+      - A deployment tool
+      - A code review system
+    correct_answer: 0
+    explanation: Required Status Checks is a branch protection feature that ensures specific checks (like tests or deployments) pass successfully before changes can be merged.
+    source: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches#require-status-checks-before-merging
+
+  - id: github_a8
+    question: What is GitHub's Code Owners feature?
+    options:
+      - A system to automatically request reviews from designated owners
+      - A code scanning tool
+      - A deployment platform
+      - A testing framework
+    correct_answer: 0
+    explanation: Code Owners automatically requests reviews from designated team members when changes are made to specific files or directories in a repository.
+    source: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+  - id: github_a9
+    question: What is GitHub's Repository Rule Sets?
+    options:
+      - A way to define and enforce repository rules across an organization
+      - A code review tool
+      - A deployment system
+      - A testing framework
+    correct_answer: 0
+    explanation: Repository Rule Sets allow organizations to define and enforce consistent rules across multiple repositories, ensuring standardized protection and workflow requirements.
+    source: https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-repository-rules-for-your-organization
+
+  - id: github_a10
+    question: What is GitHub's Secret Scanning?
+    options:
+      - A security feature that detects and alerts on committed secrets
+      - A code review tool
+      - A deployment platform
+      - A testing service
+    correct_answer: 0
+    explanation: Secret Scanning is a security feature that scans repositories for known types of secrets (like API keys or tokens) and alerts you when they are detected.
+    source: https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning 

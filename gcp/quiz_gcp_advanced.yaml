@@ -1,0 +1,116 @@
+id: gcp_advanced
+category: gcp
+level: advanced
+title: GCP Expert Level
+description: Test your expert-level knowledge of Google Cloud Platform architecture and advanced services
+
+questions:
+  - id: gcp_a1
+    question: What is Cloud HSM in GCP?
+    options:
+      - A hardware security module service for key management and cryptographic operations
+      - A high-speed memory service
+      - A hybrid storage management system
+      - A health monitoring service
+    correct_answer: 0
+    explanation: Cloud HSM is a cloud-hosted Hardware Security Module service that allows you to host encryption keys and perform cryptographic operations in FIPS 140-2 Level 3 certified HSMs.
+    source: https://cloud.google.com/kms/docs/hsm
+
+  - id: gcp_a2
+    question: What is the purpose of VPC Service Controls?
+    options:
+      - Define security perimeters around Google Cloud resources to prevent data exfiltration
+      - Manage virtual machine instances
+      - Configure load balancing
+      - Monitor network traffic
+    correct_answer: 0
+    explanation: VPC Service Controls enable you to establish security perimeters around resources, helping prevent data exfiltration and maintaining compliance with data privacy regulations.
+    source: https://cloud.google.com/vpc-service-controls/docs/overview
+
+  - id: gcp_a3
+    question: What is Cloud TPU?
+    options:
+      - A specialized hardware accelerator for machine learning workloads
+      - A traffic processing unit
+      - A temporary processing utility
+      - A testing and profiling utility
+    correct_answer: 0
+    explanation: Cloud TPU (Tensor Processing Unit) is a custom-designed machine learning ASIC that accelerates TensorFlow workloads, specifically optimized for deep learning applications.
+    source: https://cloud.google.com/tpu/docs/overview
+
+  - id: gcp_a4
+    question: What is the purpose of Cloud Endpoints?
+    options:
+      - Develop, deploy, protect, and monitor APIs on GCP
+      - Connect network endpoints
+      - Monitor endpoint devices
+      - Manage storage endpoints
+    correct_answer: 0
+    explanation: Cloud Endpoints is a distributed API management system that helps you develop, deploy, secure, and monitor APIs running on Google Cloud or anywhere else.
+    source: https://cloud.google.com/endpoints/docs/overview
+
+  - id: gcp_a5
+    question: What is Anthos?
+    options:
+      - A hybrid and multi-cloud application platform
+      - An antivirus service
+      - A monitoring tool
+      - A database service
+    correct_answer: 0
+    explanation: Anthos is a modern application management platform that provides consistent development and operations experience for cloud and on-premises environments.
+    source: https://cloud.google.com/anthos/docs/concepts/overview
+
+  - id: gcp_a6
+    question: What is Cloud Bigtable's architecture based on?
+    options:
+      - Google's Bigtable whitepaper and internal system
+      - Traditional SQL databases
+      - MongoDB architecture
+      - Redis architecture
+    correct_answer: 0
+    explanation: Cloud Bigtable is based on the original Bigtable system described in Google's Bigtable whitepaper, which inspired many NoSQL databases like HBase and Cassandra.
+    source: https://cloud.google.com/bigtable/docs/overview
+
+  - id: gcp_a7
+    question: What is the purpose of Identity-Aware Proxy (IAP)?
+    options:
+      - Establish a central authorization layer for applications accessed by HTTPS
+      - Route network traffic
+      - Monitor system performance
+      - Manage storage access
+    correct_answer: 0
+    explanation: Identity-Aware Proxy (IAP) lets you establish a central authorization layer for applications accessed by HTTPS, enabling you to adopt Zero Trust security policies.
+    source: https://cloud.google.com/iap/docs/concepts-overview
+
+  - id: gcp_a8
+    question: What is Cloud Dataprep?
+    options:
+      - An intelligent data service for visually exploring, cleaning, and preparing data
+      - A data backup service
+      - A database system
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Cloud Dataprep is an intelligent data service for visually exploring, cleaning, and preparing structured and unstructured data for analysis, reporting, and machine learning.
+    source: https://cloud.google.com/dataprep/docs/concepts/overview
+
+  - id: gcp_a9
+    question: What is the purpose of Cloud Asset Inventory?
+    options:
+      - Provide a historical view of cloud assets and their relationships
+      - Track physical assets
+      - Monitor system performance
+      - Manage storage inventory
+    correct_answer: 0
+    explanation: Cloud Asset Inventory provides a historical view of GCP assets, enabling you to monitor and analyze resources and IAM policies across your organization over time.
+    source: https://cloud.google.com/asset-inventory/docs/overview
+
+  - id: gcp_a10
+    question: What is Cloud Deploy?
+    options:
+      - A managed continuous delivery service to promote releases across environments
+      - A deployment monitoring tool
+      - A virtual machine deployment service
+      - A database deployment system
+    correct_answer: 0
+    explanation: Cloud Deploy is a managed continuous delivery service that automates the delivery of applications to a series of target environments in a progressive manner.
+    source: https://cloud.google.com/deploy/docs/overview 

@@ -1,0 +1,116 @@
+id: openstack_basics
+category: openstack
+level: beginner
+title: OpenStack Fundamentals
+description: Test your knowledge of basic OpenStack concepts and services
+
+questions:
+  - id: openstack_b1
+    question: What is OpenStack?
+    options:
+      - An open-source cloud computing platform
+      - A programming language
+      - A database system
+      - A web server
+    correct_answer: 0
+    explanation: OpenStack is an open-source cloud computing platform that controls large pools of compute, storage, and networking resources throughout a datacenter.
+    source: https://www.openstack.org/software/
+
+  - id: openstack_b2
+    question: What is Nova in OpenStack?
+    options:
+      - The compute service that manages virtual machines
+      - The storage service
+      - The networking service
+      - The identity service
+    correct_answer: 0
+    explanation: Nova is OpenStack's compute service that manages and automates pools of compute resources, supporting multiple virtualization technologies.
+    source: https://docs.openstack.org/nova/latest/
+
+  - id: openstack_b3
+    question: What is Keystone in OpenStack?
+    options:
+      - The identity and authentication service
+      - The compute service
+      - The storage service
+      - The networking service
+    correct_answer: 0
+    explanation: Keystone provides identity, token, catalog, and policy services for use by OpenStack components.
+    source: https://docs.openstack.org/keystone/latest/
+
+  - id: openstack_b4
+    question: What is Neutron in OpenStack?
+    options:
+      - The networking service
+      - The compute service
+      - The storage service
+      - The identity service
+    correct_answer: 0
+    explanation: Neutron is OpenStack's networking service that provides Network Connectivity as a Service between interface devices managed by other OpenStack services.
+    source: https://docs.openstack.org/neutron/latest/
+
+  - id: openstack_b5
+    question: What is Swift in OpenStack?
+    options:
+      - The object storage service
+      - The compute service
+      - The networking service
+      - The identity service
+    correct_answer: 0
+    explanation: Swift is OpenStack's object storage system that stores and retrieves unstructured data objects via a RESTful API.
+    source: https://docs.openstack.org/swift/latest/
+
+  - id: openstack_b6
+    question: What is Cinder in OpenStack?
+    options:
+      - The block storage service
+      - The compute service
+      - The networking service
+      - The identity service
+    correct_answer: 0
+    explanation: Cinder is OpenStack's block storage service that provides persistent block storage to running instances.
+    source: https://docs.openstack.org/cinder/latest/
+
+  - id: openstack_b7
+    question: What is Glance in OpenStack?
+    options:
+      - The image service for virtual machine images
+      - The compute service
+      - The networking service
+      - The storage service
+    correct_answer: 0
+    explanation: Glance is OpenStack's image service that provides discovery, registration, and delivery services for disk and server images.
+    source: https://docs.openstack.org/glance/latest/
+
+  - id: openstack_b8
+    question: What is Horizon in OpenStack?
+    options:
+      - The dashboard web interface
+      - The compute service
+      - The networking service
+      - The storage service
+    correct_answer: 0
+    explanation: Horizon is OpenStack's dashboard that provides a web-based user interface to OpenStack services.
+    source: https://docs.openstack.org/horizon/latest/
+
+  - id: openstack_b9
+    question: What is Heat in OpenStack?
+    options:
+      - The orchestration service
+      - The compute service
+      - The networking service
+      - The storage service
+    correct_answer: 0
+    explanation: Heat is OpenStack's orchestration service that implements an orchestration engine to launch multiple composite cloud applications.
+    source: https://docs.openstack.org/heat/latest/
+
+  - id: openstack_b10
+    question: What is a Project in OpenStack?
+    options:
+      - A logical grouping of users and resources
+      - A virtual machine
+      - A network configuration
+      - A storage volume
+    correct_answer: 0
+    explanation: A Project (also known as a Tenant) is a logical grouping of users and resources that provides isolation and quota management.
+    source: https://docs.openstack.org/security-guide/identity/concepts.html 

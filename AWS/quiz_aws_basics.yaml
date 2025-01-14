@@ -1,0 +1,114 @@
+title: AWS Fundamentals
+description: Test your basic knowledge of Amazon Web Services (AWS)
+category: aws
+level: beginner
+questions:
+  - id: aws_b1
+    question: What is Amazon EC2?
+    options:
+      - A service that provides resizable compute capacity in the cloud
+      - A database service
+      - A storage service
+      - A networking service
+    correct_answer: 0
+    explanation: Amazon EC2 (Elastic Compute Cloud) is a web service that provides secure, resizable compute capacity in the cloud, essentially virtual servers.
+    source: https://aws.amazon.com/ec2/
+
+  - id: aws_b2
+    question: What is Amazon S3?
+    options:
+      - An object storage service
+      - A compute service
+      - A database service
+      - A networking service
+    correct_answer: 0
+    explanation: Amazon S3 (Simple Storage Service) is an object storage service offering industry-leading scalability, data availability, security, and performance.
+    source: https://aws.amazon.com/s3/
+
+  - id: aws_b3
+    question: What is an AWS Region?
+    options:
+      - A physical location around the world where AWS clusters data centers
+      - A single data center
+      - A virtual private cloud
+      - A backup location
+    correct_answer: 0
+    explanation: An AWS Region is a physical location around the world where AWS clusters data centers to provide services with high availability and fault tolerance.
+    source: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+
+  - id: aws_b4
+    question: What is an AWS Availability Zone?
+    options:
+      - One or more discrete data centers with redundant power, networking, and connectivity
+      - A region
+      - A virtual private cloud
+      - A backup service
+    correct_answer: 0
+    explanation: An Availability Zone consists of one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region.
+    source: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+
+  - id: aws_b5
+    question: What is Amazon RDS?
+    options:
+      - A managed relational database service
+      - A storage service
+      - A compute service
+      - A content delivery service
+    correct_answer: 0
+    explanation: Amazon RDS (Relational Database Service) is a managed service that makes it easy to set up, operate, and scale a relational database in the cloud.
+    source: https://aws.amazon.com/rds/
+
+  - id: aws_b6
+    question: What is AWS IAM?
+    options:
+      - A service to manage access to AWS services and resources
+      - A billing service
+      - A monitoring service
+      - A backup service
+    correct_answer: 0
+    explanation: AWS IAM (Identity and Access Management) enables you to manage access to AWS services and resources securely by creating and managing AWS users and groups.
+    source: https://aws.amazon.com/iam/
+
+  - id: aws_b7
+    question: What is Amazon VPC?
+    options:
+      - A service that lets you launch AWS resources in a virtual network
+      - A storage service
+      - A database service
+      - A compute service
+    correct_answer: 0
+    explanation: Amazon VPC (Virtual Private Cloud) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network.
+    source: https://aws.amazon.com/vpc/
+
+  - id: aws_b8
+    question: What is AWS CloudWatch?
+    options:
+      - A monitoring and observability service
+      - A compute service
+      - A storage service
+      - A database service
+    correct_answer: 0
+    explanation: Amazon CloudWatch is a monitoring and observability service that provides data and insights to monitor applications, respond to system-wide performance changes, and optimize resource utilization.
+    source: https://aws.amazon.com/cloudwatch/
+
+  - id: aws_b9
+    question: What is Amazon Route 53?
+    options:
+      - A scalable domain name system (DNS) web service
+      - A storage service
+      - A compute service
+      - A database service
+    correct_answer: 0
+    explanation: Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service designed to give developers and businesses a reliable way to route end users to Internet applications.
+    source: https://aws.amazon.com/route53/
+
+  - id: aws_b10
+    question: What is AWS Lambda?
+    options:
+      - A serverless compute service
+      - A storage service
+      - A database service
+      - A networking service
+    correct_answer: 0
+    explanation: AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, paying only for the compute time you consume.
+    source: https://aws.amazon.com/lambda/ 

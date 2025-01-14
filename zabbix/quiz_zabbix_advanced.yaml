@@ -1,0 +1,116 @@
+id: zabbix_advanced
+category: zabbix
+level: advanced
+title: Zabbix Expert Operations
+description: Test your expertise in advanced Zabbix monitoring concepts and enterprise features
+
+questions:
+  - id: zabbix_a1
+    question: How does Zabbix's distributed monitoring work?
+    options:
+      - Uses proxies to distribute monitoring load
+      - Only supports centralized monitoring
+      - Manages local monitoring only
+      - Handles basic data collection
+    correct_answer: 0
+    explanation: Distributed monitoring uses proxies to collect data from remote locations and distribute monitoring load.
+    source: https://www.zabbix.com/documentation/current/en/manual/distributed_monitoring
+
+  - id: zabbix_a2
+    question: What is the purpose of Zabbix's history and trend data storage?
+    options:
+      - Optimizes data storage and retrieval performance
+      - Only stores current values
+      - Manages basic data backup
+      - Handles user permissions
+    correct_answer: 0
+    explanation: History and trend data storage optimizes performance by storing detailed and aggregated data differently.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/items/history_and_trends
+
+  - id: zabbix_a3
+    question: How does Zabbix's encryption work?
+    options:
+      - Provides TLS encryption for all communications
+      - Only encrypts passwords
+      - Manages basic security
+      - Handles user authentication
+    correct_answer: 0
+    explanation: Zabbix supports TLS encryption for all communications between Zabbix components.
+    source: https://www.zabbix.com/documentation/current/en/manual/encryption
+
+  - id: zabbix_a4
+    question: What are Zabbix's queue management capabilities?
+    options:
+      - Manages processing of items, triggers, and events
+      - Only handles basic monitoring
+      - Stores historical data
+      - Configures user access
+    correct_answer: 0
+    explanation: Queue management optimizes processing of items, triggers, and events based on priority and resources.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/items/queue
+
+  - id: zabbix_a5
+    question: How does Zabbix's high availability cluster work?
+    options:
+      - Provides automatic failover between nodes
+      - Only supports single server setup
+      - Manages basic redundancy
+      - Handles data backup
+    correct_answer: 0
+    explanation: HA cluster provides automatic failover between multiple Zabbix server nodes.
+    source: https://www.zabbix.com/documentation/current/en/manual/concepts/server#high-availability
+
+  - id: zabbix_a6
+    question: What is Zabbix's real-time export protocol?
+    options:
+      - Streams monitoring data to external systems
+      - Only stores data locally
+      - Manages basic reporting
+      - Handles user notifications
+    correct_answer: 0
+    explanation: Real-time export protocol enables streaming of history, events, and problems to external systems.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/items/exporters
+
+  - id: zabbix_a7
+    question: How does Zabbix's anomaly detection work?
+    options:
+      - Uses baseline algorithms to detect abnormal behavior
+      - Only detects simple thresholds
+      - Manages basic monitoring
+      - Handles user alerts
+    correct_answer: 0
+    explanation: Anomaly detection uses baseline algorithms to identify abnormal behavior patterns.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/triggers/prediction
+
+  - id: zabbix_a8
+    question: What is Zabbix's API automation capability?
+    options:
+      - Provides full programmatic access to Zabbix
+      - Only supports basic operations
+      - Manages user interfaces
+      - Handles data storage
+    correct_answer: 0
+    explanation: API automation enables programmatic access to all Zabbix functionality through JSON-RPC.
+    source: https://www.zabbix.com/documentation/current/en/manual/api
+
+  - id: zabbix_a9
+    question: How does Zabbix's custom JavaScript preprocessing work?
+    options:
+      - Executes custom JS code for data transformation
+      - Only supports basic preprocessing
+      - Manages data storage
+      - Handles user permissions
+    correct_answer: 0
+    explanation: Custom JavaScript preprocessing allows complex data transformations using JavaScript code.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/items/preprocessing/javascript
+
+  - id: zabbix_a10
+    question: What is Zabbix's root cause analysis feature?
+    options:
+      - Identifies primary problems causing other issues
+      - Only shows individual problems
+      - Manages basic alerts
+      - Handles user notifications
+    correct_answer: 0
+    explanation: Root cause analysis helps identify primary problems that cause cascading issues.
+    source: https://www.zabbix.com/documentation/current/en/manual/config/event_correlation 

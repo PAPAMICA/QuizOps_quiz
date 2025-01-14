@@ -1,0 +1,116 @@
+id: security_intermediate
+category: security
+level: intermediate
+title: Security Advanced Concepts
+description: Test your knowledge of intermediate security concepts and practices
+
+questions:
+  - id: security_i1
+    question: What is Network Segmentation?
+    options:
+      - Dividing networks into isolated segments to enhance security
+      - Creating backup copies of network configurations
+      - Installing multiple firewalls on a single network
+      - Setting up redundant network connections
+    correct_answer: 0
+    explanation: Network segmentation divides a network into isolated segments to contain breaches and control access between different parts of the network.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_i2
+    question: What is Security Information and Event Management (SIEM)?
+    options:
+      - A system that collects and analyzes security data for threat detection
+      - A tool for managing user passwords and credentials
+      - A protocol for secure network communications
+      - A framework for testing application security
+    correct_answer: 0
+    explanation: SIEM systems collect and analyze security event data from multiple sources to detect and respond to security threats in real-time.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_i3
+    question: What is Role-Based Access Control (RBAC)?
+    options:
+      - A method of regulating access based on user roles and privileges
+      - A system for encrypting network communications
+      - A tool for monitoring system performance
+      - A protocol for secure file transfers
+    correct_answer: 0
+    explanation: RBAC restricts system access to authorized users by assigning permissions based on their organizational roles and responsibilities.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_i4
+    question: What is a Security Audit?
+    options:
+      - A systematic evaluation of system security controls and practices
+      - A tool for monitoring network traffic patterns
+      - A method for backing up security configurations
+      - A process for updating security software
+    correct_answer: 0
+    explanation: A security audit is a comprehensive evaluation of an organization's security controls, policies, and procedures to identify vulnerabilities.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_i5
+    question: What is Intrusion Detection System (IDS)?
+    options:
+      - A system that monitors network traffic for suspicious activity
+      - A tool for managing system backups and recovery
+      - A protocol for secure data transmission
+      - A method for user authentication
+    correct_answer: 0
+    explanation: An IDS monitors network traffic and system activities for malicious behavior or security policy violations and generates alerts.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_i6
+    question: What is Security Hardening?
+    options:
+      - The process of securing systems by reducing their attack surface
+      - A method for encrypting network communications
+      - A tool for monitoring system performance
+      - A protocol for secure file transfers
+    correct_answer: 0
+    explanation: Security hardening involves reducing vulnerabilities by removing unnecessary services, applying security patches, and configuring secure settings.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_i7
+    question: What is a Security Token?
+    options:
+      - A physical or digital device used for authentication
+      - A tool for monitoring network traffic
+      - A method for encrypting files
+      - A system for managing passwords
+    correct_answer: 0
+    explanation: A security token is a physical or digital device that generates authentication codes or stores credentials for secure access.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_i8
+    question: What is Security Patch Management?
+    options:
+      - A process for updating systems with security fixes
+      - A tool for monitoring system performance
+      - A method for backing up security data
+      - A protocol for secure communications
+    correct_answer: 0
+    explanation: Security patch management involves identifying, testing, and applying software updates to address security vulnerabilities in systems.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_i9
+    question: What is Security Risk Assessment?
+    options:
+      - A process for identifying and evaluating security risks
+      - A tool for monitoring network traffic
+      - A method for encrypting data storage
+      - A system for managing access control
+    correct_answer: 0
+    explanation: Security risk assessment identifies potential threats and vulnerabilities to determine their impact and likelihood of occurrence.
+    source: https://www.nist.gov/cyberframework
+
+  - id: security_i10
+    question: What is Security Awareness Training?
+    options:
+      - Education programs to teach security best practices
+      - A tool for monitoring system security
+      - A method for testing network security
+      - A protocol for secure data transfer
+    correct_answer: 0
+    explanation: Security awareness training educates users about security threats, policies, and best practices to reduce security incidents.
+    source: https://www.nist.gov/cyberframework 

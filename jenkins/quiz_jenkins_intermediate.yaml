@@ -1,0 +1,116 @@
+id: jenkins_intermediate
+category: jenkins
+level: intermediate
+title: Jenkins Pipeline and Advanced Features
+description: Test your knowledge of Jenkins pipeline concepts and advanced features
+
+questions:
+  - id: jenkins_i1
+    question: What is a Declarative Pipeline in Jenkins?
+    options:
+      - A simplified way to define Jenkins pipelines using predefined structure
+      - A type of build agent
+      - A monitoring system
+      - A deployment tool
+    correct_answer: 0
+    explanation: Declarative Pipeline is a simplified way of writing Jenkins pipelines using a predefined structure and syntax, making it easier to create and maintain pipelines.
+    source: https://www.jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline
+
+  - id: jenkins_i2
+    question: What is a Scripted Pipeline in Jenkins?
+    options:
+      - A pipeline written using Groovy script with more flexibility
+      - A type of plugin
+      - A build trigger
+      - A deployment script
+    correct_answer: 0
+    explanation: Scripted Pipeline uses Groovy scripting language, providing more flexibility and control over pipeline execution through programming constructs.
+    source: https://www.jenkins.io/doc/book/pipeline/syntax/#scripted-pipeline
+
+  - id: jenkins_i3
+    question: What is a Multibranch Pipeline?
+    options:
+      - A pipeline that automatically creates jobs for branches in source control
+      - A parallel execution system
+      - A deployment strategy
+      - A build configuration
+    correct_answer: 0
+    explanation: A Multibranch Pipeline automatically creates pipeline jobs for each branch discovered in source control, allowing different branches to have different behaviors.
+    source: https://www.jenkins.io/doc/book/pipeline/multibranch/
+
+  - id: jenkins_i4
+    question: What is Jenkins Credentials Binding?
+    options:
+      - A way to securely inject credentials into pipeline steps
+      - A security protocol
+      - A user authentication system
+      - A backup strategy
+    correct_answer: 0
+    explanation: Credentials Binding allows you to securely inject credentials into pipeline steps without exposing sensitive information in the pipeline code.
+    source: https://www.jenkins.io/doc/book/pipeline/jenkinsfile/#handling-credentials
+
+  - id: jenkins_i5
+    question: What is a Shared Library in Jenkins?
+    options:
+      - A collection of reusable code for pipelines
+      - A plugin repository
+      - A build agent
+      - A deployment tool
+    correct_answer: 0
+    explanation: A Shared Library is a collection of reusable code that can be shared across multiple Jenkins pipelines, promoting code reuse and maintainability.
+    source: https://www.jenkins.io/doc/book/pipeline/shared-libraries/
+
+  - id: jenkins_i6
+    question: What is Pipeline Stage View?
+    options:
+      - A visualization of pipeline execution progress and results
+      - A code editor
+      - A build log
+      - A configuration panel
+    correct_answer: 0
+    explanation: Pipeline Stage View provides a visualization of pipeline execution progress and results, showing the status of each stage and step in the pipeline.
+    source: https://www.jenkins.io/doc/book/pipeline/getting-started/#stage-view
+
+  - id: jenkins_i7
+    question: What is a Post Section in Jenkins Pipeline?
+    options:
+      - A block that runs at the end of pipeline or stage completion
+      - A build notification
+      - A deployment script
+      - A cleanup process
+    correct_answer: 0
+    explanation: The Post section defines actions to be run at the end of a pipeline or stage based on the pipeline's status (success, failure, etc.).
+    source: https://www.jenkins.io/doc/book/pipeline/syntax/#post
+
+  - id: jenkins_i8
+    question: What is Pipeline Step?
+    options:
+      - A single task that is part of a pipeline
+      - A build trigger
+      - A deployment phase
+      - A security check
+    correct_answer: 0
+    explanation: A Pipeline Step is a single task that tells Jenkins what to do at a particular point in time during pipeline execution.
+    source: https://www.jenkins.io/doc/book/pipeline/syntax/#steps
+
+  - id: jenkins_i9
+    question: What is Parallel Execution in Jenkins Pipeline?
+    options:
+      - Running multiple stages or steps simultaneously
+      - A backup process
+      - A deployment strategy
+      - A build configuration
+    correct_answer: 0
+    explanation: Parallel execution allows multiple stages or steps to run simultaneously in a pipeline, reducing overall build time.
+    source: https://www.jenkins.io/doc/book/pipeline/syntax/#parallel
+
+  - id: jenkins_i10
+    question: What is a When Directive in Jenkins Pipeline?
+    options:
+      - A condition that determines if a stage should be executed
+      - A build trigger
+      - A deployment phase
+      - A security check
+    correct_answer: 0
+    explanation: The When directive allows you to specify conditions that must be met for a stage to execute in a pipeline.
+    source: https://www.jenkins.io/doc/book/pipeline/syntax/#when 

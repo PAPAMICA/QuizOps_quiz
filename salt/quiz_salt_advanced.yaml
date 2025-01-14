@@ -1,0 +1,116 @@
+id: salt_advanced
+category: salt
+level: advanced
+title: Salt Expert Level
+description: Test your expertise in advanced Salt concepts and features
+
+questions:
+  - id: salt_a1
+    question: What is Salt Thorium?
+    options:
+      - A reactive engine for complex automated decisions
+      - A monitoring system for resource tracking
+      - A configuration validator for state files
+      - A backup service for system data
+    correct_answer: 0
+    explanation: Salt Thorium is a reactive engine that makes complex automated decisions based on Salt events and data.
+    source: https://docs.saltproject.io/en/latest/topics/thorium/index.html
+
+  - id: salt_a2
+    question: What is Salt Runner?
+    options:
+      - A module that executes operations on the master
+      - A performance monitoring tool for minions
+      - A configuration management system
+      - A network traffic analyzer tool
+    correct_answer: 0
+    explanation: Salt Runners are modules that execute operations on the Salt master rather than on minions.
+    source: https://docs.saltproject.io/en/latest/ref/runners/index.html
+
+  - id: salt_a3
+    question: What is Salt Returner?
+    options:
+      - A system for storing command results in external systems
+      - A monitoring platform for tracking changes
+      - A configuration backup service for states
+      - A logging system for error messages
+    correct_answer: 0
+    explanation: Salt Returners allow storing command and event return data in external systems like databases.
+    source: https://docs.saltproject.io/en/latest/ref/returners/index.html
+
+  - id: salt_a4
+    question: What is Salt API?
+    options:
+      - A REST interface for accessing Salt functionality
+      - A monitoring service for system metrics
+      - A configuration management interface
+      - A backup system for Salt data
+    correct_answer: 0
+    explanation: Salt API provides a REST interface to access Salt functionality programmatically.
+    source: https://docs.saltproject.io/en/latest/ref/netapi/all/index.html
+
+  - id: salt_a5
+    question: What is Salt Render System?
+    options:
+      - A template processing system for state files
+      - A monitoring tool for system resources
+      - A configuration validator service
+      - A backup manager for states
+    correct_answer: 0
+    explanation: The Salt Render System processes templates and files using various renderers like Jinja and Python.
+    source: https://docs.saltproject.io/en/latest/ref/renderers/index.html
+
+  - id: salt_a6
+    question: What is Salt Multi-Master?
+    options:
+      - A high availability setup with multiple masters
+      - A load balancing system for requests
+      - A configuration replication service
+      - A backup system for redundancy
+    correct_answer: 0
+    explanation: Salt Multi-Master provides high availability by allowing minions to connect to multiple masters.
+    source: https://docs.saltproject.io/en/latest/topics/highavailability/index.html
+
+  - id: salt_a7
+    question: What is Salt Module Executors?
+    options:
+      - A system for customizing module execution methods
+      - A monitoring service for module calls
+      - A configuration validator for modules
+      - A backup system for module data
+    correct_answer: 0
+    explanation: Module Executors allow customizing how Salt executes modules on minions.
+    source: https://docs.saltproject.io/en/latest/ref/executors/index.html
+
+  - id: salt_a8
+    question: What is Salt State Compiler?
+    options:
+      - A system that converts state files into execution plans
+      - A monitoring tool for state execution
+      - A configuration backup service
+      - A validation system for syntax
+    correct_answer: 0
+    explanation: The State Compiler converts Salt State files into execution plans that can be applied to minions.
+    source: https://docs.saltproject.io/en/latest/ref/states/compiler_ordering.html
+
+  - id: salt_a9
+    question: What is Salt Engines?
+    options:
+      - A long-running process system for custom tasks
+      - A monitoring platform for system events
+      - A configuration management service
+      - A backup system for data storage
+    correct_answer: 0
+    explanation: Salt Engines are long-running processes that can perform custom tasks and integrate with external systems.
+    source: https://docs.saltproject.io/en/latest/topics/engines/index.html
+
+  - id: salt_a10
+    question: What is Salt Transport System?
+    options:
+      - A communication layer between master and minions
+      - A monitoring service for network traffic
+      - A configuration distribution system
+      - A backup service for messages
+    correct_answer: 0
+    explanation: The Salt Transport System handles communication between the master and minions using various protocols.
+    source: https://docs.saltproject.io/en/latest/topics/transports/index.html 

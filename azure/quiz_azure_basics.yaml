@@ -1,0 +1,114 @@
+title: Azure Fundamentals
+description: Test your basic knowledge of Microsoft Azure cloud services
+category: azure
+level: beginner
+questions:
+  - id: azure_b1
+    question: What is Azure Virtual Machine?
+    options:
+      - A service that provides on-demand scalable computing resources
+      - A database service
+      - A storage service
+      - A networking service
+    correct_answer: 0
+    explanation: Azure Virtual Machines provide on-demand, scalable computing resources in Azure, allowing you to create and run Windows or Linux virtual machines.
+    source: https://learn.microsoft.com/azure/virtual-machines/
+
+  - id: azure_b2
+    question: What is Azure Storage?
+    options:
+      - A cloud storage solution for modern data storage scenarios
+      - A compute service
+      - A database service
+      - A networking service
+    correct_answer: 0
+    explanation: Azure Storage is Microsoft's cloud storage solution that provides highly available, secure, durable, and scalable storage services including blob storage, file storage, queue storage, and table storage.
+    source: https://learn.microsoft.com/azure/storage/
+
+  - id: azure_b3
+    question: What is an Azure Region?
+    options:
+      - A geographical area containing one or more data centers
+      - A single data center
+      - A virtual network
+      - A resource group
+    correct_answer: 0
+    explanation: An Azure Region is a geographical area containing at least one data center (usually multiple) that provides low-latency data residency and compliance boundaries.
+    source: https://learn.microsoft.com/azure/availability-zones/az-overview
+
+  - id: azure_b4
+    question: What is Azure SQL Database?
+    options:
+      - A fully managed relational database service
+      - A storage service
+      - A compute service
+      - A networking service
+    correct_answer: 0
+    explanation: Azure SQL Database is a fully managed relational database service that provides SQL Server engine compatibility with built-in high availability, backups, and other features.
+    source: https://learn.microsoft.com/azure/azure-sql/
+
+  - id: azure_b5
+    question: What is Azure Active Directory (Azure AD)?
+    options:
+      - A cloud-based identity and access management service
+      - A storage service
+      - A compute service
+      - A database service
+    correct_answer: 0
+    explanation: Azure Active Directory is Microsoft's cloud-based identity and access management service that helps users sign in and access resources in both internal and external resources.
+    source: https://learn.microsoft.com/azure/active-directory/
+
+  - id: azure_b6
+    question: What is an Azure Resource Group?
+    options:
+      - A container that holds related resources for an Azure solution
+      - A virtual network
+      - A storage account
+      - A database instance
+    correct_answer: 0
+    explanation: A resource group is a container that holds related resources for an Azure solution, allowing you to manage all the resources as a single unit.
+    source: https://learn.microsoft.com/azure/azure-resource-manager/management/overview
+
+  - id: azure_b7
+    question: What is Azure Virtual Network (VNet)?
+    options:
+      - A service that enables Azure resources to securely communicate with each other
+      - A storage service
+      - A database service
+      - A compute service
+    correct_answer: 0
+    explanation: Azure Virtual Network enables Azure resources to securely communicate with each other, the internet, and on-premises networks through a private network in Azure.
+    source: https://learn.microsoft.com/azure/virtual-network/
+
+  - id: azure_b8
+    question: What is Azure Monitor?
+    options:
+      - A service for collecting and analyzing telemetry data
+      - A compute service
+      - A storage service
+      - A database service
+    correct_answer: 0
+    explanation: Azure Monitor is a comprehensive solution for collecting, analyzing, and responding to telemetry data from your cloud and on-premises environments.
+    source: https://learn.microsoft.com/azure/azure-monitor/
+
+  - id: azure_b9
+    question: What is Azure App Service?
+    options:
+      - A fully managed platform for building and hosting web applications
+      - A storage service
+      - A database service
+      - A networking service
+    correct_answer: 0
+    explanation: Azure App Service is a fully managed platform for building, deploying, and scaling web apps, mobile back ends, and RESTful APIs.
+    source: https://learn.microsoft.com/azure/app-service/
+
+  - id: azure_b10
+    question: What is Azure Functions?
+    options:
+      - A serverless compute service
+      - A storage service
+      - A database service
+      - A networking service
+    correct_answer: 0
+    explanation: Azure Functions is a serverless compute service that enables you to run code on-demand without having to explicitly provision or manage infrastructure.
+    source: https://learn.microsoft.com/azure/azure-functions/ 

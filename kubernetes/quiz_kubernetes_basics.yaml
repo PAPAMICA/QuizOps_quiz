@@ -1,0 +1,116 @@
+id: kubernetes_basics
+category: kubernetes
+level: beginner
+title: Kubernetes Basics
+description: Learn the fundamental concepts and components of Kubernetes container orchestration
+
+questions:
+  - id: q1
+    question: What is Kubernetes?
+    options:
+      - An open-source container orchestration platform for automating deployment, scaling, and management of containerized applications
+      - A container runtime
+      - A programming language
+      - A cloud provider
+    explanation: Kubernetes is an open-source platform designed to automate deploying, scaling, and operating application containers, making it easier to manage containerized applications.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is a Pod in Kubernetes?
+    options:
+      - The smallest deployable unit that can be created and managed in Kubernetes
+      - A physical server
+      - A storage volume
+      - A network interface
+    explanation: A Pod is the smallest and simplest unit in the Kubernetes object model that you can create or deploy. It represents a single instance of a running process in your cluster.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/workloads/pods/"
+    correct_answer: 0
+
+  - id: q3
+    question: What is a Kubernetes Node?
+    options:
+      - A worker machine in Kubernetes that runs containerized applications
+      - A container
+      - A storage device
+      - A network switch
+    explanation: A node is a worker machine in Kubernetes that may be a VM or physical machine, depending on the cluster. Each node contains the services necessary to run Pods.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/architecture/nodes/"
+    correct_answer: 0
+
+  - id: q4
+    question: What is a Kubernetes Service?
+    options:
+      - An abstract way to expose an application running on a set of Pods
+      - A container image
+      - A storage volume
+      - A backup system
+    explanation: A Service is an abstraction which defines a logical set of Pods and a policy by which to access them, enabling loose coupling between dependent Pods.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/services-networking/service/"
+    correct_answer: 0
+
+  - id: q5
+    question: What command is used to view the status of pods?
+    options:
+      - kubectl get pods
+      - kubectl list pods
+      - kubectl show pods
+      - kubectl status pods
+    explanation: The kubectl get pods command is used to list all pods in the current namespace and view their status.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get"
+    correct_answer: 0
+
+  - id: q6
+    question: What is a Deployment in Kubernetes?
+    options:
+      - A way to describe the desired state for Pods and ReplicaSets
+      - A physical server
+      - A network configuration
+      - A storage system
+    explanation: A Deployment provides declarative updates for Pods and ReplicaSets, allowing you to describe your application's desired state and manage updates to it.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
+    correct_answer: 0
+
+  - id: q7
+    question: What is a Kubernetes Namespace?
+    options:
+      - A way to divide cluster resources between multiple users or projects
+      - A type of container
+      - A storage volume
+      - A network protocol
+    explanation: Namespaces provide a mechanism for isolating groups of resources within a single cluster, useful when multiple users or projects share a cluster.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is kubectl?
+    options:
+      - The command-line tool for interacting with the Kubernetes cluster
+      - A container runtime
+      - A monitoring system
+      - A backup tool
+    explanation: kubectl is the command-line interface for running commands against Kubernetes clusters, allowing you to deploy applications, inspect resources, and view logs.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/reference/kubectl/"
+    correct_answer: 0
+
+  - id: q9
+    question: What is a ConfigMap in Kubernetes?
+    options:
+      - An API object used to store non-confidential data in key-value pairs
+      - A secret storage system
+      - A container image
+      - A network configuration
+    explanation: ConfigMap is an API object used to store non-confidential data in key-value pairs, allowing you to decouple configuration artifacts from image content.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/configuration/configmap/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of labels in Kubernetes?
+    options:
+      - To identify and organize Kubernetes objects
+      - To secure the cluster
+      - To store configuration data
+      - To manage storage
+    explanation: Labels are key/value pairs attached to objects that are used to organize and select subsets of objects, making it easier to manage and operate on groups of resources.
+    source: "Kubernetes Documentation - https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/"
+    correct_answer: 0 

@@ -1,0 +1,114 @@
+title: ELK Stack Expert Level
+description: Test your advanced knowledge of Elasticsearch, Logstash, and Kibana
+category: elk
+level: advanced
+questions:
+  - id: elk_a1
+    question: What is the purpose of Elasticsearch's Cross-cluster Replication (CCR)?
+    options:
+      - To replicate indices from one cluster to another for disaster recovery and data locality
+      - To compress data across clusters
+      - To manage user permissions between clusters
+      - To synchronize cluster settings
+    correct_answer: 0
+    explanation: Cross-cluster Replication (CCR) enables replication of indices from one Elasticsearch cluster to another, providing disaster recovery capabilities and data locality for geographically distributed deployments.
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/xpack-ccr.html
+
+  - id: elk_a2
+    question: How does Elasticsearch's Index Lifecycle Management (ILM) work?
+    options:
+      - By automating index management through defined phases and actions
+      - By manually managing indices
+      - By deleting old indices only
+      - By compressing indices
+    correct_answer: 0
+    explanation: ILM automates index management by defining phases (hot, warm, cold, delete) and actions to take during each phase, helping to optimize performance and resource usage over time.
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/index-lifecycle-management.html
+
+  - id: elk_a3
+    question: What is the purpose of Logstash's Persistent Queue?
+    options:
+      - To provide disk-based buffering for reliability during pipeline disruptions
+      - To manage memory usage only
+      - To compress log data
+      - To encrypt data in transit
+    correct_answer: 0
+    explanation: Persistent Queue provides disk-based buffering in Logstash, ensuring data durability during pipeline disruptions and preventing data loss during restarts or outages.
+    source: https://www.elastic.co/guide/en/logstash/current/persistent-queues.html
+
+  - id: elk_a4
+    question: What is Elasticsearch's Field Data Type 'nested' used for?
+    options:
+      - To index arrays of objects and maintain their relationships
+      - To store nested JSON structures
+      - To create hierarchical data
+      - To compress complex data
+    correct_answer: 0
+    explanation: The 'nested' field type is used to index arrays of objects while maintaining their relationships, allowing for accurate querying of object arrays where each object is indexed independently.
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html
+
+  - id: elk_a5
+    question: What is the purpose of Kibana's Elastic Maps?
+    options:
+      - To visualize and analyze location-based data with multiple layers and data sources
+      - To create basic geographical charts
+      - To store map data
+      - To generate map thumbnails
+    correct_answer: 0
+    explanation: Elastic Maps is a powerful tool for visualizing and analyzing location-based data, supporting multiple layers, data sources, and custom styling for complex geospatial analysis.
+    source: https://www.elastic.co/guide/en/kibana/current/maps.html
+
+  - id: elk_a6
+    question: How does Elasticsearch's Search Template feature enhance search operations?
+    options:
+      - By parameterizing search requests for reuse and simplified client integration
+      - By caching search results
+      - By compressing search queries
+      - By limiting search scope
+    correct_answer: 0
+    explanation: Search Templates allow you to parameterize search requests, making them reusable and easier to maintain, while simplifying client integration by separating query logic from application code.
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/search-template.html
+
+  - id: elk_a7
+    question: What is the purpose of Logstash's Multiple Pipeline feature?
+    options:
+      - To run multiple pipelines with different configurations and resource allocations
+      - To backup pipeline configurations
+      - To test pipeline configurations
+      - To monitor pipeline performance
+    correct_answer: 0
+    explanation: Multiple Pipeline feature allows running separate pipelines with different configurations and resource allocations, enabling better resource utilization and pipeline isolation.
+    source: https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
+
+  - id: elk_a8
+    question: What is Elasticsearch's Snapshot Lifecycle Management (SLM)?
+    options:
+      - To automate the process of taking and managing index snapshots
+      - To manage system backups
+      - To handle data replication
+      - To monitor snapshot status
+    correct_answer: 0
+    explanation: SLM automates the process of taking and managing index snapshots, allowing you to define policies for backup scheduling, retention, and repository management.
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/snapshot-lifecycle-management.html
+
+  - id: elk_a9
+    question: What is the purpose of Kibana's Canvas Workpad?
+    options:
+      - To create custom, pixel-perfect presentations with dynamic data
+      - To draw simple diagrams
+      - To create static reports
+      - To manage dashboards
+    correct_answer: 0
+    explanation: Canvas Workpad enables creation of custom, pixel-perfect presentations with dynamic data, allowing for unique layouts, custom CSS, and interactive elements.
+    source: https://www.elastic.co/guide/en/kibana/current/canvas-workpad.html
+
+  - id: elk_a10
+    question: What is Elasticsearch's Ingest Pipeline?
+    options:
+      - To process documents before indexing with a series of processors
+      - To manage data input only
+      - To handle document routing
+      - To compress incoming data
+    correct_answer: 0
+    explanation: Ingest Pipeline allows you to process documents before indexing using a series of processors, enabling data transformation, enrichment, and normalization at ingestion time.
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest.html 

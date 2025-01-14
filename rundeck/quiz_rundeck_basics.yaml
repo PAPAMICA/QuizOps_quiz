@@ -1,0 +1,116 @@
+id: rundeck_basics
+category: rundeck
+level: beginner
+title: Rundeck Fundamentals
+description: Test your knowledge of basic Rundeck concepts and usage
+
+questions:
+  - id: rundeck_b1
+    question: What is Rundeck?
+    options:
+      - An open-source automation service with a web console
+      - A database system
+      - A web server
+      - A monitoring tool
+    correct_answer: 0
+    explanation: Rundeck is an open-source automation service with a web console, CLI and WebAPI for running commands and scripts across multiple nodes.
+    source: https://docs.rundeck.com/docs/about/introduction.html
+
+  - id: rundeck_b2
+    question: What is a Job in Rundeck?
+    options:
+      - A sequence of steps that can be executed on demand
+      - A server configuration
+      - A network setting
+      - A user account
+    correct_answer: 0
+    explanation: A Job in Rundeck is a sequence of steps that can be saved and executed later, either on demand or on a schedule.
+    source: https://docs.rundeck.com/docs/manual/jobs.html
+
+  - id: rundeck_b3
+    question: What is a Node in Rundeck?
+    options:
+      - A machine or endpoint where jobs can be executed
+      - A type of job
+      - A backup system
+      - A user group
+    correct_answer: 0
+    explanation: A Node in Rundeck represents a machine or endpoint where jobs can be executed, defined by attributes like hostname and tags.
+    source: https://docs.rundeck.com/docs/manual/05-nodes.html
+
+  - id: rundeck_b4
+    question: What is a Project in Rundeck?
+    options:
+      - A container for jobs, nodes, and configurations
+      - A type of node
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: A Project in Rundeck is a container for jobs, nodes, and configurations, helping organize and manage automation tasks.
+    source: https://docs.rundeck.com/docs/manual/projects.html
+
+  - id: rundeck_b5
+    question: What is the default port for Rundeck web interface?
+    options:
+      - 4440
+      - 80
+      - 8080
+      - 443
+    correct_answer: 0
+    explanation: By default, Rundeck's web interface runs on port 4440.
+    source: https://docs.rundeck.com/docs/administration/configuration/config-file-reference.html
+
+  - id: rundeck_b6
+    question: What is an Option in Rundeck jobs?
+    options:
+      - A user-defined parameter that can be passed to a job
+      - A type of node
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: Options in Rundeck jobs are user-defined parameters that can be passed to a job when it is executed.
+    source: https://docs.rundeck.com/docs/manual/job-options.html
+
+  - id: rundeck_b7
+    question: What is a Step in Rundeck?
+    options:
+      - A single action within a job
+      - A type of project
+      - A user group
+      - A backup system
+    correct_answer: 0
+    explanation: A Step is a single action within a job, such as running a command, script, or another job.
+    source: https://docs.rundeck.com/docs/manual/job-workflows.html
+
+  - id: rundeck_b8
+    question: What is ACL in Rundeck?
+    options:
+      - Access Control Lists that define user permissions
+      - A type of job
+      - A backup system
+      - A node type
+    correct_answer: 0
+    explanation: ACLs (Access Control Lists) in Rundeck define what actions users can perform and what resources they can access.
+    source: https://docs.rundeck.com/docs/administration/security/authorization.html
+
+  - id: rundeck_b9
+    question: What is a Workflow in Rundeck?
+    options:
+      - A sequence of steps in a job
+      - A type of node
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: A Workflow in Rundeck is the sequence of steps that make up a job, defining the order of execution.
+    source: https://docs.rundeck.com/docs/manual/job-workflows.html
+
+  - id: rundeck_b10
+    question: What is a Command step in Rundeck?
+    options:
+      - A step that executes a command or script
+      - A type of project
+      - A backup system
+      - A user role
+    correct_answer: 0
+    explanation: A Command step in Rundeck executes a command or script on the selected nodes.
+    source: https://docs.rundeck.com/docs/manual/job-workflows.html#command-step 

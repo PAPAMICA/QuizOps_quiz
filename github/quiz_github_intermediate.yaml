@@ -9,108 +9,108 @@ questions:
     question: What is GitHub Actions?
     options:
       - A continuous integration and continuous delivery (CI/CD) platform
-      - A code editor
-      - A version control system
-      - A database service
+      - A version control system for code management
+      - A package manager for repositories
+      - A platform for online discussions
     correct_answer: 0
-    explanation: GitHub Actions is a CI/CD platform that allows you to automate your build, test, and deployment pipeline directly from GitHub.
+    explanation: GitHub Actions automates CI/CD pipelines, enabling you to build, test, and deploy applications directly from your GitHub repository.
     source: https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
 
   - id: github_i2
     question: What is a GitHub Project?
     options:
-      - A project management tool integrated with GitHub issues and pull requests
-      - A code repository
-      - A version control system
-      - A deployment platform
+      - A project management tool integrated with issues and pull requests
+      - A feature for managing repository versions
+      - A cloud-based deployment platform for applications
+      - A tracking system for coding tasks
     correct_answer: 0
-    explanation: GitHub Projects is a customizable, flexible tool for planning and tracking work on GitHub, integrating with issues and pull requests.
+    explanation: GitHub Projects provides an organized way to plan, track, and collaborate on tasks, with integration into issues and pull requests for seamless project management.
     source: https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects
 
   - id: github_i3
     question: What is GitHub Codespaces?
     options:
-      - A cloud-based development environment
-      - A version control system
-      - A project management tool
-      - A testing framework
+      - A cloud-based development environment for coding
+      - A feature for managing repository configurations
+      - A backup system for repository data
+      - A tool for automated testing and quality checks
     correct_answer: 0
-    explanation: GitHub Codespaces provides cloud-based development environments that are configurable and accessible from anywhere, powered by Visual Studio Code.
+    explanation: GitHub Codespaces offers configurable, cloud-powered development environments that are accessible from anywhere, enabling efficient coding and collaboration.
     source: https://docs.github.com/en/codespaces/overview
 
   - id: github_i4
     question: What is GitHub Discussions?
     options:
-      - A collaborative communication forum for the community
-      - A code review tool
-      - A deployment platform
-      - A testing framework
+      - A forum for collaborative communication within the community
+      - A monitoring tool for code changes in repositories
+      - A platform for hosting and deploying applications
+      - A package manager integrated with GitHub repositories
     correct_answer: 0
-    explanation: GitHub Discussions is a collaborative communication forum for the community to have conversations, ask questions, and share ideas outside the scope of specific issues.
+    explanation: GitHub Discussions facilitates collaboration through forums where community members can share ideas, ask questions, and discuss improvements outside of code.
     source: https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/about-discussions
 
   - id: github_i5
     question: What is GitHub Security scanning?
     options:
-      - A set of security features to identify vulnerabilities
-      - A backup system
-      - A deployment tool
-      - A testing framework
+      - A set of tools for identifying vulnerabilities in your code and dependencies
+      - A feature for archiving repository data securely
+      - A service for managing deployment environments
+      - A tool for monitoring code repository health
     correct_answer: 0
-    explanation: GitHub Security scanning includes features like Dependabot and Code scanning that help identify and fix security vulnerabilities in your code and dependencies.
+    explanation: GitHub Security scanning helps identify and fix vulnerabilities in code and dependencies, including Dependabot and advanced code scanning tools.
     source: https://docs.github.com/en/code-security/getting-started/github-security-features
 
   - id: github_i6
     question: What is GitHub Packages?
     options:
-      - A package hosting service integrated with GitHub
-      - A code editor
-      - A project management tool
-      - A testing platform
+      - A package hosting service integrated with GitHub repositories
+      - A testing tool for code validation and quality checks
+      - A deployment platform for scalable applications
+      - A tool for organizing repository structures
     correct_answer: 0
-    explanation: GitHub Packages is a package hosting service that allows you to host your packages privately or publicly and use packages as dependencies in your projects.
+    explanation: GitHub Packages allows developers to host and share packages securely and use them as dependencies in their projects, with easy integration into CI/CD workflows.
     source: https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages
 
   - id: github_i7
     question: What is a GitHub Template repository?
     options:
-      - A repository that serves as a starting point for other repositories
-      - A backup repository
-      - A testing repository
-      - A deployment repository
+      - A repository designed to be used as a starting point for new projects
+      - A version control feature for managing code branches
+      - A testing environment for repository files
+      - A backup repository for storing historical data
     correct_answer: 0
-    explanation: Template repositories let you generate new repositories with the same directory structure, branches, and files, making it easier to start new projects.
+    explanation: Template repositories provide a convenient way to create new repositories with predefined structures and configurations, streamlining the process of starting projects.
     source: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository
 
   - id: github_i8
     question: What is GitHub Copilot?
     options:
-      - An AI pair programmer that suggests code completions
-      - A code review tool
-      - A project management system
-      - A testing framework
+      - An AI-powered coding assistant that suggests real-time code completions
+      - A package management tool for code dependencies
+      - A deployment framework for cloud-based applications
+      - A feature for monitoring repository access logs
     correct_answer: 0
-    explanation: GitHub Copilot is an AI-powered code completion tool that suggests code and entire functions in real-time, acting as an AI pair programmer.
+    explanation: GitHub Copilot uses AI to suggest code completions and generate functions, acting as a virtual coding partner for developers.
     source: https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot
 
   - id: github_i9
     question: What is GitHub Sponsors?
     options:
-      - A way to financially support open source developers
-      - A project management tool
-      - A deployment platform
-      - A testing service
+      - A program to financially support open source developers and projects
+      - A tool for managing repository visibility and permissions
+      - A platform for integrating CI/CD workflows in repositories
+      - A feature for sharing code snippets with collaborators
     correct_answer: 0
-    explanation: GitHub Sponsors allows you to financially support open source developers and projects that design, build, and maintain the open source projects you depend on.
+    explanation: GitHub Sponsors enables users to financially support open source developers and projects they rely on, fostering sustainability in the open source community.
     source: https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors
 
   - id: github_i10
     question: What is GitHub Advanced Security?
     options:
-      - A suite of security features for code analysis and vulnerability detection
-      - A backup system
-      - A deployment platform
-      - A testing framework
+      - A suite of tools for analyzing and mitigating security risks in repositories
+      - A platform for hosting and scaling serverless applications
+      - A feature for customizing repository settings and workflows
+      - A monitoring service for code repository activity
     correct_answer: 0
-    explanation: GitHub Advanced Security is a suite of security features that help you identify and fix security vulnerabilities in your code, including code scanning, secret scanning, and dependency review.
-    source: https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security 
+    explanation: GitHub Advanced Security includes features like code scanning, secret scanning, and dependency reviews to enhance repository security and compliance.
+    source: https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security

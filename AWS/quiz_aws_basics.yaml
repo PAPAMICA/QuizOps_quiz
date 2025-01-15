@@ -6,10 +6,10 @@ questions:
   - id: aws_b1
     question: What is Amazon EC2?
     options:
-      - A service that provides resizable compute capacity in the cloud
-      - A database service
-      - A storage service
-      - A networking service
+      - A service providing scalable compute capacity for virtual servers in the cloud
+      - A managed database service designed for relational data storage
+      - A scalable and secure service for storing and retrieving data
+      - A networking service that enables connections between AWS environments
     correct_answer: 0
     explanation: Amazon EC2 (Elastic Compute Cloud) is a web service that provides secure, resizable compute capacity in the cloud, essentially virtual servers.
     source: https://aws.amazon.com/ec2/
@@ -17,10 +17,10 @@ questions:
   - id: aws_b2
     question: What is Amazon S3?
     options:
-      - An object storage service
-      - A compute service
-      - A database service
-      - A networking service
+      - A highly durable object storage service for scalability, security, and performance
+      - A virtual compute service designed to run applications in the cloud
+      - A database service built to handle structured and unstructured data
+      - A networking tool for optimizing connectivity between AWS Regions
     correct_answer: 0
     explanation: Amazon S3 (Simple Storage Service) is an object storage service offering industry-leading scalability, data availability, security, and performance.
     source: https://aws.amazon.com/s3/
@@ -28,10 +28,10 @@ questions:
   - id: aws_b3
     question: What is an AWS Region?
     options:
-      - A physical location around the world where AWS clusters data centers
-      - A single data center
-      - A virtual private cloud
-      - A backup location
+      - A physical location grouping multiple data centers to ensure fault tolerance
+      - A single data center housing compute and storage resources for customers
+      - A virtual cloud network where resources are launched securely
+      - A backup service ensuring the availability of AWS resources globally
     correct_answer: 0
     explanation: An AWS Region is a physical location around the world where AWS clusters data centers to provide services with high availability and fault tolerance.
     source: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
@@ -39,10 +39,10 @@ questions:
   - id: aws_b4
     question: What is an AWS Availability Zone?
     options:
-      - One or more discrete data centers with redundant power, networking, and connectivity
-      - A region
-      - A virtual private cloud
-      - A backup service
+      - One or more data centers with independent power, networking, and connectivity
+      - A geographic location where AWS operates its global services
+      - A virtual private cloud created for isolated resource management
+      - A backup service used to ensure availability in case of failures
     correct_answer: 0
     explanation: An Availability Zone consists of one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region.
     source: https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
@@ -50,10 +50,10 @@ questions:
   - id: aws_b5
     question: What is Amazon RDS?
     options:
-      - A managed relational database service
-      - A storage service
-      - A compute service
-      - A content delivery service
+      - A managed database service for deploying, operating, and scaling relational databases
+      - A storage service designed for secure and scalable data backups in the cloud
+      - A compute service for running virtual machines and containers
+      - A content delivery network service for reducing latency in web applications
     correct_answer: 0
     explanation: Amazon RDS (Relational Database Service) is a managed service that makes it easy to set up, operate, and scale a relational database in the cloud.
     source: https://aws.amazon.com/rds/
@@ -61,10 +61,10 @@ questions:
   - id: aws_b6
     question: What is AWS IAM?
     options:
-      - A service to manage access to AWS services and resources
-      - A billing service
-      - A monitoring service
-      - A backup service
+      - A service that securely manages access to AWS resources for users and groups
+      - A billing service designed to provide detailed usage and cost insights
+      - A monitoring tool that tracks resource usage and application performance
+      - A backup service for automating resource snapshots and disaster recovery
     correct_answer: 0
     explanation: AWS IAM (Identity and Access Management) enables you to manage access to AWS services and resources securely by creating and managing AWS users and groups.
     source: https://aws.amazon.com/iam/
@@ -72,10 +72,10 @@ questions:
   - id: aws_b7
     question: What is Amazon VPC?
     options:
-      - A service that lets you launch AWS resources in a virtual network
-      - A storage service
-      - A database service
-      - A compute service
+      - A service that lets you launch AWS resources in a logically isolated virtual network
+      - A storage service designed for hosting structured and unstructured data
+      - A database service for managing large-scale relational data storage
+      - A compute service for deploying virtual servers and containers
     correct_answer: 0
     explanation: Amazon VPC (Virtual Private Cloud) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network.
     source: https://aws.amazon.com/vpc/
@@ -83,10 +83,10 @@ questions:
   - id: aws_b8
     question: What is AWS CloudWatch?
     options:
-      - A monitoring and observability service
-      - A compute service
-      - A storage service
-      - A database service
+      - A monitoring service that tracks metrics, logs, and events for AWS resources
+      - A compute service designed for executing serverless applications
+      - A storage service optimized for retrieving large datasets securely
+      - A database service for storing transactional and analytical data
     correct_answer: 0
     explanation: Amazon CloudWatch is a monitoring and observability service that provides data and insights to monitor applications, respond to system-wide performance changes, and optimize resource utilization.
     source: https://aws.amazon.com/cloudwatch/
@@ -94,10 +94,10 @@ questions:
   - id: aws_b9
     question: What is Amazon Route 53?
     options:
-      - A scalable domain name system (DNS) web service
-      - A storage service
-      - A compute service
-      - A database service
+      - A highly available and scalable Domain Name System (DNS) web service for routing traffic
+      - A storage solution designed for securely hosting application files and data
+      - A compute service offering serverless and virtual machine options
+      - A database service for storing relational and non-relational datasets
     correct_answer: 0
     explanation: Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service designed to give developers and businesses a reliable way to route end users to Internet applications.
     source: https://aws.amazon.com/route53/
@@ -105,10 +105,10 @@ questions:
   - id: aws_b10
     question: What is AWS Lambda?
     options:
-      - A serverless compute service
-      - A storage service
-      - A database service
-      - A networking service
+      - A serverless compute service for running code without managing servers or provisioning
+      - A scalable storage service optimized for object and block data storage
+      - A database service tailored for managing structured and unstructured data
+      - A networking solution designed for connecting on-premises environments to AWS
     correct_answer: 0
     explanation: AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, paying only for the compute time you consume.
-    source: https://aws.amazon.com/lambda/ 
+    source: https://aws.amazon.com/lambda/

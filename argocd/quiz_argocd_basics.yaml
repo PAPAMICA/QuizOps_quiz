@@ -8,10 +8,10 @@ questions:
   - id: argocd_b1
     question: What is ArgoCD?
     options:
-      - A GitOps continuous delivery tool for Kubernetes
-      - A container runtime
-      - A monitoring solution
-      - A version control system
+      - A GitOps tool for Kubernetes used to automate continuous delivery
+      - A runtime environment designed to manage containerized applications
+      - A solution designed primarily for monitoring Kubernetes clusters
+      - A version control system used to store application source code
     correct_answer: 0
     explanation: ArgoCD is a declarative GitOps continuous delivery tool for Kubernetes that follows the GitOps pattern of using Git repositories as the source of truth for defining the desired application state.
     source: https://argo-cd.readthedocs.io/en/stable/
@@ -19,10 +19,10 @@ questions:
   - id: argocd_b2
     question: What is GitOps?
     options:
-      - A practice where the desired state of infrastructure is stored in Git
-      - A Git branching strategy
-      - A deployment tool
-      - A monitoring pattern
+      - A method of storing desired state configurations in Git for automation
+      - A branching strategy for managing code development workflows
+      - A tool specifically designed for application deployment tasks
+      - A monitoring technique for cloud-native application environments
     correct_answer: 0
     explanation: GitOps is a way of implementing Continuous Deployment for cloud native applications by using Git as the single source of truth for declarative infrastructure and applications.
     source: https://argo-cd.readthedocs.io/en/stable/user-guide/concepts/
@@ -30,10 +30,10 @@ questions:
   - id: argocd_b3
     question: How does ArgoCD monitor the state of an application?
     options:
-      - By continuously comparing the live state with the desired state in Git
-      - By using external monitoring tools
-      - By manual checks only
-      - By running tests
+      - By comparing the live state of applications with the desired state in Git
+      - By relying on external monitoring tools integrated with the cluster
+      - By performing manual periodic checks of application configurations
+      - By executing test cases to validate application states regularly
     correct_answer: 0
     explanation: ArgoCD continuously monitors running applications and compares their live state against the desired state specified in the Git repository.
     source: https://argo-cd.readthedocs.io/en/stable/core-concepts/
@@ -41,10 +41,10 @@ questions:
   - id: argocd_b4
     question: What is an Application in ArgoCD?
     options:
-      - A Custom Resource that defines the source repo and destination cluster
-      - A Kubernetes pod
-      - A Git repository
-      - A deployment strategy
+      - A Custom Resource defining the source repository and destination cluster
+      - A specific Kubernetes pod running a containerized application
+      - A Git repository that contains application source files and manifests
+      - A deployment method used for managing Kubernetes resources
     correct_answer: 0
     explanation: An Application in ArgoCD is a Kubernetes Custom Resource (CR) that defines the source repository, path, target cluster, and other deployment configurations.
     source: https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/
@@ -52,10 +52,10 @@ questions:
   - id: argocd_b5
     question: What are the main components of ArgoCD?
     options:
-      - API server, repository server, and application controller
-      - Frontend and backend only
-      - Database and cache
-      - Web interface only
+      - API server, repository server, and application controller for orchestration
+      - A frontend UI and backend services for configuration management
+      - A database for application data and caching services for performance
+      - A web interface designed to provide real-time application insights
     correct_answer: 0
     explanation: ArgoCD consists of three main components - API server (handles requests), repository server (manages Git repositories), and application controller (monitors and syncs applications).
     source: https://argo-cd.readthedocs.io/en/stable/operator-manual/architecture/
@@ -63,10 +63,10 @@ questions:
   - id: argocd_b6
     question: How do you access the ArgoCD UI?
     options:
-      - Through a web interface exposed by the argocd-server service
-      - Only through command line
-      - Through SSH only
-      - Through API only
+      - Through a web interface served by the argocd-server service
+      - Using the command line interface exclusively for management tasks
+      - By connecting via SSH to the cluster running ArgoCD services
+      - Through API endpoints that provide access to application details
     correct_answer: 0
     explanation: ArgoCD provides a web-based UI that is exposed through the argocd-server service, allowing users to view and manage applications through a graphical interface.
     source: https://argo-cd.readthedocs.io/en/stable/getting_started/
@@ -74,10 +74,10 @@ questions:
   - id: argocd_b7
     question: What is the purpose of the ArgoCD CLI?
     options:
-      - To manage ArgoCD applications and configurations from the command line
-      - To manage Git repositories only
-      - To monitor cluster health
-      - To deploy containers
+      - To manage ArgoCD applications, projects, and configurations via terminal
+      - To handle Git repository synchronization processes for applications
+      - To monitor and report cluster health across various nodes
+      - To deploy containers onto Kubernetes nodes within the cluster
     correct_answer: 0
     explanation: The ArgoCD CLI provides command-line access to ArgoCD features, allowing users to manage applications, configurations, and perform various operations from the terminal.
     source: https://argo-cd.readthedocs.io/en/stable/user-guide/commands/argocd/
@@ -85,10 +85,10 @@ questions:
   - id: argocd_b8
     question: What is an Application Project in ArgoCD?
     options:
-      - A logical grouping of applications with specific rules and constraints
-      - A Git project
-      - A Kubernetes namespace
-      - A deployment environment
+      - A grouping of applications with rules for access, resources, and constraints
+      - A Git project repository containing application manifests and code
+      - A Kubernetes namespace dedicated to specific deployment environments
+      - A specific deployment target environment for testing or production
     correct_answer: 0
     explanation: An Application Project in ArgoCD is a logical grouping of applications that provides a way to configure access rules, resource constraints, and other settings for a group of applications.
     source: https://argo-cd.readthedocs.io/en/stable/user-guide/projects/
@@ -96,10 +96,10 @@ questions:
   - id: argocd_b9
     question: What is the default sync policy in ArgoCD?
     options:
-      - Manual sync
-      - Automatic sync
-      - Force sync
-      - Selective sync
+      - Manual sync, requiring explicit approval to synchronize changes
+      - Automatic sync, applying changes from Git repositories by default
+      - Force sync, overriding safety checks for resource updates
+      - Selective sync, syncing only specific components of applications
     correct_answer: 0
     explanation: By default, ArgoCD uses manual sync policy, meaning users need to explicitly approve synchronization of applications with their Git source.
     source: https://argo-cd.readthedocs.io/en/stable/user-guide/auto_sync/
@@ -107,10 +107,10 @@ questions:
   - id: argocd_b10
     question: What manifest formats does ArgoCD support?
     options:
-      - Kubernetes YAML, Kustomize, Helm, and Jsonnet
-      - Only Kubernetes YAML
-      - Only Helm charts
-      - Only Kustomize
+      - Kubernetes YAML, Kustomize, Helm charts, and Jsonnet files
+      - Plain Kubernetes YAML files exclusively for application definitions
+      - Helm charts designed for deploying packaged applications
+      - Kustomize formats used for templating Kubernetes configurations
     correct_answer: 0
     explanation: ArgoCD supports multiple manifest formats including plain Kubernetes YAML files, Helm charts, Kustomize applications, and Jsonnet.
-    source: https://argo-cd.readthedocs.io/en/stable/user-guide/application_sources/ 
+    source: https://argo-cd.readthedocs.io/en/stable/user-guide/application_sources/

@@ -8,10 +8,10 @@ questions:
   - id: ansible_b1
     question: What is Ansible?
     options:
-      - A configuration management tool only
-      - An automation tool for deployment, configuration management, and orchestration
-      - A monitoring tool
-      - A version control system
+      - A tool for managing configurations in a limited scope
+      - An automation tool for deployment, configuration, and orchestration
+      - A specialized tool for system monitoring and alerting
+      - A system designed primarily for version control and tracking changes
     correct_answer: 1
     explanation: Ansible is an open-source automation tool that can handle configuration management, application deployment, cloud provisioning, and IT orchestration.
     source: https://docs.ansible.com/ansible/latest/getting_started/index.html
@@ -19,10 +19,10 @@ questions:
   - id: ansible_b2
     question: What language are Ansible playbooks written in?
     options:
-      - JSON
-      - XML
-      - YAML
-      - Python
+      - JSON, a structured format used for various configurations
+      - XML, a markup language for defining documents
+      - YAML, a simple and human-readable data format
+      - Python, the core language Ansible modules are written in
     correct_answer: 2
     explanation: Ansible playbooks are written in YAML (YAML Ain't Markup Language), which is designed to be human-readable and easy to understand.
     source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html
@@ -30,21 +30,21 @@ questions:
   - id: ansible_b3
     question: What is an Ansible inventory file?
     options:
-      - A file containing variables
-      - A file listing all hosts to be managed
-      - A file containing playbooks
-      - A file containing roles
-    correct_answer: 1
+      - A document containing details about all managed hosts
+      - A collection of predefined variables for specific tasks
+      - A central location where playbooks are stored and managed
+      - A repository containing roles and associated configurations
+    correct_answer: 0
     explanation: An inventory file in Ansible lists all the hosts and groups of hosts that you want to manage using Ansible.
     source: https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html
 
   - id: ansible_b4
     question: What is the default location of the Ansible inventory file?
     options:
-      - /etc/ansible/hosts
-      - /var/ansible/inventory
-      - /etc/hosts
-      - /ansible/inventory
+      - /etc/ansible/hosts, the typical directory for managed host files
+      - /var/ansible/inventory, commonly used for dynamic inventories
+      - /etc/hosts, a general-purpose file for resolving hostnames
+      - /ansible/inventory, a placeholder for static inventory management
     correct_answer: 0
     explanation: By default, Ansible looks for the inventory file at /etc/ansible/hosts, though you can specify a different inventory file using the -i option.
     source: https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html
@@ -52,21 +52,21 @@ questions:
   - id: ansible_b5
     question: What is an Ansible module?
     options:
-      - A collection of playbooks
-      - A type of variable
-      - A unit of code that performs a specific task
-      - A group of hosts
-    correct_answer: 2
+      - A piece of code that performs a specific action on a target
+      - A predefined group of hosts used in playbook tasks
+      - A centralized script for managing Ansible playbooks
+      - A system for organizing roles and dependencies in a playbook
+    correct_answer: 0
     explanation: An Ansible module is a unit of code that performs a specific task, such as managing packages, files, or services on target hosts.
     source: https://docs.ansible.com/ansible/latest/module_plugin_guide/index.html
 
   - id: ansible_b6
     question: What command is used to run an Ansible playbook?
     options:
-      - ansible-playbook playbook.yml
-      - ansible run playbook.yml
-      - ansible-execute playbook.yml
-      - ansible playbook.yml
+      - ansible-playbook playbook.yml for executing playbooks
+      - ansible run playbook.yml for starting a new playbook task
+      - ansible-execute playbook.yml for triggering playbook execution
+      - ansible playbook.yml as a shorthand for running all playbooks
     correct_answer: 0
     explanation: The ansible-playbook command is used to execute Ansible playbooks, which contain the tasks to be performed on managed hosts.
     source: https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
@@ -74,32 +74,32 @@ questions:
   - id: ansible_b7
     question: What is an Ansible role?
     options:
-      - A user permission level
-      - A way to organize playbooks and related files
-      - A type of variable
-      - A host group
-    correct_answer: 1
+      - A way to organize playbooks and associated files efficiently
+      - A method to define specific user permission levels
+      - A category of variables used in advanced playbooks
+      - A predefined group of hosts for use in complex tasks
+    correct_answer: 0
     explanation: An Ansible role is a way to organize playbooks and other related files (variables, handlers, etc.) into a standardized directory structure for reuse.
     source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html
 
   - id: ansible_b8
     question: What is the purpose of 'ansible.cfg' file?
     options:
-      - To store variables
-      - To list managed hosts
-      - To configure Ansible settings and defaults
-      - To define playbooks
-    correct_answer: 2
+      - To configure Ansible's default settings for all tasks
+      - To provide a list of managed hosts and their attributes
+      - To act as a central storage for variables and templates
+      - To define playbook structures for organized task management
+    correct_answer: 0
     explanation: The ansible.cfg file is used to configure Ansible settings and defaults, such as inventory location, privilege escalation settings, and plugin paths.
     source: https://docs.ansible.com/ansible/latest/reference_appendices/config.html
 
   - id: ansible_b9
     question: What is an Ansible fact?
     options:
-      - A variable containing system information
-      - A type of playbook
-      - A configuration file
-      - A module name
+      - A variable containing system-level information collected during runs
+      - A type of configuration file for advanced playbook customization
+      - A group of modules used for task execution in remote systems
+      - A specialized playbook template used in orchestration tasks
     correct_answer: 0
     explanation: Ansible facts are variables containing information about a system, such as network interfaces, IP addresses, operating system, and hardware details.
     source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_vars_facts.html
@@ -107,10 +107,10 @@ questions:
   - id: ansible_b10
     question: What is the difference between 'ansible' and 'ansible-playbook' commands?
     options:
-      - ansible runs single tasks while ansible-playbook runs playbooks
-      - They are the same command
-      - ansible is for Windows while ansible-playbook is for Linux
-      - ansible is newer than ansible-playbook
+      - ansible runs single tasks while ansible-playbook handles multi-task playbooks
+      - Both are identical and interchangeable for task and playbook execution
+      - ansible is tailored for Windows systems while ansible-playbook is for Linux
+      - ansible is an older command while ansible-playbook is the modern version
     correct_answer: 0
     explanation: The ansible command is used to run single tasks using modules (ad-hoc commands), while ansible-playbook is used to run playbooks containing multiple tasks.
-    source: https://docs.ansible.com/ansible/latest/getting_started/index.html 
+    source: https://docs.ansible.com/ansible/latest/getting_started/index.html

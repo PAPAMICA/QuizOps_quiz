@@ -9,9 +9,9 @@ questions:
     question: What is a Git rebase?
     options:
       - A way to integrate changes from one branch into another by rewriting commit history
-      - A way to delete a branch
-      - A way to create a new repository
-      - A way to tag a commit
+      - A method to delete a branch in the repository
+      - A command to create a fresh repository
+      - A technique to tag a specific commit in history
     correct_answer: 0
     explanation: Git rebase moves or combines a sequence of commits to a new base commit, effectively rewriting the project history by creating new commits for each commit in the original branch.
     source: https://git-scm.com/docs/git-rebase
@@ -20,9 +20,9 @@ questions:
     question: What does 'git cherry-pick' do?
     options:
       - Applies the changes from specific commits to the current branch
-      - Deletes specific commits
-      - Creates a new branch
-      - Merges two branches
+      - Deletes specific commits from the repository
+      - Creates a new branch in the repository
+      - Merges two existing branches together
     correct_answer: 0
     explanation: Git cherry-pick is used to apply the changes introduced by some existing commits to the current branch, allowing you to pick specific commits from one branch and apply them to another.
     source: https://git-scm.com/docs/git-cherry-pick
@@ -31,9 +31,9 @@ questions:
     question: What is a Git stash?
     options:
       - A way to temporarily save changes that are not ready to be committed
-      - A permanent storage location
-      - A type of branch
-      - A remote repository
+      - A permanent storage location in the repository
+      - A type of branch in the repository
+      - A remote repository that stores changes
     correct_answer: 0
     explanation: Git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later.
     source: https://git-scm.com/docs/git-stash
@@ -42,9 +42,9 @@ questions:
     question: What is a Git tag?
     options:
       - A reference to a specific point in Git history
-      - A type of branch
-      - A commit message
-      - A merge strategy
+      - A type of branch in the repository
+      - A formatted commit message
+      - A selected merge strategy
     correct_answer: 0
     explanation: A Git tag is a reference that points to a specific point in Git history, typically used to mark release points (v1.0, v2.0, etc.).
     source: https://git-scm.com/docs/git-tag
@@ -53,9 +53,9 @@ questions:
     question: What is the purpose of .gitignore?
     options:
       - Specify files and directories that Git should ignore
-      - Store Git configuration
-      - List all Git commands
-      - Track binary files
+      - Store repository configuration settings
+      - List all available Git commands
+      - Track binary files for the repository
     correct_answer: 0
     explanation: The .gitignore file specifies intentionally untracked files that Git should ignore, such as build artifacts, temporary files, or sensitive information.
     source: https://git-scm.com/docs/gitignore
@@ -64,9 +64,9 @@ questions:
     question: What is a Git submodule?
     options:
       - A repository nested inside another repository
-      - A type of branch
-      - A commit message format
-      - A merge strategy
+      - A specific type of branch for projects
+      - A defined commit message format
+      - A specialized merge strategy for branches
     correct_answer: 0
     explanation: Git submodules allow you to keep a Git repository as a subdirectory of another Git repository, letting you clone another repository into your project and keep your commits separate.
     source: https://git-scm.com/docs/git-submodule
@@ -75,9 +75,9 @@ questions:
     question: What does 'git bisect' do?
     options:
       - Uses binary search to find the commit that introduced a bug
-      - Splits a repository in two
-      - Merges two branches
-      - Creates a new branch
+      - Splits an existing repository into two parts
+      - Merges two branches in the repository
+      - Creates a new branch for bug tracking
     correct_answer: 0
     explanation: Git bisect uses a binary search algorithm to find which commit in your project's history introduced a bug by letting you test each commit until you find the exact one that introduced the problem.
     source: https://git-scm.com/docs/git-bisect
@@ -86,9 +86,9 @@ questions:
     question: What is a Git hook?
     options:
       - Scripts that run automatically before or after Git commands
-      - A type of branch
-      - A remote repository
-      - A merge strategy
+      - A type of branch in the repository
+      - A remote repository reference
+      - A selected merge strategy for branches
     correct_answer: 0
     explanation: Git hooks are scripts that Git executes before or after events such as commit, push, and receive, allowing you to customize Git's internal behavior and trigger customizable actions.
     source: https://git-scm.com/docs/githooks
@@ -97,9 +97,9 @@ questions:
     question: What does 'git reflog' show?
     options:
       - A log of all reference updates in the repository
-      - Current branch status
-      - Remote repository status
-      - Commit messages only
+      - The current branch status for the project
+      - The status of the remote repository
+      - The commit messages only for the history
     correct_answer: 0
     explanation: Git reflog records when the tips of branches and other references were updated in the local repository, providing a way to recover lost commits or branches.
     source: https://git-scm.com/docs/git-reflog
@@ -108,9 +108,9 @@ questions:
     question: What is a Git remote?
     options:
       - A repository hosted on the internet or network
-      - A local branch
-      - A commit message
-      - A merge strategy
+      - A local branch in the project
+      - A formatted commit message for history
+      - A selected merge strategy for changes
     correct_answer: 0
     explanation: A Git remote is a repository hosted on the internet or another network, allowing collaboration with other developers by pushing to and pulling from these remote repositories.
-    source: https://git-scm.com/docs/git-remote 
+    source: https://git-scm.com/docs/git-remote

@@ -9,9 +9,9 @@ questions:
     question: What is Docker Compose?
     options:
       - A tool for defining and running multi-container Docker applications
-      - A container runtime
-      - A monitoring solution
-      - A version control system
+      - A container runtime for executing isolated processes
+      - A monitoring solution for Docker environments
+      - A version control system for managing application code
     correct_answer: 0
     explanation: Docker Compose is a tool that helps you define and share multi-container applications using a YAML file to configure your application's services.
     source: https://docs.docker.com/compose/
@@ -21,7 +21,7 @@ questions:
     options:
       - docker-compose.yml
       - compose.yaml
-      - docker.yml
+      - docker.yaml
       - containers.yml
     correct_answer: 0
     explanation: The default filename for a Docker Compose configuration file is docker-compose.yml, although docker-compose.yaml is also accepted.
@@ -42,9 +42,9 @@ questions:
     question: How do you define a service in Docker Compose?
     options:
       - Using the 'services' section in the compose file
-      - Using Dockerfile only
-      - Using environment variables
-      - Using command line arguments
+      - Using a Dockerfile to set up the service
+      - Using environment variables to specify service details
+      - Using command line arguments to configure services
     correct_answer: 0
     explanation: Services in Docker Compose are defined under the 'services' section in the compose file, where you specify container configurations.
     source: https://docs.docker.com/compose/compose-file/compose-file-v3/#service-configuration-reference
@@ -64,9 +64,9 @@ questions:
     question: How do you specify the image for a service in Docker Compose?
     options:
       - Using the 'image' key in the service definition
-      - Using the 'container' key
-      - Using the 'source' key
-      - Using the 'from' key
+      - Using the 'container' key in the YAML file
+      - Using the 'source' key to link the image
+      - Using the 'from' key to set the image source
     correct_answer: 0
     explanation: The 'image' key in a service definition specifies which Docker image to use for creating the service's containers.
     source: https://docs.docker.com/compose/compose-file/compose-file-v3/#image
@@ -74,10 +74,10 @@ questions:
   - id: docker_compose_b7
     question: How do you define environment variables in Docker Compose?
     options:
-      - Using the 'environment' or 'env_file' keys
-      - Only through command line
-      - Only using system variables
-      - Only in Dockerfile
+      - Using the 'environment' or 'env_file' keys for configuration
+      - Only through command line options for running containers
+      - Only using system environment variables configured beforehand
+      - Only in Dockerfile for service-specific environment variables
     correct_answer: 0
     explanation: Environment variables can be defined using the 'environment' key for inline variables or 'env_file' to specify a file containing the variables.
     source: https://docs.docker.com/compose/environment-variables/
@@ -85,10 +85,10 @@ questions:
   - id: docker_compose_b8
     question: What is the purpose of the 'ports' section in a service definition?
     options:
-      - To map container ports to host ports
-      - To define internal ports only
-      - To set network speeds
-      - To configure firewalls
+      - To map container ports to host ports for external access
+      - To define internal ports used by the container services
+      - To set network speeds for Docker container communication
+      - To configure firewalls for protecting service ports
     correct_answer: 0
     explanation: The 'ports' section is used to map ports from the container to the host machine, allowing external access to services running in the container.
     source: https://docs.docker.com/compose/compose-file/compose-file-v3/#ports
@@ -96,10 +96,10 @@ questions:
   - id: docker_compose_b9
     question: How do you specify dependencies between services?
     options:
-      - Using the 'depends_on' key
-      - Using the 'requires' key
-      - Using the 'needs' key
-      - Using the 'after' key
+      - Using the 'depends_on' key in the service configuration
+      - Using the 'requires' key to define service dependencies
+      - Using the 'needs' key to specify service startup order
+      - Using the 'after' key to delay dependent service startup
     correct_answer: 0
     explanation: The 'depends_on' key expresses dependency between services, ensuring they start in the correct order.
     source: https://docs.docker.com/compose/compose-file/compose-file-v3/#depends_on
@@ -113,4 +113,4 @@ questions:
       - docker-compose status
     correct_answer: 0
     explanation: The docker-compose logs command displays log output from services defined in the docker-compose.yml file.
-    source: https://docs.docker.com/compose/reference/logs/ 
+    source: https://docs.docker.com/compose/reference/logs/

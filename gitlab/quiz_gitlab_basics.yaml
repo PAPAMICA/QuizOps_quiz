@@ -9,108 +9,108 @@ questions:
     question: What is GitLab?
     options:
       - A complete DevOps platform delivered as a single application
-      - A version control system only
-      - A code editor
-      - A project management tool only
+      - A project management tool with basic version control
+      - A simple code repository with no additional tools
+      - A standalone CI/CD pipeline system only
     correct_answer: 0
-    explanation: GitLab is a complete DevOps platform that enables professional software development by combining version control, CI/CD, security, and project management in a single application.
+    explanation: GitLab combines version control, CI/CD, security, and project management into one platform, enabling end-to-end software development workflows.
     source: https://docs.gitlab.com/ee/development/architecture.html
 
   - id: gitlab_b2
     question: What is a GitLab Project?
     options:
       - A repository containing your code with additional GitLab features
-      - A simple code storage
-      - A documentation system
-      - A testing framework
+      - A centralized task board for managing issues
+      - A tool for generating documentation
+      - A standalone system for managing CI/CD jobs
     correct_answer: 0
-    explanation: A GitLab Project is a repository that includes your code along with additional features like issue tracking, merge requests, CI/CD pipelines, and wiki pages.
+    explanation: A GitLab Project includes code storage, issue tracking, CI/CD pipelines, wikis, and more to support collaborative software development.
     source: https://docs.gitlab.com/ee/user/project/
 
   - id: gitlab_b3
     question: What is a GitLab Merge Request?
     options:
       - A request to merge changes from one branch into another
-      - A system backup request
-      - A project deletion request
-      - A user access request
+      - A way to deploy updates to a production server
+      - A notification system for user actions
+      - A tool to compare code snippets across repositories
     correct_answer: 0
-    explanation: A Merge Request (MR) is GitLab's version of a pull request, allowing you to visualize and collaborate on proposed changes to source code.
+    explanation: Merge Requests are GitLab's equivalent of pull requests, enabling collaboration and review of changes before merging them into the main branch.
     source: https://docs.gitlab.com/ee/user/project/merge_requests/
 
   - id: gitlab_b4
     question: What is a GitLab Issue?
     options:
       - A tool for tracking tasks, bugs, and feature requests
-      - A system error
-      - A merge conflict
-      - A failed pipeline
+      - A system log for debugging CI/CD pipelines
+      - A record of merge conflicts in a project
+      - A list of commits with failed tests
     correct_answer: 0
-    explanation: GitLab Issues are a way to track work, discuss ideas, and collaborate on tasks, bugs, and feature requests within your projects.
+    explanation: Issues help teams organize work, discuss ideas, and collaborate on features, tasks, and bugs within GitLab projects.
     source: https://docs.gitlab.com/ee/user/project/issues/
 
   - id: gitlab_b5
     question: What is GitLab Wiki?
     options:
       - A documentation system for your project
-      - A code repository
-      - A testing platform
-      - A deployment tool
+      - A specialized tool for writing commit messages
+      - A platform for hosting CI/CD job logs
+      - A dashboard for monitoring deployment progress
     correct_answer: 0
-    explanation: GitLab Wiki is a documentation system that comes with each GitLab project, allowing you to create and store documentation directly within your project.
+    explanation: GitLab Wiki provides a built-in documentation platform within projects to write, share, and maintain project-related information.
     source: https://docs.gitlab.com/ee/user/project/wiki/
 
   - id: gitlab_b6
     question: What is GitLab CI/CD?
     options:
       - An integrated continuous integration and delivery system
-      - A code editor
-      - A documentation system
-      - A backup tool
+      - A tool for editing and formatting project documentation
+      - A standalone service for managing Git repositories
+      - A dashboard for managing team roles and permissions
     correct_answer: 0
-    explanation: GitLab CI/CD is a built-in continuous integration and delivery system that helps you automate your software development pipeline.
+    explanation: GitLab CI/CD automates building, testing, and deploying applications, streamlining development workflows.
     source: https://docs.gitlab.com/ee/ci/introduction/
 
   - id: gitlab_b7
     question: What is a GitLab Runner?
     options:
       - An agent that runs your CI/CD jobs
-      - A performance monitoring tool
-      - A documentation system
-      - A backup service
+      - A tool for generating project templates
+      - A feature for sharing code snippets
+      - A centralized dashboard for managing CI/CD pipelines
     correct_answer: 0
-    explanation: GitLab Runner is an application that works with GitLab CI/CD to run jobs in your CI/CD pipeline on different machines and environments.
+    explanation: GitLab Runner executes CI/CD jobs on different machines, enabling distributed and flexible job execution across environments.
     source: https://docs.gitlab.com/runner/
 
   - id: gitlab_b8
     question: What is GitLab Pages?
     options:
       - A static website hosting service
-      - A code editor
-      - A testing platform
-      - A monitoring system
+      - A tool for managing branch permissions
+      - A specialized feature for analyzing project dependencies
+      - A dashboard for visualizing test results in CI/CD pipelines
     correct_answer: 0
-    explanation: GitLab Pages is a feature that allows you to publish static websites directly from a repository in GitLab.
+    explanation: GitLab Pages lets you publish static websites from your GitLab repository, making it easy to share project-related content online.
     source: https://docs.gitlab.com/ee/user/project/pages/
 
   - id: gitlab_b9
     question: What is GitLab Snippets?
     options:
       - A way to store and share code snippets
-      - A deployment system
-      - A monitoring tool
-      - A backup service
+      - A system for archiving old project branches
+      - A feature for documenting CI/CD workflows
+      - A built-in platform for debugging application errors
     correct_answer: 0
-    explanation: GitLab Snippets allow you to store and share bits of code or text between users and projects.
+    explanation: Snippets allow developers to store and share small pieces of code or text with other team members or projects within GitLab.
     source: https://docs.gitlab.com/ee/user/snippets.html
 
   - id: gitlab_b10
     question: What is a GitLab Group?
     options:
       - A collection of related projects and users
-      - A type of branch
-      - A deployment strategy
-      - A testing framework
+      - A platform for comparing repository statistics
+      - A service for archiving project history
+      - A CI/CD template repository shared across teams
     correct_answer: 0
-    explanation: GitLab Groups are collections of related projects and the users who have access to them, helping organize projects and manage permissions.
-    source: https://docs.gitlab.com/ee/user/group/ 
+    explanation: GitLab Groups enable teams to organize projects and manage user access, making collaboration and resource sharing easier.
+    source: https://docs.gitlab.com/ee/user/group/

@@ -6,10 +6,10 @@ questions:
   - id: azure_a1
     question: How does Azure Arc enable hybrid and multi-cloud management?
     options:
-      - By extending Azure management to any infrastructure including on-premises and other clouds
-      - By providing basic monitoring only
-      - By managing Azure resources only
-      - By offering cloud migration tools
+      - By extending Azure management to on-premises, edge, and multi-cloud environments
+      - By providing basic monitoring capabilities across Azure environments only
+      - By managing Azure-specific resources without external integrations
+      - By offering migration tools for moving on-premises data to Azure clouds
     correct_answer: 0
     explanation: Azure Arc extends Azure management and services to any infrastructure, enabling you to manage resources across on-premises, multi-cloud, and edge environments from a single control plane.
     source: https://learn.microsoft.com/azure/azure-arc/overview
@@ -17,10 +17,10 @@ questions:
   - id: azure_a2
     question: What are the key features of Azure Synapse Analytics?
     options:
-      - An integrated analytics service combining enterprise data warehousing and big data analytics
-      - A basic data warehouse service
-      - A reporting tool only
-      - A data visualization platform
+      - An integrated service combining data warehousing, big data analytics, and AI tools
+      - A data warehousing solution with basic data processing capabilities only
+      - A visualization platform for building business intelligence dashboards
+      - A reporting solution designed for analyzing structured datasets
     correct_answer: 0
     explanation: Azure Synapse Analytics is an integrated analytics service that brings together enterprise data warehousing, big data analytics, data integration, and AI capabilities.
     source: https://learn.microsoft.com/azure/synapse-analytics/
@@ -28,10 +28,10 @@ questions:
   - id: azure_a3
     question: How does Azure Confidential Computing enhance data security?
     options:
-      - By protecting data in use through hardware-based trusted execution environments
-      - By providing basic encryption only
-      - By securing data at rest only
-      - By implementing network security
+      - By protecting data in use with encryption and Trusted Execution Environments
+      - By offering data encryption features for stored data and at-rest backups
+      - By securing data traffic across network connections with advanced encryption
+      - By implementing robust identity management for controlling data access
     correct_answer: 0
     explanation: Azure Confidential Computing protects data while it's being processed by encrypting data in memory and processing it in a hardware-based Trusted Execution Environment.
     source: https://learn.microsoft.com/azure/confidential-computing/
@@ -39,10 +39,10 @@ questions:
   - id: azure_a4
     question: What is the purpose of Azure Lighthouse?
     options:
-      - To enable service providers to manage multiple customer tenants with enhanced security and automation
-      - To monitor Azure services only
-      - To manage single tenants only
-      - To provide basic reporting
+      - To enable service providers to securely manage multiple tenants with automation
+      - To monitor Azure resource usage and report system health metrics
+      - To allow users to manage Azure resources in a single tenant environment
+      - To provide simplified reporting tools for basic tenant management tasks
     correct_answer: 0
     explanation: Azure Lighthouse enables service providers to manage multiple customer tenants from a single control plane, with granular and automated access control.
     source: https://learn.microsoft.com/azure/lighthouse/
@@ -50,10 +50,10 @@ questions:
   - id: azure_a5
     question: How does Azure Private Link enhance network security?
     options:
-      - By providing private connectivity to Azure services without exposure to the public internet
-      - By implementing basic firewalls
-      - By managing public IPs only
-      - By providing VPN connectivity
+      - By enabling private connectivity to Azure services without exposing to the internet
+      - By providing basic firewall rules to control inbound and outbound traffic
+      - By managing public IPs to ensure secure communication between resources
+      - By offering VPN connections for encrypting network traffic across sites
     correct_answer: 0
     explanation: Azure Private Link enables access to Azure PaaS services over a private endpoint in your virtual network, eliminating data exposure to the public internet.
     source: https://learn.microsoft.com/azure/private-link/
@@ -61,10 +61,10 @@ questions:
   - id: azure_a6
     question: What are Azure Blueprints and how do they help with compliance?
     options:
-      - By enabling repeatable creation of governed environments with built-in compliance components
-      - By providing basic templates only
-      - By managing resource groups only
-      - By implementing security policies only
+      - By enabling repeatable creation of governed environments with compliance templates
+      - By offering predefined templates for creating basic Azure resources
+      - By managing resource groups and applying consistent configurations
+      - By implementing security policies for identity and access management
     correct_answer: 0
     explanation: Azure Blueprints enable cloud architects to define repeatable sets of Azure resources that implement and adhere to standards, patterns, and requirements.
     source: https://learn.microsoft.com/azure/governance/blueprints/
@@ -72,10 +72,10 @@ questions:
   - id: azure_a7
     question: How does Azure Site Recovery implement disaster recovery?
     options:
-      - By orchestrating replication, failover, and recovery of workloads across sites
-      - By providing basic backup only
-      - By managing data copies only
-      - By implementing high availability only
+      - By orchestrating replication, failover, and recovery across on-premises and Azure
+      - By offering backup services for restoring application data after failures
+      - By managing copies of critical application data for quick restoration
+      - By implementing high availability solutions to minimize downtime
     correct_answer: 0
     explanation: Azure Site Recovery orchestrates and automates disaster recovery for Azure VMs, on-premises VMs, and physical servers by replicating, failing over, and recovering workloads.
     source: https://learn.microsoft.com/azure/site-recovery/
@@ -83,10 +83,10 @@ questions:
   - id: azure_a8
     question: What is Azure Sentinel and how does it enhance security operations?
     options:
-      - By providing cloud-native SIEM and SOAR capabilities with AI-driven threat detection
-      - By implementing basic logging only
-      - By monitoring network traffic only
-      - By managing security policies only
+      - By providing SIEM and SOAR capabilities with AI-driven detection and response
+      - By offering logging and monitoring features for resource management
+      - By analyzing network traffic to identify suspicious communication patterns
+      - By managing security policies to enforce compliance requirements
     correct_answer: 0
     explanation: Azure Sentinel is a cloud-native SIEM/SOAR solution that uses AI to help detect, investigate, and respond to threats across the enterprise.
     source: https://learn.microsoft.com/azure/sentinel/
@@ -94,10 +94,10 @@ questions:
   - id: azure_a9
     question: How does Azure Stack HCI integrate with Azure services?
     options:
-      - By extending Azure services to on-premises hyperconverged infrastructure
-      - By providing cloud backup only
-      - By managing virtual machines only
-      - By implementing basic monitoring
+      - By extending Azure features to on-premises infrastructure for hybrid environments
+      - By providing cloud backup solutions for protecting on-premises workloads
+      - By managing virtual machines in private and public cloud deployments
+      - By implementing monitoring tools to track resource usage and performance
     correct_answer: 0
     explanation: Azure Stack HCI integrates hyperconverged infrastructure with Azure services, enabling you to run virtualized applications on-premises while seamlessly connecting to Azure.
     source: https://learn.microsoft.com/azure-stack/hci/
@@ -105,10 +105,10 @@ questions:
   - id: azure_a10
     question: What are the key features of Azure Databricks?
     options:
-      - An Apache Spark-based analytics platform with integrated machine learning capabilities
-      - A basic data processing tool
-      - A reporting platform only
-      - A data storage service
+      - An Apache Spark-based analytics platform with machine learning integration
+      - A data processing tool for handling structured and unstructured datasets
+      - A reporting platform for creating dashboards and business intelligence reports
+      - A scalable storage service designed for high-performance data archiving
     correct_answer: 0
     explanation: Azure Databricks is an Apache Spark-based analytics platform optimized for Azure that provides collaborative notebooks, integrated workflows, and enterprise security features.
-    source: https://learn.microsoft.com/azure/databricks/ 
+    source: https://learn.microsoft.com/azure/databricks/

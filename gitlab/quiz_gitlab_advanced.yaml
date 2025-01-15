@@ -9,108 +9,108 @@ questions:
     question: What is GitLab Geo?
     options:
       - A disaster recovery and replication solution for GitLab
-      - A mapping service
-      - A deployment platform
-      - A monitoring system
+      - A deployment system for global clusters
+      - A monitoring and tracking service for distributed environments
+      - A mapping system for managing resources across projects
     correct_answer: 0
-    explanation: GitLab Geo is a disaster recovery and replication solution that creates read-only mirrors of your GitLab instance in different geographical locations.
+    explanation: GitLab Geo provides disaster recovery and replication by creating read-only mirrors of your GitLab instance in different geographical locations.
     source: https://docs.gitlab.com/ee/administration/geo/
 
   - id: gitlab_a2
     question: What is GitLab Reference Architecture?
     options:
-      - A set of documented scalable architectures for GitLab deployments
-      - A code structure guide
-      - A testing framework
-      - A deployment tool
+      - A set of scalable architectures documented for GitLab deployments
+      - A framework for designing deployment pipelines
+      - A set of blueprints for CI/CD pipelines
+      - A collection of best practices for managing GitLab projects
     correct_answer: 0
-    explanation: GitLab Reference Architecture provides documented and tested architectures for deploying GitLab at various scales, from small to very large installations.
+    explanation: GitLab Reference Architecture outlines documented and tested architectures for deploying GitLab efficiently at various scales.
     source: https://docs.gitlab.com/ee/administration/reference_architectures/
 
   - id: gitlab_a3
     question: What is GitLab Compliance Dashboard?
     options:
-      - A tool for monitoring compliance with security policies
-      - A performance monitor
-      - A deployment system
-      - A testing platform
+      - A monitoring tool for tracking security and compliance
+      - A dashboard for managing project dependencies
+      - A reporting system for deployment performance
+      - A centralized panel for tracking team activity
     correct_answer: 0
-    explanation: The Compliance Dashboard helps organizations monitor and enforce security policies across projects and ensure compliance with regulatory requirements.
+    explanation: The Compliance Dashboard helps organizations enforce and monitor security policies, ensuring adherence to regulatory standards.
     source: https://docs.gitlab.com/ee/user/compliance/compliance_dashboard/
 
   - id: gitlab_a4
     question: What is GitLab Kubernetes Agent?
     options:
-      - A secure communication channel between GitLab and Kubernetes clusters
-      - A deployment tool
-      - A monitoring system
-      - A backup service
+      - A secure channel for connecting Kubernetes clusters with GitLab
+      - A monitoring tool for Kubernetes workloads
+      - A resource allocator for CI/CD pipelines
+      - A testing utility for Kubernetes configurations
     correct_answer: 0
-    explanation: The GitLab Kubernetes Agent provides a secure way to connect Kubernetes clusters to GitLab, enabling GitOps workflows and cluster management.
+    explanation: The GitLab Kubernetes Agent enables secure integration with Kubernetes clusters, facilitating GitOps workflows and cluster management.
     source: https://docs.gitlab.com/ee/user/clusters/agent/
 
   - id: gitlab_a5
     question: What is GitLab Dependency Proxy?
     options:
-      - A caching proxy for frequently used upstream images/packages
-      - A network proxy
-      - A deployment system
-      - A monitoring tool
+      - A caching proxy for upstream images and packages
+      - A registry for managing container images
+      - A monitoring tool for package usage
+      - A network proxy for optimizing build pipelines
     correct_answer: 0
-    explanation: GitLab Dependency Proxy acts as a caching proxy for frequently used upstream images and packages, improving build times and reducing bandwidth usage.
+    explanation: The Dependency Proxy reduces build times by caching frequently used upstream images and packages, improving efficiency.
     source: https://docs.gitlab.com/ee/user/packages/dependency_proxy/
 
   - id: gitlab_a6
     question: What is GitLab Vault?
     options:
       - A secrets management integration with HashiCorp Vault
-      - A backup system
-      - A deployment platform
-      - A monitoring service
+      - A secure storage service for project artifacts
+      - A backup system for GitLab repositories
+      - A deployment manager for sensitive workflows
     correct_answer: 0
-    explanation: GitLab Vault integration allows secure management of secrets using HashiCorp Vault, enabling secure access to sensitive data in CI/CD pipelines.
+    explanation: GitLab Vault integration provides secure secrets management for CI/CD pipelines by leveraging HashiCorp Vault.
     source: https://docs.gitlab.com/ee/ci/secrets/
 
   - id: gitlab_a7
     question: What is GitLab Load Performance Testing?
     options:
-      - A feature to run performance tests as part of CI/CD pipelines
-      - A code analysis tool
-      - A deployment system
-      - A backup service
+      - A CI/CD feature for assessing application performance
+      - A monitoring tool for managing system resources
+      - A deployment testing utility for staging environments
+      - A reporting framework for tracking deployment efficiency
     correct_answer: 0
-    explanation: GitLab Load Performance Testing allows you to run performance tests as part of your CI/CD pipeline to ensure application performance under load.
+    explanation: Load Performance Testing in GitLab evaluates application performance under load conditions within CI/CD pipelines.
     source: https://docs.gitlab.com/ee/user/project/merge_requests/load_performance_testing.html
 
   - id: gitlab_a8
     question: What is GitLab Canary Deployments?
     options:
-      - A deployment strategy for testing changes on a subset of users
-      - A testing framework
-      - A monitoring system
-      - A backup service
+      - A strategy for rolling out updates to a subset of users
+      - A tool for testing CI/CD configurations
+      - A monitoring service for deployment health
+      - A deployment manager for staging environments
     correct_answer: 0
-    explanation: Canary Deployments in GitLab allow you to roll out changes to a subset of users before deploying to the entire infrastructure, reducing risk.
+    explanation: Canary Deployments test changes with a subset of users before full deployment, minimizing risk in production environments.
     source: https://docs.gitlab.com/ee/user/project/canary_deployments.html
 
   - id: gitlab_a9
     question: What is GitLab Custom Executors?
     options:
-      - A feature to create custom runner execution environments
-      - A deployment tool
-      - A monitoring system
-      - A backup service
+      - A feature for creating tailored environments for runners
+      - A deployment tool for custom applications
+      - A system for optimizing resource allocation
+      - A monitoring framework for CI/CD pipelines
     correct_answer: 0
-    explanation: Custom Executors allow you to create specialized environments for GitLab Runner job execution, providing complete control over the execution environment.
+    explanation: Custom Executors allow full customization of environments where GitLab Runner jobs are executed, enhancing flexibility.
     source: https://docs.gitlab.com/runner/executors/custom.html
 
   - id: gitlab_a10
     question: What is GitLab Disaster Recovery?
     options:
-      - A set of features and procedures for backing up and restoring GitLab
-      - A deployment system
-      - A monitoring tool
-      - A testing framework
+      - A set of tools for backup and restoration of GitLab instances
+      - A framework for managing multi-region deployments
+      - A reporting system for data recovery operations
+      - A testing suite for failover scenarios
     correct_answer: 0
-    explanation: GitLab Disaster Recovery includes features and procedures for backing up GitLab data and restoring service in case of system failure or data loss.
-    source: https://docs.gitlab.com/ee/administration/backup_restore/ 
+    explanation: GitLab Disaster Recovery includes features and procedures to safeguard GitLab data and restore service after failure.
+    source: https://docs.gitlab.com/ee/administration/backup_restore/

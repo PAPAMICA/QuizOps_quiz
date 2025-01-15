@@ -9,108 +9,108 @@ questions:
     question: What is Google Cloud Platform (GCP)?
     options:
       - A cloud computing platform offering various services and infrastructure
-      - A web browser developed by Google
-      - A social media platform
-      - An email service
+      - A web browser developed by Google for internet users
+      - A social media platform for connecting people globally
+      - An email service provided for personal and business use
     correct_answer: 0
-    explanation: Google Cloud Platform (GCP) is a suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products.
+    explanation: Google Cloud Platform (GCP) is a suite of cloud services providing infrastructure, platform, and software capabilities for developers and businesses.
     source: https://cloud.google.com/docs/overview
 
   - id: gcp_b2
     question: What is a GCP Project?
     options:
       - The main organizational unit that groups together related resources
-      - A physical data center
-      - A type of virtual machine
-      - A storage bucket
+      - A physical data center where servers are hosted
+      - A type of virtual machine instance used in deployments
+      - A storage bucket used for storing large datasets
     correct_answer: 0
-    explanation: A GCP Project is the main way to organize resources in Google Cloud. It contains all your Google Cloud resources and is the base-level organizing entity.
+    explanation: A GCP Project is the primary method of organizing and managing Google Cloud resources, offering billing and access control.
     source: https://cloud.google.com/resource-manager/docs/creating-managing-projects
 
   - id: gcp_b3
     question: What is Google Compute Engine (GCE)?
     options:
-      - A service that provides virtual machines
-      - A database service
-      - A networking tool
-      - A monitoring system
+      - A service that provides virtual machines running in the cloud
+      - A database service designed for transactional workloads
+      - A networking tool used for setting up VPC networks
+      - A monitoring system for tracking cloud resource usage
     correct_answer: 0
-    explanation: Google Compute Engine (GCE) is an Infrastructure as a Service (IaaS) offering that provides virtual machines running in Google's data centers.
+    explanation: Google Compute Engine (GCE) offers virtual machines as an Infrastructure as a Service (IaaS) solution for running scalable workloads.
     source: https://cloud.google.com/compute/docs/overview
 
   - id: gcp_b4
     question: What is Cloud Storage in GCP?
     options:
-      - Object storage service for storing and accessing data
-      - A virtual machine service
-      - A database service
-      - A networking service
+      - Object storage service for storing and accessing data on demand
+      - A virtual machine service designed for compute tasks
+      - A database service optimized for data warehousing
+      - A networking service used for VPC configurations
     correct_answer: 0
-    explanation: Google Cloud Storage is an object storage service that lets you store any amount of data and retrieve it as often as needed.
+    explanation: Cloud Storage is an object storage solution in GCP that supports the storage and retrieval of unlimited amounts of data globally.
     source: https://cloud.google.com/storage/docs/overview
 
   - id: gcp_b5
     question: What is Cloud Run?
     options:
-      - A serverless platform for containerized applications
-      - A virtual machine service
-      - A database service
-      - A monitoring tool
+      - A serverless platform for containerized applications running on demand
+      - A virtual machine service for managing compute-intensive workloads
+      - A database service optimized for large-scale transactions
+      - A monitoring tool for tracking and optimizing service performance
     correct_answer: 0
-    explanation: Cloud Run is a managed compute platform that enables you to run stateless containers that are invocable via web requests or Pub/Sub events.
+    explanation: Cloud Run enables running stateless containers with automatic scaling, triggered by HTTP requests or Pub/Sub events.
     source: https://cloud.google.com/run/docs/overview/what-is-cloud-run
 
   - id: gcp_b6
     question: What is a VPC in GCP?
     options:
-      - Virtual Private Cloud network
-      - Virtual Processing Center
-      - Virtual Public Computer
-      - Virtual Platform Control
+      - Virtual Private Cloud network providing isolated networking
+      - Virtual Processing Center for handling cloud transactions
+      - Virtual Public Computer used for shared compute operations
+      - Virtual Platform Control for managing user applications
     correct_answer: 0
-    explanation: A Virtual Private Cloud (VPC) network is a virtual version of a physical network, implemented inside of Google's production network, providing networking functionality to your cloud resources.
+    explanation: Virtual Private Cloud (VPC) networks in GCP offer secure, scalable networking for cloud resources, implemented inside Google's global infrastructure.
     source: https://cloud.google.com/vpc/docs/overview
 
   - id: gcp_b7
     question: What is Cloud IAM?
     options:
-      - Identity and Access Management service
-      - Internet Access Module
-      - Internal Application Manager
-      - Infrastructure Automation Module
+      - Identity and Access Management service for resource permissions
+      - Internet Access Module for managing external connectivity
+      - Internal Application Manager for handling deployments internally
+      - Infrastructure Automation Module for automating resource provisioning
     correct_answer: 0
-    explanation: Cloud IAM (Identity and Access Management) lets you manage access control by defining who (identity) has what access (role) for which resource.
+    explanation: Cloud IAM allows organizations to manage access controls for Google Cloud resources by assigning roles and permissions.
     source: https://cloud.google.com/iam/docs/overview
 
   - id: gcp_b8
     question: What is BigQuery?
     options:
-      - A fully managed data warehouse
-      - A virtual machine service
-      - A container orchestration system
-      - A monitoring tool
+      - A fully managed data warehouse for scalable analytics
+      - A virtual machine service designed for compute tasks
+      - A container orchestration system for managing workloads
+      - A monitoring tool for tracking application performance
     correct_answer: 0
-    explanation: BigQuery is a fully managed, serverless data warehouse that enables scalable analysis over petabytes of data.
+    explanation: BigQuery is a serverless, fully managed data warehouse that supports SQL queries on massive datasets with high performance.
     source: https://cloud.google.com/bigquery/docs/introduction
 
   - id: gcp_b9
     question: What is Cloud Functions?
     options:
-      - A serverless execution environment for running code
-      - A database service
-      - A storage service
-      - A networking tool
+      - A serverless execution environment for running event-driven code
+      - A database service for managing structured data
+      - A storage service for keeping large data files
+      - A networking tool for managing VPC connections
     correct_answer: 0
-    explanation: Cloud Functions is a serverless execution environment for building and connecting cloud services, allowing you to write simple, single-purpose functions.
+    explanation: Cloud Functions is a lightweight, serverless compute service that allows users to deploy and execute single-purpose functions in response to events.
     source: https://cloud.google.com/functions/docs/concepts/overview
 
   - id: gcp_b10
     question: What is App Engine?
     options:
       - A platform for building scalable web applications and mobile backends
-      - A virtual machine service
-      - A database service
-      - A monitoring system
+      - A virtual machine service optimized for batch processing
+      - A database service tailored for high-transaction workloads
+      - A monitoring system for tracking infrastructure performance
     correct_answer: 0
-    explanation: App Engine is a fully managed platform for building, deploying, and scaling web applications and APIs without managing the underlying infrastructure.
-    source: https://cloud.google.com/appengine/docs/overview 
+    explanation: App Engine provides a platform-as-a-service (PaaS) environment for deploying web applications with no need to manage infrastructure manually.
+    source: https://cloud.google.com/appengine/docs/overview

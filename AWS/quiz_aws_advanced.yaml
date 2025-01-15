@@ -6,10 +6,10 @@ questions:
   - id: aws_a1
     question: What is AWS Organizations and how does it help with multi-account management?
     options:
-      - A service that provides policy-based management for multiple AWS accounts with consolidated billing
-      - A service for organizing AWS resources only
-      - A billing service only
-      - A security service only
+      - A service for policy-based multi-account management and consolidated billing
+      - A solution focused on organizing AWS resources into logical groups only
+      - A tool that offers centralized billing management for linked accounts
+      - A security service designed to manage IAM policies for linked accounts
     correct_answer: 0
     explanation: AWS Organizations helps you centrally manage and govern multiple AWS accounts, providing policy-based management, consolidated billing, and hierarchical organization of accounts through organizational units (OUs).
     source: https://aws.amazon.com/organizations/
@@ -17,10 +17,10 @@ questions:
   - id: aws_a2
     question: How does AWS Transit Gateway facilitate network architecture?
     options:
-      - By acting as a central hub to route traffic between VPCs, VPNs, and Direct Connect connections
-      - By providing basic VPC connectivity only
-      - By managing internet gateways only
-      - By handling DNS routing only
+      - By acting as a central hub for connecting VPCs, VPNs, and Direct Connect links
+      - By providing basic connectivity for routing traffic between two VPCs
+      - By managing internet gateways for connecting resources to the public internet
+      - By providing DNS services to resolve domain names within VPCs and networks
     correct_answer: 0
     explanation: AWS Transit Gateway acts as a cloud router, simplifying network architecture by serving as a central hub that controls how traffic is routed between all connected networks, including VPCs, VPNs, and Direct Connect connections.
     source: https://aws.amazon.com/transit-gateway/
@@ -28,10 +28,10 @@ questions:
   - id: aws_a3
     question: What are the key features of AWS Control Tower?
     options:
-      - Automated account setup, governance, and compliance management for multi-account environments
-      - Basic account management only
-      - Security monitoring only
-      - Resource organization only
+      - Automated setup, governance, and compliance for multi-account environments
+      - A tool for setting up AWS accounts without additional governance controls
+      - A service for monitoring security compliance in AWS environments only
+      - A framework for tagging and organizing AWS resources across accounts
     correct_answer: 0
     explanation: AWS Control Tower provides automated setup of multi-account environments with built-in governance and compliance controls, including account factory, guardrails, and a dashboard for visibility into policy compliance.
     source: https://aws.amazon.com/controltower/
@@ -39,10 +39,10 @@ questions:
   - id: aws_a4
     question: How does AWS WAF help protect web applications?
     options:
-      - By filtering malicious web traffic using rules for SQL injection, cross-site scripting, and IP addresses
-      - By providing basic firewall rules only
-      - By monitoring traffic only
-      - By blocking all external access
+      - By filtering web traffic using rules for SQL injection, XSS, and IP conditions
+      - By applying basic firewall rules to monitor traffic and block suspicious activity
+      - By passively monitoring and logging web traffic for further analysis
+      - By blocking external requests to web applications through default configurations
     correct_answer: 0
     explanation: AWS WAF (Web Application Firewall) helps protect web applications from common web exploits by allowing you to create rules that filter web traffic based on conditions like SQL injection patterns, cross-site scripting, IP addresses, and custom criteria.
     source: https://aws.amazon.com/waf/
@@ -50,10 +50,10 @@ questions:
   - id: aws_a5
     question: What is AWS Service Quotas and how does it help with resource management?
     options:
-      - A service to view and manage AWS service quotas centrally with request automation
-      - A basic quota monitoring tool
-      - A resource counting service
-      - A billing management tool
+      - A service to centrally manage quotas, automate requests, and monitor utilization
+      - A tool to count and display allocated resources in the AWS management console
+      - A feature designed to set soft and hard limits for individual AWS services
+      - A system to manage and view quota-related billing details for AWS accounts
     correct_answer: 0
     explanation: AWS Service Quotas provides a central location to view and manage your AWS service quotas (formerly called limits), including the ability to request quota increases automatically and set CloudWatch alarms for quota utilization.
     source: https://docs.aws.amazon.com/servicequotas/
@@ -61,10 +61,10 @@ questions:
   - id: aws_a6
     question: How does AWS GuardDuty enhance security monitoring?
     options:
-      - By using machine learning and threat intelligence to detect security threats
-      - By providing basic log analysis only
-      - By monitoring network traffic only
-      - By scanning for vulnerabilities only
+      - By using machine learning and intelligence to detect threats and anomalies
+      - By analyzing access logs and identifying potential misconfigurations in policies
+      - By monitoring VPC network traffic for irregular patterns in data transfers
+      - By scanning workloads and resources to identify known vulnerabilities
     correct_answer: 0
     explanation: AWS GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior using machine learning, anomaly detection, and integrated threat intelligence.
     source: https://aws.amazon.com/guardduty/
@@ -72,10 +72,10 @@ questions:
   - id: aws_a7
     question: What is AWS Step Functions and how does it help with application workflows?
     options:
-      - By orchestrating multiple AWS services into serverless workflows using visual tools
-      - By managing Lambda functions only
-      - By scheduling tasks only
-      - By monitoring application state only
+      - By orchestrating AWS services into workflows using state machines and visual tools
+      - By directly managing individual Lambda functions and their interactions
+      - By scheduling repetitive tasks and jobs for execution at regular intervals
+      - By tracking and maintaining the state of serverless applications in production
     correct_answer: 0
     explanation: AWS Step Functions is a serverless orchestration service that lets you combine AWS services into workflows using visual tools, enabling you to build distributed applications, automate processes, and create data and machine learning pipelines.
     source: https://aws.amazon.com/step-functions/
@@ -83,10 +83,10 @@ questions:
   - id: aws_a8
     question: How does AWS Global Accelerator improve application availability?
     options:
-      - By optimizing network paths and automatically routing traffic to the best endpoint
-      - By providing basic DNS routing only
-      - By caching content only
-      - By load balancing only
+      - By optimizing traffic routes and routing requests to the healthiest endpoints
+      - By resolving DNS queries and directing user traffic to appropriate resources
+      - By caching static content for faster delivery to geographically distant users
+      - By balancing traffic among application servers in specific AWS Regions
     correct_answer: 0
     explanation: AWS Global Accelerator improves application availability and performance by using AWS's global network infrastructure to optimize the network path from users to applications, automatically routing traffic to the best endpoint based on health, geography, and routing policies.
     source: https://aws.amazon.com/global-accelerator/
@@ -94,10 +94,10 @@ questions:
   - id: aws_a9
     question: What is AWS Lake Formation and how does it simplify data lakes?
     options:
-      - By automating the setup of data lakes with security, governance, and cataloging
-      - By providing basic storage only
-      - By managing databases only
-      - By processing data only
+      - By automating setup and governance for data lakes, including security policies
+      - By providing a centralized storage platform for unstructured datasets
+      - By organizing and managing relational databases used in analytics workflows
+      - By processing raw data into structured formats ready for querying and analysis
     correct_answer: 0
     explanation: AWS Lake Formation simplifies the creation of data lakes by automating many complex manual steps, including collecting, cleaning, and cataloging data, and securing access to sensitive data using a central permissions model.
     source: https://aws.amazon.com/lake-formation/
@@ -105,10 +105,10 @@ questions:
   - id: aws_a10
     question: How does AWS Outposts enable hybrid cloud architecture?
     options:
-      - By extending AWS infrastructure and services to on-premises facilities
-      - By providing basic VPN connectivity only
-      - By managing cloud resources only
-      - By synchronizing data only
+      - By extending AWS infrastructure, APIs, and services to on-premises environments
+      - By providing basic connectivity between on-premises networks and AWS Regions
+      - By managing synchronization of application data between AWS and local systems
+      - By hosting cloud-native applications without relying on AWS hardware resources
     correct_answer: 0
     explanation: AWS Outposts is a fully managed service that extends AWS infrastructure, services, APIs, and tools to on-premises facilities, enabling a truly consistent hybrid experience using the same hardware infrastructure used in AWS Regions.
-    source: https://aws.amazon.com/outposts/ 
+    source: https://aws.amazon.com/outposts/

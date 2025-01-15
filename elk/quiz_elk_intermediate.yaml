@@ -7,108 +7,108 @@ questions:
     question: What is an Elasticsearch shard?
     options:
       - A subset of an index that contains a portion of the data
-      - A backup of an index
-      - A type of query
-      - A visualization component
+      - A backup of an Elasticsearch index
+      - A specific type of search query
+      - A visualization component in Kibana
     correct_answer: 0
-    explanation: A shard is a subset of an index that contains a portion of the data. Sharding allows Elasticsearch to distribute data across multiple nodes for scalability and performance.
+    explanation: A shard is a subset of an index that contains part of the data. Sharding enables Elasticsearch to distribute data across nodes, ensuring scalability and performance.
     source: https://www.elastic.co/guide/en/elasticsearch/reference/current/scalability.html
 
   - id: elk_i2
     question: What is the purpose of Logstash Grok patterns?
     options:
-      - To parse and structure unstructured log data
-      - To compress log files
-      - To encrypt data
-      - To transfer files
+      - To parse and structure unstructured log data into structured formats
+      - To compress log files for storage
+      - To encrypt sensitive data in transit
+      - To transfer files securely across networks
     correct_answer: 0
-    explanation: Grok is a Logstash filter plugin that allows you to parse unstructured log data into structured and queryable data using pattern matching.
+    explanation: Grok is a Logstash plugin that allows you to parse unstructured log data into structured and queryable data using predefined or custom patterns.
     source: https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html
 
   - id: elk_i3
     question: What is Kibana Lens?
     options:
-      - An intuitive interface for creating data visualizations
-      - A security feature
-      - A data import tool
-      - A backup solution
+      - An intuitive interface for building and managing visualizations
+      - A security feature for protecting dashboards
+      - A data import wizard for Elasticsearch
+      - A backup solution for saving visualizations
     correct_answer: 0
-    explanation: Kibana Lens is an intuitive interface for creating data visualizations that provides suggestions based on your data and allows for easy switching between visualization types.
+    explanation: Kibana Lens is an intuitive tool for building visualizations that suggests configurations based on your data and supports easy switching between visualization types.
     source: https://www.elastic.co/guide/en/kibana/current/lens.html
 
   - id: elk_i4
     question: What is the purpose of Elasticsearch mapping?
     options:
-      - To define how documents and their fields are stored and indexed
-      - To create network connections
-      - To manage user permissions
-      - To handle data backup
+      - To define how documents and fields are stored and indexed
+      - To create secure network connections for Elasticsearch
+      - To manage user access and permissions for indices
+      - To automate data backup processes
     correct_answer: 0
-    explanation: Mapping defines how documents and their fields are stored and indexed, including field data types, formats, and whether they should be searchable or analyzable.
+    explanation: Mapping specifies how documents and fields are indexed, including data types, field formats, and whether fields should be searchable or analyzed.
     source: https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html
 
   - id: elk_i5
     question: What is a Logstash codec?
     options:
-      - A plugin that changes the data representation of events
-      - A compression algorithm
-      - A security feature
-      - A visualization type
+      - A plugin that encodes and decodes event data as it flows
+      - A compression algorithm for log files in pipelines
+      - A security feature to encrypt pipeline events
+      - A visualization type available in Kibana dashboards
     correct_answer: 0
-    explanation: A codec in Logstash is a plugin that changes the data representation of events as they pass through the pipeline, handling tasks like encoding and decoding data.
+    explanation: Codecs in Logstash are plugins that encode and decode data as it passes through the pipeline, transforming it for storage or processing.
     source: https://www.elastic.co/guide/en/logstash/current/codec-plugins.html
 
   - id: elk_i6
     question: What is the purpose of Elasticsearch aggregations?
     options:
-      - To perform analytics and statistical analysis on data
-      - To backup data
-      - To compress indexes
-      - To manage users
+      - To perform analytics and statistical operations on data
+      - To manage and back up Elasticsearch indices securely
+      - To compress large data sets into smaller storage units
+      - To assign user roles and access permissions for data
     correct_answer: 0
-    explanation: Aggregations allow you to perform analytics and statistical analysis on your data, providing complex summaries and metrics about your data.
+    explanation: Aggregations allow you to perform statistical operations and analytics on data, providing insights and metrics to support decision-making.
     source: https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html
 
   - id: elk_i7
     question: What is Kibana Canvas?
     options:
-      - A tool for creating custom presentations and infographics
-      - A drawing tool
-      - A data import wizard
-      - A security dashboard
+      - A tool for creating custom presentations with live data
+      - A drawing tool for creating freeform diagrams
+      - A data import wizard for Elasticsearch
+      - A dashboard for managing user security and access
     correct_answer: 0
-    explanation: Kibana Canvas is a tool that allows you to create custom presentations and infographics using your data, with dynamic elements and customizable layouts.
+    explanation: Kibana Canvas allows you to create custom presentations using Elasticsearch data with dynamic elements and customizable layouts for a professional look.
     source: https://www.elastic.co/guide/en/kibana/current/canvas.html
 
   - id: elk_i8
     question: What is the purpose of Elasticsearch replication?
     options:
-      - To provide high availability and fault tolerance
-      - To compress data
-      - To encrypt data
-      - To clean data
+      - To ensure high availability by creating replicas of data shards
+      - To compress large indices for faster query performance
+      - To encrypt sensitive data stored in Elasticsearch
+      - To clean data and remove duplicates from indices
     correct_answer: 0
-    explanation: Replication in Elasticsearch provides high availability and fault tolerance by creating copies (replicas) of shards across different nodes.
+    explanation: Replication creates replicas of shards across nodes, ensuring high availability and fault tolerance in distributed environments.
     source: https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-update-settings.html
 
   - id: elk_i9
     question: What is a Logstash input plugin?
     options:
       - A plugin that enables Logstash to read events from specific sources
-      - A visualization tool
-      - A data compression tool
-      - A security feature
+      - A tool for creating real-time visualizations in Kibana
+      - A compression utility for large datasets in pipelines
+      - A security feature for encrypting data in motion
     correct_answer: 0
-    explanation: Input plugins enable Logstash to read specific types of events from various sources like files, syslog, metrics, and many other sources.
+    explanation: Input plugins allow Logstash to read events from various sources, such as files, databases, and network streams, to process and analyze data.
     source: https://www.elastic.co/guide/en/logstash/current/input-plugins.html
 
   - id: elk_i10
     question: What is Kibana Timelion?
     options:
-      - A time series data visualization tool
-      - A backup solution
-      - A security feature
-      - A data import tool
+      - A tool for visualizing and analyzing time series data
+      - A backup solution for storing visualizations securely
+      - A security feature for protecting time-based data
+      - A wizard for importing historical data into Elasticsearch
     correct_answer: 0
-    explanation: Timelion is a time series data visualization tool in Kibana that allows you to combine totally independent data sources within a single visualization.
-    source: https://www.elastic.co/guide/en/kibana/current/timelion.html 
+    explanation: Timelion is a time series visualization tool in Kibana that combines independent data sources into unified visualizations for analysis.
+    source: https://www.elastic.co/guide/en/kibana/current/timelion.html

@@ -6,10 +6,10 @@ questions:
   - id: ansible_i1
     question: What is an Ansible handler and when is it triggered?
     options:
-      - A task that runs only when notified by another task after a change
-      - A task that runs automatically at the start of a playbook
-      - A task that handles errors in playbooks
-      - A task that manages host connections
+      - A task triggered only when notified by another task making a change
+      - A task that starts automatically at the beginning of every playbook
+      - A predefined task specifically designed to handle playbook errors
+      - A task responsible for managing and maintaining host connections
     correct_answer: 0
     explanation: A handler is a task that only runs when notified by another task that has made a change. They are commonly used for restarting services or triggering other actions when configurations change.
     source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_handlers.html
@@ -17,10 +17,10 @@ questions:
   - id: ansible_i2
     question: What is the purpose of the 'when' statement in Ansible?
     options:
-      - To implement conditional execution of tasks
-      - To specify when a playbook should run
-      - To set task timeout
-      - To schedule periodic tasks
+      - To control whether a task should execute based on conditions
+      - To define the timing for a playbook’s execution and run intervals
+      - To set a maximum allowable execution time for specific tasks
+      - To schedule playbook runs periodically with specific triggers
     correct_answer: 0
     explanation: The 'when' statement is used for conditional execution of tasks based on variables, facts, or previous task results.
     source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_conditionals.html
@@ -28,10 +28,10 @@ questions:
   - id: ansible_i3
     question: How do you handle sensitive data in Ansible?
     options:
-      - Using Ansible Vault
-      - Using environment variables only
-      - Using plain text variables
-      - Using external databases
+      - By using Ansible Vault to encrypt and secure variables and files
+      - By storing sensitive information in environment variables exclusively
+      - By including passwords and keys directly in plain text variables
+      - By saving secrets in external databases and fetching them dynamically
     correct_answer: 0
     explanation: Ansible Vault is used to encrypt sensitive data such as passwords, keys, or sensitive variables, allowing secure storage in version control.
     source: https://docs.ansible.com/ansible/latest/vault_guide/index.html
@@ -39,10 +39,10 @@ questions:
   - id: ansible_i4
     question: What is the purpose of 'gather_facts' in a playbook?
     options:
-      - To collect system information about target hosts
-      - To gather playbook statistics
-      - To collect network information only
-      - To gather user information
+      - To collect detailed system information about target hosts before tasks run
+      - To gather playbook execution metrics and performance-related statistics
+      - To fetch network-related configurations and connectivity information only
+      - To collect user-specific details from managed systems for customization
     correct_answer: 0
     explanation: gather_facts is used to collect system information (facts) about target hosts, including OS details, IP addresses, hardware info, etc.
     source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_vars_facts.html
@@ -50,10 +50,10 @@ questions:
   - id: ansible_i5
     question: What is an Ansible Galaxy?
     options:
-      - A repository for sharing and downloading Ansible roles
-      - A monitoring tool for Ansible
-      - A testing framework
-      - A deployment tool
+      - A platform for sharing and downloading reusable Ansible roles and modules
+      - A tool that provides continuous monitoring for Ansible-based systems
+      - A framework designed for testing Ansible playbooks during development
+      - A utility for deploying applications in cloud or on-premise environments
     correct_answer: 0
     explanation: Ansible Galaxy is a repository for sharing, downloading, and managing Ansible roles created by the Ansible community.
     source: https://docs.ansible.com/ansible/latest/galaxy/user_guide.html
@@ -61,10 +61,10 @@ questions:
   - id: ansible_i6
     question: What is the purpose of 'block' in Ansible playbooks?
     options:
-      - To group multiple tasks and handle errors
-      - To create a new variable scope
-      - To define a new play
-      - To create a loop
+      - To group related tasks together and apply error handling at the block level
+      - To create and isolate a new scope for variables used in specific tasks
+      - To define a new execution play with its own independent parameters
+      - To structure loops in playbooks for repeated task execution patterns
     correct_answer: 0
     explanation: Blocks allow you to group related tasks together and handle errors for the entire group of tasks using rescue and always sections.
     source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_blocks.html
@@ -72,10 +72,10 @@ questions:
   - id: ansible_i7
     question: How can you handle different operating systems in Ansible?
     options:
-      - Using when conditions with ansible_facts['os_family']
-      - Using separate playbooks for each OS
-      - Using different inventory files
-      - Using OS-specific modules only
+      - By using 'when' conditions with ansible_facts to specify OS-specific tasks
+      - By writing separate and distinct playbooks customized for each OS type
+      - By maintaining different inventory files categorized by operating systems
+      - By relying exclusively on modules that are tailored for specific OSes
     correct_answer: 0
     explanation: You can use conditional statements with ansible_facts['os_family'] or ansible_facts['distribution'] to execute tasks based on the target system's OS.
     source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_conditionals.html
@@ -83,10 +83,10 @@ questions:
   - id: ansible_i8
     question: What is the purpose of 'strategy' in Ansible playbooks?
     options:
-      - To control how plays are executed across hosts
-      - To define deployment strategies
-      - To manage variable precedence
-      - To handle task failures
+      - To define how tasks are executed across multiple hosts in a play
+      - To configure deployment patterns and manage complex installation flows
+      - To establish precedence for variables and their resolution during execution
+      - To determine how task failures are managed and retries are handled
     correct_answer: 0
     explanation: Strategy controls how Ansible executes tasks across hosts (linear, free, or debug), affecting parallelism and execution order.
     source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_strategies.html
@@ -94,10 +94,10 @@ questions:
   - id: ansible_i9
     question: What is an Ansible lookup plugin?
     options:
-      - A plugin to fetch data from external sources
-      - A plugin to look up module documentation
-      - A plugin to search playbooks
-      - A plugin to find roles
+      - A tool for accessing data from external sources like files or databases
+      - A utility for locating specific module documentation during playbook development
+      - A search feature to locate and analyze playbooks stored in directories
+      - A mechanism for discovering and downloading available roles dynamically
     correct_answer: 0
     explanation: Lookup plugins are used to access data from external sources like files, databases, or key-value stores during playbook execution.
     source: https://docs.ansible.com/ansible/latest/plugins/lookup.html
@@ -105,10 +105,10 @@ questions:
   - id: ansible_i10
     question: What is the purpose of 'tags' in Ansible playbooks?
     options:
-      - To selectively execute specific parts of a playbook
-      - To label playbook versions
-      - To categorize variables
-      - To mark deprecated tasks
+      - To allow selective execution or skipping of tasks, roles, or plays
+      - To attach labels for identifying specific playbook versions in repositories
+      - To categorize variables into logical groups for easier management
+      - To mark tasks that are deprecated and should be avoided in production
     correct_answer: 0
     explanation: Tags allow you to selectively execute or skip specific parts of a playbook by marking tasks, roles, or plays with tags.
-    source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_tags.html 
+    source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_tags.html

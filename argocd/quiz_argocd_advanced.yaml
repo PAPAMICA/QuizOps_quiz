@@ -6,10 +6,10 @@ questions:
   - id: argocd_a1
     question: How can you implement custom diffing logic in ArgoCD?
     options:
-      - By creating a custom diff plugin using the plugin framework
-      - By modifying the core ArgoCD code
-      - By using external diff tools
-      - By implementing custom CRDs
+      - By creating a plugin using the ArgoCD plugin framework to define custom logic
+      - By modifying the core ArgoCD code to add new diffing functionality
+      - By relying on external tools to handle the diffing of resources
+      - By using custom CRDs to define alternative diffing processes
     correct_answer: 0
     explanation: Custom diffing logic can be implemented by creating plugins using ArgoCD's plugin framework, allowing for specialized comparison of resources based on specific requirements.
     source: https://argo-cd.readthedocs.io/en/stable/user-guide/diff-strategies/
@@ -17,10 +17,10 @@ questions:
   - id: argocd_a2
     question: What are the implications of using the 'force' sync option in ArgoCD?
     options:
-      - It bypasses checks and hooks, potentially causing data loss or service disruption
-      - It only forces metadata updates
-      - It only affects non-critical resources
-      - It automatically backs up before sync
+      - It bypasses normal checks and hooks, risking data loss or service disruptions
+      - It forces only metadata updates without affecting the resource's state
+      - It applies changes only to non-critical resources to prevent disruptions
+      - It automatically creates backups before forcing resource updates
     correct_answer: 0
     explanation: Force sync bypasses normal safety checks and resource hooks, which can lead to data loss or service disruption if not used carefully, especially with stateful applications.
     source: https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/
@@ -28,10 +28,10 @@ questions:
   - id: argocd_a3
     question: How can you implement custom resource actions in ArgoCD?
     options:
-      - By creating ConfigMap-based action definitions with custom UI and backend logic
-      - By modifying the ArgoCD UI only
-      - By using external scripts
-      - By implementing new CRDs
+      - By creating ConfigMaps that define actions with custom UI and logic
+      - By modifying the ArgoCD UI to support new resource actions
+      - By relying on external scripts to perform specific resource actions
+      - By creating and deploying custom CRDs with action definitions
     correct_answer: 0
     explanation: Custom resource actions can be implemented by defining them in ConfigMaps, including both UI elements and backend logic for performing specific operations on resources.
     source: https://argo-cd.readthedocs.io/en/stable/operator-manual/custom-actions/
@@ -39,10 +39,10 @@ questions:
   - id: argocd_a4
     question: What is the purpose of the 'resource tracking' method in ArgoCD?
     options:
-      - To determine which resources belong to an application using different strategies
-      - To monitor resource usage
-      - To track deployment history
-      - To manage resource quotas
+      - To identify resources belonging to an application using defined strategies
+      - To monitor real-time resource usage and performance metrics
+      - To maintain a deployment history for each application
+      - To manage quotas for resources used by applications
     correct_answer: 0
     explanation: Resource tracking methods determine how ArgoCD identifies which resources belong to an application, with options like annotation-based, label-based, or combinatorial approaches.
     source: https://argo-cd.readthedocs.io/en/stable/user-guide/resource_tracking/
@@ -50,10 +50,10 @@ questions:
   - id: argocd_a5
     question: How can you implement custom authentication in ArgoCD?
     options:
-      - By configuring OIDC, LDAP, or implementing custom authentication plugins
-      - By using basic auth only
-      - By modifying core authentication code
-      - By using external auth services only
+      - By configuring OIDC or LDAP and writing custom authentication plugins
+      - By using only basic authentication methods for simplicity
+      - By modifying core authentication code directly in the ArgoCD server
+      - By integrating external authentication services exclusively
     correct_answer: 0
     explanation: Custom authentication can be implemented through built-in support for OIDC and LDAP, or by creating custom authentication plugins for specific requirements.
     source: https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/
@@ -61,10 +61,10 @@ questions:
   - id: argocd_a6
     question: What are the considerations for implementing multi-cluster management with ArgoCD?
     options:
-      - Network connectivity, RBAC, secret management, and cluster credentials
-      - Only network connectivity
-      - Only RBAC settings
-      - Only cluster credentials
+      - Network connectivity, RBAC settings, secret handling, and credentials management
+      - Ensuring only network connectivity between ArgoCD and target clusters
+      - Defining appropriate RBAC policies for managing individual clusters
+      - Managing cluster credentials securely without additional configurations
     correct_answer: 0
     explanation: Multi-cluster management requires careful consideration of network connectivity between clusters, RBAC configurations, secret management, and secure handling of cluster credentials.
     source: https://argo-cd.readthedocs.io/en/stable/operator-manual/cluster-management/
@@ -72,10 +72,10 @@ questions:
   - id: argocd_a7
     question: How can you implement custom metrics and monitoring in ArgoCD?
     options:
-      - By using Prometheus metrics, custom metrics, and monitoring integrations
-      - By using logs only
-      - By external monitoring only
-      - By manual checks only
+      - By using built-in Prometheus metrics, custom exporters, and integrations
+      - By analyzing application logs as the primary source of metrics
+      - By relying on external monitoring systems for all metrics collection
+      - By performing manual checks and using reports for monitoring
     correct_answer: 0
     explanation: Custom metrics and monitoring can be implemented using built-in Prometheus metrics, custom metric exporters, and integrations with monitoring systems like Grafana.
     source: https://argo-cd.readthedocs.io/en/stable/operator-manual/metrics/
@@ -83,10 +83,10 @@ questions:
   - id: argocd_a8
     question: What is the purpose of the 'application reconciliation' process in ArgoCD?
     options:
-      - To continuously ensure the desired state matches the actual state
-      - To backup applications
-      - To deploy new versions
-      - To rollback changes
+      - To ensure the desired state in Git matches the actual state in the cluster
+      - To create regular backups of applications and resources
+      - To deploy new versions of applications as changes are detected
+      - To rollback applications automatically after errors are detected
     correct_answer: 0
     explanation: Application reconciliation is the core process where ArgoCD continuously compares the desired state in Git with the actual state in the cluster and attempts to resolve any differences.
     source: https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/
@@ -94,10 +94,10 @@ questions:
   - id: argocd_a9
     question: How can you implement custom resource state management in ArgoCD?
     options:
-      - By creating custom health checks and sync hooks
-      - By using external state management
-      - By manual state tracking
-      - By modifying core state logic
+      - By creating health checks, sync hooks, and custom actions for resources
+      - By relying on external systems for tracking and managing resource states
+      - By manually keeping track of resource states across deployments
+      - By modifying core logic to include new state management strategies
     correct_answer: 0
     explanation: Custom resource state management can be implemented through custom health checks, sync hooks, and resource actions to handle complex application states and transitions.
     source: https://argo-cd.readthedocs.io/en/stable/operator-manual/health/
@@ -105,10 +105,10 @@ questions:
   - id: argocd_a10
     question: What are the security implications of using 'server-side apply' in ArgoCD?
     options:
-      - Potential conflicts with other controllers and field management issues
-      - No security implications
-      - Only affects performance
-      - Only impacts logging
+      - It can cause conflicts with other controllers and requires careful field management
+      - It has no direct security implications but might impact performance
+      - It only affects logging and has no significant security considerations
+      - It strictly impacts performance without influencing resource security
     correct_answer: 0
     explanation: Server-side apply can lead to conflicts with other controllers managing the same resources and requires careful consideration of field management and RBAC permissions.
-    source: https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/ 
+    source: https://argo-cd.readthedocs.io/en/stable/user-guide/sync-options/

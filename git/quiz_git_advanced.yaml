@@ -9,108 +9,108 @@ questions:
     question: What is a Git packfile?
     options:
       - A compressed collection of Git objects
-      - A configuration file
-      - A branch type
-      - A commit message format
+      - A type of branch in the repository
+      - A configuration setting in Git
+      - A metadata file for Git history
     correct_answer: 0
-    explanation: A packfile is Git's way of storing objects efficiently by compressing them together into a single file, reducing disk space and improving performance.
+    explanation: A packfile is Git's method for storing multiple objects in a compressed format, improving storage efficiency and performance.
     source: https://git-scm.com/book/en/v2/Git-Internals-Packfiles
 
   - id: git_a2
     question: What is the purpose of git-filter-branch?
     options:
-      - Rewrite Git revision history by filtering specific files or commits
-      - Filter branch names
-      - Clean up repositories
-      - Merge branches
+      - Rewrite revision history by filtering files or commits
+      - Create new branches from existing ones
+      - Backup branch data into separate directories
+      - Synchronize branches with remote repositories
     correct_answer: 0
-    explanation: git-filter-branch lets you rewrite Git revision history by filtering certain files, directories, or commits, useful for removing sensitive data or restructuring repository history.
+    explanation: git-filter-branch lets you rewrite Git history by filtering specific files, directories, or commits, useful for removing sensitive data or restructuring repositories.
     source: https://git-scm.com/docs/git-filter-branch
 
   - id: git_a3
     question: What is a Git shallow clone?
     options:
-      - A clone with truncated history to reduce download size
-      - A partial branch clone
-      - A clone without remote references
-      - A clone of specific files only
+      - A repository clone with truncated history
+      - A partial branch checkout for specific files
+      - A clone limited to the latest commits
+      - A clone without branch references
     correct_answer: 0
-    explanation: A shallow clone is a clone of a repository with truncated history, created with --depth option, useful when you don't need the full project history.
+    explanation: A shallow clone, created using the --depth option, downloads only recent commit history, saving bandwidth and storage.
     source: https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---depthltdepthgt
 
   - id: git_a4
     question: What is Git's object model composed of?
     options:
       - Blobs, trees, commits, and tags
-      - Files and directories only
-      - Branches and tags only
-      - Commits and branches only
+      - Commit histories and branches
+      - Repository metadata files
+      - Tags and branch definitions
     correct_answer: 0
-    explanation: "Git's object model consists of four main types: blobs (file contents), trees (directory listings), commits (snapshots), and tags (references to specific commits)."
+    explanation: Git's object model includes blobs (file contents), trees (directory structures), commits (snapshots), and tags (named references to commits).
     source: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
 
   - id: git_a5
     question: What is a Git worktree?
     options:
-      - A linked working tree associated with the repository
-      - A type of branch
-      - A commit history
-      - A merge strategy
+      - A linked working tree associated with the same repository
+      - A detached head state for commits
+      - A feature branch for testing
+      - A staging area for changes
     correct_answer: 0
-    explanation: A Git worktree is a linked working tree, allowing you to check out multiple branches simultaneously in separate directories that share the same repository.
+    explanation: Git worktrees allow multiple working trees to be linked to a single repository, enabling simultaneous checkouts of different branches.
     source: https://git-scm.com/docs/git-worktree
 
   - id: git_a6
     question: What is the purpose of git-notes?
     options:
-      - Add or inspect object notes without changing the commit
-      - Create text notes
-      - Add commit messages
-      - Tag releases
+      - Attach notes to objects without modifying commits
+      - Append commit messages to repositories
+      - Manage branch-level metadata
+      - Create summary notes for changes
     correct_answer: 0
-    explanation: Git notes allow you to add or inspect object notes that are not part of the commit message, providing a way to add information to an object without changing its SHA-1.
+    explanation: git-notes allows attaching additional metadata or comments to Git objects without altering their actual contents or SHA-1 hash.
     source: https://git-scm.com/docs/git-notes
 
   - id: git_a7
     question: What is a Git reference?
     options:
       - A pointer to a commit's SHA-1 hash
-      - A type of branch
-      - A remote repository
-      - A tag message
+      - A branch-specific configuration file
+      - A bookmark for repository snapshots
+      - A direct link to a repository clone
     correct_answer: 0
-    explanation: A Git reference (or ref) is a file containing a SHA-1 hash pointing to a specific commit, making it easier to refer to commits without using their full SHA-1 hash.
+    explanation: Git references (refs) store pointers to specific commits, making navigation and branch management easier in repositories.
     source: https://git-scm.com/book/en/v2/Git-Internals-Git-References
 
   - id: git_a8
     question: What is the purpose of git-replace?
     options:
-      - Create, list, and delete refs that replace objects
-      - Replace files in working directory
-      - Replace branch names
-      - Replace commit messages
+      - Replace an object in Git with another
+      - Substitute repository metadata files
+      - Switch branches in detached head states
+      - Overwrite commit messages in history
     correct_answer: 0
-    explanation: git-replace allows you to create, list, and delete refs that replace one object in Git with another, useful for replacing commits in history without rewriting the entire history.
+    explanation: git-replace creates refs that temporarily substitute one Git object for another without rewriting history.
     source: https://git-scm.com/docs/git-replace
 
   - id: git_a9
     question: What is a Git bundle?
     options:
-      - A binary file containing Git objects and references
-      - A collection of branches
-      - A group of commits
-      - A backup format
+      - A portable file containing Git objects and references
+      - A snapshot of repository branches
+      - A collection of commit patches
+      - A metadata archive for Git operations
     correct_answer: 0
-    explanation: A Git bundle is a binary file containing Git objects and references, allowing you to package up everything that would normally be pushed over a network into a single file.
+    explanation: Git bundles package repository objects and references into a single file, enabling offline data transfers or backups.
     source: https://git-scm.com/docs/git-bundle
 
   - id: git_a10
     question: What is the purpose of git-gc?
     options:
-      - Clean up unnecessary files and optimize local repository
-      - Delete branches
-      - Remove commits
-      - Clear staging area
+      - Clean up unnecessary files and optimize repository storage
+      - Reset branches to their last commit
+      - Compress repository data without modifying branches
+      - Synchronize local and remote repository states
     correct_answer: 0
-    explanation: git-gc (garbage collection) cleans up unnecessary files and optimizes your local repository by removing unreachable objects and compressing files for better performance.
+    explanation: git-gc (garbage collection) removes unreferenced objects and compresses repository data to improve performance and storage efficiency.
     source: https://git-scm.com/docs/git-gc

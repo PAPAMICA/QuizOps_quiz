@@ -9,108 +9,108 @@ questions:
     question: What is GitHub?
     options:
       - A web-based platform for version control and collaboration
-      - A programming language
-      - A code editor
       - A database management system
+      - A programming language for software development
+      - A web browser tool for code editing
     correct_answer: 0
-    explanation: GitHub is a web-based platform that provides hosting for software development version control using Git, along with collaboration features like bug tracking, feature requests, and wikis.
+    explanation: GitHub is a web-based platform offering hosting for version control using Git and tools for collaboration, such as issue tracking and pull requests.
     source: https://docs.github.com/en/get-started/quickstart/hello-world
 
   - id: github_b2
     question: What is a GitHub repository?
     options:
       - A container for your project's files and version history
-      - A type of programming language
-      - A code editor plugin
-      - A database table
+      - A program for tracking changes in software code
+      - A feature for organizing pull requests
+      - A database schema for storing project files
     correct_answer: 0
-    explanation: A GitHub repository contains all of your project's files and each file's revision history, allowing you to work on projects collaboratively.
+    explanation: A repository in GitHub stores all your project's files and keeps track of their revision history, enabling effective collaboration and code sharing.
     source: https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories
 
   - id: github_b3
     question: What is a GitHub Pull Request?
     options:
       - A way to propose changes to a repository
-      - A way to delete a repository
-      - A way to create a new repository
-      - A way to download code
+      - A feature for creating new branches
+      - A system for monitoring workflow events
+      - A method for managing access permissions
     correct_answer: 0
-    explanation: Pull requests let you tell others about changes you've pushed to a branch in a repository, allowing for code review and discussion before merging into the main branch.
+    explanation: Pull requests are used to propose and discuss changes in a branch before merging them into the main codebase, facilitating code reviews and collaboration.
     source: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
 
   - id: github_b4
     question: What is a GitHub Issue?
     options:
-      - A way to track bugs, enhancements, or other requests
-      - A type of repository
-      - A programming error
-      - A branch conflict
+      - A way to track bugs, tasks, or feature requests in a repository
+      - A feature for managing pull requests
+      - A system for creating branches
+      - A tool for storing secret keys
     correct_answer: 0
-    explanation: GitHub Issues are a way to track bugs, enhancements, tasks, or other requests within a repository, helping you organize and prioritize your work.
+    explanation: GitHub Issues help users track work, prioritize tasks, and collaborate effectively by documenting bugs, enhancements, or feature requests.
     source: https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues
 
   - id: github_b5
     question: What is GitHub Markdown?
     options:
       - A lightweight markup language for formatting text
-      - A programming language
-      - A version control system
-      - A code editor
+      - A programming tool for testing workflows
+      - A system for tracking changes in files
+      - A method for securing repository access
     correct_answer: 0
-    explanation: GitHub Markdown is a lightweight markup language that lets you format text using a plain-text formatting syntax, commonly used in README files and comments.
+    explanation: Markdown is a text formatting syntax used on GitHub to create formatted content, such as README files and documentation, in a plain-text format.
     source: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
   - id: github_b6
     question: What is a GitHub Fork?
     options:
-      - A personal copy of another user's repository
-      - A branch deletion
-      - A file deletion
-      - A repository deletion
+      - A personal copy of a repository that you can modify without affecting the original
+      - A system for managing workflow permissions in repositories
+      - A type of pull request for organizing changes
+      - A method for archiving repository history
     correct_answer: 0
-    explanation: A fork is a copy of a repository that allows you to freely experiment with changes without affecting the original project.
+    explanation: A fork allows users to create a personal copy of a repository, enabling experimentation and contributions to projects without altering the source.
     source: https://docs.github.com/en/get-started/quickstart/fork-a-repo
 
   - id: github_b7
     question: What is GitHub Pages?
     options:
-      - A hosting service for static websites
-      - A code editor
-      - A database service
-      - A testing platform
+      - A static website hosting service directly from a repository
+      - A tool for monitoring workflow events in repositories
+      - A system for tracking changes in files
+      - A method for managing code snippets online
     correct_answer: 0
-    explanation: GitHub Pages is a static site hosting service that takes files straight from a repository on GitHub and publishes a website.
+    explanation: GitHub Pages provides a platform for hosting static websites created from files in a repository, often used for project documentation or personal sites.
     source: https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages
 
   - id: github_b8
     question: What is a GitHub README file?
     options:
-      - A file that describes your project and how to use it
-      - A configuration file
-      - A database file
-      - A program file
+      - A file that describes a project and how to use it
+      - A branch management tool in a repository
+      - A testing tool for monitoring workflows
+      - A system for organizing workflow dependencies
     correct_answer: 0
-    explanation: A README file is a text file that introduces and explains a project, including what it is, why it's useful, and how to use it.
+    explanation: README files introduce a project, explaining its purpose and usage, and are typically the first file users see in a repository.
     source: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
 
   - id: github_b9
     question: What is GitHub Gist?
     options:
-      - A way to share code snippets and notes
-      - A version control system
-      - A programming language
-      - A database system
+      - A way to share code snippets and notes with others
+      - A feature for managing workflow security in repositories
+      - A type of pull request for tracking changes
+      - A tool for organizing testing frameworks
     correct_answer: 0
-    explanation: GitHub Gist is a simple way to share code snippets, notes, and other pieces of information with others, with support for version tracking and embedding.
+    explanation: GitHub Gist allows users to share code snippets, notes, and other small pieces of information with others in a collaborative environment.
     source: https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
 
   - id: github_b10
     question: What is a GitHub Profile README?
     options:
       - A special repository to customize your GitHub profile
-      - A system configuration file
-      - A programming tutorial
-      - A database schema
+      - A method for testing workflows in branches
+      - A feature for tracking file revisions in repositories
+      - A system for managing repository dependencies
     correct_answer: 0
-    explanation: A GitHub Profile README is a special repository that allows you to add customized content that appears on your GitHub profile page.
-    source: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme 
+    explanation: A Profile README allows users to customize their GitHub profile page, providing an opportunity to showcase projects, achievements, or contact information.
+    source: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme

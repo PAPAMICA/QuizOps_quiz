@@ -6,10 +6,10 @@ questions:
   - id: azure_i1
     question: What is Azure Kubernetes Service (AKS)?
     options:
-      - A managed container orchestration service
-      - A virtual machine service
-      - A storage service
-      - A database service
+      - A managed container orchestration service for deploying Kubernetes clusters
+      - A virtual machine platform designed for compute-intensive workloads
+      - A scalable storage solution for managing unstructured datasets in the cloud
+      - A managed database service optimized for hosting relational data workloads
     correct_answer: 0
     explanation: Azure Kubernetes Service (AKS) is a managed container orchestration service that simplifies Kubernetes deployment, management, and operations.
     source: https://learn.microsoft.com/azure/aks/
@@ -17,10 +17,10 @@ questions:
   - id: azure_i2
     question: What is Azure DevOps?
     options:
-      - A suite of development tools and services for software projects
-      - A code repository only
-      - A build service only
-      - A testing platform only
+      - A suite of tools providing pipelines, Git repositories, and project collaboration
+      - A code repository tool for version control in software development projects
+      - A build service for automating software compilation and deployment processes
+      - A testing platform designed for ensuring software quality and reliability
     correct_answer: 0
     explanation: Azure DevOps provides development collaboration tools including pipelines, Git repositories, Kanban boards, and automated testing tools.
     source: https://learn.microsoft.com/azure/devops/
@@ -28,10 +28,10 @@ questions:
   - id: azure_i3
     question: What is Azure Key Vault?
     options:
-      - A service for managing keys, secrets, and certificates
-      - A password manager only
-      - A database encryption service
-      - A backup service
+      - A service for securely managing encryption keys, secrets, and certificates
+      - A password manager designed for storing and retrieving user credentials
+      - A database encryption service for protecting structured and unstructured data
+      - A backup service designed for securely archiving critical application data
     correct_answer: 0
     explanation: Azure Key Vault is a cloud service for securely storing and accessing secrets, keys, and certificates, with features for key management and certificate management.
     source: https://learn.microsoft.com/azure/key-vault/
@@ -39,10 +39,10 @@ questions:
   - id: azure_i4
     question: What is Azure Application Gateway?
     options:
-      - A web traffic load balancer operating at application layer
-      - A basic network gateway
-      - A VPN service
-      - A firewall service
+      - A web traffic load balancer operating at the application layer (Layer 7)
+      - A basic network gateway for connecting on-premises environments to Azure
+      - A VPN service designed for securing communication between remote networks
+      - A firewall solution that protects resources from unauthorized access attempts
     correct_answer: 0
     explanation: Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications, operating at the application layer (Layer 7).
     source: https://learn.microsoft.com/azure/application-gateway/
@@ -50,10 +50,10 @@ questions:
   - id: azure_i5
     question: What is Azure Cosmos DB?
     options:
-      - A globally distributed, multi-model database service
-      - A relational database only
-      - A file storage service
-      - A caching service
+      - A globally distributed NoSQL database with multi-model support and scalability
+      - A relational database service designed for handling transactional workloads
+      - A file storage platform optimized for storing large-scale application data
+      - A caching service for improving application performance with in-memory data
     correct_answer: 0
     explanation: Azure Cosmos DB is a fully managed NoSQL database service for modern app development, offering multi-model support and global distribution.
     source: https://learn.microsoft.com/azure/cosmos-db/
@@ -61,10 +61,10 @@ questions:
   - id: azure_i6
     question: What is Azure Logic Apps?
     options:
-      - A cloud service for automating workflows and business processes
-      - A programming language
-      - A development environment
-      - A testing service
+      - A cloud service for automating workflows, tasks, and business processes
+      - A programming language for creating dynamic cloud-native applications
+      - A development environment for designing and testing software applications
+      - A testing service for ensuring the quality and stability of application code
     correct_answer: 0
     explanation: Azure Logic Apps is a cloud service that helps you schedule, automate, and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services.
     source: https://learn.microsoft.com/azure/logic-apps/
@@ -72,10 +72,10 @@ questions:
   - id: azure_i7
     question: What is Azure Service Bus?
     options:
-      - A fully managed enterprise message broker
-      - A web service
-      - A monitoring service
-      - A storage service
+      - A fully managed enterprise message broker for reliable message queuing
+      - A web service that enables real-time communication between applications
+      - A monitoring service for tracking the performance of cloud-based resources
+      - A scalable storage solution for archiving and retrieving structured datasets
     correct_answer: 0
     explanation: Azure Service Bus is a fully managed enterprise integration message broker, enabling reliable message queuing and publish-subscribe patterns.
     source: https://learn.microsoft.com/azure/service-bus-messaging/
@@ -83,10 +83,10 @@ questions:
   - id: azure_i8
     question: What is Azure API Management?
     options:
-      - A service for publishing, securing, and analyzing APIs
-      - A development tool only
-      - A testing platform
-      - A monitoring service
+      - A service for publishing, managing, securing, and analyzing APIs effectively
+      - A development tool designed for writing and testing API endpoints quickly
+      - A testing platform that evaluates the performance and scalability of APIs
+      - A monitoring service for observing the usage and health of API applications
     correct_answer: 0
     explanation: Azure API Management helps organizations publish APIs to external, partner, and internal developers to unlock the potential of their data and services.
     source: https://learn.microsoft.com/azure/api-management/
@@ -94,10 +94,10 @@ questions:
   - id: azure_i9
     question: What is Azure Front Door?
     options:
-      - A global application delivery network service
-      - A basic load balancer
-      - A firewall service
-      - A DNS service
+      - A global application delivery network service for optimizing web applications
+      - A basic load balancer for distributing incoming traffic to backend services
+      - A firewall service for protecting applications against web-based attacks
+      - A DNS service for managing domain names and resolving network addresses
     correct_answer: 0
     explanation: Azure Front Door is a global, scalable entry-point that uses the Microsoft global edge network to create fast, secure, and widely scalable web applications.
     source: https://learn.microsoft.com/azure/frontdoor/
@@ -105,10 +105,10 @@ questions:
   - id: azure_i10
     question: What is Azure Event Grid?
     options:
-      - A fully managed event routing service
-      - A monitoring service
-      - A storage service
-      - A compute service
+      - A fully managed event routing service for building event-driven architectures
+      - A monitoring service for tracking event logs and analyzing resource usage
+      - A storage solution optimized for storing event-driven application data
+      - A compute platform designed for processing event-driven application workflows
     correct_answer: 0
     explanation: Azure Event Grid is a fully managed event routing service that enables event-driven architectures with near real-time event delivery at scale.
-    source: https://learn.microsoft.com/azure/event-grid/ 
+    source: https://learn.microsoft.com/azure/event-grid/

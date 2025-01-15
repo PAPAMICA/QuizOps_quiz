@@ -9,108 +9,108 @@ questions:
     question: What is GitHub Enterprise Server?
     options:
       - A self-hosted version of GitHub that runs on your infrastructure
-      - A cloud-based GitHub service
-      - A code editor
-      - A testing platform
+      - A cloud-based GitHub service for advanced users
+      - A testing framework for GitHub repositories
+      - A deployment tool for managing workflows
     correct_answer: 0
-    explanation: GitHub Enterprise Server is a self-hosted platform that allows organizations to run GitHub on their own infrastructure, providing enhanced security and compliance features.
+    explanation: GitHub Enterprise Server is a self-hosted platform that allows organizations to run GitHub on their own infrastructure, offering enhanced security and compliance features.
     source: https://docs.github.com/en/enterprise-server@latest/admin/overview/about-github-enterprise-server
 
   - id: github_a2
     question: What is GitHub SAML SSO?
     options:
       - A single sign-on security feature for enterprise authentication
-      - A code scanning tool
-      - A deployment platform
-      - A testing framework
+      - A deployment service for GitHub projects
+      - A testing tool for GitHub Actions workflows
+      - A monitoring system for GitHub repositories
     correct_answer: 0
-    explanation: GitHub SAML SSO (Single Sign-On) allows enterprise organizations to centrally manage and secure access to GitHub resources using their identity provider.
+    explanation: SAML SSO (Single Sign-On) enables enterprise organizations to centrally manage and secure access to GitHub resources using their identity provider.
     source: https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-saml-single-sign-on-for-your-organization/about-identity-and-access-management-with-saml-single-sign-on
 
   - id: github_a3
     question: What is GitHub Audit Log?
     options:
       - A detailed record of actions taken in an organization
-      - A code review tool
-      - A deployment log
-      - A testing report
+      - A monitoring dashboard for workflow events
+      - A code testing feature for repositories
+      - A deployment tool for managing CI/CD processes
     correct_answer: 0
-    explanation: GitHub Audit Log provides a detailed record of actions taken in your organization, helping administrators track changes and maintain security compliance.
+    explanation: The GitHub Audit Log tracks all actions performed in an organization, providing administrators with detailed records to help ensure security compliance.
     source: https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization
 
   - id: github_a4
     question: What is GitHub Enterprise Managed Users?
     options:
       - A service for centrally managing user identities and access
-      - A user management tool
-      - A deployment service
-      - A testing platform
+      - A feature for organizing deployment workflows
+      - A code review tool for enterprise repositories
+      - A monitoring system for repository events
     correct_answer: 0
-    explanation: GitHub Enterprise Managed Users allows enterprises to centrally manage user identities and access on GitHub.com through their identity provider.
+    explanation: GitHub Enterprise Managed Users integrates with identity providers to allow centralized management of user identities and access on GitHub.
     source: https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/managing-iam-with-enterprise-managed-users/about-enterprise-managed-users
 
   - id: github_a5
     question: What is GitHub Actions Workflow Visualization?
     options:
       - A visual representation of workflow execution and dependencies
-      - A code editor
-      - A project management tool
-      - A testing framework
+      - A monitoring system for CI/CD pipelines
+      - A code review tool for repositories
+      - A testing framework for deployment processes
     correct_answer: 0
-    explanation: GitHub Actions Workflow Visualization provides a graphical view of workflow execution, helping you understand job dependencies and execution flow.
+    explanation: Workflow Visualization provides a graphical overview of execution flow and dependencies in GitHub Actions workflows, making debugging and optimization easier.
     source: https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/using-the-visualization-graph
 
   - id: github_a6
     question: What is GitHub's IP Allow List?
     options:
       - A security feature to restrict access from specific IP addresses
-      - A network monitoring tool
-      - A deployment platform
-      - A testing service
+      - A monitoring tool for tracking repository access
+      - A testing service for GitHub Actions workflows
+      - A deployment feature for CI/CD pipelines
     correct_answer: 0
-    explanation: IP Allow List is a security feature that lets enterprise organizations control access to their assets by specifying allowed IP addresses.
+    explanation: The IP Allow List enhances security by allowing organizations to control access to their assets based on specified IP addresses.
     source: https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization
 
   - id: github_a7
     question: What is GitHub's Required Status Checks?
     options:
       - A branch protection rule requiring specific checks to pass before merging
-      - A testing framework
-      - A deployment tool
-      - A code review system
+      - A tool for testing CI/CD workflows
+      - A deployment feature for managing releases
+      - A monitoring tool for repository events
     correct_answer: 0
-    explanation: Required Status Checks is a branch protection feature that ensures specific checks (like tests or deployments) pass successfully before changes can be merged.
+    explanation: Required Status Checks ensure that specified checks, such as tests or deployments, are successfully completed before changes are merged into a branch.
     source: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches#require-status-checks-before-merging
 
   - id: github_a8
     question: What is GitHub's Code Owners feature?
     options:
       - A system to automatically request reviews from designated owners
-      - A code scanning tool
-      - A deployment platform
-      - A testing framework
+      - A testing framework for repository workflows
+      - A monitoring tool for repository changes
+      - A deployment system for CI/CD pipelines
     correct_answer: 0
-    explanation: Code Owners automatically requests reviews from designated team members when changes are made to specific files or directories in a repository.
+    explanation: Code Owners automatically assigns review requests to designated team members when changes are made to specific files or directories in a repository.
     source: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
   - id: github_a9
     question: What is GitHub's Repository Rule Sets?
     options:
       - A way to define and enforce repository rules across an organization
-      - A code review tool
-      - A deployment system
-      - A testing framework
+      - A monitoring tool for repository activity
+      - A testing feature for deployment processes
+      - A code scanning tool for repositories
     correct_answer: 0
-    explanation: Repository Rule Sets allow organizations to define and enforce consistent rules across multiple repositories, ensuring standardized protection and workflow requirements.
+    explanation: Repository Rule Sets allow organizations to define and enforce consistent rules across repositories, ensuring standardized protection and workflow configurations.
     source: https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-repository-rules-for-your-organization
 
   - id: github_a10
     question: What is GitHub's Secret Scanning?
     options:
       - A security feature that detects and alerts on committed secrets
-      - A code review tool
-      - A deployment platform
-      - A testing service
+      - A monitoring system for repository workflows
+      - A testing framework for GitHub Actions
+      - A deployment tool for managing CI/CD processes
     correct_answer: 0
-    explanation: Secret Scanning is a security feature that scans repositories for known types of secrets (like API keys or tokens) and alerts you when they are detected.
-    source: https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning 
+    explanation: Secret Scanning identifies exposed secrets in a repository and provides alerts to help prevent unauthorized access or data breaches.
+    source: https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning

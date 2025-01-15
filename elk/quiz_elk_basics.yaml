@@ -6,109 +6,109 @@ questions:
   - id: elk_b1
     question: What is the ELK Stack?
     options:
-      - A collection of three open source projects - Elasticsearch, Logstash, and Kibana
-      - A programming language for data analysis
-      - A database management system
-      - A web server stack
+      - A collection of three open source projects
+      - A programming language used for analyzing data
+      - A database management and visualization system
+      - A web server stack for hosting applications
     correct_answer: 0
-    explanation: The ELK Stack is a collection of three open source projects - Elasticsearch (search and analytics engine), Logstash (data processing pipeline), and Kibana (data visualization).
+    explanation: The ELK Stack is a collection of three open source projects - Elasticsearch (search engine), Logstash (data processing pipeline), and Kibana (data visualization tool).
     source: https://www.elastic.co/what-is/elk-stack
 
   - id: elk_b2
     question: What is Elasticsearch primarily used for?
     options:
-      - A distributed search and analytics engine
-      - A web server
-      - A programming language
-      - A database backup tool
+      - A distributed search and analytics engine for large-scale data
+      - A simple web server for hosting static content
+      - A programming language designed for log analysis
+      - A tool for managing database backups efficiently
     correct_answer: 0
-    explanation: Elasticsearch is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases, primarily used for full-text search and log analytics.
+    explanation: Elasticsearch is a distributed, RESTful search and analytics engine used for full-text search, log analytics, and other use cases.
     source: https://www.elastic.co/elasticsearch/
 
   - id: elk_b3
     question: What is the main function of Logstash?
     options:
-      - To collect, process, and forward log data
-      - To display graphs and charts
-      - To store data permanently
-      - To manage user authentication
+      - To collect, process, and forward log and event data seamlessly
+      - To generate visualizations and dashboards for analysis
+      - To store data persistently for long-term analytics
+      - To authenticate users accessing Elasticsearch securely
     correct_answer: 0
-    explanation: Logstash is a data processing pipeline that ingests data from multiple sources simultaneously, transforms it, and then sends it to your favorite "stash" (like Elasticsearch).
+    explanation: Logstash is a data processing pipeline that collects data from multiple sources, processes it, and forwards it to destinations like Elasticsearch.
     source: https://www.elastic.co/logstash/
 
   - id: elk_b4
     question: What is Kibana used for?
     options:
-      - To visualize and explore data stored in Elasticsearch
-      - To process log files
-      - To store data
-      - To collect metrics
+      - To visualize and explore data stored in Elasticsearch databases
+      - To collect and process log files from various sources
+      - To store and manage large amounts of raw data effectively
+      - To collect and analyze system metrics from multiple servers
     correct_answer: 0
-    explanation: Kibana is a data visualization and management tool for Elasticsearch that provides real-time histograms, line graphs, pie charts, and maps.
+    explanation: Kibana is a visualization and management tool for Elasticsearch that offers real-time histograms, line graphs, pie charts, and maps.
     source: https://www.elastic.co/kibana/
 
   - id: elk_b5
     question: What type of data format does Elasticsearch use?
     options:
-      - JSON
-      - XML
-      - CSV
-      - Plain text
+      - JSON for both storing and retrieving data easily
+      - XML for defining structured and semi-structured data
+      - CSV for managing tabular and row-based data
+      - Plain text for storing unstructured log files
     correct_answer: 0
-    explanation: Elasticsearch uses JSON (JavaScript Object Notation) as its data format for both requests and responses, making it easy to work with from any programming language.
+    explanation: Elasticsearch uses JSON as its data format for both requests and responses, making it easy to interact with from various programming languages.
     source: https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html
 
   - id: elk_b6
     question: What is an index in Elasticsearch?
     options:
-      - A collection of documents with similar characteristics
-      - A backup of data
-      - A type of graph in Kibana
-      - A Logstash filter
+      - A collection of documents with similar characteristics for search
+      - A backup of data stored in Elasticsearch securely
+      - A type of visualization created in Kibana dashboards
+      - A filter applied to data processed by Logstash
     correct_answer: 0
-    explanation: An index in Elasticsearch is a collection of documents that have similar characteristics and is identified by a name that is used to refer to the index when performing indexing, search, update, and delete operations.
+    explanation: An index in Elasticsearch is a collection of documents that share similar characteristics, enabling efficient indexing and searching.
     source: https://www.elastic.co/guide/en/elasticsearch/reference/current/indices.html
 
   - id: elk_b7
     question: What is a Logstash pipeline?
     options:
-      - A series of stages that process data (input → filter → output)
-      - A network connection
-      - A type of database
-      - A visualization tool
+      - A series of stages that process data from input to output
+      - A network connection established between nodes
+      - A specific type of database for storing logs
+      - A visualization tool used for exploring data
     correct_answer: 0
-    explanation: A Logstash pipeline consists of three stages: inputs (ingesting data), filters (modifying and transforming data), and outputs (sending data to various destinations).
+    explanation: "A Logstash pipeline consists of three stages: inputs (to ingest data), filters (to transform data), and outputs (to send data to destinations like Elasticsearch)."
     source: https://www.elastic.co/guide/en/logstash/current/pipeline.html
 
   - id: elk_b8
     question: What is a Dashboard in Kibana?
     options:
-      - A collection of visualizations, searches, and maps
-      - A single graph
-      - A data source
-      - A type of database
+      - A collection of visualizations, searches, and maps for analysis
+      - A single graph or chart created in Kibana visualizations
+      - A database system for storing event and metric data
+      - A type of data source used for creating visualizations
     correct_answer: 0
-    explanation: A Kibana Dashboard is a collection of visualizations, searches, and maps that provide a comprehensive view of your data and can be shared with other users.
+    explanation: A Kibana Dashboard is a collection of visualizations, searches, and maps that provide a comprehensive view of your data in Elasticsearch.
     source: https://www.elastic.co/guide/en/kibana/current/dashboard.html
 
   - id: elk_b9
     question: What is Beats in relation to the ELK Stack?
     options:
-      - Lightweight data shippers that send data to Logstash or Elasticsearch
-      - A visualization type
-      - A database system
-      - A search engine
+      - Lightweight data shippers for sending logs or metrics to Elasticsearch
+      - A specific visualization type available in Kibana dashboards
+      - A database system integrated with Elasticsearch and Logstash
+      - A search engine optimized for high-speed querying of logs
     correct_answer: 0
-    explanation: Beats are lightweight data shippers that you install as agents on your servers to send specific types of operational data to Elasticsearch or Logstash.
+    explanation: Beats are lightweight data shippers that send specific types of operational data from servers to Elasticsearch or Logstash for processing.
     source: https://www.elastic.co/beats/
 
   - id: elk_b10
     question: What is the default port for Elasticsearch?
     options:
-      - 9200
-      - 8080
-      - 3306
-      - 5601
+      - 9200 for the REST API used to interact with Elasticsearch
+      - 8080 for HTTP-based web applications hosted on the stack
+      - 3306 for connecting to database management systems like MySQL
+      - 5601 for accessing Kibana dashboards and visualizations
     correct_answer: 0
-    explanation: The default port for Elasticsearch HTTP API is 9200, which is used for REST API calls to interact with Elasticsearch.
-    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-network.html 
+    explanation: The default port for Elasticsearch's HTTP API is 9200, which is used for REST API calls to interact with the Elasticsearch service.
+    source: https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-network.html

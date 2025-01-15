@@ -9,9 +9,9 @@ questions:
     question: What is Git?
     options:
       - A distributed version control system
-      - A programming language
       - A web hosting service
-      - A code editor
+      - A programming language for developers
+      - A code editor for version tracking
     correct_answer: 0
     explanation: Git is a distributed version control system that tracks changes in source code during software development, enabling multiple developers to work together on non-linear development.
     source: https://git-scm.com/about
@@ -20,8 +20,8 @@ questions:
     question: What command initializes a new Git repository?
     options:
       - git init
-      - git start
       - git create
+      - git start
       - git new
     correct_answer: 0
     explanation: The 'git init' command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository.
@@ -32,8 +32,8 @@ questions:
     options:
       - git clone
       - git copy
-      - git download
       - git fetch
+      - git download
     correct_answer: 0
     explanation: The 'git clone' command copies a remote repository to your local machine, creating a new directory, initializing a .git directory inside it, and pulling all repository data.
     source: https://git-scm.com/docs/git-clone
@@ -42,8 +42,8 @@ questions:
     question: What command adds files to the staging area?
     options:
       - git add
-      - git stage
       - git commit
+      - git stage
       - git push
     correct_answer: 0
     explanation: The 'git add' command adds file contents to the staging area (index), preparing them for the next commit.
@@ -64,9 +64,9 @@ questions:
     question: What command shows the status of files in the working directory?
     options:
       - git status
-      - git info
       - git check
       - git show
+      - git info
     correct_answer: 0
     explanation: The 'git status' command displays the state of the working directory and the staging area, showing which changes have been staged, which haven't, and which files aren't being tracked by Git.
     source: https://git-scm.com/docs/git-status
@@ -75,9 +75,9 @@ questions:
     question: What command creates a new branch?
     options:
       - git branch
-      - git create
-      - git new
       - git checkout
+      - git new
+      - git create
     correct_answer: 0
     explanation: The 'git branch' command creates a new branch. To create and switch to a new branch in one command, you can use 'git checkout -b branch-name'.
     source: https://git-scm.com/docs/git-branch
@@ -97,9 +97,9 @@ questions:
     question: What command shows the commit history?
     options:
       - git log
-      - git history
       - git show
       - git commits
+      - git history
     correct_answer: 0
     explanation: The 'git log' command shows the commit history, displaying information about previous commits including their hash, author, date, and commit message.
     source: https://git-scm.com/docs/git-log
@@ -108,9 +108,9 @@ questions:
     question: What command downloads changes from a remote repository?
     options:
       - git pull
-      - git download
       - git fetch
       - git sync
+      - git download
     correct_answer: 0
     explanation: The 'git pull' command fetches changes from a remote repository and integrates them into the current branch. It's essentially a combination of 'git fetch' and 'git merge'.
     source: https://git-scm.com/docs/git-pull

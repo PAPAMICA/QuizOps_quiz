@@ -6,10 +6,10 @@ questions:
   - id: ansible_a1
     question: What is the purpose of 'strategy plugins' in Ansible and how do they differ from the standard linear strategy?
     options:
-      - They control task execution across hosts with different algorithms than linear execution
-      - They only affect the order of host execution
-      - They are used for plugin management
-      - They control variable precedence
+      - They manage task execution across hosts using different approaches, not just linear
+      - They focus solely on changing the sequence in which hosts are executed in playbooks
+      - They are utilized specifically for managing and organizing plugins in Ansible setups
+      - They are employed to define variable precedence rules used during playbook runs
     correct_answer: 0
     explanation: Strategy plugins determine how playbooks are executed across hosts, with options like linear (default), free (parallel), and debug (interactive), each offering different approaches to task execution and host synchronization.
     source: https://docs.ansible.com/ansible/latest/plugins/strategy.html
@@ -17,10 +17,10 @@ questions:
   - id: ansible_a2
     question: How can you implement custom facts in Ansible?
     options:
-      - By creating scripts in /etc/ansible/facts.d/ ending in .fact
-      - By defining facts in the inventory file
-      - By using set_fact in playbooks only
-      - By modifying the ansible.cfg file
+      - By adding scripts in /etc/ansible/facts.d/ that output JSON data and have .fact extensions
+      - By writing custom entries directly into the inventory file used during execution runs
+      - By defining custom values using the set_fact module directly in Ansible playbooks
+      - By modifying the ansible.cfg file to support additional fact configurations globally
     correct_answer: 0
     explanation: Custom facts can be implemented by placing executable scripts that output JSON in /etc/ansible/facts.d/ with a .fact extension, which Ansible will automatically collect during fact gathering.
     source: https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html
@@ -28,10 +28,10 @@ questions:
   - id: ansible_a3
     question: What is the purpose of 'callback plugins' in Ansible?
     options:
-      - To customize output formatting and handle responses from playbook execution
-      - To handle network callbacks only
-      - To manage system callbacks
-      - To process asynchronous tasks
+      - To customize how output is displayed and control events triggered during playbook runs
+      - To handle specific network-based callback events that occur during task execution
+      - To manage internal system-based callbacks triggered while tasks are performed
+      - To process tasks that require asynchronous handling and special completion responses
     correct_answer: 0
     explanation: Callback plugins enable you to customize how Ansible displays output, responds to certain events during playbook execution, and processes task results.
     source: https://docs.ansible.com/ansible/latest/plugins/callback.html
@@ -39,10 +39,10 @@ questions:
   - id: ansible_a4
     question: How do you implement 'delegation' in Ansible and what is its primary use case?
     options:
-      - Using delegate_to to run tasks on different hosts than the inventory target
-      - Using delegation to assign tasks to specific users
-      - Using delegation for load balancing
-      - Using delegation to manage task priority
+      - By using the delegate_to keyword to execute tasks on a host other than the target
+      - By assigning specific tasks within playbooks to individual users or groups explicitly
+      - By leveraging delegation methods to distribute tasks more evenly across hosts
+      - By prioritizing certain tasks to ensure critical actions are completed before others
     correct_answer: 0
     explanation: Delegation (delegate_to) allows tasks to be executed on a different host than the inventory target, useful for scenarios like load balancer management or monitoring system updates.
     source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_delegation.html
@@ -50,10 +50,10 @@ questions:
   - id: ansible_a5
     question: What is the purpose of 'action plugins' in Ansible?
     options:
-      - To extend Ansible's core functionality by preprocessing tasks before execution
-      - To manage plugin actions only
-      - To handle post-task actions
-      - To manage file operations
+      - To preprocess tasks and extend core functionality before tasks run on target hosts
+      - To manage the actions performed specifically by other plugins within the playbook
+      - To handle special operations required after the execution of certain playbook tasks
+      - To support file-related actions that require coordination during task execution runs
     correct_answer: 0
     explanation: Action plugins preprocess tasks before execution on target hosts, allowing for complex operations that require manipulation of data or coordination with the control node.
     source: https://docs.ansible.com/ansible/latest/plugins/action.html
@@ -61,10 +61,10 @@ questions:
   - id: ansible_a6
     question: How can you implement custom filters in Ansible?
     options:
-      - By creating Python modules with filter plugins that extend Jinja2
-      - By defining filters in ansible.cfg
-      - By using built-in filters only
-      - By creating YAML filter definitions
+      - By writing Python modules that extend Jinja2 filtering to add custom data manipulation
+      - By defining new filters directly in the ansible.cfg configuration for global availability
+      - By leveraging only the built-in filtering features already available in Ansible playbooks
+      - By creating YAML templates that provide additional filtering capabilities for tasks
     correct_answer: 0
     explanation: Custom filters are implemented by creating Python modules that extend Jinja2's filtering capabilities, allowing for complex data manipulation in templates and playbooks.
     source: https://docs.ansible.com/ansible/latest/dev_guide/developing_plugins.html#filter-plugins
@@ -72,10 +72,10 @@ questions:
   - id: ansible_a7
     question: What is the purpose of 'serial' in Ansible playbooks and how does it affect execution?
     options:
-      - To control how many hosts are processed simultaneously during playbook execution
-      - To manage serial connections only
-      - To handle serial port configurations
-      - To process tasks in serial order
+      - To specify how many hosts are processed together during rolling updates in deployments
+      - To manage specific serial port-related configurations that apply to target systems
+      - To define task execution strictly in sequential order for the specified target hosts
+      - To enable task-level controls that process one host at a time during playbook execution
     correct_answer: 0
     explanation: The 'serial' keyword controls rolling updates by specifying how many hosts should be processed simultaneously, useful for maintaining service availability during deployments.
     source: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_strategies.html
@@ -83,10 +83,10 @@ questions:
   - id: ansible_a8
     question: How do you implement dynamic inventory in Ansible?
     options:
-      - By creating a script that outputs JSON/YAML in the expected format
-      - By manually updating inventory files
-      - By using static inventory only
-      - By using environment variables
+      - By creating scripts or plugins that dynamically generate inventory in JSON or YAML format
+      - By manually editing and updating inventory files to reflect the latest infrastructure
+      - By relying on static inventory files only, without using dynamic external data sources
+      - By exporting environment variables that define the required inventory during execution
     correct_answer: 0
     explanation: Dynamic inventory is implemented through scripts or plugins that generate inventory information in real-time, often pulling data from external sources like cloud providers or CMDBs.
     source: https://docs.ansible.com/ansible/latest/dev_guide/developing_inventory.html
@@ -94,10 +94,10 @@ questions:
   - id: ansible_a9
     question: What is the purpose of 'connection plugins' in Ansible?
     options:
-      - To define how Ansible connects to and executes commands on target hosts
-      - To manage network connections only
-      - To handle database connections
-      - To manage API connections
+      - To define methods like SSH, WinRM, or local for communicating with target systems
+      - To manage only the network-based connection tasks performed during playbook execution
+      - To support database-related connection methods used by modules in specific tasks
+      - To handle API-based communications required for certain custom task executions
     correct_answer: 0
     explanation: Connection plugins define how Ansible communicates with target hosts, including methods like SSH, WinRM, or local connections, and handle command execution specifics.
     source: https://docs.ansible.com/ansible/latest/plugins/connection.html
@@ -105,10 +105,10 @@ questions:
   - id: ansible_a10
     question: How can you implement custom modules in Ansible?
     options:
-      - By creating Python scripts that follow Ansible's module development guidelines
-      - By modifying existing modules only
-      - By using shell scripts
-      - By creating YAML definitions
+      - By developing Python scripts that follow Ansible’s module guidelines for compatibility
+      - By modifying and extending pre-existing modules provided in the Ansible core libraries
+      - By using shell scripts to handle specific operations for unique playbook requirements
+      - By writing YAML definitions that include tasks and variables for custom module actions
     correct_answer: 0
     explanation: Custom modules are implemented as Python scripts that follow Ansible's module development guidelines, including proper argument handling, documentation, and return value formatting.
-    source: https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html 
+    source: https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html

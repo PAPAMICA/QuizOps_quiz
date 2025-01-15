@@ -9,108 +9,108 @@ questions:
     question: What is Cloud HSM in GCP?
     options:
       - A hardware security module service for key management and cryptographic operations
-      - A high-speed memory service
-      - A hybrid storage management system
-      - A health monitoring service
+      - A high-speed memory service for temporary storage operations
+      - A hybrid storage management system for distributed environments
+      - A health monitoring service for cloud resource performance
     correct_answer: 0
-    explanation: Cloud HSM is a cloud-hosted Hardware Security Module service that allows you to host encryption keys and perform cryptographic operations in FIPS 140-2 Level 3 certified HSMs.
+    explanation: Cloud HSM is a Hardware Security Module service in Google Cloud that hosts encryption keys and performs cryptographic operations within FIPS 140-2 Level 3 certified modules.
     source: https://cloud.google.com/kms/docs/hsm
 
   - id: gcp_a2
     question: What is the purpose of VPC Service Controls?
     options:
-      - Define security perimeters around Google Cloud resources to prevent data exfiltration
-      - Manage virtual machine instances
-      - Configure load balancing
-      - Monitor network traffic
+      - Define security perimeters around resources to prevent data exfiltration
+      - Manage virtual machine instances and their storage settings
+      - Configure advanced load balancing for high-traffic services
+      - Monitor network traffic and optimize routing between subnets
     correct_answer: 0
-    explanation: VPC Service Controls enable you to establish security perimeters around resources, helping prevent data exfiltration and maintaining compliance with data privacy regulations.
+    explanation: VPC Service Controls help establish security perimeters around Google Cloud resources to prevent data exfiltration and ensure compliance with data protection regulations.
     source: https://cloud.google.com/vpc-service-controls/docs/overview
 
   - id: gcp_a3
     question: What is Cloud TPU?
     options:
       - A specialized hardware accelerator for machine learning workloads
-      - A traffic processing unit
-      - A temporary processing utility
-      - A testing and profiling utility
+      - A traffic processing unit for optimizing data routing in networks
+      - A temporary processing utility for handling batch operations
+      - A testing and profiling utility for debugging cloud applications
     correct_answer: 0
-    explanation: Cloud TPU (Tensor Processing Unit) is a custom-designed machine learning ASIC that accelerates TensorFlow workloads, specifically optimized for deep learning applications.
+    explanation: Cloud TPU is a Tensor Processing Unit specifically designed to accelerate machine learning models, with optimizations for TensorFlow and deep learning tasks.
     source: https://cloud.google.com/tpu/docs/overview
 
   - id: gcp_a4
     question: What is the purpose of Cloud Endpoints?
     options:
       - Develop, deploy, protect, and monitor APIs on GCP
-      - Connect network endpoints
-      - Monitor endpoint devices
-      - Manage storage endpoints
+      - Connect network endpoints to regional cloud zones
+      - Monitor endpoint devices for system security breaches
+      - Manage storage endpoints across distributed systems
     correct_answer: 0
-    explanation: Cloud Endpoints is a distributed API management system that helps you develop, deploy, secure, and monitor APIs running on Google Cloud or anywhere else.
+    explanation: Cloud Endpoints is a distributed API management system that supports API development, deployment, security, and monitoring on Google Cloud and other platforms.
     source: https://cloud.google.com/endpoints/docs/overview
 
   - id: gcp_a5
     question: What is Anthos?
     options:
-      - A hybrid and multi-cloud application platform
-      - An antivirus service
-      - A monitoring tool
-      - A database service
+      - A hybrid and multi-cloud application platform for managing deployments
+      - An antivirus service for protecting workloads in the cloud
+      - A monitoring tool for observing cloud application performance
+      - A database service for managing large-scale transactional data
     correct_answer: 0
-    explanation: Anthos is a modern application management platform that provides consistent development and operations experience for cloud and on-premises environments.
+    explanation: Anthos provides a unified platform for managing applications across on-premises, Google Cloud, and other public clouds, enabling consistent development and operations.
     source: https://cloud.google.com/anthos/docs/concepts/overview
 
   - id: gcp_a6
     question: What is Cloud Bigtable's architecture based on?
     options:
-      - Google's Bigtable whitepaper and internal system
-      - Traditional SQL databases
-      - MongoDB architecture
-      - Redis architecture
+      - Google's Bigtable whitepaper and internal system design
+      - Traditional SQL databases for structured data management
+      - MongoDB architecture for handling JSON-based data
+      - Redis architecture for low-latency data processing
     correct_answer: 0
-    explanation: Cloud Bigtable is based on the original Bigtable system described in Google's Bigtable whitepaper, which inspired many NoSQL databases like HBase and Cassandra.
+    explanation: Cloud Bigtable leverages Google's Bigtable system, which is described in the Bigtable whitepaper and serves as the foundation for many NoSQL databases.
     source: https://cloud.google.com/bigtable/docs/overview
 
   - id: gcp_a7
     question: What is the purpose of Identity-Aware Proxy (IAP)?
     options:
       - Establish a central authorization layer for applications accessed by HTTPS
-      - Route network traffic
-      - Monitor system performance
-      - Manage storage access
+      - Route network traffic to specific virtual machines within a region
+      - Monitor system performance for improving service availability
+      - Manage storage access permissions for distributed applications
     correct_answer: 0
-    explanation: Identity-Aware Proxy (IAP) lets you establish a central authorization layer for applications accessed by HTTPS, enabling you to adopt Zero Trust security policies.
+    explanation: Identity-Aware Proxy provides centralized access control for web applications, allowing secure access while supporting Zero Trust security principles.
     source: https://cloud.google.com/iap/docs/concepts-overview
 
   - id: gcp_a8
     question: What is Cloud Dataprep?
     options:
       - An intelligent data service for visually exploring, cleaning, and preparing data
-      - A data backup service
-      - A database system
-      - A monitoring tool
+      - A data backup service for archival and retrieval of structured data
+      - A database system optimized for real-time analytics processing
+      - A monitoring tool for tracking resource usage and data flow
     correct_answer: 0
-    explanation: Cloud Dataprep is an intelligent data service for visually exploring, cleaning, and preparing structured and unstructured data for analysis, reporting, and machine learning.
+    explanation: Cloud Dataprep helps users visually explore, clean, and prepare structured and unstructured data for use in analytics, reporting, and machine learning applications.
     source: https://cloud.google.com/dataprep/docs/concepts/overview
 
   - id: gcp_a9
     question: What is the purpose of Cloud Asset Inventory?
     options:
       - Provide a historical view of cloud assets and their relationships
-      - Track physical assets
-      - Monitor system performance
-      - Manage storage inventory
+      - Track physical assets and equipment across data centers
+      - Monitor system performance for identifying bottlenecks in services
+      - Manage storage inventory for optimizing resource allocation
     correct_answer: 0
-    explanation: Cloud Asset Inventory provides a historical view of GCP assets, enabling you to monitor and analyze resources and IAM policies across your organization over time.
+    explanation: Cloud Asset Inventory offers visibility into the history and relationships of GCP assets, helping users analyze resource configurations and IAM policies.
     source: https://cloud.google.com/asset-inventory/docs/overview
 
   - id: gcp_a10
     question: What is Cloud Deploy?
     options:
       - A managed continuous delivery service to promote releases across environments
-      - A deployment monitoring tool
-      - A virtual machine deployment service
-      - A database deployment system
+      - A deployment monitoring tool for ensuring system uptime
+      - A virtual machine deployment service for automating instance creation
+      - A database deployment system for distributing transactional workloads
     correct_answer: 0
-    explanation: Cloud Deploy is a managed continuous delivery service that automates the delivery of applications to a series of target environments in a progressive manner.
-    source: https://cloud.google.com/deploy/docs/overview 
+    explanation: Cloud Deploy automates the progressive delivery of applications across multiple target environments, simplifying the continuous delivery pipeline.
+    source: https://cloud.google.com/deploy/docs/overview

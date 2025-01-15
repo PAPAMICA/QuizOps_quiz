@@ -8,10 +8,10 @@ questions:
   - id: q1
     question: How does Docker's seccomp profile enhance container security?
     options:
-      - By restricting the system calls available to containers based on a security profile
-      - By encrypting container data
-      - By scanning for vulnerabilities
-      - By isolating networks
+      - By restricting the system calls available to containers using security profiles
+      - By encrypting container data to ensure secure storage on the host machine
+      - By scanning containers for known vulnerabilities and malware threats
+      - By isolating container networks to prevent unauthorized data access
     explanation: Docker's seccomp (secure computing mode) profiles enhance security by limiting which system calls a container can make to the host kernel, reducing the potential attack surface.
     source: "Docker Documentation - https://docs.docker.com/engine/security/seccomp/"
     correct_answer: 0
@@ -19,10 +19,10 @@ questions:
   - id: q2
     question: What are the implications of using --privileged flag with Docker containers?
     options:
-      - It gives containers full access to host devices and kernel capabilities, potentially compromising security
-      - It only affects network access
-      - It only impacts storage access
-      - It only changes container names
+      - It gives containers full access to host devices and kernel capabilities
+      - It only affects the container’s network connectivity and performance
+      - It only impacts the ability to store and retrieve container data
+      - It only changes the names of containers without other security concerns
     explanation: The --privileged flag gives containers nearly all the same capabilities as processes running on the host, which can be dangerous as it bypasses security restrictions.
     source: "Docker Documentation - https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities"
     correct_answer: 0
@@ -30,10 +30,10 @@ questions:
   - id: q3
     question: How does Docker's copy-on-write (CoW) storage driver optimize container storage?
     options:
-      - By sharing common layers between images and only copying data when it's modified
-      - By compressing all data
-      - By using external storage
-      - By limiting storage size
+      - By sharing common image layers and only copying data when modified
+      - By compressing container data to minimize disk usage and improve performance
+      - By integrating with external storage systems for efficient data handling
+      - By limiting storage size to enforce data management policies for containers
     explanation: The copy-on-write storage driver optimizes storage and memory use by sharing common image layers between containers and only copying data when it's modified.
     source: "Docker Documentation - https://docs.docker.com/storage/storagedriver/"
     correct_answer: 0
@@ -41,10 +41,10 @@ questions:
   - id: q4
     question: What is the purpose of Docker's experimental features and how are they managed?
     options:
-      - To test new features before they become stable by enabling them through daemon configuration
-      - To improve performance automatically
-      - To add security features
-      - To modify existing features
+      - To test new features by enabling them through Docker daemon configuration
+      - To improve system performance and reliability automatically over time
+      - To add enhanced security functionalities for protecting containerized apps
+      - To modify existing Docker features based on feedback and development needs
     explanation: Experimental features allow testing of new Docker functionality before it becomes stable, managed through daemon configuration and providing feedback for feature development.
     source: "Docker Documentation - https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file"
     correct_answer: 0
@@ -53,9 +53,9 @@ questions:
     question: How does Docker handle inter-container communication security in overlay networks?
     options:
       - By implementing IPSEC encryption and managing keys through the swarm control plane
-      - By using basic authentication
-      - By disabling all communication
-      - By using public networks
+      - By using basic authentication methods to ensure secure container access
+      - By disabling all inter-container communication for sensitive applications
+      - By allowing containers to communicate over public networks for simplicity
     explanation: Docker secures inter-container communication in overlay networks using IPSEC encryption, with automatic key management handled by the swarm control plane.
     source: "Docker Documentation - https://docs.docker.com/network/overlay/#encrypt-traffic-on-an-overlay-network"
     correct_answer: 0
@@ -63,10 +63,10 @@ questions:
   - id: q6
     question: What role do capabilities play in Docker container security?
     options:
-      - They provide fine-grained control over privileged operations without giving full root access
-      - They only affect network access
-      - They only control storage
-      - They only impact logging
+      - They provide fine-grained control over privileged operations without full root access
+      - They only impact the ability of containers to communicate over networks
+      - They only control the way containers access local and remote storage resources
+      - They only provide logging capabilities for monitoring container activities
     explanation: Linux capabilities in Docker provide fine-grained control over privileged operations, allowing containers to perform specific privileged operations without full root access.
     source: "Docker Documentation - https://docs.docker.com/engine/security/security/#linux-kernel-capabilities"
     correct_answer: 0
@@ -75,9 +75,9 @@ questions:
     question: How does Docker's built-in orchestration handle node failure in a swarm?
     options:
       - By automatically rescheduling containers from failed nodes to healthy nodes
-      - By shutting down the cluster
-      - By ignoring the failure
-      - By requiring manual intervention
+      - By shutting down the swarm cluster entirely until failures are resolved
+      - By ignoring the node failure and continuing operations without changes
+      - By requiring manual intervention to restore services after node failures
     explanation: Docker swarm mode automatically detects node failures and reschedules containers from failed nodes to healthy nodes, maintaining service availability.
     source: "Docker Documentation - https://docs.docker.com/engine/swarm/how-swarm-mode-works/nodes/"
     correct_answer: 0
@@ -85,10 +85,10 @@ questions:
   - id: q8
     question: What are the security implications of using Docker socket mounting?
     options:
-      - It can give containers complete control over the Docker daemon, potentially compromising host security
-      - It only affects logging
-      - It only impacts performance
-      - It only changes networking
+      - It can give containers control over the Docker daemon, risking host security
+      - It only affects the way logging is handled for containerized applications
+      - It only impacts the overall performance of containers and their runtime
+      - It only changes the networking configurations used by container services
     explanation: Mounting the Docker socket gives containers access to the Docker daemon API, potentially allowing them to create, modify, or delete containers and access host resources.
     source: "Docker Documentation - https://docs.docker.com/engine/security/protect-access/"
     correct_answer: 0
@@ -96,10 +96,10 @@ questions:
   - id: q9
     question: How does Docker's resource quotas mechanism work at the daemon level?
     options:
-      - By setting system-wide limits on resources like CPU, memory, and storage that containers can use
-      - By affecting single containers only
-      - By limiting network access only
-      - By restricting image downloads
+      - By setting system-wide limits on resources like CPU, memory, and storage
+      - By affecting single container resource allocation policies and constraints
+      - By limiting the network usage of containers to ensure optimal performance
+      - By restricting the ability to download container images from external sources
     explanation: Docker daemon-level resource quotas allow setting system-wide limits on resources that containers can consume, helping prevent resource exhaustion on the host.
     source: "Docker Documentation - https://docs.docker.com/config/containers/resource_constraints/"
     correct_answer: 0
@@ -107,10 +107,10 @@ questions:
   - id: q10
     question: What are the implications of using user namespaces in Docker?
     options:
-      - They map container user IDs to different host IDs, providing additional security isolation
-      - They only affect network isolation
-      - They only impact storage access
-      - They only change container names
+      - They map container user IDs to host IDs, enhancing isolation and security
+      - They only affect network isolation by restricting container communication
+      - They only impact storage access by limiting read and write permissions
+      - They only modify container names without other significant security effects
     explanation: User namespaces provide an additional layer of security by mapping container user IDs to different host IDs, reducing the risk of privilege escalation attacks.
     source: "Docker Documentation - https://docs.docker.com/engine/security/userns-remap/"
-    correct_answer: 0 
+    correct_answer: 0

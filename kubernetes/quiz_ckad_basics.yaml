@@ -1,0 +1,116 @@
+id: ckad_basics
+category: ckad
+level: beginner
+title: CKAD Certification Basics
+description: Learn fundamental Kubernetes application development concepts
+
+questions:
+  - id: q1
+    question: How do you create a basic pod configuration?
+    options:
+      - Define container specifications and resource requirements properly
+      - Monitor pod status without configuration settings
+      - Track container logs without pod specifications
+      - Display resource usage without proper definitions
+    explanation: Pod configurations define container specifications and resource requirements.
+    source: "https://kubernetes.io/docs/concepts/workloads/pods/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the purpose of container probes?
+    options:
+      - Check container health and readiness for traffic
+      - Monitor container logs without health checks
+      - Track container metrics without probe definitions
+      - Display container status without health verification
+    explanation: Probes determine container health and readiness states.
+    source: "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you manage application configurations?
+    options:
+      - Use ConfigMaps and Secrets for application settings
+      - Monitor configuration changes without proper management
+      - Track application settings without structured storage
+      - Display configuration data without secure handling
+    explanation: ConfigMaps and Secrets provide ways to manage application configurations.
+    source: "https://kubernetes.io/docs/concepts/configuration/configmap/"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the purpose of Deployments?
+    options:
+      - Manage application rollouts and scaling operations
+      - Monitor pod status without deployment controls
+      - Track container changes without version management
+      - Display application state without rollout capabilities
+    explanation: Deployments handle application rollouts and scaling operations.
+    source: "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
+    correct_answer: 0
+
+  - id: q5
+    question: How do you handle container resources?
+    options:
+      - Define resource requests and limits appropriately
+      - Monitor resource usage without proper limits
+      - Track container performance without specifications
+      - Display resource metrics without defined controls
+    explanation: Resource requests and limits ensure proper resource allocation.
+    source: "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the purpose of Services?
+    options:
+      - Expose applications with stable network endpoints
+      - Monitor network traffic without service definitions
+      - Track application access without endpoint management
+      - Display connection status without proper exposure
+    explanation: Services provide stable network endpoints for applications.
+    source: "https://kubernetes.io/docs/concepts/services-networking/service/"
+    correct_answer: 0
+
+  - id: q7
+    question: How do you manage application logs?
+    options:
+      - Access and analyze container log output
+      - Monitor application status without log access
+      - Track container events without logging setup
+      - Display pod status without log collection
+    explanation: Container logs help debug and monitor applications.
+    source: "https://kubernetes.io/docs/concepts/cluster-administration/logging/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of environment variables?
+    options:
+      - Configure application behavior at runtime properly
+      - Monitor application settings without variable management
+      - Track configuration changes without proper definition
+      - Display runtime parameters without structured setup
+    explanation: Environment variables configure application runtime behavior.
+    source: "https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/"
+    correct_answer: 0
+
+  - id: q9
+    question: How do you handle application storage?
+    options:
+      - Configure persistent storage for application data
+      - Monitor storage usage without volume definitions
+      - Track data persistence without proper setup
+      - Display storage metrics without volume management
+    explanation: Persistent storage ensures data survival across container restarts.
+    source: "https://kubernetes.io/docs/concepts/storage/persistent-volumes/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of labels?
+    options:
+      - Organize and select kubernetes objects effectively
+      - Monitor object status without proper organization
+      - Track resource groups without label definitions
+      - Display object relationships without proper tagging
+    explanation: Labels help organize and select Kubernetes objects.
+    source: "https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/"
+    correct_answer: 0 

@@ -1,0 +1,116 @@
+id: aws_devops_intermediate
+category: aws_devops
+level: intermediate
+title: AWS DevOps Certification Intermediate
+description: Master intermediate AWS DevOps concepts
+
+questions:
+  - id: q1
+    question: How do you implement AWS OpsWorks?
+    options:
+      - Configure managed instances using Chef automation
+      - Monitor server status without configuration tools
+      - Track instance health without automation features
+      - Display configuration data without management tools
+    explanation: OpsWorks provides managed instance configuration using Chef.
+    source: "https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html"
+    correct_answer: 0
+
+  - id: q2
+    question: What is AWS Service Catalog?
+    options:
+      - Create standardized infrastructure service portfolios
+      - Monitor service usage without portfolio controls
+      - Track resource deployment without standardization
+      - Display catalog items without management features
+    explanation: Service Catalog enables standardized infrastructure deployment.
+    source: "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you use AWS Config?
+    options:
+      - Assess resource compliance and configuration state
+      - Monitor resources without compliance checking
+      - Track changes without configuration history
+      - Display resource status without assessment tools
+    explanation: AWS Config evaluates resource configurations and compliance.
+    source: "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html"
+    correct_answer: 0
+
+  - id: q4
+    question: What is AWS X-Ray?
+    options:
+      - Analyze application behavior and performance
+      - Monitor basic metrics without tracing features
+      - Track service calls without analysis tools
+      - Display request data without debugging capabilities
+    explanation: X-Ray provides application tracing and analysis.
+    source: "https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html"
+    correct_answer: 0
+
+  - id: q5
+    question: How do you implement AWS Organizations?
+    options:
+      - Manage multiple AWS accounts centrally
+      - Monitor account usage without central control
+      - Track resource access without organization features
+      - Display account data without management tools
+    explanation: Organizations enables centralized AWS account management.
+    source: "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html"
+    correct_answer: 0
+
+  - id: q6
+    question: What is AWS Step Functions?
+    options:
+      - Coordinate distributed application components
+      - Monitor workflow status without coordination
+      - Track process execution without state management
+      - Display function data without workflow tools
+    explanation: Step Functions orchestrates distributed application workflows.
+    source: "https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html"
+    correct_answer: 0
+
+  - id: q7
+    question: How do you use AWS Parameter Store?
+    options:
+      - Manage configuration data and secrets centrally
+      - Monitor parameter usage without central storage
+      - Track configuration without secure management
+      - Display parameter data without security features
+    explanation: Parameter Store provides secure configuration management.
+    source: "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html"
+    correct_answer: 0
+
+  - id: q8
+    question: What is AWS EventBridge?
+    options:
+      - Create serverless event-driven applications
+      - Monitor events without routing capabilities
+      - Track service integration without event rules
+      - Display event data without processing features
+    explanation: EventBridge enables serverless event processing.
+    source: "https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html"
+    correct_answer: 0
+
+  - id: q9
+    question: How do you implement AWS Secrets Manager?
+    options:
+      - Protect sensitive application and service data
+      - Monitor secret usage without rotation features
+      - Track credentials without secure storage
+      - Display secret data without management tools
+    explanation: Secrets Manager secures and manages sensitive data.
+    source: "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html"
+    correct_answer: 0
+
+  - id: q10
+    question: What is AWS AppConfig?
+    options:
+      - Manage application configuration deployment safely
+      - Monitor settings without deployment controls
+      - Track changes without validation features
+      - Display config data without rollback options
+    explanation: AppConfig enables safe application configuration management.
+    source: "https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html"
+    correct_answer: 0 

@@ -1,0 +1,116 @@
+id: lfcs_basics
+category: lfcs
+level: beginner
+title: LFCS Certification Basics
+description: Learn fundamental concepts for Linux Foundation Certified System Administrator
+
+questions:
+  - id: q1
+    question: What command is used to view real-time system processes?
+    options:
+      - To monitor system processes with interactive process management capabilities
+      - To display static process information without real time updates
+      - To generate system resource usage reports periodically
+      - To list running services without process details
+    explanation: The top command provides real-time system process monitoring with interactive management capabilities.
+    source: "https://man7.org/linux/man-pages/man1/top.1.html"
+    correct_answer: 0
+
+  - id: q2
+    question: How do you check disk partition information in Linux?
+    options:
+      - To display partition information and disk space allocation details
+      - To monitor disk performance metrics without partition details
+      - To show file system types without partition information
+      - To list mounted devices without partition data
+    explanation: The fdisk -l command shows detailed partition information including size, type, and layout.
+    source: "https://man7.org/linux/man-pages/man8/fdisk.8.html"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the purpose of the /etc/passwd file?
+    options:
+      - To store basic user account information and configuration details
+      - To maintain system passwords and security credentials
+      - To track user login activity and session data
+      - To manage user group assignments exclusively
+    explanation: The /etc/passwd file contains essential user account information including username, UID, home directory, and shell.
+    source: "https://man7.org/linux/man-pages/man5/passwd.5.html"
+    correct_answer: 0
+
+  - id: q4
+    question: How do you check system boot messages?
+    options:
+      - To view kernel boot messages and system startup information
+      - To display current system status without boot data
+      - To show runtime errors without startup details
+      - To list service status without boot messages
+    explanation: The dmesg command displays kernel ring buffer messages including boot information and system messages.
+    source: "https://man7.org/linux/man-pages/man1/dmesg.1.html"
+    correct_answer: 0
+
+  - id: q5
+    question: What is the function of the umask command?
+    options:
+      - To set default permissions for newly created files and directories
+      - To modify existing file permissions system wide
+      - To change ownership of files and directories
+      - To display current file permissions only
+    explanation: umask sets the default permission mask for new files and directories created by the user.
+    source: "https://man7.org/linux/man-pages/man2/umask.2.html"
+    correct_answer: 0
+
+  - id: q6
+    question: How do you check system resource limits?
+    options:
+      - To display and modify system resource limits for users
+      - To show current resource usage without limits
+      - To monitor system performance metrics only
+      - To list process priorities without limits
+    explanation: The ulimit command shows and sets user limits for various system resources.
+    source: "https://man7.org/linux/man-pages/man1/ulimit.1.html"
+    correct_answer: 0
+
+  - id: q7
+    question: What is the purpose of the /etc/shadow file?
+    options:
+      - To store encrypted password information and account aging details
+      - To maintain user account names and home directories
+      - To track password change history only
+      - To manage group password information
+    explanation: The /etc/shadow file securely stores encrypted passwords and password aging information.
+    source: "https://man7.org/linux/man-pages/man5/shadow.5.html"
+    correct_answer: 0
+
+  - id: q8
+    question: How do you manage system services in systemd?
+    options:
+      - To start, stop, enable, and disable system services systematically
+      - To monitor service status without management capabilities
+      - To display service logs without control options
+      - To list running services without modification
+    explanation: systemctl manages systemd services including starting, stopping, enabling, and disabling services.
+    source: "https://www.freedesktop.org/software/systemd/man/systemctl.html"
+    correct_answer: 0
+
+  - id: q9
+    question: What is the function of the /etc/sysctl.conf file?
+    options:
+      - To configure kernel parameters and system settings permanently
+      - To display current kernel parameters without changes
+      - To monitor system performance settings only
+      - To list kernel modules without configuration
+    explanation: /etc/sysctl.conf configures kernel parameters that persist across system reboots.
+    source: "https://man7.org/linux/man-pages/man5/sysctl.conf.5.html"
+    correct_answer: 0
+
+  - id: q10
+    question: How do you check system load averages?
+    options:
+      - To display system load averages over different time periods
+      - To show current CPU usage without averaging
+      - To monitor memory usage without load data
+      - To list process counts without load info
+    explanation: The uptime or w command shows system load averages for 1, 5, and 15 minute intervals.
+    source: "https://man7.org/linux/man-pages/man1/uptime.1.html"
+    correct_answer: 0 

@@ -1,0 +1,116 @@
+id: lfcs_intermediate
+category: lfcs
+level: intermediate
+title: LFCS Certification Intermediate
+description: Master intermediate concepts for Linux Foundation Certified System Administrator
+
+questions:
+  - id: q1
+    question: How do you configure network interfaces using nmcli?
+    options:
+      - To create and manage network connections through NetworkManager CLI
+      - To monitor network traffic without configuration capabilities
+      - To display network statistics for active connections only
+      - To test network connectivity between interfaces regularly
+    explanation: nmcli provides command-line interface for NetworkManager, allowing complete network configuration management.
+    source: "https://developer.gnome.org/NetworkManager/stable/nmcli.html"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the purpose of systemd-networkd?
+    options:
+      - To manage network configuration and connections systematically
+      - To display network status without configuration options
+      - To monitor network performance metrics exclusively
+      - To test network connectivity periodically only
+    explanation: systemd-networkd is a system daemon for managing network configurations in modern Linux systems.
+    source: "https://www.freedesktop.org/software/systemd/man/systemd-networkd.service.html"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you manage storage with LVM?
+    options:
+      - To create and manage logical volumes with dynamic sizing
+      - To monitor disk usage without volume management
+      - To display storage statistics for volumes only
+      - To backup volume data automatically regularly
+    explanation: LVM provides flexible storage management through logical volume creation and management.
+    source: "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_logical_volumes/index"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the purpose of systemd-journald?
+    options:
+      - To collect and store system logs with structured metadata
+      - To display log entries without storage capabilities
+      - To monitor system events without logging features
+      - To rotate log files automatically periodically
+    explanation: systemd-journald collects and stores logging data with indexed metadata for efficient querying.
+    source: "https://www.freedesktop.org/software/systemd/man/systemd-journald.service.html"
+    correct_answer: 0
+
+  - id: q5
+    question: How do you configure system time synchronization?
+    options:
+      - To manage time synchronization using systemd-timesyncd or chrony
+      - To display current time settings without synchronization
+      - To monitor time drift without adjustment features
+      - To set system time manually periodically only
+    explanation: Modern Linux systems use systemd-timesyncd or chrony for NTP time synchronization.
+    source: "https://www.freedesktop.org/software/systemd/man/systemd-timesyncd.service.html"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the purpose of systemd targets?
+    options:
+      - To define system states and organize service dependencies
+      - To display service status without state management
+      - To monitor system performance during boot only
+      - To track service failures without recovery options
+    explanation: Systemd targets define system states and group related services for organized boot processes.
+    source: "https://www.freedesktop.org/software/systemd/man/systemd.target.html"
+    correct_answer: 0
+
+  - id: q7
+    question: How do you manage user quotas?
+    options:
+      - To implement and enforce storage limits for users
+      - To display disk usage without restriction options
+      - To monitor storage patterns without quotas only
+      - To track file creation without size limits
+    explanation: User quotas allow administrators to limit and track disk space usage per user.
+    source: "https://www.kernel.org/doc/html/latest/filesystems/quota.html"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of systemd unit files?
+    options:
+      - To define service configuration and behavior precisely
+      - To display service status without configuration
+      - To monitor service performance metrics only
+      - To track service dependencies without control
+    explanation: Systemd unit files define service configurations, dependencies, and behavior.
+    source: "https://www.freedesktop.org/software/systemd/man/systemd.unit.html"
+    correct_answer: 0
+
+  - id: q9
+    question: How do you configure system logging with rsyslog?
+    options:
+      - To manage system logging with filtering and forwarding
+      - To display log entries without configuration options
+      - To monitor system events without logging control
+      - To rotate log files without customization
+    explanation: rsyslog provides advanced system logging capabilities with filtering and forwarding options.
+    source: "https://www.rsyslog.com/doc/master/configuration/index.html"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of systemd-resolved?
+    options:
+      - To provide network name resolution and DNS caching
+      - To display DNS queries without resolution features
+      - To monitor network connectivity without DNS
+      - To track name resolution without caching
+    explanation: systemd-resolved provides network name resolution services with caching capabilities.
+    source: "https://www.freedesktop.org/software/systemd/man/systemd-resolved.service.html"
+    correct_answer: 0 

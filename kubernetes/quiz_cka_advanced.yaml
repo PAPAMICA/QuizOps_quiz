@@ -1,0 +1,116 @@
+id: cka_advanced
+category: cka
+level: advanced
+title: CKA Certification Advanced
+description: Master advanced Kubernetes administration concepts
+
+questions:
+  - id: q1
+    question: How do you implement etcd backup and restore?
+    options:
+      - Configure and execute etcd snapshot operations with encryption
+      - Monitor etcd cluster status without performing backup tasks
+      - Manage etcd peer communication without snapshot capabilities
+      - Display etcd metrics while skipping all backup procedures
+    explanation: Regular etcd backups are crucial for cluster data protection and recovery.
+    source: "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the purpose of cluster federation?
+    options:
+      - Coordinate multiple clusters across different geographic locations
+      - Manage single cluster operations without federation support
+      - Monitor cluster metrics without multi-cluster coordination
+      - Configure local clusters while ignoring federation features
+    explanation: Federation enables management of multiple Kubernetes clusters from a single control plane.
+    source: "https://kubernetes.io/docs/concepts/cluster-administration/federation/"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you implement advanced scheduling policies?
+    options:
+      - Configure custom schedulers with complex pod placement rules
+      - Monitor default scheduler without custom policy settings
+      - Manage basic pod placement without advanced configurations
+      - Track scheduler events while using default settings
+    explanation: Custom schedulers enable advanced pod placement strategies beyond default configurations.
+    source: "https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the purpose of node taints?
+    options:
+      - Control pod scheduling through node repulsion mechanisms
+      - Monitor node status without affecting pod placement
+      - Manage node resources without scheduling considerations
+      - Configure node labels without taint effect rules
+    explanation: Taints allow nodes to repel pods that don't tolerate the taint.
+    source: "https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/"
+    correct_answer: 0
+
+  - id: q5
+    question: How do you implement container runtime security?
+    options:
+      - Configure advanced security policies for container execution
+      - Monitor container status without security policy enforcement
+      - Manage basic container operations without security controls
+      - Track container metrics while ignoring security features
+    explanation: Container runtime security ensures secure execution of containerized applications.
+    source: "https://kubernetes.io/docs/concepts/security/pod-security-standards/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the purpose of mutating admission webhooks?
+    options:
+      - Modify resource requests before persistence in etcd
+      - Monitor admission requests without modification capabilities
+      - Track webhook calls without changing request content
+      - Display webhook metrics without mutation features
+    explanation: Mutating admission webhooks can modify objects before they are persisted.
+    source: "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#mutatingadmissionwebhook"
+    correct_answer: 0
+
+  - id: q7
+    question: How do you implement advanced networking features?
+    options:
+      - Configure complex network policies with custom protocols
+      - Monitor network traffic without policy configuration options
+      - Manage basic connectivity without advanced network features
+      - Track network metrics while using default settings
+    explanation: Advanced networking enables complex traffic management and security policies.
+    source: "https://kubernetes.io/docs/concepts/services-networking/network-policies/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of pod disruption budgets?
+    options:
+      - Ensure application availability during voluntary disruptions
+      - Monitor pod status without disruption management features
+      - Track pod metrics without availability guarantees
+      - Configure basic pod settings without budget controls
+    explanation: Pod disruption budgets limit voluntary disruptions to maintain availability.
+    source: "https://kubernetes.io/docs/concepts/workloads/pods/disruptions/"
+    correct_answer: 0
+
+  - id: q9
+    question: How do you implement advanced monitoring solutions?
+    options:
+      - Configure comprehensive metrics collection with custom exporters
+      - Monitor basic metrics without advanced collection features
+      - Track simple metrics without customization capabilities
+      - Display standard metrics while ignoring advanced options
+    explanation: Advanced monitoring provides deep insights into cluster and application health.
+    source: "https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of certificate rotation?
+    options:
+      - Automate cluster certificate management for security compliance
+      - Monitor certificate status without rotation capabilities
+      - Track certificate expiration without automated management
+      - Display certificate metrics without renewal features
+    explanation: Certificate rotation ensures continuous security through automated certificate management.
+    source: "https://kubernetes.io/docs/tasks/tls/certificate-rotation/"
+    correct_answer: 0 

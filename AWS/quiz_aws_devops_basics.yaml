@@ -1,0 +1,116 @@
+id: aws_devops_basics
+category: aws_devops
+level: beginner
+title: AWS DevOps Certification Basics
+description: Learn fundamental AWS DevOps concepts
+
+questions:
+  - id: q1
+    question: What is AWS CodePipeline?
+    options:
+      - Configure continuous delivery service for applications
+      - Monitor deployment status without pipeline features
+      - Track code changes without automation tools
+      - Display build progress without integration services
+    explanation: CodePipeline automates continuous delivery pipelines for applications.
+    source: "https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html"
+    correct_answer: 0
+
+  - id: q2
+    question: How do you implement AWS CodeBuild?
+    options:
+      - Manage fully managed build service operations
+      - Monitor code compilation without build services
+      - Track build process without managed features
+      - Display build logs without automation tools
+    explanation: CodeBuild compiles code and runs tests automatically.
+    source: "https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html"
+    correct_answer: 0
+
+  - id: q3
+    question: What is AWS CodeDeploy?
+    options:
+      - Automate application deployments to compute services
+      - Monitor deployment status without automation tools
+      - Track application versions without deployment features
+      - Display service status without deployment controls
+    explanation: CodeDeploy automates application deployments across services.
+    source: "https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html"
+    correct_answer: 0
+
+  - id: q4
+    question: How do you use AWS CloudFormation?
+    options:
+      - Create and manage infrastructure as code
+      - Monitor resource status without templates
+      - Track infrastructure without automation tools
+      - Display stack information without management features
+    explanation: CloudFormation enables infrastructure automation through templates.
+    source: "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html"
+    correct_answer: 0
+
+  - id: q5
+    question: What is AWS Elastic Beanstalk?
+    options:
+      - Deploy and scale web applications automatically
+      - Monitor application status without scaling features
+      - Track resource usage without deployment tools
+      - Display service metrics without management controls
+    explanation: Elastic Beanstalk handles deployment and scaling automatically.
+    source: "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html"
+    correct_answer: 0
+
+  - id: q6
+    question: How do you implement AWS CloudWatch?
+    options:
+      - Monitor resources and applications in realtime
+      - Track basic metrics without monitoring features
+      - Display service status without detailed data
+      - Collect logs without analysis capabilities
+    explanation: CloudWatch provides monitoring and observability services.
+    source: "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html"
+    correct_answer: 0
+
+  - id: q7
+    question: What is AWS Systems Manager?
+    options:
+      - Manage operational tasks across AWS resources
+      - Monitor system status without management tools
+      - Track resource usage without automation features
+      - Display operational data without control options
+    explanation: Systems Manager provides operational insights and control.
+    source: "https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html"
+    correct_answer: 0
+
+  - id: q8
+    question: How do you use AWS IAM?
+    options:
+      - Manage access to AWS services securely
+      - Monitor user activity without security controls
+      - Track resource access without permission settings
+      - Display authentication data without management tools
+    explanation: IAM controls access to AWS services and resources.
+    source: "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html"
+    correct_answer: 0
+
+  - id: q9
+    question: What is AWS CloudTrail?
+    options:
+      - Track user activity and API usage
+      - Monitor basic metrics without audit features
+      - Display service status without tracking tools
+      - Collect logs without analysis capabilities
+    explanation: CloudTrail enables AWS account activity monitoring.
+    source: "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html"
+    correct_answer: 0
+
+  - id: q10
+    question: How do you implement Auto Scaling?
+    options:
+      - Automatically adjust resource capacity as needed
+      - Monitor resource usage without scaling features
+      - Track service metrics without adjustment tools
+      - Display scaling data without automation controls
+    explanation: Auto Scaling maintains application availability automatically.
+    source: "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+    correct_answer: 0 

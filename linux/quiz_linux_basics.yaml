@@ -1,116 +1,116 @@
 id: linux_basics
 category: linux
 level: beginner
-title: Linux Fundamentals
-description: Test your knowledge of basic Linux concepts and commands
+title: Linux System Administration Basics
+description: Learn fundamental Linux system administration concepts
 
 questions:
-  - id: linux_b1
-    question: What is Linux?
+  - id: q1
+    question: What is the purpose of the /etc/fstab file?
     options:
-      - An open-source operating system kernel
-      - A text editor
-      - A programming language
-      - A web browser
+      - To configure automatic mounting of filesystems during system boot process
+      - To store temporary system files used during the boot sequence only
+      - To maintain a list of currently mounted storage devices actively
+      - To record system errors related to filesystem operations daily
+    explanation: The /etc/fstab file contains filesystem mount configurations that are automatically processed during system startup.
+    source: "https://www.kernel.org/doc/html/latest/filesystems/fstab.html"
     correct_answer: 0
-    explanation: Linux is an open-source operating system kernel originally created by Linus Torvalds, which forms the foundation of many operating systems.
-    source: https://www.kernel.org/linux.html
 
-  - id: linux_b2
-    question: What is the pwd command used for?
+  - id: q2
+    question: What is the function of the systemctl command?
     options:
-      - Print Working Directory - shows current directory path
-      - Change password
-      - Power down system
-      - Print word document
+      - To control and manage systemd services and system state effectively
+      - To monitor system performance metrics and resource utilization only
+      - To configure network interfaces and routing tables manually
+      - To manage user accounts and group permissions regularly
+    explanation: systemctl is used to control the systemd system and service manager, managing system services and states.
+    source: "https://www.freedesktop.org/software/systemd/man/systemctl.html"
     correct_answer: 0
-    explanation: The pwd (Print Working Directory) command displays the full path of the current working directory you are in.
-    source: https://www.gnu.org/software/coreutils/manual/html_node/pwd-invocation.html
 
-  - id: linux_b3
-    question: What is the ls command used for?
+  - id: q3
+    question: What is the purpose of the chmod command?
     options:
-      - List directory contents
-      - Login to system
-      - Load system
-      - Link software
+      - To modify file and directory permissions for access control
+      - To change file ownership between different system users only
+      - To create new files with specific permission settings daily
+      - To monitor file access patterns across the system regularly
+    explanation: chmod changes file mode bits, modifying permissions for user, group, and others.
+    source: "https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html"
     correct_answer: 0
-    explanation: The ls command is used to list directory contents, showing files and subdirectories in the current directory.
-    source: https://www.gnu.org/software/coreutils/manual/html_node/ls-invocation.html
 
-  - id: linux_b4
-    question: What is the cd command used for?
+  - id: q4
+    question: What is the function of the grep command?
     options:
-      - Change Directory - navigate between directories
-      - Copy directory
-      - Create directory
-      - Close directory
+      - To search text patterns within files using regular expressions
+      - To modify text content in files without manual editing
+      - To count word occurrences in text files automatically
+      - To format text files for proper display regularly
+    explanation: grep searches for patterns in text using regular expressions and prints matching lines.
+    source: "https://www.gnu.org/software/grep/manual/grep.html"
     correct_answer: 0
-    explanation: The cd (Change Directory) command is used to navigate between directories in the file system.
-    source: https://www.gnu.org/software/bash/manual/html_node/Directory-Stack-Builtins.html
 
-  - id: linux_b5
-    question: What is the mkdir command used for?
+  - id: q5
+    question: What is the purpose of the sudo command?
     options:
-      - Make Directory - create new directories
-      - Move directory
-      - Modify directory
-      - Mark directory
+      - To execute commands with elevated privileges as another user
+      - To switch between different user accounts permanently only
+      - To create new administrative user accounts regularly
+      - To monitor system administrator activities constantly
+    explanation: sudo allows users to execute commands as another user, typically the superuser.
+    source: "https://www.sudo.ws/docs/man/sudo.man/"
     correct_answer: 0
-    explanation: The mkdir (Make Directory) command is used to create new directories in the file system.
-    source: https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html
 
-  - id: linux_b6
-    question: What is the rm command used for?
+  - id: q6
+    question: What is the function of the df command?
     options:
-      - Remove files or directories
-      - Read mail
-      - Remote access
-      - Run program
+      - To display filesystem disk space usage and availability information
+      - To format new disk partitions for system use regularly
+      - To check disk health and report potential failures only
+      - To monitor disk activity and performance metrics constantly
+    explanation: df reports filesystem disk space usage, showing available and used space.
+    source: "https://www.gnu.org/software/coreutils/manual/html_node/df-invocation.html"
     correct_answer: 0
-    explanation: The rm (Remove) command is used to delete files or directories from the file system.
-    source: https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html
 
-  - id: linux_b7
-    question: What is the cp command used for?
+  - id: q7
+    question: What is the purpose of the ps command?
     options:
-      - Copy files and directories
-      - Change permissions
-      - Create program
-      - Close program
+      - To display information about active system processes currently
+      - To terminate specific system processes automatically only
+      - To monitor system performance metrics regularly
+      - To manage process priorities and scheduling constantly
+    explanation: ps provides information about currently running processes in the system.
+    source: "https://man7.org/linux/man-pages/man1/ps.1.html"
     correct_answer: 0
-    explanation: The cp (Copy) command is used to copy files and directories from one location to another.
-    source: https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html
 
-  - id: linux_b8
-    question: What is the mv command used for?
+  - id: q8
+    question: What is the function of the useradd command?
     options:
-      - Move or rename files and directories
-      - Make video
-      - Monitor version
-      - Modify value
+      - To create new user accounts with specified parameters properly
+      - To modify existing user account settings regularly only
+      - To delete unused user accounts from the system automatically
+      - To monitor user account activities and login patterns
+    explanation: useradd creates new user accounts with specified attributes and settings.
+    source: "https://man7.org/linux/man-pages/man8/useradd.8.html"
     correct_answer: 0
-    explanation: The mv (Move) command is used to move files and directories from one location to another, or to rename them.
-    source: https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html
 
-  - id: linux_b9
-    question: What is the cat command used for?
+  - id: q9
+    question: What is the purpose of the tar command?
     options:
-      - Display file contents
-      - Create archive
-      - Change attributes
-      - Copy all text
+      - To create and manipulate archive files for data storage
+      - To compress individual files without creating archives only
+      - To encrypt sensitive files for secure transmission regularly
+      - To monitor file system changes and backup status constantly
+    explanation: tar creates, maintains, modifies, and extracts files from archives.
+    source: "https://www.gnu.org/software/tar/manual/tar.html"
     correct_answer: 0
-    explanation: The cat (Concatenate) command is used to display the contents of one or more files.
-    source: https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html
 
-  - id: linux_b10
-    question: What is the sudo command used for?
+  - id: q10
+    question: What is the function of the cron service?
     options:
-      - Execute commands with superuser privileges
-      - Sort data
-      - Show users
-      - System update
-    correct_answer: 0
-    explanation: The sudo (Superuser Do) command allows users to execute commands with the security privileges of another user, by default the superuser.
-    source: https://www.sudo.ws/docs/man/sudo.man/ 
+      - To schedule and automate tasks at specified time intervals
+      - To monitor system performance during specific periods only
+      - To manage system backup operations exclusively regularly
+      - To track system maintenance activities and schedules constantly
+    explanation: cron is a time-based job scheduler in Unix-like operating systems.
+    source: "https://man7.org/linux/man-pages/man8/cron.8.html"
+    correct_answer: 0 

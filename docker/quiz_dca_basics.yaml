@@ -1,0 +1,116 @@
+id: dca_basics
+category: dca
+level: beginner
+title: DCA Certification Basics
+description: Learn fundamental Docker administration concepts
+
+questions:
+  - id: q1
+    question: What is Docker daemon configuration?
+    options:
+      - Configure core Docker engine settings and parameters
+      - Monitor Docker processes without configuration changes
+      - Track container status without daemon settings
+      - Display engine metrics without proper setup
+    explanation: Docker daemon configuration controls core engine behavior and settings.
+    source: "https://docs.docker.com/engine/reference/commandline/dockerd/"
+    correct_answer: 0
+
+  - id: q2
+    question: How do you manage Docker networks?
+    options:
+      - Create and configure container network connectivity
+      - Monitor network traffic without configuration options
+      - Track container connections without network setup
+      - Display network metrics without proper management
+    explanation: Docker networks enable container communication and isolation.
+    source: "https://docs.docker.com/network/"
+    correct_answer: 0
+
+  - id: q3
+    question: What is Docker volume management?
+    options:
+      - Manage persistent data storage for containers
+      - Monitor storage usage without volume controls
+      - Track container data without persistence options
+      - Display storage metrics without volume setup
+    explanation: Docker volumes provide persistent storage for container data.
+    source: "https://docs.docker.com/storage/volumes/"
+    correct_answer: 0
+
+  - id: q4
+    question: How do you handle container logging?
+    options:
+      - Configure and collect container log outputs
+      - Monitor container status without log access
+      - Track application events without logging setup
+      - Display container metrics without log collection
+    explanation: Container logging enables monitoring and troubleshooting applications.
+    source: "https://docs.docker.com/config/containers/logging/"
+    correct_answer: 0
+
+  - id: q5
+    question: What is Docker image management?
+    options:
+      - Build and maintain container images properly
+      - Monitor image usage without management tools
+      - Track container deployments without image control
+      - Display image metrics without proper handling
+    explanation: Docker image management ensures proper container deployment.
+    source: "https://docs.docker.com/engine/reference/commandline/image/"
+    correct_answer: 0
+
+  - id: q6
+    question: How do you implement container security?
+    options:
+      - Configure basic security settings for containers
+      - Monitor container access without security rules
+      - Track container activity without protection measures
+      - Display security metrics without proper controls
+    explanation: Container security protects applications and infrastructure.
+    source: "https://docs.docker.com/engine/security/"
+    correct_answer: 0
+
+  - id: q7
+    question: What is Docker registry management?
+    options:
+      - Configure and manage container image storage
+      - Monitor image downloads without registry setup
+      - Track image versions without proper storage
+      - Display registry metrics without management tools
+    explanation: Docker registries store and distribute container images.
+    source: "https://docs.docker.com/registry/"
+    correct_answer: 0
+
+  - id: q8
+    question: How do you handle container resources?
+    options:
+      - Set resource limits for container execution
+      - Monitor resource usage without proper limits
+      - Track container performance without constraints
+      - Display resource metrics without configuration
+    explanation: Resource limits control container resource consumption.
+    source: "https://docs.docker.com/config/containers/resource_constraints/"
+    correct_answer: 0
+
+  - id: q9
+    question: What is Docker Compose usage?
+    options:
+      - Define and run multi-container applications properly
+      - Monitor container status without composition tools
+      - Track application deployment without proper setup
+      - Display service metrics without compose features
+    explanation: Docker Compose manages multi-container application deployment.
+    source: "https://docs.docker.com/compose/"
+    correct_answer: 0
+
+  - id: q10
+    question: How do you manage container networking?
+    options:
+      - Configure container communication and network access
+      - Monitor network traffic without proper setup
+      - Track container connections without network rules
+      - Display network metrics without configuration tools
+    explanation: Container networking enables secure application communication.
+    source: "https://docs.docker.com/network/container-networking/"
+    correct_answer: 0 

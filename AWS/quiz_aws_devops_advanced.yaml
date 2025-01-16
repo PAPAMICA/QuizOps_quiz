@@ -1,0 +1,116 @@
+id: aws_devops_advanced
+category: aws_devops
+level: advanced
+title: AWS DevOps Certification Advanced
+description: Master advanced AWS DevOps concepts
+
+questions:
+  - id: q1
+    question: How do you implement AWS Service Quotas?
+    options:
+      - Manage service limits across AWS accounts
+      - Monitor usage without quota management features
+      - Track resource limits without adjustment tools
+      - Display quota data without control capabilities
+    explanation: Service Quotas manages AWS service limits centrally.
+    source: "https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html"
+    correct_answer: 0
+
+  - id: q2
+    question: What is AWS Control Tower?
+    options:
+      - Implement multi-account governance and compliance
+      - Monitor accounts without governance frameworks
+      - Track compliance without automated controls
+      - Display account data without management features
+    explanation: Control Tower automates multi-account governance.
+    source: "https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you use AWS Transit Gateway?
+    options:
+      - Centralize network routing between VPCs
+      - Monitor network traffic without central control
+      - Track connectivity without routing management
+      - Display network data without gateway features
+    explanation: Transit Gateway centralizes network routing management.
+    source: "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
+    correct_answer: 0
+
+  - id: q4
+    question: What is AWS Lake Formation?
+    options:
+      - Build secure data lakes with governance
+      - Monitor data without lake management tools
+      - Track analytics without security controls
+      - Display data metrics without governance features
+    explanation: Lake Formation simplifies secure data lake creation.
+    source: "https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html"
+    correct_answer: 0
+
+  - id: q5
+    question: How do you implement AWS Proton?
+    options:
+      - Automate infrastructure provisioning for containers
+      - Monitor container deployment without automation tools
+      - Track infrastructure without template management
+      - Display service data without provisioning features
+    explanation: Proton automates infrastructure for container-based applications.
+    source: "https://docs.aws.amazon.com/proton/latest/userguide/what-is-proton.html"
+    correct_answer: 0
+
+  - id: q6
+    question: What is AWS Fault Injection Simulator?
+    options:
+      - Test application resilience with controlled chaos
+      - Monitor systems without fault injection tools
+      - Track failures without controlled testing
+      - Display resilience data without simulation features
+    explanation: FIS enables controlled chaos engineering experiments.
+    source: "https://docs.aws.amazon.com/fis/latest/userguide/what-is.html"
+    correct_answer: 0
+
+  - id: q7
+    question: How do you use AWS Audit Manager?
+    options:
+      - Continuously audit AWS usage and compliance
+      - Monitor resources without audit capabilities
+      - Track compliance without assessment tools
+      - Display audit data without management features
+    explanation: Audit Manager automates continuous compliance assessment.
+    source: "https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html"
+    correct_answer: 0
+
+  - id: q8
+    question: What is AWS Security Hub?
+    options:
+      - Centralize security alerts and management
+      - Monitor threats without central coordination
+      - Track security without aggregation features
+      - Display alerts without management capabilities
+    explanation: Security Hub provides centralized security management.
+    source: "https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html"
+    correct_answer: 0
+
+  - id: q9
+    question: How do you implement AWS Network Firewall?
+    options:
+      - Deploy network security across VPC resources
+      - Monitor traffic without firewall protection
+      - Track connections without security controls
+      - Display network data without filtering features
+    explanation: Network Firewall provides VPC traffic protection.
+    source: "https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html"
+    correct_answer: 0
+
+  - id: q10
+    question: What is AWS Resilience Hub?
+    options:
+      - Assess and improve application resilience continuously
+      - Monitor applications without resilience testing
+      - Track availability without assessment tools
+      - Display resilience data without improvement features
+    explanation: Resilience Hub helps ensure application availability.
+    source: "https://docs.aws.amazon.com/resilience-hub/latest/userguide/what-is.html"
+    correct_answer: 0 

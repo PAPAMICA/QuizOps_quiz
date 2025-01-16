@@ -1,0 +1,116 @@
+id: ccna_basics
+category: ccna
+level: beginner
+title: CCNA Networking Basics
+description: Learn fundamental networking concepts and Cisco device basics
+
+questions:
+  - id: q1
+    question: What is the purpose of the OSI model?
+    options:
+      - To provide a standardized framework for understanding network communication protocols and functions
+      - To define specific routing algorithms used exclusively by Cisco devices in enterprise networks
+      - To establish proprietary networking standards that work only with Cisco equipment
+      - To create hardware specifications for manufacturing networking equipment components
+    explanation: The OSI model is a conceptual framework that standardizes network communication functions into seven abstraction layers.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13769-5.html"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the function of a Layer 2 switch?
+    options:
+      - To forward frames between devices using MAC addresses within a local network
+      - To determine optimal paths between networks using complex routing algorithms
+      - To encrypt data transmissions between multiple network segments securely
+      - To translate domain names into corresponding IP addresses automatically
+    explanation: Layer 2 switches use MAC addresses to forward frames between devices within the same local network segment.
+    source: "https://www.cisco.com/c/en/us/support/docs/switches/catalyst-6500-series-switches/17053-1.html"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the purpose of VLAN tagging?
+    options:
+      - To segment a physical network into multiple logical networks for traffic isolation
+      - To compress network traffic data for efficient bandwidth utilization rates
+      - To authenticate users accessing different portions of the network infrastructure
+      - To monitor network performance metrics across multiple device interfaces
+    explanation: VLAN tagging allows network administrators to create separate logical networks on a single physical infrastructure.
+    source: "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/16-12/configuration_guide/vlan/b_1612_vlan_9300_cg/configuring_vlan.html"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the function of the DHCP protocol?
+    options:
+      - To automatically assign IP addresses and network configuration to client devices
+      - To establish secure encrypted connections between network routing devices
+      - To manage quality of service parameters for voice and video traffic
+      - To synchronize time settings across multiple networking devices automatically
+    explanation: DHCP automates the process of assigning IP addresses and other network configuration parameters to devices.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/dynamic-host-configuration-protocol-dhcp/27470-100.html"
+    correct_answer: 0
+
+  - id: q5
+    question: What is the purpose of Spanning Tree Protocol (STP)?
+    options:
+      - To prevent network loops while maintaining redundant paths between switches
+      - To optimize bandwidth allocation between multiple network connections actively
+      - To secure wireless communications between access points and clients
+      - To manage IP address assignments across different network segments
+    explanation: STP prevents loops in switched networks while maintaining backup paths for redundancy.
+    source: "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/5234-5.html"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the function of an IP subnet mask?
+    options:
+      - To determine which portion of an IP address identifies network and host parts
+      - To encrypt sensitive data transmissions between different network segments
+      - To filter unwanted traffic based on predefined security policies
+      - To compress network addresses for efficient routing table storage
+    explanation: Subnet masks identify which bits in an IP address represent the network portion and which represent hosts.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13788-3.html"
+    correct_answer: 0
+
+  - id: q7
+    question: What is the purpose of ARP protocol?
+    options:
+      - To resolve IP addresses to MAC addresses for local network communication
+      - To authenticate users accessing network resources across domains securely
+      - To compress data packets for efficient network bandwidth utilization
+      - To synchronize configuration settings between network devices automatically
+    explanation: ARP maps IP addresses to MAC addresses, enabling communication on local networks.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/address-resolution-protocol-arp/108954-arp-ios.html"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the function of a default gateway?
+    options:
+      - To provide a path for local devices to reach destinations on other networks
+      - To store network configuration settings for all connected devices locally
+      - To manage user authentication credentials across network segments securely
+      - To monitor traffic patterns between different network interfaces actively
+    explanation: A default gateway is a router that provides connectivity between local devices and other networks.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13730-ext-ping-trace.html"
+    correct_answer: 0
+
+  - id: q9
+    question: What is the purpose of CDP protocol?
+    options:
+      - To discover and share information about directly connected Cisco devices
+      - To encrypt sensitive data transmissions between network segments securely
+      - To manage bandwidth allocation between multiple network connections actively
+      - To synchronize time settings across different networking devices automatically
+    explanation: CDP is a Cisco proprietary protocol that discovers neighboring Cisco devices and their capabilities.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13769-5.html"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the function of ICMP protocol?
+    options:
+      - To provide network diagnostic and error reporting functionality between hosts
+      - To manage secure user authentication across multiple network domains safely
+      - To optimize routing decisions between different network segments actively
+      - To compress data packets for efficient bandwidth utilization automatically
+    explanation: ICMP enables network diagnostic functions and error reporting between network devices.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/internet-control-message-protocol-icmp/13769-17.html"
+    correct_answer: 0 

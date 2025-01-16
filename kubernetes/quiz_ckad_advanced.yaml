@@ -1,0 +1,116 @@
+id: ckad_advanced
+category: ckad
+level: advanced
+title: CKAD Certification Advanced
+description: Master advanced Kubernetes application development concepts
+
+questions:
+  - id: q1
+    question: How do you implement custom resource definitions?
+    options:
+      - Define and manage custom kubernetes resource types
+      - Monitor standard resources without custom definitions
+      - Track resource usage without extension capabilities
+      - Display object status without customization options
+    explanation: Custom Resource Definitions extend the Kubernetes API with new types.
+    source: "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the purpose of pod priority?
+    options:
+      - Control scheduling order and preemption policies
+      - Monitor pod status without priority settings
+      - Track resource allocation without scheduling rules
+      - Display pod metrics without preemption control
+    explanation: Pod priority influences scheduling decisions and preemption behavior.
+    source: "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you implement pod disruption budgets?
+    options:
+      - Limit voluntary disruptions to maintain availability
+      - Monitor pod failures without protection rules
+      - Track disruption events without budget controls
+      - Display availability metrics without protection settings
+    explanation: Pod Disruption Budgets protect applications during voluntary disruptions.
+    source: "https://kubernetes.io/docs/concepts/workloads/pods/disruptions/"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the purpose of pod topology spread?
+    options:
+      - Control pod distribution across topology domains
+      - Monitor pod placement without distribution rules
+      - Track node selection without topology constraints
+      - Display scheduling decisions without spread control
+    explanation: Topology spread constraints ensure balanced pod distribution.
+    source: "https://kubernetes.io/docs/concepts/workloads/pods/pod-topology-spread-constraints/"
+    correct_answer: 0
+
+  - id: q5
+    question: How do you implement custom metrics?
+    options:
+      - Define and collect application-specific metrics data
+      - Monitor standard metrics without custom collection
+      - Track basic metrics without extension options
+      - Display metric data without customization features
+    explanation: Custom metrics enable application-specific monitoring and scaling.
+    source: "https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the purpose of pod overhead?
+    options:
+      - Account for runtime costs beyond containers
+      - Monitor container resources without overhead tracking
+      - Track pod usage without runtime considerations
+      - Display resource metrics without overhead calculation
+    explanation: Pod overhead accounts for runtime costs in resource allocation.
+    source: "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-overhead/"
+    correct_answer: 0
+
+  - id: q7
+    question: How do you implement pod security policies?
+    options:
+      - Define cluster-wide security configuration standards
+      - Monitor pod security without policy enforcement
+      - Track security settings without cluster rules
+      - Display security status without policy controls
+    explanation: Pod Security Policies enforce security standards across pods.
+    source: "https://kubernetes.io/docs/concepts/security/pod-security-policy/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of ephemeral containers?
+    options:
+      - Debug running pods with temporary containers
+      - Monitor pod status without debugging tools
+      - Track container issues without temporary access
+      - Display debugging data without container creation
+    explanation: Ephemeral containers enable runtime debugging capabilities.
+    source: "https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/"
+    correct_answer: 0
+
+  - id: q9
+    question: How do you implement pod scheduling gates?
+    options:
+      - Control pod scheduling with custom conditions
+      - Monitor scheduling without condition management
+      - Track pod status without scheduling controls
+      - Display scheduling data without gate configuration
+    explanation: Scheduling gates provide fine-grained scheduling control.
+    source: "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-scheduling-readiness/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of volume snapshots?
+    options:
+      - Create point-in-time copies of storage volumes
+      - Monitor storage without snapshot capabilities
+      - Track volume data without backup features
+      - Display storage metrics without snapshot control
+    explanation: Volume snapshots enable data backup and restoration.
+    source: "https://kubernetes.io/docs/concepts/storage/volume-snapshots/"
+    correct_answer: 0 

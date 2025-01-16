@@ -1,0 +1,116 @@
+id: ccna_advanced
+category: ccna
+level: advanced
+title: CCNA Advanced Topics
+description: Master advanced networking concepts and prepare for CCNA certification
+
+questions:
+  - id: q1
+    question: What is the purpose of MPLS technology?
+    options:
+      - To provide efficient packet forwarding using label switching mechanisms
+      - To manage security policies across network segments automatically actively
+      - To optimize bandwidth allocation between connections efficiently
+      - To synchronize routing tables between devices automatically
+    explanation: MPLS uses label switching to improve packet forwarding efficiency in large networks.
+    source: "https://www.cisco.com/c/en/us/support/docs/multiprotocol-label-switching-mpls/mpls/4649-mpls-faq-4649.html"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the function of BGP protocol?
+    options:
+      - To enable routing between autonomous systems using path attributes
+      - To manage traffic prioritization across network segments automatically
+      - To optimize bandwidth utilization between connections efficiently actively
+      - To synchronize routing policies between devices automatically
+    explanation: BGP is the primary protocol for routing between different autonomous systems on the internet.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/5212-46.html"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the purpose of QoS marking?
+    options:
+      - To identify and classify traffic for different service level treatments
+      - To manage security parameters across network segments automatically actively
+      - To optimize routing decisions between connections efficiently
+      - To synchronize traffic policies between devices automatically
+    explanation: QoS marking enables traffic classification for differentiated service treatment.
+    source: "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/qos_mqc/configuration/xe-16/qos-mqc-xe-16-book/qos-mqc-marking.html"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the function of IPsec VPN?
+    options:
+      - To provide secure encrypted communication tunnels between network endpoints
+      - To manage traffic filtering across network segments automatically actively
+      - To optimize bandwidth allocation between connections efficiently
+      - To synchronize security policies between devices automatically
+    explanation: IPsec VPNs create secure encrypted tunnels for data transmission over public networks.
+    source: "https://www.cisco.com/c/en/us/support/docs/security-vpn/ipsec-negotiation-ike-protocols/14106-how-to-ipsec.html"
+    correct_answer: 0
+
+  - id: q5
+    question: What is the purpose of DMVPN?
+    options:
+      - To create dynamic mesh VPN networks with simplified hub configuration
+      - To manage routing policies across network segments automatically actively
+      - To optimize bandwidth utilization between connections efficiently
+      - To synchronize tunnel configurations between devices automatically
+    explanation: DMVPN enables dynamic mesh VPN networks with reduced configuration complexity.
+    source: "https://www.cisco.com/c/en/us/support/docs/security-vpn/dynamic-multipoint-vpn-dmvpn/119370-configure-dmvpn-00.html"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the function of PBR?
+    options:
+      - To route packets based on defined policies rather than routing tables
+      - To manage traffic prioritization across segments automatically actively
+      - To optimize bandwidth allocation between connections efficiently
+      - To synchronize routing decisions between devices automatically
+    explanation: Policy-Based Routing allows packet forwarding based on configured policies.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/ip-routing/200785-pbr-configuration-examples.html"
+    correct_answer: 0
+
+  - id: q7
+    question: What is the purpose of SDN architecture?
+    options:
+      - To separate control plane from data plane for network programmability
+      - To manage security policies across segments automatically actively
+      - To optimize traffic flow between connections efficiently
+      - To synchronize device configurations automatically
+    explanation: SDN separates network control and forwarding functions for improved programmability.
+    source: "https://www.cisco.com/c/en/us/solutions/software-defined-networking/overview.html"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the function of NetFlow?
+    options:
+      - To collect and analyze network traffic flow information for monitoring
+      - To manage bandwidth allocation across segments automatically actively
+      - To optimize routing decisions between connections efficiently
+      - To synchronize monitoring policies between devices automatically
+    explanation: NetFlow provides detailed network traffic flow analysis and monitoring capabilities.
+    source: "https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-netflow/index.html"
+    correct_answer: 0
+
+  - id: q9
+    question: What is the purpose of GLBP?
+    options:
+      - To provide load balancing and redundancy for default gateway services
+      - To manage traffic distribution across segments automatically actively
+      - To optimize bandwidth utilization between connections efficiently
+      - To synchronize gateway configurations between devices automatically
+    explanation: GLBP enables load balancing across multiple gateway routers simultaneously.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/gateway-load-balancing-protocol-glbp/13700-19.html"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the function of NBAR?
+    options:
+      - To identify and classify application traffic for network management
+      - To manage security policies across segments automatically actively
+      - To optimize bandwidth allocation between connections efficiently
+      - To synchronize traffic classifications between devices automatically
+    explanation: NBAR provides deep packet inspection for application recognition and classification.
+    source: "https://www.cisco.com/c/en/us/products/ios-nx-os-software/network-based-application-recognition-nbar/index.html"
+    correct_answer: 0 

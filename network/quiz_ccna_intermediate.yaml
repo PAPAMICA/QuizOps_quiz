@@ -1,0 +1,116 @@
+id: ccna_intermediate
+category: ccna
+level: intermediate
+title: CCNA Intermediate Concepts
+description: Master intermediate networking concepts and Cisco configuration skills
+
+questions:
+  - id: q1
+    question: What is the purpose of OSPF areas?
+    options:
+      - To reduce routing overhead by dividing networks into smaller hierarchical zones
+      - To implement security policies across different network segments automatically
+      - To manage bandwidth allocation between multiple network connections actively
+      - To synchronize device configurations across network boundaries efficiently
+    explanation: OSPF areas help reduce routing table size and processing overhead in large networks.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/7039-1.html"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the function of Port Security?
+    options:
+      - To limit access to switch ports based on MAC addresses and defined rules
+      - To optimize traffic flow between different network segments automatically
+      - To manage quality of service parameters across network connections actively
+      - To monitor bandwidth utilization across multiple interfaces efficiently
+    explanation: Port Security restricts switch port access based on MAC addresses to prevent unauthorized access.
+    source: "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/16-12/configuration_guide/sec/b_1612_sec_9300_cg/configuring_port_security.html"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the purpose of HSRP protocol?
+    options:
+      - To provide gateway redundancy for hosts using virtual router configurations
+      - To manage secure user authentication across network domains efficiently
+      - To optimize routing decisions between different network segments actively
+      - To synchronize configuration settings between network devices automatically
+    explanation: HSRP enables gateway redundancy by creating a virtual router from multiple physical routers.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/hot-standby-router-protocol-hsrp/9234-hsrpguidetoc.html"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the function of NAT overload?
+    options:
+      - To share one public IP address among multiple internal network devices
+      - To optimize bandwidth allocation between network connections automatically
+      - To manage security policies across different network segments actively
+      - To synchronize routing tables between multiple devices efficiently
+    explanation: NAT overload (PAT) allows multiple internal devices to share a single public IP address.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/network-address-translation-nat/13772-12.html"
+    correct_answer: 0
+
+  - id: q5
+    question: What is the purpose of VTP protocol?
+    options:
+      - To manage VLAN configuration distribution across multiple network switches
+      - To implement traffic filtering between different network segments actively
+      - To optimize bandwidth utilization across network connections efficiently
+      - To synchronize time settings between network devices automatically
+    explanation: VTP centralizes VLAN management by distributing VLAN configurations across switches.
+    source: "https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/16-12/configuration_guide/vlan/b_1612_vlan_9300_cg/configuring_vlan.html"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the function of EIGRP protocol?
+    options:
+      - To provide advanced distance vector routing with fast convergence time
+      - To manage secure data transmission between network segments efficiently
+      - To optimize bandwidth allocation across multiple connections actively
+      - To synchronize device configurations across networks automatically
+    explanation: EIGRP combines distance vector and link state protocol features for efficient routing.
+    source: "https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/16406-eigrp-toc.html"
+    correct_answer: 0
+
+  - id: q7
+    question: What is the purpose of ACL wildcard masks?
+    options:
+      - To specify which bits in an IP address should be matched for filtering
+      - To manage user authentication across network domains efficiently actively
+      - To optimize routing decisions between network segments automatically
+      - To synchronize access control settings between devices efficiently
+    explanation: Wildcard masks in ACLs determine which bits in an IP address should be matched or ignored.
+    source: "https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the function of EtherChannel?
+    options:
+      - To combine multiple physical links into one logical high bandwidth link
+      - To manage security policies across network segments automatically actively
+      - To optimize traffic flow between different networks efficiently
+      - To synchronize port configurations between switches automatically
+    explanation: EtherChannel bundles multiple physical links to increase bandwidth and provide redundancy.
+    source: "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/configuration/guide/cli/CLIConfigurationGuide/EtherChannel.html"
+    correct_answer: 0
+
+  - id: q9
+    question: What is the purpose of TACACS+?
+    options:
+      - To provide centralized authentication and authorization for network devices
+      - To manage bandwidth allocation between connections automatically actively
+      - To optimize routing decisions across network segments efficiently
+      - To synchronize security policies between devices automatically
+    explanation: TACACS+ provides centralized AAA services for network device administration.
+    source: "https://www.cisco.com/c/en/us/support/docs/security-vpn/remote-authentication-dial-user-service-radius/13838-10.html"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the function of RSTP?
+    options:
+      - To provide faster network convergence than traditional spanning tree protocol
+      - To manage traffic prioritization between network segments automatically
+      - To optimize bandwidth utilization across connections efficiently actively
+      - To synchronize switch configurations between devices automatically
+    explanation: RSTP improves upon STP by providing faster convergence in switched networks.
+    source: "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html"
+    correct_answer: 0 

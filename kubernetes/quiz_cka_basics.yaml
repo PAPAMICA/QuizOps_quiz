@@ -1,0 +1,116 @@
+id: cka_basics
+category: cka
+level: beginner
+title: CKA Certification Basics
+description: Learn fundamental Kubernetes administration concepts
+
+questions:
+  - id: q1
+    question: What is the purpose of kubelet?
+    options:
+      - To manage individual node components and maintain pod lifecycle
+      - To schedule pods across multiple cluster nodes automatically
+      - To manage cluster-wide networking configurations only
+      - To store cluster state and configuration data
+    explanation: Kubelet is the primary node agent that runs on each node, ensuring containers are running in a pod.
+    source: "https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/"
+    correct_answer: 0
+
+  - id: q2
+    question: How do you check cluster node status?
+    options:
+      - To display detailed information about node health and readiness
+      - To monitor pod deployments without node information
+      - To track resource usage without status details
+      - To list services running on specific nodes
+    explanation: kubectl get nodes and kubectl describe node provide detailed information about node status and health.
+    source: "https://kubernetes.io/docs/concepts/architecture/nodes/"
+    correct_answer: 0
+
+  - id: q3
+    question: What is the purpose of kube-proxy?
+    options:
+      - To implement network rules and enable pod communication
+      - To manage container runtime and image pulling
+      - To schedule pods across cluster nodes only
+      - To store configuration data centrally
+    explanation: kube-proxy maintains network rules on nodes to enable pod communication.
+    source: "https://kubernetes.io/docs/concepts/overview/components/#kube-proxy"
+    correct_answer: 0
+
+  - id: q4
+    question: How do you create a new namespace?
+    options:
+      - To create an isolated workspace within the cluster
+      - To deploy applications without isolation
+      - To manage cluster resources globally
+      - To configure network policies only
+    explanation: Namespaces provide a mechanism for isolating groups of resources within a cluster.
+    source: "https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+    correct_answer: 0
+
+  - id: q5
+    question: What is the purpose of ConfigMaps?
+    options:
+      - To store non-confidential configuration data for pod consumption
+      - To manage secret encryption keys only
+      - To configure pod scheduling policies
+      - To store persistent volume data
+    explanation: ConfigMaps allow you to decouple configuration artifacts from image content.
+    source: "https://kubernetes.io/docs/concepts/configuration/configmap/"
+    correct_answer: 0
+
+  - id: q6
+    question: How do you check pod logs?
+    options:
+      - To view container logs and troubleshoot applications
+      - To monitor cluster events without pod details
+      - To track resource usage statistics only
+      - To list pod configurations without logs
+    explanation: kubectl logs command allows you to view the logs of containers in a pod.
+    source: "https://kubernetes.io/docs/reference/kubectl/cheatsheet/#interacting-with-running-pods"
+    correct_answer: 0
+
+  - id: q7
+    question: What is the purpose of Services?
+    options:
+      - To expose applications running on pods with stable endpoints
+      - To manage pod storage requirements only
+      - To configure pod security policies
+      - To handle container runtime operations
+    explanation: Services define a logical set of pods and a policy by which to access them.
+    source: "https://kubernetes.io/docs/concepts/services-networking/service/"
+    correct_answer: 0
+
+  - id: q8
+    question: How do you manage pod resources?
+    options:
+      - To specify CPU and memory requests and limits for containers
+      - To configure network policies without resources
+      - To manage storage volumes only
+      - To handle service discovery operations
+    explanation: Resource requests and limits help manage container computing resources effectively.
+    source: "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+    correct_answer: 0
+
+  - id: q9
+    question: What is the purpose of DaemonSets?
+    options:
+      - To ensure all nodes run a copy of a specific pod
+      - To manage stateful applications only
+      - To handle ingress traffic routing
+      - To configure cluster storage
+    explanation: DaemonSets ensure that all or some nodes run a copy of a pod.
+    source: "https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/"
+    correct_answer: 0
+
+  - id: q10
+    question: How do you perform basic troubleshooting?
+    options:
+      - To diagnose common cluster and application issues systematically
+      - To monitor resource usage without diagnostics
+      - To track network traffic without analysis
+      - To list configuration changes only
+    explanation: Basic troubleshooting involves checking pod status, logs, and events.
+    source: "https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application/"
+    correct_answer: 0 

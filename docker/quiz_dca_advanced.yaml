@@ -1,0 +1,116 @@
+id: dca_advanced
+category: dca
+level: advanced
+title: DCA Certification Advanced
+description: Master advanced Docker administration concepts
+
+questions:
+  - id: q1
+    question: How do you implement Docker security scanning?
+    options:
+      - Configure automated vulnerability detection systems
+      - Monitor basic security without scanning tools
+      - Track container status without security checks
+      - Display security metrics without scanning features
+    explanation: Security scanning identifies vulnerabilities in container images.
+    source: "https://docs.docker.com/engine/scan/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is Universal Control Plane?
+    options:
+      - Manage enterprise container deployments and security
+      - Monitor basic deployments without enterprise features
+      - Track container operations without central control
+      - Display cluster status without management tools
+    explanation: UCP provides enterprise-grade container management capabilities.
+    source: "https://docs.docker.com/ee/ucp/"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you implement Docker plugins?
+    options:
+      - Extend Docker functionality with custom features
+      - Monitor container operations without extensions
+      - Track basic functions without plugin support
+      - Display system metrics without custom features
+    explanation: Docker plugins enable custom functionality and integrations.
+    source: "https://docs.docker.com/engine/extend/"
+    correct_answer: 0
+
+  - id: q4
+    question: What is Docker namespace isolation?
+    options:
+      - Configure advanced container resource isolation
+      - Monitor container resources without isolation
+      - Track system resources without namespace control
+      - Display resource usage without isolation features
+    explanation: Namespace isolation provides container resource separation.
+    source: "https://docs.docker.com/engine/security/userns-remap/"
+    correct_answer: 0
+
+  - id: q5
+    question: How do you manage Docker storage drivers?
+    options:
+      - Configure advanced container storage mechanisms
+      - Monitor storage usage without driver control
+      - Track container data without storage options
+      - Display storage metrics without driver features
+    explanation: Storage drivers control how container layers are stored.
+    source: "https://docs.docker.com/storage/storagedriver/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is Docker API management?
+    options:
+      - Implement programmatic Docker engine control
+      - Monitor Docker operations without API access
+      - Track container status without remote control
+      - Display system information without API features
+    explanation: Docker API enables programmatic engine management.
+    source: "https://docs.docker.com/engine/api/"
+    correct_answer: 0
+
+  - id: q7
+    question: How do you handle Docker runtime security?
+    options:
+      - Configure advanced container security controls
+      - Monitor basic security without runtime protection
+      - Track container execution without security measures
+      - Display security status without runtime features
+    explanation: Runtime security protects container execution environment.
+    source: "https://docs.docker.com/engine/security/security/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is Docker networking troubleshooting?
+    options:
+      - Diagnose complex container network issues
+      - Monitor network status without troubleshooting tools
+      - Track basic connectivity without diagnostic features
+      - Display network metrics without analysis capabilities
+    explanation: Network troubleshooting resolves container connectivity issues.
+    source: "https://docs.docker.com/network/troubleshooting_network/"
+    correct_answer: 0
+
+  - id: q9
+    question: How do you implement Docker metrics collection?
+    options:
+      - Configure comprehensive container performance monitoring
+      - Monitor basic metrics without advanced collection
+      - Track container status without detailed metrics
+      - Display system statistics without proper monitoring
+    explanation: Metrics collection enables detailed performance analysis.
+    source: "https://docs.docker.com/config/daemon/prometheus/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is Docker orchestration optimization?
+    options:
+      - Implement advanced container scheduling strategies
+      - Monitor basic scheduling without optimization
+      - Track container placement without advanced rules
+      - Display orchestration status without improvements
+    explanation: Orchestration optimization enhances container deployment efficiency.
+    source: "https://docs.docker.com/engine/swarm/admin_guide/"
+    correct_answer: 0 

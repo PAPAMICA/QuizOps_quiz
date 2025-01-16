@@ -1,0 +1,116 @@
+id: lfcs_advanced
+category: lfcs
+level: advanced
+title: LFCS Certification Advanced
+description: Master advanced concepts for Linux Foundation Certified System Administrator
+
+questions:
+  - id: q1
+    question: How do you configure advanced firewall rules with nftables?
+    options:
+      - To implement complex packet filtering and NAT configurations systematically
+      - To monitor network traffic without filtering capabilities
+      - To display firewall statistics without rule management
+      - To track network connections without security controls
+    explanation: nftables provides advanced packet filtering and NAT capabilities with improved syntax and features.
+    source: "https://wiki.nftables.org/wiki-nftables/index.php/Main_Page"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the purpose of Linux containers (LXC)?
+    options:
+      - To create isolated system environments with resource management
+      - To virtualize applications without system isolation
+      - To monitor system resources without containerization
+      - To track application performance in shared environments
+    explanation: LXC provides operating system-level virtualization for running multiple isolated Linux systems.
+    source: "https://linuxcontainers.org/lxc/documentation/"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you implement disk encryption with LUKS?
+    options:
+      - To encrypt storage devices with key management functionality
+      - To compress disk data without encryption features
+      - To monitor disk access without security controls
+      - To track storage usage without protection measures
+    explanation: LUKS provides disk encryption with secure key management and multiple key slots.
+    source: "https://gitlab.com/cryptsetup/cryptsetup/wikis/home"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the purpose of Linux Audit System?
+    options:
+      - To track system events and security-relevant activities comprehensively
+      - To monitor system performance without security logging
+      - To display system logs without audit capabilities
+      - To manage log rotation without event tracking
+    explanation: The Linux Audit System provides detailed logging and monitoring of security-relevant system events.
+    source: "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/auditing-the-system_security-hardening"
+    correct_answer: 0
+
+  - id: q5
+    question: How do you configure advanced network bonding?
+    options:
+      - To implement complex network interface aggregation with failover
+      - To monitor network performance without bonding features
+      - To display network statistics without aggregation
+      - To track interface status without redundancy
+    explanation: Advanced network bonding provides interface aggregation with various modes and failover capabilities.
+    source: "https://www.kernel.org/doc/Documentation/networking/bonding.txt"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the purpose of Linux Namespaces?
+    options:
+      - To isolate system resources between processes and containers
+      - To manage process priorities without isolation features
+      - To monitor system resources without separation
+      - To track process usage without containment
+    explanation: Linux Namespaces provide isolation of system resources, enabling containerization and process separation.
+    source: "https://man7.org/linux/man-pages/man7/namespaces.7.html"
+    correct_answer: 0
+
+  - id: q7
+    question: How do you implement advanced storage with ZFS?
+    options:
+      - To manage complex storage pools with advanced features
+      - To monitor disk usage without pool management
+      - To display storage statistics without ZFS features
+      - To track file system changes without snapshots
+    explanation: ZFS provides advanced storage management with features like snapshots, compression, and data integrity.
+    source: "https://openzfs.github.io/openzfs-docs/"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of Linux Capabilities?
+    options:
+      - To provide fine-grained process privilege control systematically
+      - To monitor process permissions without capability management
+      - To display security settings without granular control
+      - To track privilege usage without restrictions
+    explanation: Linux Capabilities allow fine-grained control over privileged operations without full root access.
+    source: "https://man7.org/linux/man-pages/man7/capabilities.7.html"
+    correct_answer: 0
+
+  - id: q9
+    question: How do you configure advanced system resource limits?
+    options:
+      - To implement complex resource controls with cgroups precisely
+      - To monitor system resources without limitation features
+      - To display resource usage without control mechanisms
+      - To track process limits without enforcement
+    explanation: Control groups (cgroups) provide advanced resource management and limitation capabilities.
+    source: "https://www.kernel.org/doc/Documentation/cgroup-v2.txt"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of Linux Security Modules (LSM)?
+    options:
+      - To enforce mandatory access control policies comprehensively
+      - To monitor system security without policy enforcement
+      - To display security settings without control features
+      - To track access attempts without restrictions
+    explanation: LSM provides a framework for implementing mandatory access control systems like SELinux and AppArmor.
+    source: "https://www.kernel.org/doc/html/latest/admin-guide/LSM/index.html"
+    correct_answer: 0 

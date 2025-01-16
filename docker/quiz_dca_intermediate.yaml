@@ -1,0 +1,116 @@
+id: dca_intermediate
+category: dca
+level: intermediate
+title: DCA Certification Intermediate
+description: Master intermediate Docker administration concepts
+
+questions:
+  - id: q1
+    question: How do you implement Docker Swarm clustering?
+    options:
+      - Configure and manage multi-node Docker clusters
+      - Monitor single node operations without clustering
+      - Track container status without swarm features
+      - Display node metrics without cluster management
+    explanation: Docker Swarm enables container orchestration across multiple nodes.
+    source: "https://docs.docker.com/engine/swarm/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is overlay network configuration?
+    options:
+      - Create multi-host container communication networks
+      - Monitor local networks without overlay support
+      - Track container traffic without multi-host features
+      - Display network status without overlay setup
+    explanation: Overlay networks enable container communication across multiple hosts.
+    source: "https://docs.docker.com/network/overlay/"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you manage Docker secrets?
+    options:
+      - Securely distribute sensitive data to containers
+      - Monitor container data without security features
+      - Track configuration without secrets management
+      - Display sensitive data without proper protection
+    explanation: Docker secrets provide secure sensitive data management.
+    source: "https://docs.docker.com/engine/swarm/secrets/"
+    correct_answer: 0
+
+  - id: q4
+    question: What is Docker content trust?
+    options:
+      - Implement image signing and verification systems
+      - Monitor image usage without security checks
+      - Track container deployment without verification
+      - Display image status without trust features
+    explanation: Content trust ensures image integrity and authenticity.
+    source: "https://docs.docker.com/engine/security/trust/"
+    correct_answer: 0
+
+  - id: q5
+    question: How do you configure logging drivers?
+    options:
+      - Implement advanced container log management systems
+      - Monitor basic logs without driver configuration
+      - Track container output without logging options
+      - Display log data without driver setup
+    explanation: Logging drivers enable advanced log management capabilities.
+    source: "https://docs.docker.com/config/containers/logging/configure/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is Docker stack deployment?
+    options:
+      - Deploy multi-service applications in swarm mode
+      - Monitor single services without stack features
+      - Track application status without orchestration
+      - Display service metrics without stack management
+    explanation: Docker stacks manage complex application deployments.
+    source: "https://docs.docker.com/engine/swarm/stack-deploy/"
+    correct_answer: 0
+
+  - id: q7
+    question: How do you implement health checks?
+    options:
+      - Configure container health monitoring systems
+      - Monitor container status without health checks
+      - Track application state without monitoring
+      - Display container metrics without health tracking
+    explanation: Health checks ensure container and application availability.
+    source: "https://docs.docker.com/engine/reference/builder/#healthcheck"
+    correct_answer: 0
+
+  - id: q8
+    question: What is Docker config management?
+    options:
+      - Manage centralized application configuration data
+      - Monitor settings without configuration management
+      - Track application data without central storage
+      - Display config status without proper handling
+    explanation: Docker configs provide centralized configuration management.
+    source: "https://docs.docker.com/engine/swarm/configs/"
+    correct_answer: 0
+
+  - id: q9
+    question: How do you handle node labels?
+    options:
+      - Implement node classification and scheduling controls
+      - Monitor nodes without classification features
+      - Track node status without label management
+      - Display node information without proper tagging
+    explanation: Node labels enable targeted service deployment.
+    source: "https://docs.docker.com/engine/swarm/manage-nodes/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is service discovery implementation?
+    options:
+      - Configure automatic container service location
+      - Monitor services without discovery features
+      - Track container endpoints without automation
+      - Display service status without discovery setup
+    explanation: Service discovery enables automatic container location.
+    source: "https://docs.docker.com/engine/swarm/networking/"
+    correct_answer: 0 

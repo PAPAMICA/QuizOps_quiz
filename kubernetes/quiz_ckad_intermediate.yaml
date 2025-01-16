@@ -1,0 +1,116 @@
+id: ckad_intermediate
+category: ckad
+level: intermediate
+title: CKAD Certification Intermediate
+description: Master intermediate Kubernetes application development concepts
+
+questions:
+  - id: q1
+    question: How do you implement multi-container pods?
+    options:
+      - Define multiple containers sharing network and storage
+      - Monitor single container pods without shared resources
+      - Track container isolation without communication patterns
+      - Display pod metrics without container coordination
+    explanation: Multi-container pods enable containers to share resources and communicate locally.
+    source: "https://kubernetes.io/docs/concepts/workloads/pods/#pod-templates"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the purpose of init containers?
+    options:
+      - Execute setup tasks before application containers start
+      - Monitor container startup without initialization steps
+      - Track application state without setup procedures
+      - Display container readiness without prerequisite checks
+    explanation: Init containers perform initialization tasks before application containers run.
+    source: "https://kubernetes.io/docs/concepts/workloads/pods/init-containers/"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you manage pod scaling?
+    options:
+      - Configure horizontal pod autoscaling with metrics
+      - Monitor pod counts without scaling capabilities
+      - Track resource usage without autoscaling rules
+      - Display scaling status without metric analysis
+    explanation: Horizontal Pod Autoscaling adjusts pod count based on metrics.
+    source: "https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the purpose of Jobs?
+    options:
+      - Run batch processes with completion guarantees
+      - Monitor continuous processes without completion tracking
+      - Track running tasks without completion status
+      - Display job metrics without guarantee handling
+    explanation: Jobs ensure batch tasks run to completion successfully.
+    source: "https://kubernetes.io/docs/concepts/workloads/controllers/job/"
+    correct_answer: 0
+
+  - id: q5
+    question: How do you handle pod affinity?
+    options:
+      - Control pod placement using node characteristics
+      - Monitor pod distribution without placement rules
+      - Track node selection without affinity settings
+      - Display scheduling decisions without placement control
+    explanation: Pod affinity influences pod placement based on node attributes.
+    source: "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the purpose of CronJobs?
+    options:
+      - Schedule recurring tasks at specified intervals
+      - Monitor periodic jobs without scheduling control
+      - Track task execution without time patterns
+      - Display job status without schedule management
+    explanation: CronJobs create Jobs on a time-based schedule.
+    source: "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/"
+    correct_answer: 0
+
+  - id: q7
+    question: How do you implement rolling updates?
+    options:
+      - Update applications gradually without service interruption
+      - Monitor application versions without update strategy
+      - Track deployment changes without rollout control
+      - Display update status without version management
+    explanation: Rolling updates provide zero-downtime application updates.
+    source: "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-update-deployment"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of readiness probes?
+    options:
+      - Determine when pods are ready for traffic
+      - Monitor pod health without readiness checks
+      - Track container status without probe configuration
+      - Display service availability without readiness tests
+    explanation: Readiness probes indicate when pods can receive traffic.
+    source: "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/"
+    correct_answer: 0
+
+  - id: q9
+    question: How do you manage pod security?
+    options:
+      - Configure security contexts for pod execution
+      - Monitor pod access without security settings
+      - Track container privileges without security controls
+      - Display security status without context management
+    explanation: Security contexts define privilege and access control settings.
+    source: "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of StatefulSets?
+    options:
+      - Manage stateful applications with stable identities
+      - Monitor stateless workloads without identity management
+      - Track application state without persistence guarantees
+      - Display pod status without identity controls
+    explanation: StatefulSets provide unique identities and stable storage for pods.
+    source: "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/"
+    correct_answer: 0 

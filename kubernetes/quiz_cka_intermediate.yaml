@@ -1,0 +1,116 @@
+id: cka_intermediate
+category: cka
+level: intermediate
+title: CKA Certification Intermediate
+description: Master intermediate Kubernetes administration concepts
+
+questions:
+  - id: q1
+    question: How do you configure RBAC authorization?
+    options:
+      - To implement role-based access control with specific permissions
+      - To manage network policies without access control
+      - To configure resource quotas without roles
+      - To handle service accounts without permissions
+    explanation: RBAC allows fine-grained access control through roles and bindings.
+    source: "https://kubernetes.io/docs/reference/access-authn-authz/rbac/"
+    correct_answer: 0
+
+  - id: q2
+    question: What is the purpose of StatefulSets?
+    options:
+      - To manage stateful applications with stable network identities
+      - To handle stateless deployments without persistence
+      - To configure temporary storage solutions only
+      - To manage network policies without state
+    explanation: StatefulSets manage stateful applications with unique identities and stable storage.
+    source: "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/"
+    correct_answer: 0
+
+  - id: q3
+    question: How do you implement network policies?
+    options:
+      - To control pod-to-pod communication with specific rules
+      - To manage storage access without networking
+      - To configure resource limits without policies
+      - To handle service discovery without rules
+    explanation: Network policies specify how pods communicate with each other and other endpoints.
+    source: "https://kubernetes.io/docs/concepts/services-networking/network-policies/"
+    correct_answer: 0
+
+  - id: q4
+    question: What is the purpose of PodSecurityPolicies?
+    options:
+      - To enforce security settings for pod creation and updates
+      - To manage resource quotas without security
+      - To configure network access without policies
+      - To handle storage permissions without pods
+    explanation: PodSecurityPolicies control security-sensitive aspects of pod specification.
+    source: "https://kubernetes.io/docs/concepts/security/pod-security-policy/"
+    correct_answer: 0
+
+  - id: q5
+    question: How do you manage persistent volumes?
+    options:
+      - To provide persistent storage with specific access modes
+      - To handle temporary storage without persistence
+      - To configure memory limits without volumes
+      - To manage network storage without persistence
+    explanation: Persistent volumes provide a way to store data independently of pod lifecycle.
+    source: "https://kubernetes.io/docs/concepts/storage/persistent-volumes/"
+    correct_answer: 0
+
+  - id: q6
+    question: What is the purpose of CustomResourceDefinitions?
+    options:
+      - To extend Kubernetes API with custom resources
+      - To manage built-in resources without extension
+      - To configure standard objects only
+      - To handle core APIs without customization
+    explanation: CRDs allow you to define custom resources and extend the Kubernetes API.
+    source: "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/"
+    correct_answer: 0
+
+  - id: q7
+    question: How do you implement pod affinity rules?
+    options:
+      - To control pod placement based on topology and labels
+      - To manage resource allocation without placement
+      - To configure networking without topology
+      - To handle scheduling without affinity
+    explanation: Pod affinity and anti-affinity allow you to constrain pod placement.
+    source: "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity"
+    correct_answer: 0
+
+  - id: q8
+    question: What is the purpose of admission controllers?
+    options:
+      - To intercept requests to the API server before persistence
+      - To manage storage without validation
+      - To configure networking without admission
+      - To handle authentication without control
+    explanation: Admission controllers validate and modify requests to the Kubernetes API.
+    source: "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/"
+    correct_answer: 0
+
+  - id: q9
+    question: How do you manage cluster upgrades?
+    options:
+      - To upgrade cluster components with minimal disruption
+      - To handle application updates without cluster
+      - To configure new features without upgrade
+      - To manage versions without planning
+    explanation: Cluster upgrades require careful planning and execution to maintain availability.
+    source: "https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/"
+    correct_answer: 0
+
+  - id: q10
+    question: What is the purpose of resource quotas?
+    options:
+      - To limit resource consumption within namespaces
+      - To manage access control without limits
+      - To configure storage without quotas
+      - To handle networking without resources
+    explanation: Resource quotas provide constraints that limit resource consumption per namespace.
+    source: "https://kubernetes.io/docs/concepts/policy/resource-quotas/"
+    correct_answer: 0 

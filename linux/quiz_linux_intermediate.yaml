@@ -1,116 +1,116 @@
 id: linux_intermediate
 category: linux
 level: intermediate
-title: Linux System Administration
-description: Test your knowledge of Linux system administration and advanced commands
+title: Linux System Administration Intermediate
+description: Master intermediate Linux system administration concepts
 
 questions:
-  - id: linux_i1
-    question: What is the purpose of the grep command?
+  - id: q1
+    question: What is the purpose of LVM (Logical Volume Management)?
     options:
-      - Search for patterns in files using regular expressions
-      - Group users
-      - Generate reports
-      - Graph system resources
+      - To manage storage volumes flexibly with dynamic size adjustment
+      - To encrypt disk partitions for enhanced data security only
+      - To compress data automatically for storage optimization regularly
+      - To monitor disk performance and usage patterns constantly
+    explanation: LVM provides flexible disk space management with features like volume resizing and snapshots.
+    source: "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_logical_volumes/index"
     correct_answer: 0
-    explanation: The grep command searches for patterns in files using regular expressions, making it a powerful tool for text searching and filtering.
-    source: https://www.gnu.org/software/grep/manual/grep.html
 
-  - id: linux_i2
-    question: What is a symbolic link in Linux?
+  - id: q2
+    question: What is the function of SELinux?
     options:
-      - A special file that points to another file or directory
-      - A system library
-      - A symbolic programming language
-      - A network protocol
+      - To provide mandatory access control for enhanced security
+      - To monitor system performance and resource utilization only
+      - To manage user authentication and authorization regularly
+      - To scan system files for potential security threats constantly
+    explanation: SELinux implements mandatory access control security policies to enhance system security.
+    source: "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/using_selinux/index"
     correct_answer: 0
-    explanation: A symbolic link (symlink) is a special type of file that points to another file or directory, similar to a shortcut in Windows.
-    source: https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html
 
-  - id: linux_i3
-    question: What is the purpose of the chmod command?
+  - id: q3
+    question: What is the purpose of the iptables firewall?
     options:
-      - Change file permissions and access rights
-      - Change file modification time
-      - Change file owner
-      - Change file mode
+      - To filter network traffic based on defined security rules
+      - To monitor network performance and bandwidth usage only
+      - To manage network routing between different interfaces regularly
+      - To encrypt network traffic for secure communication constantly
+    explanation: iptables is a user-space utility program that allows system administrators to configure packet filtering rules.
+    source: "https://netfilter.org/documentation/"
     correct_answer: 0
-    explanation: The chmod command is used to change the permissions and access rights of files and directories in Linux.
-    source: https://www.gnu.org/software/coreutils/manual/html_node/chmod-invocation.html
 
-  - id: linux_i4
-    question: What is the purpose of the cron daemon?
+  - id: q4
+    question: What is the function of systemd-journald?
     options:
-      - Schedule and automate tasks
-      - Control system resources
-      - Monitor system processes
-      - Manage network connections
+      - To collect and store system logging data in structured format
+      - To monitor system performance metrics exclusively regularly
+      - To manage system service configurations automatically only
+      - To track user activities and login attempts constantly
+    explanation: systemd-journald collects and stores logging data with indexed metadata for efficient querying.
+    source: "https://www.freedesktop.org/software/systemd/man/systemd-journald.service.html"
     correct_answer: 0
-    explanation: The cron daemon is used to schedule and automate tasks (called cron jobs) to run at specified times or intervals.
-    source: https://man7.org/linux/man-pages/man8/cron.8.html
 
-  - id: linux_i5
-    question: What is the purpose of the ps command?
+  - id: q5
+    question: What is the purpose of network bonding?
     options:
-      - Display information about active processes
-      - Print system statistics
-      - Process scheduling
-      - Power save mode
+      - To combine multiple network interfaces for redundancy or throughput
+      - To encrypt network traffic between bonded interfaces only
+      - To monitor network performance across multiple links regularly
+      - To manage network routing between bonded interfaces constantly
+    explanation: Network bonding combines multiple network interfaces into a single logical interface for redundancy or increased throughput.
+    source: "https://www.kernel.org/doc/Documentation/networking/bonding.txt"
     correct_answer: 0
-    explanation: The ps command displays information about active processes running on the system, including their status and resource usage.
-    source: https://man7.org/linux/man-pages/man1/ps.1.html
 
-  - id: linux_i6
-    question: What is the purpose of the tar command?
+  - id: q6
+    question: What is the function of the rsyslog service?
     options:
-      - Archive files and directories
-      - Terminate processes
-      - Test and repair filesystems
-      - Track system resources
+      - To process system logs with filtering and forwarding capabilities
+      - To compress log files for efficient storage automatically only
+      - To monitor system events and generate alerts regularly
+      - To manage log rotation and retention policies constantly
+    explanation: rsyslog processes system logs with advanced filtering, forwarding, and processing capabilities.
+    source: "https://www.rsyslog.com/doc/master/configuration/index.html"
     correct_answer: 0
-    explanation: The tar command is used to create, maintain, modify, and extract files from archives, commonly used for backup and distribution.
-    source: https://www.gnu.org/software/tar/manual/tar.html
 
-  - id: linux_i7
-    question: What is the purpose of the find command?
+  - id: q7
+    question: What is the purpose of systemd targets?
     options:
-      - Search for files and directories based on various criteria
-      - Find network connections
-      - Find system errors
-      - Find user information
+      - To group system services for specific operational states
+      - To monitor service performance and resource usage only
+      - To manage service dependencies automatically regularly
+      - To track service startup and shutdown times constantly
+    explanation: Systemd targets group services and other units to define system states and boot goals.
+    source: "https://www.freedesktop.org/software/systemd/man/systemd.target.html"
     correct_answer: 0
-    explanation: The find command searches for files and directories in a directory hierarchy based on various criteria like name, size, type, and permissions.
-    source: https://www.gnu.org/software/findutils/manual/html_node/find_html/
 
-  - id: linux_i8
-    question: What is the purpose of the sed command?
+  - id: q8
+    question: What is the function of RAID configurations?
     options:
-      - Stream editor for filtering and transforming text
-      - Secure encrypted data
-      - Send email data
-      - System error detection
+      - To combine multiple disks for redundancy or performance
+      - To encrypt data across multiple storage devices only
+      - To compress data for efficient storage usage regularly
+      - To monitor disk performance in array configurations constantly
+    explanation: RAID combines multiple disk drives for improved performance, redundancy, or both.
+    source: "https://raid.wiki.kernel.org/index.php/Linux_Raid"
     correct_answer: 0
-    explanation: The sed (Stream Editor) command is used to perform basic text transformations on an input stream (file or pipe).
-    source: https://www.gnu.org/software/sed/manual/sed.html
 
-  - id: linux_i9
-    question: What is the purpose of the awk command?
+  - id: q9
+    question: What is the purpose of systemd-networkd?
     options:
-      - Pattern scanning and text processing language
-      - Automatic work scheduler
-      - Advanced web kit
-      - Audio workstation
+      - To manage network configurations and connections dynamically
+      - To monitor network performance and bandwidth usage only
+      - To configure network security policies automatically regularly
+      - To track network interface status changes constantly
+    explanation: systemd-networkd manages network configurations and connections in modern Linux systems.
+    source: "https://www.freedesktop.org/software/systemd/man/systemd-networkd.service.html"
     correct_answer: 0
-    explanation: The awk command is a powerful text processing language used for pattern scanning and processing in text files.
-    source: https://www.gnu.org/software/gawk/manual/gawk.html
 
-  - id: linux_i10
-    question: What is the purpose of the systemctl command?
+  - id: q10
+    question: What is the function of AppArmor?
     options:
-      - Control the systemd system and service manager
-      - System cleanup tool
-      - System clock time
-      - System configuration loader
-    correct_answer: 0
-    explanation: The systemctl command is used to control the systemd system and service manager, managing system services, checking their status, and more.
-    source: https://www.freedesktop.org/software/systemd/man/systemctl.html 
+      - To enforce application security policies through mandatory access control
+      - To monitor application performance and resource usage only
+      - To manage application dependencies automatically regularly
+      - To track application behavior and generate reports constantly
+    explanation: AppArmor restricts program capabilities with per-program profiles.
+    source: "https://gitlab.com/apparmor/apparmor/-/wikis/Documentation"
+    correct_answer: 0 

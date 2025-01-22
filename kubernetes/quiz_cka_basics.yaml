@@ -17,12 +17,12 @@ questions:
     correct_answer: 0
 
   - id: q2
-    question: How do you check cluster node status?
+    question: Which command helps you check the cluster nodes status?
     options:
-      - To display detailed information about node health and readiness
-      - To monitor pod deployments without node information
-      - To track resource usage without status details
-      - To list services running on specific nodes
+      - Display detailed information about node health and readiness
+      - Monitor pod deployments without node information
+      - Track resource usage without status details
+      - List services running on specific nodes
     explanation: kubectl get nodes and kubectl describe node provide detailed information about node status and health.
     source: "https://kubernetes.io/docs/concepts/architecture/nodes/"
     correct_answer: 0
@@ -39,7 +39,7 @@ questions:
     correct_answer: 0
 
   - id: q4
-    question: How do you create a new namespace?
+    question: What is the purpose of namespace?
     options:
       - To create an isolated workspace within the cluster
       - To deploy applications without isolation
@@ -61,7 +61,7 @@ questions:
     correct_answer: 0
 
   - id: q6
-    question: How do you check pod logs?
+    question: What is the purpose of pod logs?
     options:
       - To view container logs and troubleshoot applications
       - To monitor cluster events without pod details
@@ -83,7 +83,7 @@ questions:
     correct_answer: 0
 
   - id: q8
-    question: How do you manage pod resources?
+    question: What is the purpose of  pod resources?
     options:
       - To specify CPU and memory requests and limits for containers
       - To configure network policies without resources
@@ -105,12 +105,12 @@ questions:
     correct_answer: 0
 
   - id: q10
-    question: How do you perform basic troubleshooting?
+    question: What is the primary goal of basic troubleshooting ?
     options:
-      - To diagnose common cluster and application issues systematically
-      - To monitor resource usage without diagnostics
-      - To track network traffic without analysis
-      - To list configuration changes only
+      - Diagnose common cluster and application issues systematically
+      - Monitor resource usage without diagnostics
+      - Track network traffic without analysis
+      - List configuration changes only
     explanation: Basic troubleshooting involves checking pod status, logs, and events.
     source: "https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application/"
     correct_answer: 0 
